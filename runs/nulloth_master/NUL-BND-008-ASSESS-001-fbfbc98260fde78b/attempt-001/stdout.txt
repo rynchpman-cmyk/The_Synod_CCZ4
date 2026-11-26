@@ -1,0 +1,8 @@
+{
+  "decisive_observables_produced": 0,
+  "duration_seconds": 1114.9519643000094,
+  "failed_return_code": 1,
+  "original_run_completed": 0,
+  "original_scientific_acceptance_passed": 0,
+  "singular_recovery_jacobian_reported": 1
+}

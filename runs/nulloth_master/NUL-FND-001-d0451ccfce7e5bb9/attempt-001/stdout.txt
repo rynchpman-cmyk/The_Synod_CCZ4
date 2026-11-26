@@ -1,0 +1,41 @@
+{
+  "amplitudes": [
+    0.0,
+    0.23,
+    -0.31
+  ],
+  "cases": 3,
+  "hilbert_material_stress_errors": [
+    2.360643625021197e-11,
+    1.2491084555588117e-11,
+    2.8519769879054024e-11
+  ],
+  "hilbert_material_stress_max_error": 2.8519769879054024e-11,
+  "parameters": {
+    "carrier_K": 0.2,
+    "carrier_charge": 1.0,
+    "carrier_floor": 1e-10,
+    "carrier_sound_speed": 0.9,
+    "characteristic_condition_limit": 100000000.0,
+    "chemical_susceptibility": 10.0,
+    "convexity_floor": 1e-10,
+    "effective_mass_floor": -1000000.0,
+    "entrainment_linear": 0.03,
+    "entrainment_quadratic": 0.02,
+    "entrainment_scale_fourth": 1.0,
+    "gamma_ad": 1.6666666666666667,
+    "maximum_relative_lorentz_factor": 2.0,
+    "relaxation_time": 1.0,
+    "scalar_amplitude_limit": 20.0,
+    "scalar_baryon_coupling": 0.7,
+    "scalar_baryon_scale": 1.0,
+    "scalar_carrier_coupling": 1.3,
+    "scalar_carrier_scale": 1.0,
+    "scalar_constraint_damping": 0.0,
+    "scalar_counterflow_coupling": 0.9,
+    "scalar_counterflow_scale": 1.0,
+    "scalar_mass": 0.5,
+    "scalar_quartic": 1.0,
+    "target_fraction": 0.05
+  }
+}

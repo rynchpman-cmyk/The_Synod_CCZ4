@@ -1,0 +1,319 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-NLN-005",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/close_nulloth_entropy_budget.py",
+    "--duration",
+    "0.1",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-NLN-005-a3e3446c30e5c763\\attempt-001/entropy_budget.json"
+  ],
+  "duration_seconds": 52.12118439999176,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T11:00:16.219254+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T11:00:16.326507+00:00",
+  "input_artifacts": {
+    "experiments/close_nulloth_entropy_budget.py": "85b15480cb79eb133114fabe8815bb9e517e00f18649bc56566acf7ae454d67c",
+    "experiments/map_nulloth_production_regimes.py": "6bb320fa713786ae1fb6fb455339ca97991a68ca99b4a02eb9f3ca71e028bfc2",
+    "experiments/nulloth_master/NULLOTH_ENTROPY_BUDGET.md": "0aebac13fcc536a8211885b8d673e8c6710cc747e04a6e5d3c5b7f3c108f6757",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/initial_constraints.py": "0f60088dd771693958f04b6fb4baf13909954026aa5299019c08cb4223b60f95",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-NLN-005.json",
+  "manifest_sha256": "a4416f44485009f565da3855b90ed03f9c0cbb69c3dccebcf8df899d679eaabe",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "entropy_budget.json": "cc66e836708aedfaf2cb98217f47dd5b2d98f98927fecb0c1dee1e4f1081de48",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "cc66e836708aedfaf2cb98217f47dd5b2d98f98927fecb0c1dee1e4f1081de48"
+  },
+  "parsed_stdout": {
+    "cases": [
+      {
+        "drag_entropy_change": 0.004542616513669391,
+        "dt": 0.02,
+        "entropy_telescope_error": 0.0,
+        "maximum_field_constraint_l2": 1.8655119472947973e-19,
+        "maximum_gravitational_constraint_l2": 4.3471296470127196e-08,
+        "maximum_number_relative_drift": 1.533209484814193e-16,
+        "maximum_recovery_residual": 1.3125495573786806e-11,
+        "minimum_legendre": 0.5770605464580938,
+        "minimum_step_entropy_change": 0.0009447036199787817,
+        "minimum_thermodynamic": 0.3698108067817206,
+        "net_entropy_change": 0.00512021167569543,
+        "numerical_entropy_change": 0.0005775951620260386,
+        "numerical_entropy_fraction": 0.11280689131813859,
+        "points": 16,
+        "raw_projection_stage_sum": 0.0017338100357759956,
+        "raw_projection_to_numerical_ratio": 3.0017738197361035
+      },
+      {
+        "drag_entropy_change": 0.004545618294025806,
+        "dt": 0.01,
+        "entropy_telescope_error": 0.0,
+        "maximum_field_constraint_l2": 2.1680072619196154e-19,
+        "maximum_gravitational_constraint_l2": 4.904909841561913e-08,
+        "maximum_number_relative_drift": 1.850371642566198e-16,
+        "maximum_recovery_residual": 3.270022047670697e-12,
+        "minimum_legendre": 0.5770595230079295,
+        "minimum_step_entropy_change": 0.0004679746521389916,
+        "minimum_thermodynamic": 0.36981100084920304,
+        "net_entropy_change": 0.005121885011121208,
+        "numerical_entropy_change": 0.0005762667170954019,
+        "numerical_entropy_fraction": 0.11251067055276473,
+        "points": 16,
+        "raw_projection_stage_sum": 0.0017293038813646078,
+        "raw_projection_to_numerical_ratio": 3.0008741266213343
+      },
+      {
+        "drag_entropy_change": 0.004547012309444005,
+        "dt": 0.005,
+        "entropy_telescope_error": 0.0,
+        "maximum_field_constraint_l2": 3.155376794164798e-19,
+        "maximum_gravitational_constraint_l2": 5.185175187652859e-08,
+        "maximum_number_relative_drift": 0.0,
+        "maximum_recovery_residual": 8.161101020018253e-13,
+        "minimum_legendre": 0.5770590125623913,
+        "minimum_step_entropy_change": 0.00023290463133918138,
+        "minimum_thermodynamic": 0.36981109788313715,
+        "net_entropy_change": 0.005122619337022627,
+        "numerical_entropy_change": 0.0005756070275786222,
+        "numerical_entropy_fraction": 0.11236576245643445,
+        "points": 16,
+        "raw_projection_stage_sum": 0.001727071640311273,
+        "raw_projection_to_numerical_ratio": 3.0004352927664213
+      },
+      {
+        "drag_entropy_change": 0.004525570092015247,
+        "dt": 0.01,
+        "entropy_telescope_error": 0.0,
+        "maximum_field_constraint_l2": 1.1700097711579406e-19,
+        "maximum_gravitational_constraint_l2": 6.367922244506774e-08,
+        "maximum_number_relative_drift": 0.0,
+        "maximum_recovery_residual": 5.694149039560434e-11,
+        "minimum_legendre": 0.5770602642162985,
+        "minimum_step_entropy_change": 0.0005013314519572987,
+        "minimum_thermodynamic": 0.3697388112062413,
+        "net_entropy_change": 0.005484163974571743,
+        "numerical_entropy_change": 0.0009585938825564964,
+        "numerical_entropy_fraction": 0.17479307456910106,
+        "points": 8,
+        "raw_projection_stage_sum": 0.002876771879683382,
+        "raw_projection_to_numerical_ratio": 3.001033004729022
+      },
+      {
+        "drag_entropy_change": 0.004512214633587675,
+        "dt": 0.01,
+        "entropy_telescope_error": 0.0,
+        "maximum_field_constraint_l2": 6.371061790946281e-19,
+        "maximum_gravitational_constraint_l2": 6.950673564596373e-08,
+        "maximum_number_relative_drift": 0.0,
+        "maximum_recovery_residual": 4.539172911071405e-11,
+        "minimum_legendre": 0.5770636192097235,
+        "minimum_step_entropy_change": 0.00044018186998329156,
+        "minimum_thermodynamic": 0.3697889019579105,
+        "net_entropy_change": 0.004822559825427675,
+        "numerical_entropy_change": 0.0003103451918399997,
+        "numerical_entropy_fraction": 0.06435279251563823,
+        "points": 32,
+        "raw_projection_stage_sum": 0.0009312704094721624,
+        "raw_projection_to_numerical_ratio": 3.0007566862910653
+      }
+    ],
+    "coarse_numerical_entropy_fraction": 0.17479307456910106,
+    "coarse_to_medium_numerical_reduction": 1.6634552267536207,
+    "duration": 0.1,
+    "fine_numerical_entropy_fraction": 0.06435279251563823,
+    "maximum_entropy_telescope_error": 0.0,
+    "maximum_field_constraint_l2": 6.371061790946281e-19,
+    "maximum_gravitational_constraint_l2": 6.950673564596373e-08,
+    "maximum_number_relative_drift": 1.850371642566198e-16,
+    "maximum_raw_projection_to_numerical_ratio": 3.0017738197361035,
+    "maximum_recovery_residual": 5.694149039560434e-11,
+    "medium_to_fine_numerical_reduction": 1.856857242346128,
+    "minimum_drag_entropy_change": 0.004512214633587675,
+    "minimum_legendre": 0.5770590125623913,
+    "minimum_net_entropy_change": 0.004822559825427675,
+    "minimum_numerical_entropy_change": 0.0003103451918399997,
+    "minimum_raw_projection_to_numerical_ratio": 3.0004352927664213,
+    "minimum_thermodynamic": 0.3697388112062413,
+    "numerical_entropy_monotone_with_resolution": 1,
+    "time_drag_relative_spread": 0.0009667437595195699,
+    "time_net_relative_spread": 0.00047000590299505987,
+    "time_numerical_relative_spread": 0.003453978760092231
+  },
+  "return_code": 0,
+  "run_id": "NUL-NLN-005-a3e3446c30e5c763",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 0.001,
+        "observable": "time_net_relative_spread",
+        "observed": 0.00047000590299505987,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.002,
+        "observable": "time_drag_relative_spread",
+        "observed": 0.0009667437595195699,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.005,
+        "observable": "time_numerical_relative_spread",
+        "observed": 0.003453978760092231,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "numerical_entropy_monotone_with_resolution",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1.5,
+        "observable": "coarse_to_medium_numerical_reduction",
+        "observed": 1.6634552267536207,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1.7,
+        "observable": "medium_to_fine_numerical_reduction",
+        "observed": 1.856857242346128,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.15,
+        "observable": "coarse_numerical_entropy_fraction",
+        "observed": 0.17479307456910106,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.07,
+        "observable": "fine_numerical_entropy_fraction",
+        "observed": 0.06435279251563823,
+        "operator": "<",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_net_entropy_change",
+        "observed": 0.004822559825427675,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_drag_entropy_change",
+        "observed": 0.004512214633587675,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_numerical_entropy_change",
+        "observed": 0.0003103451918399997,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 2.9,
+        "observable": "minimum_raw_projection_to_numerical_ratio",
+        "observed": 3.0004352927664213,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 3.1,
+        "observable": "maximum_raw_projection_to_numerical_ratio",
+        "observed": 3.0017738197361035,
+        "operator": "<",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_entropy_telescope_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-06,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": 6.950673564596373e-08,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_field_constraint_l2",
+        "observed": 6.371061790946281e-19,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_number_relative_drift",
+        "observed": 1.850371642566198e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre",
+        "observed": 0.5770590125623913,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic",
+        "observed": 0.3697388112062413,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": 5.694149039560434e-11,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "d893658cc2b8a5d87b36b43682f0657945cce4cc23a89fedd49269b3c737863e",
+  "started_utc": "2026-07-22T10:59:24.078268+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-NLN-005"
+  ],
+  "termination": "completed"
+}

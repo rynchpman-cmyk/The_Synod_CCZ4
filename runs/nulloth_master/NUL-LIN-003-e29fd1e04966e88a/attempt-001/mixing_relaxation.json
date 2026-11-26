@@ -1,0 +1,25 @@
+{
+  "avoided_crossings_detected": 1,
+  "carrier_drag_monotonic_with_inverse_relaxation_time": 1,
+  "carrier_relaxation_times": [
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "cleaning_damping_samples": 4,
+  "coupled_minimum_mass_squared_gap": 0.09999999999999995,
+  "electric_damping_modes": 6,
+  "electric_damping_parameter_sets": 3,
+  "exact_crossings_detected": 1,
+  "mass_samples": 81,
+  "maximum_carrier_drag_decay_error": 1.1102230246251565e-16,
+  "maximum_cleaning_dispersion_error": 7.119291619286993e-15,
+  "maximum_drag_energy_conservation_error": 0.0,
+  "maximum_drag_momentum_conservation_error": 0.0,
+  "maximum_electric_damping_error": 1.1102230246251565e-16,
+  "maximum_mode_mixing_fraction": 0.4999999999999996,
+  "minimum_drag_entropy_change": 0.0002728349545419562,
+  "minimum_irreversible_heat": 0.0,
+  "uncoupled_minimum_mass_squared_gap": 5.551115123125783e-17
+}

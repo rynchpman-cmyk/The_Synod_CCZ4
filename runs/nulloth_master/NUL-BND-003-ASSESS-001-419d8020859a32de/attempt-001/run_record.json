@@ -1,0 +1,131 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-BND-003-ASSESS-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/assess_nulloth_finite_vector_material_outflow.py",
+    "--record",
+    "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-BND-003-ASSESS-001-419d8020859a32de\\attempt-001/finite_vector_material_assessment.json"
+  ],
+  "duration_seconds": 0.08686489998945035,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T11:57:34.158314+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T11:57:34.262205+00:00",
+  "input_artifacts": {
+    "experiments/assess_nulloth_finite_vector_material_outflow.py": "bc823444ddc9dc581825f28afed5562b72e833754fd6e0debcd5e175ec71c3a6",
+    "experiments/nulloth_master/corrections/NUL-BND-003-CR-001.md": "9878344cc028935df09ee51832e3e315b8e4d1a9beba77ac107a042e800b763c",
+    "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json": "5eb9a37524a01e72a93d1b651bcd2d279b79fa110d6a48ac30a8da7606f98637"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-BND-003-ASSESS-001.json",
+  "manifest_sha256": "e380f932129a85d174b7bcc12a15a925522c7a8f0b892a77212166771a2484bd",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "finite_vector_material_assessment.json": "9cb05acf69300a88ef5b33e994ef003df0c823a7bf21a707286adbd7c12bd1ac",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "9cb05acf69300a88ef5b33e994ef003df0c823a7bf21a707286adbd7c12bd1ac"
+  },
+  "parsed_stdout": {
+    "all_nonentropy_criteria_passed": 1,
+    "failed_entropy_criteria": 2,
+    "material_excess_baryon_loss_fraction": 0.6310682133723654,
+    "material_excess_carrier_loss_fraction": 0.6938604714081333,
+    "maximum_absolute_cumulative_entropy_balance_residual": 0.0005942812615476212,
+    "maximum_step_entropy_balance_residual": 1.6060981132879502e-05,
+    "original_run_completed": 1,
+    "original_scientific_acceptance_passed": 0,
+    "vector_norm_loss_fraction": 0.45689023568569076
+  },
+  "return_code": 0,
+  "run_id": "NUL-BND-003-ASSESS-001-419d8020859a32de",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 1,
+        "observable": "original_run_completed",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "original_scientific_acceptance_passed",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "all_nonentropy_criteria_passed",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2,
+        "observable": "failed_entropy_criteria",
+        "observed": 2,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.01,
+        "observable": "vector_norm_loss_fraction",
+        "observed": 0.45689023568569076,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0.01,
+        "observable": "material_excess_baryon_loss_fraction",
+        "observed": 0.6310682133723654,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0.01,
+        "observable": "material_excess_carrier_loss_fraction",
+        "observed": 0.6938604714081333,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1e-05,
+        "observable": "maximum_step_entropy_balance_residual",
+        "observed": 1.6060981132879502e-05,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-05,
+        "observable": "maximum_absolute_cumulative_entropy_balance_residual",
+        "observed": 0.0005942812615476212,
+        "operator": ">",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "cac0f9a9f71ad0f382a96a93ce4bf829505763af80b2532778a17d0d845102a9",
+  "started_utc": "2026-07-22T11:57:34.057317+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-BND-003"
+  ],
+  "termination": "completed"
+}

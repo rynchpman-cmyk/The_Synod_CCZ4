@@ -1,0 +1,50 @@
+{
+  "box_lengths": [
+    8.0,
+    16.0,
+    32.0,
+    64.0
+  ],
+  "candidate_mechanisms_registered": 3,
+  "characteristic_failures": 0,
+  "locally_growing_states": 16,
+  "locally_oscillatory_states": 816,
+  "maximum_condensed_frequency": 1.0327496356294559,
+  "maximum_directional_growth_difference": 3.748390486890685e-13,
+  "maximum_growth_rate": 0.456609006357168,
+  "maximum_multidimensional_dispersion_error": 5.580536256551949e-13,
+  "maximum_scalar_curvature": 3.82673646556747,
+  "maximum_unstable_mode_number": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "minimum_scalar_curvature": -0.2084917846864803,
+  "multidimensional_resolutions": [
+    8,
+    12,
+    16
+  ],
+  "sampled_states": 832,
+  "states_with_nonhomogeneous_instability": [
+    0,
+    8,
+    16,
+    16
+  ],
+  "tested_wavevectors": [
+    [
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ]
+}

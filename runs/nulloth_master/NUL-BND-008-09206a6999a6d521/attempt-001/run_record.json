@@ -1,0 +1,147 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-BND-008",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/qualify_nulloth_driven_latency.py"
+  ],
+  "duration_seconds": 1114.9519643000094,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T16:07:05.988121+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T16:07:06.108326+00:00",
+  "input_artifacts": {
+    "experiments/qualify_nulloth_driven_latency.py": "444ffda3f06d8a59fff8fcb4aa4d0a56d2af915a580181b6a9fb91bdcf7dbae1",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/driven_finite_nulloth.py": "9d9bb849a8c8212e806cba476b1049ca65f6f1b89ff5d79de12d8a4eec095d8c",
+    "src/causal_repair/finite_nulloth.py": "3436258b56608e73602d4fdb3482f04fd192f1d296cdcbf3f3e488708d77b6e4",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-BND-008.json",
+  "manifest_sha256": "641759f8ec3dfbbec814c64e147ca1c272feb6653eeaa62602028614071b4440",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "17ad0968af45b28b43deb48a7e42101e4e23a223a07ded749abb53471371fd59",
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "parsed_stdout": null,
+  "return_code": 1,
+  "run_id": "NUL-BND-008-09206a6999a6d521",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 2,
+        "observable": "resolution_count",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 0.8,
+        "observable": "fine_speed",
+        "observed": null,
+        "operator": ">=",
+        "passed": false
+      },
+      {
+        "expected": 1.2,
+        "observable": "fine_speed",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.1,
+        "observable": "speed_relative_change",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.03,
+        "observable": "maximum_arrival_error",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.05,
+        "observable": "maximum_prearrival_leakage_ratio",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.05,
+        "observable": "maximum_final_characteristic_ratio",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.05,
+        "observable": "maximum_right_reflection_ratio",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 1e-06,
+        "observable": "maximum_scalar_constraint_l2",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.001,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre_eigenvalue",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic_eigenvalue",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      }
+    ],
+    "passed": false
+  },
+  "source_fingerprint": "be78d4c09b71bcddabc5ae2537d55338d69ce853ac6db200d7c768b7a7ca0d4a",
+  "started_utc": "2026-07-22T15:48:31.021644+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-BND-008"
+  ],
+  "termination": "failed"
+}

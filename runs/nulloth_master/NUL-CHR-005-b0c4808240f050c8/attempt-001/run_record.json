@@ -1,0 +1,559 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-005",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/locate_nulloth_admissibility_boundaries.py",
+    "--coarse-steps",
+    "65",
+    "--bisection-steps",
+    "24"
+  ],
+  "duration_seconds": 52.20050150001771,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:12:18.382654+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:12:18.493397+00:00",
+  "input_artifacts": {
+    "experiments/locate_nulloth_admissibility_boundaries.py": "89a4381977a812ee13c01b0b1894a9a35800b3dd3755e15f7723c1339ba22695",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/matter.py": "450cf00fc626ce719f3c9929d4faeb9f83b1ebbf0c5eec4553ff0e78b89d5e30",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-005.json",
+  "manifest_sha256": "91afd5ecedea3e821b914575d1df8a93d4a54386650cac85dbc0efd1e548a644",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "c66e2330d898e1cf7aaea77d709c8401108e5809c0d0d52a7ffff4292d88be38"
+  },
+  "parsed_stdout": {
+    "amplitude_cap_rays": 5,
+    "bisection_steps": 24,
+    "boundaries": [
+      {
+        "end": [
+          0.02,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ],
+        "first_physical_failure_fraction": null,
+        "first_production_failure_fraction": null,
+        "name": "density_low",
+        "physical_boundary_point": null,
+        "physical_bracket_width": null,
+        "physical_cause": null,
+        "production_boundary_point": null,
+        "production_bracket_width": null,
+        "production_cause": null,
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          2.0,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ],
+        "first_physical_failure_fraction": null,
+        "first_production_failure_fraction": null,
+        "name": "density_high",
+        "physical_boundary_point": null,
+        "physical_bracket_width": null,
+        "physical_cause": null,
+        "production_boundary_point": null,
+        "production_bracket_width": null,
+        "production_cause": null,
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          0.005,
+          0.18,
+          0.0,
+          0.0
+        ],
+        "first_physical_failure_fraction": null,
+        "first_production_failure_fraction": null,
+        "name": "internal_low",
+        "physical_boundary_point": null,
+        "physical_bracket_width": null,
+        "physical_cause": null,
+        "production_boundary_point": null,
+        "production_bracket_width": null,
+        "production_cause": null,
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          1.5,
+          0.18,
+          0.0,
+          0.0
+        ],
+        "first_physical_failure_fraction": null,
+        "first_production_failure_fraction": null,
+        "name": "internal_high",
+        "physical_boundary_point": null,
+        "physical_bracket_width": null,
+        "physical_cause": null,
+        "production_boundary_point": null,
+        "production_bracket_width": null,
+        "production_cause": null,
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          0.225,
+          0.005,
+          0.0,
+          0.0
+        ],
+        "first_physical_failure_fraction": 0.8965939320623875,
+        "first_production_failure_fraction": 0.8965939320623875,
+        "name": "carrier_low",
+        "physical_boundary_point": [
+          0.65,
+          0.225,
+          0.023096061889082198,
+          0.0,
+          0.0
+        ],
+        "physical_bracket_width": 9.313225746154785e-10,
+        "physical_cause": "superluminal",
+        "production_boundary_point": [
+          0.65,
+          0.225,
+          0.023096061889082198,
+          0.0,
+          0.0
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "superluminal",
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          0.225,
+          0.8,
+          0.0,
+          0.0
+        ],
+        "first_physical_failure_fraction": null,
+        "first_production_failure_fraction": null,
+        "name": "carrier_high",
+        "physical_boundary_point": null,
+        "physical_bracket_width": null,
+        "physical_cause": null,
+        "production_boundary_point": null,
+        "production_bracket_width": null,
+        "production_cause": null,
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          0.225,
+          0.18,
+          -0.9,
+          0.0
+        ],
+        "first_physical_failure_fraction": null,
+        "first_production_failure_fraction": 0.9622504487633705,
+        "name": "counterflow_negative",
+        "physical_boundary_point": null,
+        "physical_bracket_width": null,
+        "physical_cause": null,
+        "production_boundary_point": [
+          0.65,
+          0.225,
+          0.18,
+          -0.8660254038870335,
+          0.0
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "relative_lorentz_cap",
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          0.225,
+          0.18,
+          0.9,
+          0.0
+        ],
+        "first_physical_failure_fraction": null,
+        "first_production_failure_fraction": 0.9622504487633705,
+        "name": "counterflow_positive",
+        "physical_boundary_point": null,
+        "physical_bracket_width": null,
+        "physical_cause": null,
+        "production_boundary_point": [
+          0.65,
+          0.225,
+          0.18,
+          0.8660254038870335,
+          0.0
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "relative_lorentz_cap",
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          -0.8
+        ],
+        "first_physical_failure_fraction": 0.256704356521368,
+        "first_production_failure_fraction": 0.21250000037252903,
+        "name": "coherence_negative",
+        "physical_boundary_point": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          -0.20536348521709444
+        ],
+        "physical_bracket_width": 9.313225746154785e-10,
+        "physical_cause": "ill_conditioned",
+        "production_boundary_point": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          -0.17000000029802323
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "amplitude_cap",
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.8
+        ],
+        "first_physical_failure_fraction": 0.256704356521368,
+        "first_production_failure_fraction": 0.21250000037252903,
+        "name": "coherence_positive",
+        "physical_boundary_point": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.20536348521709444
+        ],
+        "physical_bracket_width": 9.313225746154785e-10,
+        "physical_cause": "ill_conditioned",
+        "production_boundary_point": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.17000000029802323
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "amplitude_cap",
+        "start": [
+          0.65,
+          0.225,
+          0.18,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "end": [
+          2.0,
+          0.005,
+          0.8,
+          -0.9,
+          -0.8
+        ],
+        "first_physical_failure_fraction": 0.06040772330015898,
+        "first_production_failure_fraction": 0.015625000931322575,
+        "name": "convexity_corner_outward",
+        "physical_boundary_point": [
+          0.9664484956301749,
+          0.0942612662864849,
+          0.273828325048089,
+          -0.3362446339800954,
+          -0.19866094291210173
+        ],
+        "physical_bracket_width": 9.313225746154785e-10,
+        "physical_cause": "complex_mode",
+        "production_boundary_point": [
+          0.9171875010244549,
+          0.09851562491152437,
+          0.24875000052154064,
+          -0.3093750005587935,
+          -0.17000000059604645
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "amplitude_cap",
+        "start": [
+          0.9,
+          0.1,
+          0.24,
+          -0.3,
+          -0.16
+        ]
+      },
+      {
+        "end": [
+          0.02,
+          0.005,
+          0.005,
+          -0.9,
+          -0.8
+        ],
+        "first_physical_failure_fraction": 0.0827915295958519,
+        "first_production_failure_fraction": 0.015625000931322575,
+        "name": "collision_corner_outward",
+        "physical_boundary_point": [
+          0.3685392187535763,
+          0.09213480468839408,
+          0.11047897409647703,
+          -0.34967491775751114,
+          -0.2129865789413452
+        ],
+        "physical_bracket_width": 9.313225746154785e-10,
+        "physical_cause": "complex_mode",
+        "production_boundary_point": [
+          0.39406249964609746,
+          0.09851562491152437,
+          0.1182031248928979,
+          -0.3093750005587935,
+          -0.17000000059604645
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "amplitude_cap",
+        "start": [
+          0.4,
+          0.1,
+          0.12,
+          -0.3,
+          -0.16
+        ]
+      },
+      {
+        "end": [
+          2.0,
+          1.5,
+          0.8,
+          0.9,
+          -0.8
+        ],
+        "first_physical_failure_fraction": 0.06083018612116575,
+        "first_production_failure_fraction": 0.015625000931322575,
+        "name": "condition_corner_outward",
+        "physical_boundary_point": [
+          0.9669132047332823,
+          0.4199547140393406,
+          0.2740649042278528,
+          0.33649811167269944,
+          -0.19893131911754608
+        ],
+        "physical_bracket_width": 9.313225746154785e-10,
+        "physical_cause": "ill_conditioned",
+        "production_boundary_point": [
+          0.9171875010244549,
+          0.36796875107102095,
+          0.24875000052154064,
+          0.3093750005587935,
+          -0.17000000059604645
+        ],
+        "production_bracket_width": 9.313225746154785e-10,
+        "production_cause": "amplitude_cap",
+        "start": [
+          0.9,
+          0.35,
+          0.24,
+          0.3,
+          -0.16
+        ]
+      }
+    ],
+    "coarse_steps_per_ray": 65,
+    "complex_mode_rays": 2,
+    "ill_conditioned_rays": 3,
+    "incomplete_basis_rays": 0,
+    "legendre_failure_rays": 0,
+    "maximum_boundary_bracket_width": 9.313225746154785e-10,
+    "minimum_physical_boundary_fraction": 0.06040772330015898,
+    "minimum_production_boundary_fraction": 0.015625000931322575,
+    "physically_proscribed_rays": 6,
+    "production_proscribed_rays": 8,
+    "rays": 13,
+    "relative_lorentz_cap_rays": 2,
+    "safe_starting_points": 13,
+    "superluminal_rays": 1,
+    "thermodynamic_failure_rays": 0,
+    "unclassified_errors": 0
+  },
+  "return_code": 0,
+  "run_id": "NUL-CHR-005-b0c4808240f050c8",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 13,
+        "observable": "rays",
+        "observed": 13,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 65,
+        "observable": "coarse_steps_per_ray",
+        "observed": 65,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 24,
+        "observable": "bisection_steps",
+        "observed": 24,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 13,
+        "observable": "safe_starting_points",
+        "observed": 13,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 3,
+        "observable": "physically_proscribed_rays",
+        "observed": 6,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "production_proscribed_rays",
+        "observed": 8,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "unclassified_errors",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_physical_boundary_fraction",
+        "observed": 0.06040772330015898,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_production_boundary_fraction",
+        "observed": 0.015625000931322575,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-06,
+        "observable": "maximum_boundary_bracket_width",
+        "observed": 9.313225746154785e-10,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "2d0f126a40dca147cb45f47f24a88f5c7be5babf0dee3a00bc674afb84c2e4eb",
+  "started_utc": "2026-07-22T08:11:26.168871+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-005"
+  ],
+  "termination": "completed"
+}

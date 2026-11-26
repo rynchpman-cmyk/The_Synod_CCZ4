@@ -1,0 +1,29 @@
+{
+  "constitutive_fields_compared": 18,
+  "constitutive_max_abs_error": 0.0,
+  "minimum_one_step_scaling_order": 2.0000021603881324,
+  "nulloth_rhs_groups": 27,
+  "nulloth_state_groups": 27,
+  "one_step_error_ratios": [
+    0.24999849987865005,
+    0.2499996256335446
+  ],
+  "one_step_errors": [
+    5.000039999814021e-07,
+    1.250002499286751e-07,
+    3.1250015686268284e-08
+  ],
+  "one_step_scaling_orders": [
+    2.000008656896502,
+    2.0000021603881324
+  ],
+  "rhs_groups_compared": 24,
+  "rhs_max_abs_error": 0.0,
+  "scalar_amplitudes": [
+    0.002,
+    0.001,
+    0.0005
+  ],
+  "smallest_grid_failed_cells": 0,
+  "theory33_rhs_groups": 24
+}

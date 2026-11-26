@@ -1,0 +1,133 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-009",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_vector_target_orientation.py",
+    "--target-orientations",
+    "128"
+  ],
+  "duration_seconds": 0.33177400002023205,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:30:04.864035+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:30:04.973356+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_vector_target_orientation.py": "6e6283f47c36709de0e700f38f5f82a80761207f521498b2f11a2c2de33cbb40",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-009.json",
+  "manifest_sha256": "0d89ae576930524859e4e241531930178eac02a44dc8be52679d19fc66541652",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "f2704489a3a863dbb73ec9fa4a96d8d453a0b499986e1b79cc41b1ea09bd2db6",
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "parsed_stdout": null,
+  "return_code": 1,
+  "run_id": "NUL-CHR-009-e75d77e6a4b52647",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 128,
+        "observable": "target_orientations",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 4,
+        "observable": "proca_parameter_sets",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 16,
+        "observable": "field_variables",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 3,
+        "observable": "numerical_jacobian_source_orientations",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "maximum_principal_block_variation",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "maximum_principal_spectrum_variation",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_source_orientation_field_jacobian_error",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 1e-14,
+        "observable": "maximum_power_projection_error",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 1e-14,
+        "observable": "maximum_force_projection_error",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "longitudinal_power",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "transverse_power",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      }
+    ],
+    "passed": false
+  },
+  "source_fingerprint": "4d16c95b88143a6389b85f98b251887e9d22ea7f3568ba63137b1e419d364323",
+  "started_utc": "2026-07-22T08:30:04.519734+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-009"
+  ],
+  "termination": "failed"
+}

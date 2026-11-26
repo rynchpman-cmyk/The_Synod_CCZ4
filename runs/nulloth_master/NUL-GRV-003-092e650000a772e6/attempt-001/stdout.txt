@@ -1,0 +1,56 @@
+{
+  "cases": [
+    {
+      "entropy_change": 0.01484510688672458,
+      "final_gravitational_constraint_l2": 2.182158173884044e-06,
+      "final_scalar_amplitude": 0.022401143179979106,
+      "initial_gravitational_constraint_l2": 2.048264026640265e-06,
+      "maximum_field_constraint_l2": 2.395770963567772e-21,
+      "maximum_gravitational_constraint_l2": 2.182158173884044e-06,
+      "maximum_number_relative_drift": 3.7007428989163973e-16,
+      "maximum_recovery_residual": 5.830651391168401e-11,
+      "minimum_legendre": 0.5638842173902321,
+      "minimum_thermodynamic": 0.36912602245285225,
+      "points": 4
+    },
+    {
+      "entropy_change": 0.00883235460574383,
+      "final_gravitational_constraint_l2": 5.536220960128586e-07,
+      "final_scalar_amplitude": 0.022401616906503122,
+      "initial_gravitational_constraint_l2": 1.2600418386447479e-08,
+      "maximum_field_constraint_l2": 1.7462031549538564e-21,
+      "maximum_gravitational_constraint_l2": 5.536220960128586e-07,
+      "maximum_number_relative_drift": 1.850371449465501e-16,
+      "maximum_recovery_residual": 3.4776908000516904e-11,
+      "minimum_legendre": 0.5637234560023379,
+      "minimum_thermodynamic": 0.36898229412794553,
+      "points": 8
+    },
+    {
+      "entropy_change": 0.0046405822828106125,
+      "final_gravitational_constraint_l2": 2.3052894027113597e-07,
+      "final_scalar_amplitude": 0.022401974338103314,
+      "initial_gravitational_constraint_l2": 6.776554536307624e-08,
+      "maximum_field_constraint_l2": 2.751074881899498e-21,
+      "maximum_gravitational_constraint_l2": 2.3052894027113597e-07,
+      "maximum_number_relative_drift": 1.5418502551839006e-16,
+      "maximum_recovery_residual": 1.232784856103096e-11,
+      "minimum_legendre": 0.56361148969289,
+      "minimum_thermodynamic": 0.3689403054487827,
+      "points": 16
+    }
+  ],
+  "coarse_to_medium_constraint_reduction": 3.9416023847309747,
+  "coarse_to_medium_scalar_error_reduction": 2.325362737262815,
+  "dt": 0.01,
+  "duration": 0.25,
+  "gravitational_constraint_monotone_with_resolution": 1,
+  "maximum_field_constraint_l2": 2.751074881899498e-21,
+  "maximum_finest_gravitational_constraint_l2": 2.3052894027113597e-07,
+  "maximum_number_relative_drift": 3.7007428989163973e-16,
+  "maximum_recovery_residual": 5.830651391168401e-11,
+  "medium_to_fine_constraint_reduction": 2.401529696712775,
+  "minimum_entropy_change": 0.0046405822828106125,
+  "minimum_legendre": 0.56361148969289,
+  "minimum_thermodynamic": 0.3689403054487827
+}

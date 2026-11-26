@@ -1,0 +1,12 @@
+{
+  "maximum_initial_gauss_constraint": 0.0,
+  "maximum_periodic_passive_current_rhs_integral": 6.812243160173109e-19,
+  "maximum_periodic_total_momentum_rhs_integral": 6.812243160173109e-19,
+  "maximum_proca_momentum_exchange_residual": 1.330517333244629e-13,
+  "maximum_scalar_material_energy_exchange_residual": 1.734723475976807e-18,
+  "periodic_baryon_rhs_integral": 3.2358155010822265e-18,
+  "periodic_carrier_charge_rhs_integral": 0.0,
+  "periodic_total_energy_rhs_integral": 6.812243160173109e-19,
+  "proca_energy_exchange_residual": 5.381108809180449e-13,
+  "scalar_exchange_samples": 128
+}

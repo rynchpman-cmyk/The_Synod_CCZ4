@@ -1,0 +1,18 @@
+{
+  "dt": 0.001,
+  "duration": 0.12,
+  "material_excess_baryon_loss_fraction": 0.6310682133723654,
+  "material_excess_carrier_loss_fraction": 0.6938604714081333,
+  "material_opposite_edge_density_contrast": 2.892130979148533e-14,
+  "maximum_absolute_cumulative_entropy_balance_residual": 0.0005942812615476212,
+  "maximum_carrier_number_balance_residual": 8.673617144597106e-19,
+  "maximum_gravitational_constraint_l2": 3.06898016742746e-13,
+  "maximum_proca_constraint_l2": 3.0234999999130995e-18,
+  "maximum_recovery_residual": 1.8923315792876575e-09,
+  "maximum_scalar_constraint_l2": 0.0,
+  "maximum_step_entropy_balance_residual": 1.6060981132879502e-05,
+  "minimum_legendre_eigenvalue": 0.7711355342746735,
+  "minimum_thermodynamic_eigenvalue": 0.6574812337321356,
+  "vector_norm_loss_fraction": 0.45689023568569076,
+  "vector_opposite_edge_amplitude": 2.0843058890319156e-19
+}

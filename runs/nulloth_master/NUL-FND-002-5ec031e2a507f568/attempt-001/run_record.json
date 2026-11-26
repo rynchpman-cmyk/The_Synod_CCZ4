@@ -1,0 +1,149 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-FND-002",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_constitutive_derivatives.py",
+    "--seed",
+    "20260722",
+    "--samples",
+    "128"
+  ],
+  "duration_seconds": 0.4195692999928724,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T07:21:56.078611+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T07:21:56.211059+00:00",
+  "input_artifacts": {
+    "NULLOTH_SPEC.md": "a34039bb22e3aab5e8adc1b7ca638d892f1ec51c6da7b1aef0d5625692a9dbf4",
+    "experiments/audit_nulloth_constitutive_derivatives.py": "60f2c3f550646c87881bda1cb7ae46e0c8a284e5de0bfb2630e1e70c57ae3368",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/matter.py": "450cf00fc626ce719f3c9929d4faeb9f83b1ebbf0c5eec4553ff0e78b89d5e30",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-FND-002.json",
+  "manifest_sha256": "ece2777cc007a7497510812c4f5b7944828df56fd5809c37c177caa8ff313d60",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "3ca7bca50dc9e1bfa6a314fa31c829e38883fae7c8381b2ab38e48734bcf87ff"
+  },
+  "parsed_stdout": {
+    "maximum_carrier_first_relative_error": 9.627723003869819e-10,
+    "maximum_carrier_hessian_relative_error": 6.621384710238579e-07,
+    "maximum_counterflow_first_relative_error": 2.2491254086775277e-09,
+    "maximum_cross_hessian_relative_error": 3.959506102491185e-06,
+    "maximum_density_first_relative_error": 5.1384804055034e-10,
+    "maximum_density_hessian_relative_error": 8.541459186686899e-08,
+    "maximum_pressure_identity_error": 2.7755575615628914e-17,
+    "maximum_scalar_first_relative_error": 6.086846753653494e-08,
+    "maximum_scalar_source_identity_error": 0.0,
+    "nonfinite_results": 0,
+    "samples": 128
+  },
+  "return_code": 0,
+  "run_id": "NUL-FND-002-5ec031e2a507f568",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 128,
+        "observable": "samples",
+        "observed": 128,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1e-07,
+        "observable": "maximum_density_first_relative_error",
+        "observed": 5.1384804055034e-10,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-07,
+        "observable": "maximum_carrier_first_relative_error",
+        "observed": 9.627723003869819e-10,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-07,
+        "observable": "maximum_counterflow_first_relative_error",
+        "observed": 2.2491254086775277e-09,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-07,
+        "observable": "maximum_scalar_first_relative_error",
+        "observed": 6.086846753653494e-08,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-05,
+        "observable": "maximum_density_hessian_relative_error",
+        "observed": 8.541459186686899e-08,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-05,
+        "observable": "maximum_cross_hessian_relative_error",
+        "observed": 3.959506102491185e-06,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-05,
+        "observable": "maximum_carrier_hessian_relative_error",
+        "observed": 6.621384710238579e-07,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_pressure_identity_error",
+        "observed": 2.7755575615628914e-17,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_scalar_source_identity_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "nonfinite_results",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "df992c8c4cf4ff3e654d9ab6cba722abbde85bb9fa2a37a25bfe59e704ff6b75",
+  "started_utc": "2026-07-22T07:21:55.645542+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-FND-002"
+  ],
+  "termination": "completed"
+}

@@ -1,0 +1,170 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-LIN-002",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_linear_growth_atlas.py",
+    "--refinements",
+    "24",
+    "--resolutions",
+    "8",
+    "12",
+    "16",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-LIN-002-8f06b25f9c395b6f\\attempt-001/growth_atlas.json"
+  ],
+  "duration_seconds": 30.722627299983287,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:59:47.862887+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:59:47.969518+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_adaptive_state_atlas.py": "fe127f61b0ee7950935c11415d461ee3ef16c2bae1f0197de3f6b672b3ada2b6",
+    "experiments/map_nulloth_linear_growth_atlas.py": "bd14857fb2103a853e1baa8a31b4dfd800c6b3d1aed742e7f74cd714da9eaecd",
+    "experiments/nulloth_master/NULLOTH_LINEAR_CANDIDATES.md": "2d95accc6557948ae61536c04e2060eae5e39fbb7eb4792e9271659d2450480d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-LIN-002.json",
+  "manifest_sha256": "7f072a873135b4a74676729279d3d640e63d7c67597c9d51316224e985e03f2c",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "growth_atlas.json": "90af16a9cad1e794f34257a4a692ccbcb5c15a5e5da33dcc1658c8bb81ab72d7",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "90af16a9cad1e794f34257a4a692ccbcb5c15a5e5da33dcc1658c8bb81ab72d7"
+  },
+  "parsed_stdout": {
+    "box_lengths": [
+      8.0,
+      16.0,
+      32.0,
+      64.0
+    ],
+    "candidate_mechanisms_registered": 3,
+    "characteristic_failures": 0,
+    "locally_growing_states": 16,
+    "locally_oscillatory_states": 816,
+    "maximum_condensed_frequency": 1.0327496356294559,
+    "maximum_directional_growth_difference": 3.748390486890685e-13,
+    "maximum_growth_rate": 0.456609006357168,
+    "maximum_multidimensional_dispersion_error": 5.580536256551949e-13,
+    "maximum_scalar_curvature": 3.82673646556747,
+    "maximum_unstable_mode_number": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "minimum_scalar_curvature": -0.2084917846864803,
+    "multidimensional_resolutions": [
+      8,
+      12,
+      16
+    ],
+    "sampled_states": 832,
+    "states_with_nonhomogeneous_instability": [
+      0,
+      8,
+      16,
+      16
+    ],
+    "tested_wavevectors": [
+      [
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "return_code": 0,
+  "run_id": "NUL-LIN-002-8f06b25f9c395b6f",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 832,
+        "observable": "sampled_states",
+        "observed": 832,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "characteristic_failures",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "locally_growing_states",
+        "observed": 16,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "locally_oscillatory_states",
+        "observed": 816,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "maximum_growth_rate",
+        "observed": 0.456609006357168,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-09,
+        "observable": "maximum_multidimensional_dispersion_error",
+        "observed": 5.580536256551949e-13,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-09,
+        "observable": "maximum_directional_growth_difference",
+        "observed": 3.748390486890685e-13,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 3,
+        "observable": "candidate_mechanisms_registered",
+        "observed": 3,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "5e87999f1d8f168a9763f3bc2aeff6e6289951dd227a7e733cbb2e10ab98874f",
+  "started_utc": "2026-07-22T08:59:17.125725+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-LIN-002"
+  ],
+  "termination": "completed"
+}

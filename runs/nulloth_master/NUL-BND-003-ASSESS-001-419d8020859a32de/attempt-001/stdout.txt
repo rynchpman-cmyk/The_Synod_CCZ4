@@ -1,0 +1,11 @@
+{
+  "all_nonentropy_criteria_passed": 1,
+  "failed_entropy_criteria": 2,
+  "material_excess_baryon_loss_fraction": 0.6310682133723654,
+  "material_excess_carrier_loss_fraction": 0.6938604714081333,
+  "maximum_absolute_cumulative_entropy_balance_residual": 0.0005942812615476212,
+  "maximum_step_entropy_balance_residual": 1.6060981132879502e-05,
+  "original_run_completed": 1,
+  "original_scientific_acceptance_passed": 0,
+  "vector_norm_loss_fraction": 0.45689023568569076
+}

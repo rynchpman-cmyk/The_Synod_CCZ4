@@ -1,0 +1,250 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-GRV-008",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/close_nulloth_coordinate_energy_budget.py",
+    "--duration",
+    "0.05",
+    "--dt",
+    "0.01",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-GRV-008-3cc885a1f732fb02\\attempt-001/coordinate_energy_budget.json"
+  ],
+  "duration_seconds": 29.907253100012895,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T11:10:24.003030+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T11:10:24.112694+00:00",
+  "input_artifacts": {
+    "experiments/close_nulloth_coordinate_energy_budget.py": "a8ce834b10f9572c27cb3d92f190b880376ee581c1a15862a0aa9bfe84b4ab55",
+    "experiments/map_nulloth_production_regimes.py": "6bb320fa713786ae1fb6fb455339ca97991a68ca99b4a02eb9f3ca71e028bfc2",
+    "experiments/measure_nulloth_weak_field_backreaction.py": "fc2434ee373ea89d421432627e7a6f108c5bc8f63c2fbad816ba55a35c54f5b6",
+    "experiments/nulloth_master/NULLOTH_COORDINATE_ENERGY_BUDGET.md": "8edfec4bef24b5390cebf5a3e72a02f924a9d7d8de98fd736fc908a710413336",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/initial_constraints.py": "0f60088dd771693958f04b6fb4baf13909954026aa5299019c08cb4223b60f95",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-GRV-008.json",
+  "manifest_sha256": "684444e53c9c6795c86c15e37d36212828d5c78e07de684d177116a82ef06aef",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "coordinate_energy_budget.json": "8e7526d2e82f078cb432128333ad07e842362ea392592e183852226a4fd1c4a8",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "8e7526d2e82f078cb432128333ad07e842362ea392592e183852226a4fd1c4a8"
+  },
+  "parsed_stdout": {
+    "cases": [
+      {
+        "absolute_energy_balance_error": 7.806255641895632e-17,
+        "coordinate_energy_change": 0.01022762047441006,
+        "entropy_change": 0.0009392452949725794,
+        "kappa_gravity": 0.001,
+        "maximum_field_constraint_l2": 1.6744432256279895e-22,
+        "maximum_gravitational_constraint_l2": 5.6200507354551395e-08,
+        "maximum_number_relative_drift": 0.0,
+        "maximum_post_operator_energy_change": 3.238728729648699e-15,
+        "maximum_recovery_residual": 1.2566319502522783e-11,
+        "maximum_stage_flux_cancellation_error": 5.000444502911705e-13,
+        "minimum_legendre": 0.5653685089485788,
+        "minimum_thermodynamic": 0.370112112734476,
+        "name": "weak-fine",
+        "points": 16,
+        "relative_energy_balance_error": 7.632523773664866e-15,
+        "rk_geometric_work": 0.010227620474409982
+      },
+      {
+        "absolute_energy_balance_error": 7.579686878145253e-12,
+        "coordinate_energy_change": 0.24798405913591992,
+        "entropy_change": 0.010237229792778635,
+        "kappa_gravity": 0.5,
+        "maximum_field_constraint_l2": 5.918822653883155e-23,
+        "maximum_gravitational_constraint_l2": 0.0049190956084588025,
+        "maximum_number_relative_drift": 0.0,
+        "maximum_post_operator_energy_change": 1.5290824162406125e-12,
+        "maximum_recovery_residual": 1.0805830037728867e-09,
+        "maximum_stage_flux_cancellation_error": 1.1798381827077264e-08,
+        "minimum_legendre": 0.5609252072409809,
+        "minimum_thermodynamic": 0.3624512073383751,
+        "name": "elevated-coarse",
+        "points": 4,
+        "relative_energy_balance_error": 3.0565218202154e-11,
+        "rk_geometric_work": 0.24798405912834023
+      },
+      {
+        "absolute_energy_balance_error": 3.293515460356389e-11,
+        "coordinate_energy_change": 0.24704298467808883,
+        "entropy_change": 0.005699998065928469,
+        "kappa_gravity": 0.5,
+        "maximum_field_constraint_l2": 1.2899774906507943e-22,
+        "maximum_gravitational_constraint_l2": 0.0010249892664241527,
+        "maximum_number_relative_drift": 1.7877823666361266e-16,
+        "maximum_post_operator_energy_change": 6.641916183713903e-12,
+        "maximum_recovery_residual": 9.031333896187042e-10,
+        "maximum_stage_flux_cancellation_error": 1.1706812408363021e-08,
+        "minimum_legendre": 0.5608375500475986,
+        "minimum_thermodynamic": 0.3632097695451719,
+        "name": "elevated-medium",
+        "points": 8,
+        "relative_energy_balance_error": 1.3331750604648937e-10,
+        "rk_geometric_work": 0.24704298464515367
+      },
+      {
+        "absolute_energy_balance_error": 1.73156766702931e-11,
+        "coordinate_energy_change": 0.2470459708463686,
+        "entropy_change": 0.0029103337591749323,
+        "kappa_gravity": 0.5,
+        "maximum_field_constraint_l2": 1.539622899212892e-22,
+        "maximum_gravitational_constraint_l2": 0.0005209589769438256,
+        "maximum_number_relative_drift": 1.432300494947835e-16,
+        "maximum_post_operator_energy_change": 3.499457668088013e-12,
+        "maximum_recovery_residual": 1.7703162395482861e-09,
+        "maximum_stage_flux_cancellation_error": 1.1691750678721746e-08,
+        "minimum_legendre": 0.560761668592984,
+        "minimum_thermodynamic": 0.36356738202307765,
+        "name": "elevated-fine",
+        "points": 16,
+        "relative_energy_balance_error": 7.00909090359594e-11,
+        "rk_geometric_work": 0.2470459708290529
+      }
+    ],
+    "coarse_to_medium_work_error_reduction": 314.14284281896084,
+    "dt": 0.01,
+    "duration": 0.05,
+    "elevated_work_monotone_to_fine": 1,
+    "maximum_absolute_energy_balance_error": 3.293515460356389e-11,
+    "maximum_field_constraint_l2": 1.6744432256279895e-22,
+    "maximum_gravitational_constraint_l2": 0.0049190956084588025,
+    "maximum_number_relative_drift": 1.7877823666361266e-16,
+    "maximum_post_operator_energy_change": 6.641916183713903e-12,
+    "maximum_recovery_residual": 1.7703162395482861e-09,
+    "maximum_relative_energy_balance_error": 1.3331750604648937e-10,
+    "maximum_stage_flux_cancellation_error": 1.1798381827077264e-08,
+    "minimum_entropy_change": 0.0009392452949725794,
+    "minimum_legendre": 0.560761668592984,
+    "minimum_thermodynamic": 0.3624512073383751
+  },
+  "return_code": 0,
+  "run_id": "NUL-GRV-008-3cc885a1f732fb02",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 5e-11,
+        "observable": "maximum_absolute_energy_balance_error",
+        "observed": 3.293515460356389e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-10,
+        "observable": "maximum_relative_energy_balance_error",
+        "observed": 1.3331750604648937e-10,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-08,
+        "observable": "maximum_stage_flux_cancellation_error",
+        "observed": 1.1798381827077264e-08,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-11,
+        "observable": "maximum_post_operator_energy_change",
+        "observed": 6.641916183713903e-12,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "elevated_work_monotone_to_fine",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 100.0,
+        "observable": "coarse_to_medium_work_error_reduction",
+        "observed": 314.14284281896084,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.005,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": 0.0049190956084588025,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_field_constraint_l2",
+        "observed": 1.6744432256279895e-22,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_number_relative_drift",
+        "observed": 1.7877823666361266e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_entropy_change",
+        "observed": 0.0009392452949725794,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre",
+        "observed": 0.560761668592984,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic",
+        "observed": 0.3624512073383751,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": 1.7703162395482861e-09,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "16915ba2af479accb40317382f3d4cf35ecd00fa53a70d461b85814fb8cc0058",
+  "started_utc": "2026-07-22T11:09:54.081028+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-GRV-008"
+  ],
+  "termination": "completed"
+}

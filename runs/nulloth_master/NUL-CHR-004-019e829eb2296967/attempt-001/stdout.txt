@@ -1,0 +1,47 @@
+{
+  "activated_states": 832,
+  "adaptive_states": 800,
+  "boundary_states": 32,
+  "dimensions": 5,
+  "directions_per_state": 4,
+  "failures": 0,
+  "first_failure": null,
+  "initial_cells": 32,
+  "maximum_absolute_speed": 1.0000000000000018,
+  "maximum_characteristic_multiplicity": 7,
+  "maximum_constraint_reduced_condition": 3.437746343039567,
+  "maximum_effective_mass_squared": -0.013263534432530394,
+  "maximum_eigenspace_residual": 1.0935472939981105e-14,
+  "maximum_eigenvector_condition": 54.96192298069045,
+  "maximum_imaginary_speed": 4.34864608495744e-17,
+  "maximum_reduction_spectrum_error": 0.0,
+  "maximum_refinement_depth": 25,
+  "minimum_distinct_mode_gap": 0.008714036938829883,
+  "minimum_effective_mass_squared": -0.5332859049463868,
+  "minimum_legendre_eigenvalue": 0.25839746689845,
+  "minimum_thermodynamic_eigenvalue": 0.12324473272469352,
+  "narrowest_convexity_point": [
+    0.9,
+    0.1,
+    0.24,
+    -0.3,
+    -0.16
+  ],
+  "nearest_mode_collision_point": [
+    0.4,
+    0.1,
+    0.12,
+    -0.3,
+    -0.16
+  ],
+  "refinements": 24,
+  "sampled_states": 832,
+  "symbol_evaluations": 3328,
+  "worst_condition_point": [
+    0.9,
+    0.35,
+    0.24,
+    0.3,
+    -0.16
+  ]
+}

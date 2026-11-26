@@ -1,0 +1,17 @@
+{
+  "covariance_samples": 32,
+  "maximum_boost_stress_error": 7.771561172376096e-16,
+  "maximum_material_time_reversal_error": 0.0,
+  "maximum_proca_rhs_time_reversal_error": 0.0,
+  "maximum_recovery_primitive_error": 8.326672684688674e-17,
+  "maximum_rotation_characteristic_error": 8.791256611573317e-11,
+  "maximum_rotation_scalar_error": 0.0,
+  "maximum_rotation_tensor_error": 1.3877787807814457e-16,
+  "maximum_rotation_vector_error": 2.7755575615628914e-17,
+  "maximum_scalar_rhs_time_reversal_error": 0.0,
+  "maximum_scalar_sign_characteristic_error": 2.886579864025407e-15,
+  "maximum_scalar_sign_even_error": 0.0,
+  "maximum_scalar_sign_odd_error": 0.0,
+  "recovery_failures": 0,
+  "recovery_samples": 64
+}

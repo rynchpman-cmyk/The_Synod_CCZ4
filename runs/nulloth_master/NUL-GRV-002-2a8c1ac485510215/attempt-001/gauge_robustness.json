@@ -1,0 +1,43 @@
+{
+  "cases": [
+    {
+      "final_active_scalar_amplitude": 0.022401143179979106,
+      "final_lapse_contrast_l2": 6.797059898503427e-09,
+      "final_physical_metric_contrast_l2": 3.2769422589879054e-07,
+      "maximum_field_constraint_l2": 2.395770963567772e-21,
+      "maximum_gravitational_constraint_l2": 2.1971199455383842e-06,
+      "maximum_number_relative_drift": 3.7007428989163973e-16,
+      "maximum_recovery_residual": 5.830651391168401e-11,
+      "minimum_entropy_change": 0.01484510688672458,
+      "minimum_legendre": 0.5638842173902321,
+      "minimum_thermodynamic": 0.36912602245285225,
+      "slicing": "harmonic"
+    },
+    {
+      "final_active_scalar_amplitude": 0.0223852145695601,
+      "final_lapse_contrast_l2": 1.3568300768691847e-08,
+      "final_physical_metric_contrast_l2": 3.277193214531475e-07,
+      "maximum_field_constraint_l2": 2.395770963567772e-21,
+      "maximum_gravitational_constraint_l2": 2.195157870911904e-06,
+      "maximum_number_relative_drift": 6.167400110717922e-16,
+      "maximum_recovery_residual": 5.684244729355545e-11,
+      "minimum_entropy_change": 0.014758783014286792,
+      "minimum_legendre": 0.5638968040189358,
+      "minimum_thermodynamic": 0.36913404698108326,
+      "slicing": "1+log"
+    }
+  ],
+  "dt": 0.01,
+  "duration": 0.25,
+  "lapse_contrast_relative_spread": 0.4990485533614281,
+  "maximum_field_constraint_l2": 2.395770963567772e-21,
+  "maximum_gravitational_constraint_l2": 2.1971199455383842e-06,
+  "maximum_number_relative_drift": 6.167400110717922e-16,
+  "maximum_recovery_residual": 5.830651391168401e-11,
+  "minimum_entropy_change": 0.014758783014286792,
+  "minimum_legendre": 0.5638842173902321,
+  "minimum_thermodynamic": 0.36912602245285225,
+  "physical_metric_contrast_relative_spread": 7.65763649383379e-05,
+  "points": 4,
+  "scalar_amplitude_relative_spread": 0.0007110623904784244
+}

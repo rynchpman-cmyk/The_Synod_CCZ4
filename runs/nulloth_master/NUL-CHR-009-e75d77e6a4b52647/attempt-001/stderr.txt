@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\audit_nulloth_vector_target_orientation.py", line 270, in <module>
+    main()
+    ~~~~^^
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\audit_nulloth_vector_target_orientation.py", line 262, in main
+    asdict(run_audit(target_orientations=arguments.target_orientations)),
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\audit_nulloth_vector_target_orientation.py", line 138, in run_audit
+    Theory3Parameters(
+    ~~~~~~~~~~~~~~~~~^
+        Z_A=1.0,
+        ^^^^^^^^
+    ...<3 lines>...
+        mixing_mass_squared=0.0,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "<string>", line 16, in __init__
+  File "F:\FORGE\Tools\causal_repair_solver\src\causal_repair\theory3.py", line 41, in __post_init__
+    raise ValueError("both Proca masses must be positive")
+ValueError: both Proca masses must be positive

@@ -1,0 +1,110 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-FND-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_action.py"
+  ],
+  "duration_seconds": 0.2887717999983579,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T07:25:19.482305+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T07:25:19.584025+00:00",
+  "input_artifacts": {
+    "NULLOTH_SPEC.md": "3b9baf03f531a193fcef428c120ca68cf7ca344f53bf7e4a37f38d4924654adf",
+    "experiments/audit_nulloth_action.py": "b370452c852da46a9b599df6042892c774ea4c4308eb9f8f149b8784cd59243a",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/matter.py": "450cf00fc626ce719f3c9929d4faeb9f83b1ebbf0c5eec4553ff0e78b89d5e30",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-FND-001.json",
+  "manifest_sha256": "e239080be71a519565f2bbdb352c4045898de7264e63b4131a96f62c23cfc6f3",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "c0a3dc9048564838fa42ba70749807f9a27346bc16b87f0f912fc5c3586dfcde"
+  },
+  "parsed_stdout": {
+    "amplitudes": [
+      0.0,
+      0.23,
+      -0.31
+    ],
+    "cases": 3,
+    "hilbert_material_stress_errors": [
+      2.360643625021197e-11,
+      1.2491084555588117e-11,
+      2.8519769879054024e-11
+    ],
+    "hilbert_material_stress_max_error": 2.8519769879054024e-11,
+    "parameters": {
+      "carrier_K": 0.2,
+      "carrier_charge": 1.0,
+      "carrier_floor": 1e-10,
+      "carrier_sound_speed": 0.9,
+      "characteristic_condition_limit": 100000000.0,
+      "chemical_susceptibility": 10.0,
+      "convexity_floor": 1e-10,
+      "effective_mass_floor": -1000000.0,
+      "entrainment_linear": 0.03,
+      "entrainment_quadratic": 0.02,
+      "entrainment_scale_fourth": 1.0,
+      "gamma_ad": 1.6666666666666667,
+      "maximum_relative_lorentz_factor": 2.0,
+      "relaxation_time": 1.0,
+      "scalar_amplitude_limit": 20.0,
+      "scalar_baryon_coupling": 0.7,
+      "scalar_baryon_scale": 1.0,
+      "scalar_carrier_coupling": 1.3,
+      "scalar_carrier_scale": 1.0,
+      "scalar_constraint_damping": 0.0,
+      "scalar_counterflow_coupling": 0.9,
+      "scalar_counterflow_scale": 1.0,
+      "scalar_mass": 0.5,
+      "scalar_quartic": 1.0,
+      "target_fraction": 0.05
+    }
+  },
+  "return_code": 0,
+  "run_id": "NUL-FND-001-d0451ccfce7e5bb9",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 3,
+        "observable": "cases",
+        "observed": 3,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2e-08,
+        "observable": "hilbert_material_stress_max_error",
+        "observed": 2.8519769879054024e-11,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "8e9ae81268587c7787860315c85e5ae4e9d650b4bc55afd451b880e26e526e96",
+  "started_utc": "2026-07-22T07:25:19.187503+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-FND-001"
+  ],
+  "termination": "completed"
+}

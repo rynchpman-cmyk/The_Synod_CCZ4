@@ -1,0 +1,74 @@
+{
+  "branch_families_identified": 7,
+  "ccz4_gamma_driver_modes": 2,
+  "ccz4_gauge_constraint_modes": 17,
+  "ccz4_gravitational_tensor_modes": 4,
+  "equilibria": [
+    {
+      "acoustic_modes": 4,
+      "carrier_density": 0.1,
+      "contact_or_vorticity_modes": 4,
+      "effective_mass_squared": 0.04000000000000001,
+      "maximum_acoustic_speed": 0.9373804091983289,
+      "maximum_scalar_dispersion_error": 1.2500001034254637e-12,
+      "minimum_acoustic_speed": 0.40840897716217384,
+      "name": "symmetric-stable",
+      "scalar_amplitude": 0.0,
+      "scalar_curvature": 0.04000000000000001,
+      "unstable_fourier_modes": 0
+    },
+    {
+      "acoustic_modes": 4,
+      "carrier_density": 0.18,
+      "contact_or_vorticity_modes": 4,
+      "effective_mass_squared": -0.22879999999999995,
+      "maximum_acoustic_speed": 0.9303794792837341,
+      "maximum_scalar_dispersion_error": 6.871170301764254e-13,
+      "minimum_acoustic_speed": 0.4084672368205676,
+      "name": "symmetric-activated",
+      "scalar_amplitude": 0.0,
+      "scalar_curvature": -0.22879999999999995,
+      "unstable_fourier_modes": 3
+    },
+    {
+      "acoustic_modes": 4,
+      "carrier_density": 0.18,
+      "contact_or_vorticity_modes": 4,
+      "effective_mass_squared": -0.22879999999999995,
+      "maximum_acoustic_speed": 0.9215362324873874,
+      "maximum_scalar_dispersion_error": 2.0455748206416047e-11,
+      "minimum_acoustic_speed": 0.4084514872840549,
+      "name": "condensed",
+      "scalar_amplitude": 0.06764613810115104,
+      "scalar_curvature": 0.45759999999999984,
+      "unstable_fourier_modes": 0
+    }
+  ],
+  "finite_volume_critical_length": 13.135658776307194,
+  "finite_volume_unstable_mode_count": 3,
+  "material_modes_per_equilibrium": 8,
+  "maximum_ccz4_principal_frequency_error": 3.470617127021569e-10,
+  "maximum_resolution_spectrum_change": 1.3973822099554792e-11,
+  "maximum_spurious_real_growth": 1.2073675392798577e-15,
+  "maximum_vector_dispersion_error": 1.0219982327368713e-14,
+  "proca_cleaning_modes": 4,
+  "proca_physical_modes": 12,
+  "resolutions": [
+    16,
+    24,
+    32
+  ],
+  "scalar_fourier_modes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "scalar_physical_modes": 2,
+  "scalar_reduction_constraint_modes": 3,
+  "vector_fourier_modes": [
+    1,
+    2,
+    3
+  ]
+}

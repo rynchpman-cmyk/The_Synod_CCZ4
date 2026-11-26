@@ -1,0 +1,341 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CTL-002",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/search_nulloth_brake_controls.py",
+    "--points",
+    "8",
+    "--duration",
+    "2.0",
+    "--dt",
+    "0.01",
+    "--target-suppression",
+    "0.02",
+    "--refinement-steps",
+    "6"
+  ],
+  "duration_seconds": 1005.6253133999999,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T12:51:32.805820+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T12:51:32.922638+00:00",
+  "input_artifacts": {
+    "experiments/search_nulloth_brake_controls.py": "55cfb647025a0465f4efed3492d5a6e9d80d4e88782176351d5561d619698afe",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/initial_constraints.py": "0f60088dd771693958f04b6fb4baf13909954026aa5299019c08cb4223b60f95",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CTL-002.json",
+  "manifest_sha256": "807a5138613460d1af63875729c877bffc91b792fc1752506b12ceb75e59e50b",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "90b28fbcf68205bb51b903178dcfff2da45c4049c842c4552f6b41d2f924ef97"
+  },
+  "parsed_stdout": {
+    "active_beats_scalar_coupling_free": 1,
+    "all_branches_admissible": 1,
+    "bracket_lower_amplitude": 0.010124999999999999,
+    "bracket_upper_amplitude": 0.010249999999999999,
+    "bracket_width": 0.0001250000000000001,
+    "branches": [
+      {
+        "admissible": true,
+        "baryon_relative_drift": 1.8503713881852237e-16,
+        "branch": "no_command",
+        "carrier_kinetic_proxy": 0.004501697220726061,
+        "carrier_relative_drift": 3.083640407089066e-16,
+        "entropy_change": 0.07348981565051105,
+        "final_scalar_amplitude": 0.0,
+        "gauss_max_l2": 1.9664486025787174e-19,
+        "hamiltonian_l2": 4.6233635257576746e-06,
+        "minimum_legendre_eigenvalue": 0.5629766734113737,
+        "minimum_thermodynamic_eigenvalue": 0.35934950422320666,
+        "momentum_l2": 1.5575030159916278e-06,
+        "recovery_residual": 8.710223459634102e-11,
+        "scalar_constraint_l2": 0.0,
+        "seed_amplitude": 0.0,
+        "seed_coordinate_energy": 0.0
+      },
+      {
+        "admissible": true,
+        "baryon_relative_drift": 1.8503713883707554e-16,
+        "branch": "active",
+        "carrier_kinetic_proxy": 0.004408148274164338,
+        "carrier_relative_drift": 0.0,
+        "entropy_change": 0.07337507318022318,
+        "final_scalar_amplitude": 0.03468789788411297,
+        "gauss_max_l2": 2.0965391565296018e-19,
+        "hamiltonian_l2": 4.622332002125095e-06,
+        "minimum_legendre_eigenvalue": 0.5488645795426449,
+        "minimum_thermodynamic_eigenvalue": 0.35938595829341907,
+        "momentum_l2": 1.5549286353687146e-06,
+        "recovery_residual": 7.945561343865092e-11,
+        "scalar_constraint_l2": 0.0,
+        "seed_amplitude": 0.010249999999999999,
+        "seed_coordinate_energy": 0.0004898210232490026
+      },
+      {
+        "admissible": true,
+        "baryon_relative_drift": 1.8503713881837915e-16,
+        "branch": "scalar_coupling_free",
+        "carrier_kinetic_proxy": 0.004501711755368298,
+        "carrier_relative_drift": 6.167280813972116e-16,
+        "entropy_change": 0.07348951745193233,
+        "final_scalar_amplitude": 0.017599039446795244,
+        "gauss_max_l2": 2.586905739223091e-19,
+        "hamiltonian_l2": 4.623770799282206e-06,
+        "minimum_legendre_eigenvalue": 0.5629765869265638,
+        "minimum_thermodynamic_eigenvalue": 0.3593403201151019,
+        "momentum_l2": 1.5576883637035335e-06,
+        "recovery_residual": 8.716147853286819e-11,
+        "scalar_constraint_l2": 0.0,
+        "seed_amplitude": 0.010249999999999999,
+        "seed_coordinate_energy": 0.0004898210466381101
+      }
+    ],
+    "coupling_attributed_suppression": 0.020784045797924523,
+    "duration": 2.0,
+    "lower_bracket_passes": 0,
+    "maximum_gauss_l2": 2.586905739223091e-19,
+    "maximum_gravitational_constraint_l2": 4.623770799282206e-06,
+    "maximum_number_relative_drift": 6.167280813972116e-16,
+    "maximum_recovery_residual": 8.716147853286819e-11,
+    "maximum_scalar_constraint_l2": 0.0,
+    "minimum_entropy_change": 0.07337507318022318,
+    "minimum_legendre_eigenvalue": 0.5488645795426449,
+    "minimum_thermodynamic_eigenvalue": 0.3593403201151019,
+    "no_command_scalar_amplitude": 0.0,
+    "points": 8,
+    "samples": [
+      {
+        "amplitude": 0.001,
+        "passes_target": false,
+        "relative_suppression": 0.00011516142273679474
+      },
+      {
+        "amplitude": 0.002,
+        "passes_target": false,
+        "relative_suppression": 0.00032460890599303525
+      },
+      {
+        "amplitude": 0.004,
+        "passes_target": false,
+        "relative_suppression": 0.0014830940773896
+      },
+      {
+        "amplitude": 0.008,
+        "passes_target": false,
+        "relative_suppression": 0.010745098182891977
+      },
+      {
+        "amplitude": 0.016,
+        "passes_target": true,
+        "relative_suppression": 0.04401723246459716
+      },
+      {
+        "amplitude": 0.012,
+        "passes_target": true,
+        "relative_suppression": 0.023803750825854272
+      },
+      {
+        "amplitude": 0.01,
+        "passes_target": false,
+        "relative_suppression": 0.014739568483176875
+      },
+      {
+        "amplitude": 0.011,
+        "passes_target": true,
+        "relative_suppression": 0.021885717219388177
+      },
+      {
+        "amplitude": 0.010499999999999999,
+        "passes_target": true,
+        "relative_suppression": 0.021324809013958012
+      },
+      {
+        "amplitude": 0.010249999999999999,
+        "passes_target": true,
+        "relative_suppression": 0.02078081709516562
+      },
+      {
+        "amplitude": 0.010124999999999999,
+        "passes_target": false,
+        "relative_suppression": 0.015015516336054689
+      }
+    ],
+    "search_evaluations": 11,
+    "search_method": "coarse_bracket_plus_bisection",
+    "selected_relative_suppression": 0.02078081709516562,
+    "selected_seed_amplitude": 0.010249999999999999,
+    "selected_seed_coordinate_energy": 0.0004898210232490026,
+    "target_relative_suppression": 0.02,
+    "time_step": 0.01,
+    "uncoupled_relative_suppression": -3.228702758902602e-06,
+    "upper_bracket_passes": 1
+  },
+  "return_code": 0,
+  "run_id": "NUL-CTL-002-be68f5c873076f2c",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 12,
+        "observable": "search_evaluations",
+        "observed": 11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.00025,
+        "observable": "bracket_width",
+        "observed": 0.0001250000000000001,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "lower_bracket_passes",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "upper_bracket_passes",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.02,
+        "observable": "selected_seed_amplitude",
+        "observed": 0.010249999999999999,
+        "operator": "<",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "selected_seed_coordinate_energy",
+        "observed": 0.0004898210232490026,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.02,
+        "observable": "selected_relative_suppression",
+        "observed": 0.02078081709516562,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "coupling_attributed_suppression",
+        "observed": 0.020784045797924523,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "active_beats_scalar_coupling_free",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "no_command_scalar_amplitude",
+        "observed": 0.0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "all_branches_admissible",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_number_relative_drift",
+        "observed": 6.167280813972116e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": -1e-12,
+        "observable": "minimum_entropy_change",
+        "observed": 0.07337507318022318,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_gauss_l2",
+        "observed": 2.586905739223091e-19,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_scalar_constraint_l2",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.001,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": 4.623770799282206e-06,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": 8.716147853286819e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre_eigenvalue",
+        "observed": 0.5488645795426449,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic_eigenvalue",
+        "observed": 0.3593403201151019,
+        "operator": ">",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "ea7b2194fc4d7f7d0194672ca56e3f5111be0258c9f9fc557adcd21bcc7eda44",
+  "started_utc": "2026-07-22T12:34:47.160262+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CTL-002"
+  ],
+  "termination": "completed"
+}

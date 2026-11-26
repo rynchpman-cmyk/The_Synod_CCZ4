@@ -1,0 +1,52 @@
+{
+  "ccz4_glancing_modes": 3,
+  "ccz4_incoming_modes": 10,
+  "ccz4_outgoing_modes": 10,
+  "ccz4_projector_commutator_error": 6.933590482093845e-11,
+  "ccz4_projector_completeness_error": 1.0061088753227424e-15,
+  "ccz4_projector_condition": 5.733641412920345,
+  "ccz4_projector_idempotence_error": 1.375905456963699e-15,
+  "complete_coupled_boundary_qualified": 0,
+  "componentwise_radiative_incoming_modes": 15,
+  "composed_principal_variables": 48,
+  "count_conservation_failures": 0,
+  "distinct_face_signatures": 3,
+  "exact_characteristic_incoming_modes_implemented": 2,
+  "face_signatures": [
+    {
+      "glancing": 8,
+      "incoming": 19,
+      "occurrences": 32,
+      "outgoing": 21
+    },
+    {
+      "glancing": 10,
+      "incoming": 19,
+      "occurrences": 128,
+      "outgoing": 19
+    },
+    {
+      "glancing": 8,
+      "incoming": 21,
+      "occurrences": 32,
+      "outgoing": 19
+    }
+  ],
+  "flux_only_material_incoming_modes": 4,
+  "generic_composed_glancing_modes": 6,
+  "generic_composed_incoming_modes": 21,
+  "generic_composed_outgoing_modes": 21,
+  "generic_physical_glancing_modes": 3,
+  "generic_physical_incoming_modes": 11,
+  "generic_physical_outgoing_modes": 11,
+  "maximum_glancing_modes": 10,
+  "maximum_incoming_modes": 21,
+  "maximum_incoming_modes_without_exact_data": 19,
+  "maximum_physical_eigenspace_residual": 4.014577114113399e-15,
+  "maximum_physical_projector_commutator_error": 7.500872875760753e-14,
+  "maximum_physical_projector_completeness_error": 1.1398217581934254e-14,
+  "maximum_physical_projector_condition": 54.96192298069045,
+  "maximum_physical_projector_idempotence_error": 1.1615661268132306e-14,
+  "minimum_incoming_modes": 19,
+  "sampled_face_states": 192
+}

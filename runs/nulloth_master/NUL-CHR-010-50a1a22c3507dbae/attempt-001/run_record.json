@@ -1,0 +1,173 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-010",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_boundary_surfaces.py",
+    "--coherence-points",
+    "17",
+    "--thermodynamic-points",
+    "5",
+    "--grid-points",
+    "31"
+  ],
+  "duration_seconds": 16.093906199996127,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:34:45.511694+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:34:45.617459+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_boundary_surfaces.py": "c983a4af2ff17ffe49ca42e2bc6490900160a60366c30e85d716b9ab7c2594c5",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/matter.py": "450cf00fc626ce719f3c9929d4faeb9f83b1ebbf0c5eec4553ff0e78b89d5e30",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-010.json",
+  "manifest_sha256": "3183d054d48c328fd6834b6db40c56f1a38fc7054989bd8eb3e7bbbfb89b95db",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e31085c80ba3a83d89d948fcb1b6926dc4d21780718cac18c7529028f67ca964",
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "parsed_stdout": null,
+  "return_code": 1,
+  "run_id": "NUL-CHR-010-50a1a22c3507dbae",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 80,
+        "observable": "precision_decimal_digits",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 17,
+        "observable": "coherence_surface_points",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 25,
+        "observable": "carrier_causal_surface_points",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 961,
+        "observable": "carrier_coherence_grid_cells",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "safe_grid_cells",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "superluminal_grid_cells",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "complex_or_ill_conditioned_grid_cells",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "unclassified_grid_cells",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 1,
+        "observable": "failed_region_components",
+        "observed": null,
+        "operator": ">=",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "production_to_condition_order_violations",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "condition_to_thermodynamic_order_violations",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "thermodynamic_to_legendre_order_violations",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 0,
+        "observable": "missing_carrier_causal_crossings",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 1e-09,
+        "observable": "maximum_characteristic_bracket_width",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_condition_margin_above_production_cap",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic_to_legendre_gap",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      }
+    ],
+    "passed": false
+  },
+  "source_fingerprint": "97bd16217c7e8436d64fe8b05a486dd500fa9f233d4768398af7ecec6c53be72",
+  "started_utc": "2026-07-22T08:34:29.403947+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-010"
+  ],
+  "termination": "failed"
+}

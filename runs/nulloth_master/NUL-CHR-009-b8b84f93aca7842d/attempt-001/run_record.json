@@ -1,0 +1,148 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-009",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_vector_target_orientation.py",
+    "--target-orientations",
+    "128"
+  ],
+  "duration_seconds": 0.538906700006919,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:30:41.998235+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:30:42.098425+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_vector_target_orientation.py": "a52d5e9d232b89435b60cfa71c605cb7587fc235386d6c6b3300bce06496e3d8",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-009.json",
+  "manifest_sha256": "0d89ae576930524859e4e241531930178eac02a44dc8be52679d19fc66541652",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "e1cbf57d4af8e1709e7df95f061d01b51f75cd1b5d399e322cef9078b0789fee"
+  },
+  "parsed_stdout": {
+    "field_variables": 16,
+    "longitudinal_power": 0.008400000000000001,
+    "maximum_force_projection_error": 0.0,
+    "maximum_power_projection_error": 0.0,
+    "maximum_principal_block_variation": 0.0,
+    "maximum_principal_spectrum_variation": 0.0,
+    "maximum_sampled_mismatch_angle": 3.0724027498146045,
+    "maximum_source_orientation_field_jacobian_error": 4.5330628140050067e-11,
+    "maximum_transverse_power": 0.0008340504602131637,
+    "minimum_sampled_mismatch_angle": 0.12025456659224762,
+    "numerical_jacobian_source_orientations": 3,
+    "proca_parameter_sets": 4,
+    "target_orientations": 128,
+    "transverse_power": 0.0
+  },
+  "return_code": 0,
+  "run_id": "NUL-CHR-009-b8b84f93aca7842d",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 128,
+        "observable": "target_orientations",
+        "observed": 128,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "proca_parameter_sets",
+        "observed": 4,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 16,
+        "observable": "field_variables",
+        "observed": 16,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 3,
+        "observable": "numerical_jacobian_source_orientations",
+        "observed": 3,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "maximum_principal_block_variation",
+        "observed": 0.0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "maximum_principal_spectrum_variation",
+        "observed": 0.0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_source_orientation_field_jacobian_error",
+        "observed": 4.5330628140050067e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-14,
+        "observable": "maximum_power_projection_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-14,
+        "observable": "maximum_force_projection_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "longitudinal_power",
+        "observed": 0.008400000000000001,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "transverse_power",
+        "observed": 0.0,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "3dd84f1ecefd2853c819ee8b2621bd0cf62c3aab2d2669cc42ab759f0d1e588a",
+  "started_utc": "2026-07-22T08:30:41.443516+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-009"
+  ],
+  "termination": "completed"
+}

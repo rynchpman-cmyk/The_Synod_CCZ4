@@ -1,0 +1,204 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-BND-004",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/converge_nulloth_finite_material_entropy.py",
+    "--duration",
+    "0.024",
+    "--cfl-ratio",
+    "0.024",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-BND-004-45e0f80479f94f22\\attempt-001/finite_material_entropy.json"
+  ],
+  "duration_seconds": 33.2199227999954,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T12:02:51.563860+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T12:02:51.676546+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_finite_scalar_outflow.py": "8cfe3299f0087b62b9305e935dc994a567f367b6be94084519cb2d196ca59eaf",
+    "experiments/audit_nulloth_finite_vector_material_outflow.py": "2f673c1c18427877d77a4a2665978a0527e03d224b78ba6470edcbd4907f0ad5",
+    "experiments/converge_nulloth_finite_material_entropy.py": "518a230eaf62fb99fa329bc65b75778e77feb78a519b07c22388056fe3c1d35b",
+    "experiments/nulloth_master/NULLOTH_FINITE_MATERIAL_ENTROPY.md": "dd8b2fe6cb2efe80b83a2e2aebbf2ceb067e33f2e6b0649f43462295418836f5",
+    "src/causal_repair/finite_nulloth.py": "3436258b56608e73602d4fdb3482f04fd192f1d296cdcbf3f3e488708d77b6e4",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-BND-004.json",
+  "manifest_sha256": "fe99fc3a1f982e3f5c2442aba6dcffd8c3b2111a4e110ad51a8af7d658c920ac",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "finite_material_entropy.json": "5440cef3290a4c94677bf7ee5b59f92962c3a8e1a5103cd5cce00673cf5231b2",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "5440cef3290a4c94677bf7ee5b59f92962c3a8e1a5103cd5cce00673cf5231b2"
+  },
+  "parsed_stdout": {
+    "cases": [
+      {
+        "balance_identity_error": 0.0,
+        "cumulative_boundary_entropy_outflow": 0.0002053589318925019,
+        "cumulative_entropy_remainder": 0.0003570177719555339,
+        "cumulative_raw_projection_change": 0.0010758092974288334,
+        "dt": 0.002,
+        "gravitational_constraint_l2": 3.1242807985329985e-13,
+        "maximum_carrier_number_balance_residual": 5.844527336054672e-19,
+        "maximum_step_entropy_remainder": 3.997191173405722e-05,
+        "measured_entropy_change": 0.00015165884006303199,
+        "minimum_step_entropy_remainder": 2.147720471429931e-05,
+        "points": 12,
+        "proca_constraint_l2": 1.4067974095383653e-19,
+        "recovery_residual": 1.8421391074746885e-09,
+        "steps": 12
+      },
+      {
+        "balance_identity_error": 2.710505431213761e-20,
+        "cumulative_boundary_entropy_outflow": 0.00017066607199196416,
+        "cumulative_entropy_remainder": 0.0003320254608282327,
+        "cumulative_raw_projection_change": 0.0009997697528276671,
+        "dt": 0.0013333333333333333,
+        "gravitational_constraint_l2": 3.1282614598047847e-13,
+        "maximum_carrier_number_balance_residual": 7.250602028496811e-19,
+        "maximum_step_entropy_remainder": 2.6826395958385163e-05,
+        "measured_entropy_change": 0.00016135938883626855,
+        "minimum_step_entropy_remainder": 1.2153170240082213e-05,
+        "points": 18,
+        "proca_constraint_l2": 1.3583564254133006e-19,
+        "recovery_residual": 1.7196530104979262e-09,
+        "steps": 18
+      },
+      {
+        "balance_identity_error": 8.131516293641283e-20,
+        "cumulative_boundary_entropy_outflow": 0.00014753425215152213,
+        "cumulative_entropy_remainder": 0.00027703883179305394,
+        "cumulative_raw_projection_change": 0.0008330678236483333,
+        "dt": 0.001,
+        "gravitational_constraint_l2": 3.1302757114996104e-13,
+        "maximum_carrier_number_balance_residual": 3.9048218868423246e-19,
+        "maximum_step_entropy_remainder": 1.6060981132879502e-05,
+        "measured_entropy_change": 0.00012950457964153173,
+        "minimum_step_entropy_remainder": 7.979045914748772e-06,
+        "points": 24,
+        "proca_constraint_l2": 2.8397046708285477e-19,
+        "recovery_residual": 1.0857709733705313e-09,
+        "steps": 24
+      }
+    ],
+    "cfl_ratio": 0.024,
+    "coarse_to_fine_cumulative_reduction": 1.288692165083282,
+    "coarse_to_fine_maximum_step_reduction": 2.488759024330591,
+    "cumulative_remainder_monotone_to_fine": 1,
+    "duration": 0.024,
+    "fine_raw_projection_to_retained_remainder_ratio": 3.007043518977257,
+    "maximum_balance_identity_error": 8.131516293641283e-20,
+    "maximum_carrier_number_balance_residual": 7.250602028496811e-19,
+    "maximum_gravitational_constraint_l2": 3.1302757114996104e-13,
+    "maximum_proca_constraint_l2": 2.8397046708285477e-19,
+    "maximum_recovery_residual": 1.8421391074746885e-09,
+    "maximum_step_remainder_monotone_to_fine": 1,
+    "minimum_step_entropy_remainder": 7.979045914748772e-06
+  },
+  "return_code": 0,
+  "run_id": "NUL-BND-004-45e0f80479f94f22",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": -1e-12,
+        "observable": "minimum_step_entropy_remainder",
+        "observed": 7.979045914748772e-06,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "cumulative_remainder_monotone_to_fine",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "maximum_step_remainder_monotone_to_fine",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1.1,
+        "observable": "coarse_to_fine_cumulative_reduction",
+        "observed": 1.288692165083282,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1.1,
+        "observable": "coarse_to_fine_maximum_step_reduction",
+        "observed": 2.488759024330591,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 2.0,
+        "observable": "fine_raw_projection_to_retained_remainder_ratio",
+        "observed": 3.007043518977257,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-15,
+        "observable": "maximum_balance_identity_error",
+        "observed": 8.131516293641283e-20,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_carrier_number_balance_residual",
+        "observed": 7.250602028496811e-19,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": 3.1302757114996104e-13,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_proca_constraint_l2",
+        "observed": 2.8397046708285477e-19,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": 1.8421391074746885e-09,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "d6efee29056b526b1950995fb7ecad2cb2bb5c09f3c6470335f9e21245f75079",
+  "started_utc": "2026-07-22T12:02:18.329435+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-BND-004"
+  ],
+  "termination": "completed"
+}

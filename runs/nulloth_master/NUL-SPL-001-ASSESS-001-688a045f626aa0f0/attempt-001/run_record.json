@@ -1,0 +1,200 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-SPL-001-ASSESS-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/assess_nulloth_spell_001.py",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json"
+  ],
+  "duration_seconds": 0.09644689998822287,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T07:09:34.609540+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T07:09:34.727696+00:00",
+  "input_artifacts": {
+    "experiments/assess_nulloth_spell_001.py": "a5b23570b5606af98305cb1a3815836757255008dd9715219b19b1c8b2837640",
+    "experiments/nulloth_master/corrections/NUL-SPL-001-CR-001.md": "240fdfb9faac975acdecb491dabbebefee1a3cf39678a37236549445129a67af",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json": "b21d6a646949669aa4c92c17243f0ac99f9987f4be5a383bd72d2c4900755091"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-SPL-001-ASSESS-001.json",
+  "manifest_sha256": "eaf9fb61113f3a4f6db79b922199b4ddcc5744b3b606abecc64f9064b0504239",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "6bd3e3feeced9bd667d98199f1f80544eb3a1a80ced3558416f58c3bfe531657"
+  },
+  "parsed_stdout": {
+    "carrier_velocity_effect_relative_change_16_to_32": 0.012963760663241423,
+    "high_resolution_kinetic_effect": -0.00015698014009789263,
+    "long_peak_scalar_amplitude": 0.1424025600748232,
+    "long_peak_to_final_drop": 0.10625301683382189,
+    "long_run_promoted": 1,
+    "maximum_gauss_l2": 2.4842931960220883e-18,
+    "maximum_gravitational_constraint_l2": 7.80045849202114e-06,
+    "maximum_number_relative_drift": 9.251856944456128e-16,
+    "maximum_restart_error": 7.549516567451064e-15,
+    "maximum_scalar_constraint_l2": 0.0,
+    "minimum_legendre_eigenvalue": 0.3650504925240601,
+    "minimum_thermodynamic_eigenvalue": 0.28584675550742333,
+    "nonlinear_turnover": 1,
+    "scalar_amplitude_relative_change_16_to_32": 0.0028633968806995426,
+    "short_resolution_gate_passes": 4,
+    "short_resolution_runs": 4,
+    "source_process_completed": 1,
+    "source_run_id": "NUL-SPL-001-3aec69fdbb40b1de",
+    "suppressive_sign_consistent_16_to_32": 1
+  },
+  "return_code": 0,
+  "run_id": "NUL-SPL-001-ASSESS-001-688a045f626aa0f0",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 1,
+        "observable": "source_process_completed",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "short_resolution_runs",
+        "observed": 4,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "short_resolution_gate_passes",
+        "observed": 4,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "long_run_promoted",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "nonlinear_turnover",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.01,
+        "observable": "scalar_amplitude_relative_change_16_to_32",
+        "observed": 0.0028633968806995426,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.02,
+        "observable": "carrier_velocity_effect_relative_change_16_to_32",
+        "observed": 0.012963760663241423,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "high_resolution_kinetic_effect",
+        "observed": -0.00015698014009789263,
+        "operator": "<",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "suppressive_sign_consistent_16_to_32",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_number_relative_drift",
+        "observed": 9.251856944456128e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_gauss_l2",
+        "observed": 2.4842931960220883e-18,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_scalar_constraint_l2",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.001,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": 7.80045849202114e-06,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre_eigenvalue",
+        "observed": 0.3650504925240601,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic_eigenvalue",
+        "observed": 0.28584675550742333,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-11,
+        "observable": "maximum_restart_error",
+        "observed": 7.549516567451064e-15,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.17,
+        "observable": "long_peak_scalar_amplitude",
+        "observed": 0.1424025600748232,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.05,
+        "observable": "long_peak_to_final_drop",
+        "observed": 0.10625301683382189,
+        "operator": ">=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "9759338f2935e0a1d588ef9baca51af48f5e6c731cca41277ed2232d0b2f1bf7",
+  "started_utc": "2026-07-22T07:09:34.497588+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-SPL-001"
+  ],
+  "termination": "completed"
+}

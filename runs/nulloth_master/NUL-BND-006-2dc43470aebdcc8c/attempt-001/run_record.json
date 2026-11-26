@@ -1,0 +1,146 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-BND-006",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/converge_nulloth_scalar_boundary_reflection.py",
+    "--duration",
+    "0.6",
+    "--cfl-ratio",
+    "0.1",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-BND-006-2dc43470aebdcc8c\\attempt-001/scalar_boundary_reflection.json"
+  ],
+  "duration_seconds": 5.008874999999534,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T12:15:43.684866+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T12:15:43.788816+00:00",
+  "input_artifacts": {
+    "experiments/converge_nulloth_scalar_boundary_reflection.py": "251b4b891c7e47dcb5b9327692dd3a5eada4f68f14110dcfbfa0d410d5352d63",
+    "experiments/nulloth_master/NULLOTH_SCALAR_BOUNDARY_REFLECTION.md": "649a26f62cb02159589d49b93e2e3564948cbadfd2b1a4d5db479329f9f1b31c",
+    "src/causal_repair/finite_nulloth.py": "3436258b56608e73602d4fdb3482f04fd192f1d296cdcbf3f3e488708d77b6e4",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-BND-006.json",
+  "manifest_sha256": "d99ac25215bb21b8d84b7091e2002aa3ae9f5c3109a822ec28c2f82f994341fc",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "scalar_boundary_reflection.json": "955d367e7b05f22f1de3cecce3a45375f2a27174fb9a8996cd692bdc8a2e4f42",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "955d367e7b05f22f1de3cecce3a45375f2a27174fb9a8996cd692bdc8a2e4f42"
+  },
+  "parsed_stdout": {
+    "cases": [
+      {
+        "dt": 0.003125,
+        "extended_scalar_constraint_l2": 6.983441887268926e-12,
+        "finite_scalar_constraint_l2": 1.1365775955978034e-11,
+        "maximum_reflected_amplitude": 2.279260786103181e-08,
+        "normalized_reflection_energy": 0.0018140340520322194,
+        "points": 32,
+        "spacing": 0.03125,
+        "steps": 192
+      },
+      {
+        "dt": 0.0015625,
+        "extended_scalar_constraint_l2": 7.622394895240718e-17,
+        "finite_scalar_constraint_l2": 3.0727231612026297e-14,
+        "maximum_reflected_amplitude": 3.831313525370675e-09,
+        "normalized_reflection_energy": 6.937378500336177e-05,
+        "points": 64,
+        "spacing": 0.015625,
+        "steps": 384
+      },
+      {
+        "dt": 0.00078125,
+        "extended_scalar_constraint_l2": 1.174365741078278e-17,
+        "finite_scalar_constraint_l2": 2.7992669717788024e-15,
+        "maximum_reflected_amplitude": 1.1156885115659154e-09,
+        "normalized_reflection_energy": 1.3875530450198997e-06,
+        "points": 128,
+        "spacing": 0.0078125,
+        "steps": 768
+      }
+    ],
+    "cfl_ratio": 0.1,
+    "coarse_to_medium_reflection_reduction": 26.148696542134953,
+    "duration": 0.6,
+    "extended_boundary_causally_disconnected": 1,
+    "finest_maximum_reflected_amplitude": 1.1156885115659154e-09,
+    "finest_normalized_reflection_energy": 1.3875530450198997e-06,
+    "maximum_scalar_constraint_l2": 1.1365775955978034e-11,
+    "medium_to_fine_reflection_reduction": 49.99721290105117
+  },
+  "return_code": 0,
+  "run_id": "NUL-BND-006-2dc43470aebdcc8c",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 1e-05,
+        "observable": "finest_normalized_reflection_energy",
+        "observed": 1.3875530450198997e-06,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 10.0,
+        "observable": "coarse_to_medium_reflection_reduction",
+        "observed": 26.148696542134953,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 10.0,
+        "observable": "medium_to_fine_reflection_reduction",
+        "observed": 49.99721290105117,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "finest_maximum_reflected_amplitude",
+        "observed": 1.1156885115659154e-09,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-06,
+        "observable": "maximum_scalar_constraint_l2",
+        "observed": 1.1365775955978034e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "extended_boundary_causally_disconnected",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "f67fef2b97657fc95b6f06c7965d67072363199c9c4264e229302c15b1bebe28",
+  "started_utc": "2026-07-22T12:15:38.661324+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-BND-006"
+  ],
+  "termination": "completed"
+}

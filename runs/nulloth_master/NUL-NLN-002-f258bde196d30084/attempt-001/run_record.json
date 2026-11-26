@@ -1,0 +1,206 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-NLN-002",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_wall_collisions.py",
+    "--duration",
+    "28.0",
+    "--dt",
+    "0.01",
+    "--incoming-speed",
+    "0.4",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-NLN-002-f258bde196d30084\\attempt-001/wall_collisions.json"
+  ],
+  "duration_seconds": 60.022386099997675,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T09:14:41.188157+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T09:14:41.301973+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_wall_collisions.py": "0f7ecaed9d2a37730093d16167153ae985964c12703e78b6d40af9d2e139480f",
+    "experiments/nulloth_master/NULLOTH_WALL_COLLISIONS.md": "40e6ec8720635ad0a89678d06b8e3e0cdb8e5781efa2e0f138ed06011fab47ba",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/integrators.py": "f3a796c0bfbf40c238a64bdcf7310fffb0daa2db49f306ddcca3195cd086f607",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-NLN-002.json",
+  "manifest_sha256": "4fda55199ec31a9b0d731c26478b0d24e72726a248ce0be4e36cbceda3bd187c",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "351a9081dcf48a4caed1312b1fed9f3a37601d6489c26709a946d8541d526190",
+    "wall_collisions.json": "351a9081dcf48a4caed1312b1fed9f3a37601d6489c26709a946d8541d526190"
+  },
+  "parsed_stdout": {
+    "annihilation_runs": 0,
+    "bounded_runs": 5,
+    "controlled_collisions": 5,
+    "embedded_runs": [
+      {
+        "bounded": 1,
+        "dimensions": 2,
+        "final_constraint_l2": 3.0021811158581973e-16,
+        "final_high_wavenumber_energy_fraction": 9.514724184348271e-07,
+        "final_zero_crossings": 2,
+        "incoming_speed_error": 0.0021888059777531166,
+        "initial_zero_crossings": 2,
+        "maximum_amplitude": 0.1156248744068185,
+        "maximum_energy_relative_drift": 1.242949311219616e-10,
+        "measured_incoming_speed": 0.40218880597775314,
+        "minimum_wall_separation": 1.1880823404919596,
+        "x_points": 64
+      },
+      {
+        "bounded": 1,
+        "dimensions": 3,
+        "final_constraint_l2": 3.0021811158581973e-16,
+        "final_high_wavenumber_energy_fraction": 9.514724184348271e-07,
+        "final_zero_crossings": 2,
+        "incoming_speed_error": 0.0021888059777531166,
+        "initial_zero_crossings": 2,
+        "maximum_amplitude": 0.1156248744068185,
+        "maximum_energy_relative_drift": 1.242949311219616e-10,
+        "measured_incoming_speed": 0.40218880597775314,
+        "minimum_wall_separation": 1.1880823404919596,
+        "x_points": 64
+      }
+    ],
+    "high_wavenumber_fraction_change_96_to_128": 1.396850628555608e-07,
+    "maximum_constraint_l2": 6.885585817490322e-16,
+    "maximum_dimensional_embedding_error": 0.0,
+    "maximum_energy_relative_drift": 1.242949311219616e-10,
+    "maximum_speed_error": 0.0021888059777531166,
+    "one_dimensional_runs": [
+      {
+        "bounded": 1,
+        "dimensions": 1,
+        "final_constraint_l2": 3.0021811158581973e-16,
+        "final_high_wavenumber_energy_fraction": 9.514724184348271e-07,
+        "final_zero_crossings": 2,
+        "incoming_speed_error": 0.0021888059777531166,
+        "initial_zero_crossings": 2,
+        "maximum_amplitude": 0.1156248744068185,
+        "maximum_energy_relative_drift": 1.2429473850205177e-10,
+        "measured_incoming_speed": 0.40218880597775314,
+        "minimum_wall_separation": 1.1880823404919596,
+        "x_points": 64
+      },
+      {
+        "bounded": 1,
+        "dimensions": 1,
+        "final_constraint_l2": 6.885585817490322e-16,
+        "final_high_wavenumber_energy_fraction": 6.144355645144359e-07,
+        "final_zero_crossings": 2,
+        "incoming_speed_error": 0.002179343941007994,
+        "initial_zero_crossings": 2,
+        "maximum_amplitude": 0.11562932913888246,
+        "maximum_energy_relative_drift": 1.1293891333681458e-10,
+        "measured_incoming_speed": 0.402179343941008,
+        "minimum_wall_separation": 1.222915598513346,
+        "x_points": 96
+      },
+      {
+        "bounded": 1,
+        "dimensions": 1,
+        "final_constraint_l2": 6.637892659954242e-16,
+        "final_high_wavenumber_energy_fraction": 4.7475050165887506e-07,
+        "final_zero_crossings": 2,
+        "incoming_speed_error": 0.002177160379403853,
+        "initial_zero_crossings": 2,
+        "maximum_amplitude": 0.11562597221859158,
+        "maximum_energy_relative_drift": 1.0098552853983214e-10,
+        "measured_incoming_speed": 0.4021771603794039,
+        "minimum_wall_separation": 1.2233138805370753,
+        "x_points": 128
+      }
+    ],
+    "vacuum_amplitude": 0.06764613810115104,
+    "wall_thickness": 2.9565619799454135
+  },
+  "return_code": 0,
+  "run_id": "NUL-NLN-002-f258bde196d30084",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 5,
+        "observable": "controlled_collisions",
+        "observed": 5,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.005,
+        "observable": "maximum_speed_error",
+        "observed": 0.0021888059777531166,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-10,
+        "observable": "maximum_energy_relative_drift",
+        "observed": 1.242949311219616e-10,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_constraint_l2",
+        "observed": 6.885585817490322e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 5e-07,
+        "observable": "high_wavenumber_fraction_change_96_to_128",
+        "observed": 1.396850628555608e-07,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_dimensional_embedding_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 5,
+        "observable": "bounded_runs",
+        "observed": 5,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "annihilation_runs",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "5740733379af2b30905adb5f242103517f42273fa1f16cd31399342d827829a4",
+  "started_utc": "2026-07-22T09:13:41.150018+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-NLN-002"
+  ],
+  "termination": "completed"
+}

@@ -1,0 +1,144 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-LIM-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_limits.py"
+  ],
+  "duration_seconds": 0.8323008999868762,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T06:36:21.459384+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T06:36:21.571573+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_limits.py": "2879ee7d6a20344584e6aea36e9266ea0b5919ce5b8e3e6891e05c8b715d3002",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/integrators.py": "f3a796c0bfbf40c238a64bdcf7310fffb0daa2db49f306ddcca3195cd086f607",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production33.py": "e5b440e9172295b2c14c6ace3c72a42b530de9f30debb8bd7578006c8225d297",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-LIM-001.json",
+  "manifest_sha256": "6a41ff9f29c216bbc463df7a4240c28ed18313ee90a2640434ac317ea1c648ba",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "503e16376ba7cce7ee55910d7dcfb459e7425276f238da69751a614b0ee473c9"
+  },
+  "parsed_stdout": {
+    "constitutive_fields_compared": 18,
+    "constitutive_max_abs_error": 0.0,
+    "minimum_one_step_scaling_order": 2.0000021603881324,
+    "nulloth_rhs_groups": 27,
+    "nulloth_state_groups": 27,
+    "one_step_error_ratios": [
+      0.24999849987865005,
+      0.2499996256335446
+    ],
+    "one_step_errors": [
+      5.000039999814021e-07,
+      1.250002499286751e-07,
+      3.1250015686268284e-08
+    ],
+    "one_step_scaling_orders": [
+      2.000008656896502,
+      2.0000021603881324
+    ],
+    "rhs_groups_compared": 24,
+    "rhs_max_abs_error": 0.0,
+    "scalar_amplitudes": [
+      0.002,
+      0.001,
+      0.0005
+    ],
+    "smallest_grid_failed_cells": 0,
+    "theory33_rhs_groups": 24
+  },
+  "return_code": 0,
+  "run_id": "NUL-LIM-001-e1bcdecde77d89d0",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 1e-13,
+        "observable": "constitutive_max_abs_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "smallest_grid_failed_cells",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 27,
+        "observable": "nulloth_state_groups",
+        "observed": 27,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 24,
+        "observable": "theory33_rhs_groups",
+        "observed": 24,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 27,
+        "observable": "nulloth_rhs_groups",
+        "observed": 27,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 24,
+        "observable": "rhs_groups_compared",
+        "observed": 24,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2e-12,
+        "observable": "rhs_max_abs_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1.7,
+        "observable": "minimum_one_step_scaling_order",
+        "observed": 2.0000021603881324,
+        "operator": ">=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "2058c165ec5113c9b41aa6d9c6d21d0088510b1e6ed5d7d364280b46f77d8f2a",
+  "started_utc": "2026-07-22T06:36:20.613729+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-LIM-001",
+    "NUL-LIM-002"
+  ],
+  "termination": "completed"
+}

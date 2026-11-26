@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "entropy_change": 0.3160857360926457,
+      "final_extrinsic_curvature_tt_l2": 1.708260366274961e-12,
+      "final_metric_tt_l2": 3.410784107638554e-14,
+      "final_scalar_amplitude": 0.005000270706177342,
+      "initial_extrinsic_curvature_tt_l2": 2.748890423012519e-26,
+      "initial_metric_tt_l2": 1.76006563418402e-24,
+      "maximum_field_constraint_l2": 7.018884044633314e-24,
+      "maximum_gravitational_constraint_l2": 5.20099024726074e-07,
+      "maximum_number_relative_drift": 1.5419449341664829e-16,
+      "maximum_recovery_residual": 7.665497106883521e-13,
+      "minimum_legendre": 0.5769111823813987,
+      "minimum_thermodynamic": 0.37031107830642096,
+      "scalar_amplitude": 0.005
+    },
+    {
+      "entropy_change": 0.3160632279323181,
+      "final_extrinsic_curvature_tt_l2": 6.833038575543226e-12,
+      "final_metric_tt_l2": 1.3657317109763365e-13,
+      "final_scalar_amplitude": 0.01000053391689233,
+      "initial_extrinsic_curvature_tt_l2": 1.1104281112568523e-25,
+      "initial_metric_tt_l2": 7.079637758932334e-24,
+      "maximum_field_constraint_l2": 7.759641962678239e-24,
+      "maximum_gravitational_constraint_l2": 5.20099024726074e-07,
+      "maximum_number_relative_drift": 0.0,
+      "maximum_recovery_residual": 8.142892859550056e-13,
+      "minimum_legendre": 0.5760338211630924,
+      "minimum_thermodynamic": 0.3703098392588319,
+      "scalar_amplitude": 0.01
+    }
+  ],
+  "dt": 0.005,
+  "duration": 0.02,
+  "extrinsic_curvature_tt_amplitude_scaling": 3.9999983084799746,
+  "maximum_field_constraint_l2": 7.759641962678239e-24,
+  "maximum_final_extrinsic_curvature_tt_l2": 6.833038575543226e-12,
+  "maximum_final_metric_tt_l2": 1.3657317109763365e-13,
+  "maximum_gravitational_constraint_l2": 5.20099024726074e-07,
+  "maximum_initial_extrinsic_curvature_tt_l2": 1.1104281112568523e-25,
+  "maximum_initial_metric_tt_l2": 7.079637758932334e-24,
+  "maximum_number_relative_drift": 1.5419449341664829e-16,
+  "maximum_recovery_residual": 8.142892859550056e-13,
+  "metric_tt_amplitude_scaling": 4.004157600939148,
+  "minimum_entropy_change": 0.3160632279323181,
+  "minimum_legendre": 0.5760338211630924,
+  "minimum_thermodynamic": 0.3703098392588319,
+  "points_per_axis": 4
+}

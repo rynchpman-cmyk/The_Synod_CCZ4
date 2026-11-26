@@ -1,0 +1,475 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-010",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_boundary_surfaces.py",
+    "--coherence-points",
+    "17",
+    "--thermodynamic-points",
+    "5",
+    "--grid-points",
+    "31"
+  ],
+  "duration_seconds": 69.51252859999659,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:41:27.317612+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:41:27.424067+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_boundary_surfaces.py": "cd62d3b16e082d1c46548c193a6cca7568cdcb70859f7b5f8e9e46a339c309e3",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/matter.py": "450cf00fc626ce719f3c9929d4faeb9f83b1ebbf0c5eec4553ff0e78b89d5e30",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-010.json",
+  "manifest_sha256": "a23c502ca2bbb13fd5378744b43fa10accf53b8ad92efe5ec2561623fb52239c",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "5f45052b83f4b201996bd94b30f8e8e9513d851db3ecee3b02f40e5174d70223"
+  },
+  "parsed_stdout": {
+    "carrier_causal_surface": [
+      {
+        "bracket_width": 2.677552450591758e-11,
+        "density": 0.4,
+        "internal": 0.1,
+        "minimum_qualified_carrier_density": 0.012682425265666101
+      },
+      {
+        "bracket_width": 2.677552450591758e-11,
+        "density": 0.4,
+        "internal": 0.1625,
+        "minimum_qualified_carrier_density": 0.012682395330630243
+      },
+      {
+        "bracket_width": 2.677552450591758e-11,
+        "density": 0.4,
+        "internal": 0.22499999999999998,
+        "minimum_qualified_carrier_density": 0.012682367216330022
+      },
+      {
+        "bracket_width": 2.677552450591758e-11,
+        "density": 0.4,
+        "internal": 0.2875,
+        "minimum_qualified_carrier_density": 0.012682340788887815
+      },
+      {
+        "bracket_width": 2.677552450591758e-11,
+        "density": 0.4,
+        "internal": 0.35,
+        "minimum_qualified_carrier_density": 0.012682315887650477
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.525,
+        "internal": 0.1,
+        "minimum_qualified_carrier_density": 0.017742587096290667
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.525,
+        "internal": 0.1625,
+        "minimum_qualified_carrier_density": 0.01774252184433863
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.525,
+        "internal": 0.22499999999999998,
+        "minimum_qualified_carrier_density": 0.017742466820636765
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.525,
+        "internal": 0.2875,
+        "minimum_qualified_carrier_density": 0.017742421757429842
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.525,
+        "internal": 0.35,
+        "minimum_qualified_carrier_density": 0.017742366385646163
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.65,
+        "internal": 0.1,
+        "minimum_qualified_carrier_density": 0.023096254616975787
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.65,
+        "internal": 0.1625,
+        "minimum_qualified_carrier_density": 0.02309616392827593
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.65,
+        "internal": 0.22499999999999998,
+        "minimum_qualified_carrier_density": 0.023096061993855985
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.65,
+        "internal": 0.2875,
+        "minimum_qualified_carrier_density": 0.02309597435756587
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.65,
+        "internal": 0.35,
+        "minimum_qualified_carrier_density": 0.023095891781849794
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.775,
+        "internal": 0.1,
+        "minimum_qualified_carrier_density": 0.028698710828321056
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.775,
+        "internal": 0.1625,
+        "minimum_qualified_carrier_density": 0.02869856824865565
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.775,
+        "internal": 0.22499999999999998,
+        "minimum_qualified_carrier_density": 0.02869841343257576
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.775,
+        "internal": 0.2875,
+        "minimum_qualified_carrier_density": 0.02869827810907737
+      },
+      {
+        "bracket_width": 2.6775522771194105e-11,
+        "density": 0.775,
+        "internal": 0.35,
+        "minimum_qualified_carrier_density": 0.028698150630807506
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.9,
+        "internal": 0.1,
+        "minimum_qualified_carrier_density": 0.03451842779177243
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.9,
+        "internal": 0.1625,
+        "minimum_qualified_carrier_density": 0.03451821891590953
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.9,
+        "internal": 0.22499999999999998,
+        "minimum_qualified_carrier_density": 0.03451801065588371
+      },
+      {
+        "bracket_width": 2.6775526240641057e-11,
+        "density": 0.9,
+        "internal": 0.2875,
+        "minimum_qualified_carrier_density": 0.03451780169969425
+      },
+      {
+        "bracket_width": 2.6775519301747153e-11,
+        "density": 0.9,
+        "internal": 0.35,
+        "minimum_qualified_carrier_density": 0.03451761729666032
+      }
+    ],
+    "carrier_causal_surface_points": 25,
+    "carrier_coherence_grid_cells": 961,
+    "coherence_surface": [
+      {
+        "carrier_density": 0.12,
+        "condition_bracket_width": 9.795636524145834e-12,
+        "condition_denial_amplitude": 0.21186006497309798,
+        "legendre_zero_amplitude": 0.2315767230312053,
+        "thermodynamic_zero_amplitude": 0.211860090113998
+      },
+      {
+        "carrier_density": 0.1275,
+        "condition_bracket_width": 9.564821157326264e-12,
+        "condition_denial_amplitude": 0.21086966911343286,
+        "legendre_zero_amplitude": 0.23038648692470715,
+        "thermodynamic_zero_amplitude": 0.2108696941685263
+      },
+      {
+        "carrier_density": 0.135,
+        "condition_bracket_width": 9.348605223280515e-12,
+        "condition_denial_amplitude": 0.2099420811250153,
+        "legendre_zero_amplitude": 0.22927787115634812,
+        "thermodynamic_zero_amplitude": 0.20994210608263503
+      },
+      {
+        "carrier_density": 0.1425,
+        "condition_bracket_width": 9.145406654198496e-12,
+        "condition_denial_amplitude": 0.20907015239705207,
+        "legendre_zero_amplitude": 0.2282407805948541,
+        "thermodynamic_zero_amplitude": 0.20907017726937768
+      },
+      {
+        "carrier_density": 0.15,
+        "condition_bracket_width": 8.953754404572578e-12,
+        "condition_denial_amplitude": 0.20824787199981856,
+        "legendre_zero_amplitude": 0.22726686427015133,
+        "thermodynamic_zero_amplitude": 0.20824789679068473
+      },
+      {
+        "carrier_density": 0.1575,
+        "condition_bracket_width": 8.772510495802521e-12,
+        "condition_denial_amplitude": 0.20747013902595296,
+        "legendre_zero_amplitude": 0.22634913760750533,
+        "thermodynamic_zero_amplitude": 0.20747016372478874
+      },
+      {
+        "carrier_density": 0.16499999999999998,
+        "condition_bracket_width": 8.600620216014931e-12,
+        "condition_denial_amplitude": 0.2067325889186381,
+        "legendre_zero_amplitude": 0.2254817013286837,
+        "thermodynamic_zero_amplitude": 0.20673261354065212
+      },
+      {
+        "carrier_density": 0.1725,
+        "condition_bracket_width": 8.437195386790108e-12,
+        "condition_denial_amplitude": 0.20603145929958422,
+        "legendre_zero_amplitude": 0.22465952885770843,
+        "thermodynamic_zero_amplitude": 0.20603148383620656
+      },
+      {
+        "carrier_density": 0.18,
+        "condition_bracket_width": 8.281514363162046e-12,
+        "condition_denial_amplitude": 0.20536348476091545,
+        "legendre_zero_amplitude": 0.223878303178276,
+        "thermodynamic_zero_amplitude": 0.20536350922158442
+      },
+      {
+        "carrier_density": 0.1875,
+        "condition_bracket_width": 8.132911011315969e-12,
+        "condition_denial_amplitude": 0.20472581370900064,
+        "legendre_zero_amplitude": 0.22313428998625087,
+        "thermodynamic_zero_amplitude": 0.20472583809004247
+      },
+      {
+        "carrier_density": 0.195,
+        "condition_bracket_width": 7.990746953012717e-12,
+        "condition_denial_amplitude": 0.204115941727239,
+        "legendre_zero_amplitude": 0.22242423788319501,
+        "thermodynamic_zero_amplitude": 0.2041159660400382
+      },
+      {
+        "carrier_density": 0.20249999999999999,
+        "condition_bracket_width": 7.854578099042442e-12,
+        "condition_denial_amplitude": 0.20353165787079275,
+        "legendre_zero_amplitude": 0.22174529899233647,
+        "thermodynamic_zero_amplitude": 0.2035316821149907
+      },
+      {
+        "carrier_density": 0.21,
+        "condition_bracket_width": 7.723932604619677e-12,
+        "condition_denial_amplitude": 0.20297100084500652,
+        "legendre_zero_amplitude": 0.22109496519088387,
+        "thermodynamic_zero_amplitude": 0.20297102501705006
+      },
+      {
+        "carrier_density": 0.2175,
+        "condition_bracket_width": 7.598366380534571e-12,
+        "condition_denial_amplitude": 0.20243222305819475,
+        "legendre_zero_amplitude": 0.2204710164200262,
+        "thermodynamic_zero_amplitude": 0.20243224715967598
+      },
+      {
+        "carrier_density": 0.22499999999999998,
+        "condition_bracket_width": 7.477518604304123e-12,
+        "condition_denial_amplitude": 0.20191376090219781,
+        "legendre_zero_amplitude": 0.21987147843381308,
+        "thermodynamic_zero_amplitude": 0.20191378493776527
+      },
+      {
+        "carrier_density": 0.23249999999999998,
+        "condition_bracket_width": 7.36108396459656e-12,
+        "condition_denial_amplitude": 0.20141421000192916,
+        "legendre_zero_amplitude": 0.2192945879959815,
+        "thermodynamic_zero_amplitude": 0.2014142339715148
+      },
+      {
+        "carrier_density": 0.24,
+        "condition_bracket_width": 7.248784905655725e-12,
+        "condition_denial_amplitude": 0.20093230444993723,
+        "legendre_zero_amplitude": 0.2187387640062863,
+        "thermodynamic_zero_amplitude": 0.2009323283605915
+      }
+    ],
+    "coherence_surface_points": 17,
+    "complex_or_ill_conditioned_grid_cells": 4,
+    "condition_to_thermodynamic_order_violations": 0,
+    "counterflow_coherence_grid_cells": 961,
+    "failed_region_components": 3,
+    "legendre_grid_cells": 272,
+    "maximum_characteristic_bracket_width": 2.6775526240641057e-11,
+    "maximum_qualified_carrier_density": 0.03451842779177243,
+    "minimum_condition_margin_above_production_cap": 0.03093230444993722,
+    "minimum_qualified_carrier_density": 0.012682315887650477,
+    "minimum_thermodynamic_to_legendre_gap": 0.017806435645694813,
+    "missing_carrier_causal_crossings": 0,
+    "precision_decimal_digits": 80,
+    "production_to_condition_order_violations": 0,
+    "safe_grid_cells": 1486,
+    "superluminal_grid_cells": 29,
+    "thermodynamic_grid_cells": 131,
+    "thermodynamic_to_legendre_order_violations": 0,
+    "unclassified_grid_cells": 0
+  },
+  "return_code": 0,
+  "run_id": "NUL-CHR-010-8d80a385de6ccd9f",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 80,
+        "observable": "precision_decimal_digits",
+        "observed": 80,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 17,
+        "observable": "coherence_surface_points",
+        "observed": 17,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 25,
+        "observable": "carrier_causal_surface_points",
+        "observed": 25,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 961,
+        "observable": "carrier_coherence_grid_cells",
+        "observed": 961,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 961,
+        "observable": "counterflow_coherence_grid_cells",
+        "observed": 961,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "safe_grid_cells",
+        "observed": 1486,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "superluminal_grid_cells",
+        "observed": 29,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "complex_or_ill_conditioned_grid_cells",
+        "observed": 4,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "unclassified_grid_cells",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "failed_region_components",
+        "observed": 3,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "production_to_condition_order_violations",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "condition_to_thermodynamic_order_violations",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "thermodynamic_to_legendre_order_violations",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "missing_carrier_causal_crossings",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1e-09,
+        "observable": "maximum_characteristic_bracket_width",
+        "observed": 2.6775526240641057e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_condition_margin_above_production_cap",
+        "observed": 0.03093230444993722,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic_to_legendre_gap",
+        "observed": 0.017806435645694813,
+        "operator": ">",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "2edfdd1ea0af2505687bd428e5e7b0498ef6a117987d79844e3516f06649eea3",
+  "started_utc": "2026-07-22T08:40:17.791767+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-010"
+  ],
+  "termination": "completed"
+}

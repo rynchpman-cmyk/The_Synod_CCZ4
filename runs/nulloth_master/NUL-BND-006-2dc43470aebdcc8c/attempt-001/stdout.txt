@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "dt": 0.003125,
+      "extended_scalar_constraint_l2": 6.983441887268926e-12,
+      "finite_scalar_constraint_l2": 1.1365775955978034e-11,
+      "maximum_reflected_amplitude": 2.279260786103181e-08,
+      "normalized_reflection_energy": 0.0018140340520322194,
+      "points": 32,
+      "spacing": 0.03125,
+      "steps": 192
+    },
+    {
+      "dt": 0.0015625,
+      "extended_scalar_constraint_l2": 7.622394895240718e-17,
+      "finite_scalar_constraint_l2": 3.0727231612026297e-14,
+      "maximum_reflected_amplitude": 3.831313525370675e-09,
+      "normalized_reflection_energy": 6.937378500336177e-05,
+      "points": 64,
+      "spacing": 0.015625,
+      "steps": 384
+    },
+    {
+      "dt": 0.00078125,
+      "extended_scalar_constraint_l2": 1.174365741078278e-17,
+      "finite_scalar_constraint_l2": 2.7992669717788024e-15,
+      "maximum_reflected_amplitude": 1.1156885115659154e-09,
+      "normalized_reflection_energy": 1.3875530450198997e-06,
+      "points": 128,
+      "spacing": 0.0078125,
+      "steps": 768
+    }
+  ],
+  "cfl_ratio": 0.1,
+  "coarse_to_medium_reflection_reduction": 26.148696542134953,
+  "duration": 0.6,
+  "extended_boundary_causally_disconnected": 1,
+  "finest_maximum_reflected_amplitude": 1.1156885115659154e-09,
+  "finest_normalized_reflection_energy": 1.3875530450198997e-06,
+  "maximum_scalar_constraint_l2": 1.1365775955978034e-11,
+  "medium_to_fine_reflection_reduction": 49.99721290105117
+}

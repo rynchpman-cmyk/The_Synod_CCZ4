@@ -1,0 +1,17 @@
+{
+  "accounting_dimension_count": 6,
+  "canonical_name_correct": 1,
+  "channel_count": 6,
+  "decision_state_count": 7,
+  "direct_state_overrides": 0,
+  "duplicate_channel_ids": 0,
+  "duplicate_objective_ids": 0,
+  "global_forbidden_shortcut_count": 6,
+  "missing_channel_cost_links": 0,
+  "objective_count": 8,
+  "objectives_without_abort": 0,
+  "objectives_without_controls": 0,
+  "required_accounting_dimensions_present": 1,
+  "required_objectives_present": 1,
+  "unknown_channel_references": 0
+}

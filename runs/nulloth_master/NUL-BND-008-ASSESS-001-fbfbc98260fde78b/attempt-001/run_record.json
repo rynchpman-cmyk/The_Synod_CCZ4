@@ -1,0 +1,100 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-BND-008-ASSESS-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/assess_nulloth_driven_latency_failure.py",
+    "--record",
+    "runs/nulloth_master/NUL-BND-008-09206a6999a6d521/attempt-001/run_record.json",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-BND-008-ASSESS-001-fbfbc98260fde78b\\attempt-001/driven_latency_failure_assessment.json"
+  ],
+  "duration_seconds": 0.09761249998700805,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T16:10:34.468004+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T16:10:34.579010+00:00",
+  "input_artifacts": {
+    "experiments/assess_nulloth_driven_latency_failure.py": "9c8a45dbd47518387d52957b3975c13cbf74304a7c8ffac435488f3aa8b76eaf",
+    "experiments/nulloth_master/corrections/NUL-BND-008-CR-001.md": "ae6550610a5e6122c7bffb2391cffcf0706d5d51f3e1ae96e16479c8c3608acc",
+    "runs/nulloth_master/NUL-BND-008-09206a6999a6d521/attempt-001/run_record.json": "bf8455d1b111969b6b107e25b91ee08c184f9ff3e0996c0ad0745fab8624f10f"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-BND-008-ASSESS-001.json",
+  "manifest_sha256": "b1635fde83c98b97625d7bc6e6fc6e96b8eb02895932df6426fb90aec47b33c9",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "driven_latency_failure_assessment.json": "eeb21d933aae26f8397cc15e2b0a1a6e870b52a2a22ede483136a6b8af25c60c",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "eeb21d933aae26f8397cc15e2b0a1a6e870b52a2a22ede483136a6b8af25c60c"
+  },
+  "parsed_stdout": {
+    "decisive_observables_produced": 0,
+    "duration_seconds": 1114.9519643000094,
+    "failed_return_code": 1,
+    "original_run_completed": 0,
+    "original_scientific_acceptance_passed": 0,
+    "singular_recovery_jacobian_reported": 1
+  },
+  "return_code": 0,
+  "run_id": "NUL-BND-008-ASSESS-001-fbfbc98260fde78b",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 0,
+        "observable": "original_run_completed",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "original_scientific_acceptance_passed",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "decisive_observables_produced",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "singular_recovery_jacobian_reported",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "failed_return_code",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "ad153306d34fba956c80a1c5390e583944d10c5c861cc704b23ff0e6eb36dff9",
+  "started_utc": "2026-07-22T16:10:34.356510+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-BND-008"
+  ],
+  "termination": "completed"
+}

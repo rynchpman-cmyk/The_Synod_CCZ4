@@ -1,0 +1,243 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-004",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_adaptive_state_atlas.py",
+    "--refinements",
+    "24"
+  ],
+  "duration_seconds": 30.95009850000497,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:05:47.255624+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:05:47.371285+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_adaptive_state_atlas.py": "fe127f61b0ee7950935c11415d461ee3ef16c2bae1f0197de3f6b672b3ada2b6",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/matter.py": "450cf00fc626ce719f3c9929d4faeb9f83b1ebbf0c5eec4553ff0e78b89d5e30",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-004.json",
+  "manifest_sha256": "59e041fc4012c4d752583451fe3f9d3d441a08723e5d0bb85bce9073f9814b2b",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "e69d7fe0424d3ff3d64637e5d508cc661e64abef849378d88d5ece852088ca59"
+  },
+  "parsed_stdout": {
+    "activated_states": 832,
+    "adaptive_states": 800,
+    "boundary_states": 32,
+    "dimensions": 5,
+    "directions_per_state": 4,
+    "failures": 0,
+    "first_failure": null,
+    "initial_cells": 32,
+    "maximum_absolute_speed": 1.0000000000000018,
+    "maximum_characteristic_multiplicity": 7,
+    "maximum_constraint_reduced_condition": 3.437746343039567,
+    "maximum_effective_mass_squared": -0.013263534432530394,
+    "maximum_eigenspace_residual": 1.0935472939981105e-14,
+    "maximum_eigenvector_condition": 54.96192298069045,
+    "maximum_imaginary_speed": 4.34864608495744e-17,
+    "maximum_reduction_spectrum_error": 0.0,
+    "maximum_refinement_depth": 25,
+    "minimum_distinct_mode_gap": 0.008714036938829883,
+    "minimum_effective_mass_squared": -0.5332859049463868,
+    "minimum_legendre_eigenvalue": 0.25839746689845,
+    "minimum_thermodynamic_eigenvalue": 0.12324473272469352,
+    "narrowest_convexity_point": [
+      0.9,
+      0.1,
+      0.24,
+      -0.3,
+      -0.16
+    ],
+    "nearest_mode_collision_point": [
+      0.4,
+      0.1,
+      0.12,
+      -0.3,
+      -0.16
+    ],
+    "refinements": 24,
+    "sampled_states": 832,
+    "symbol_evaluations": 3328,
+    "worst_condition_point": [
+      0.9,
+      0.35,
+      0.24,
+      0.3,
+      -0.16
+    ]
+  },
+  "return_code": 0,
+  "run_id": "NUL-CHR-004-019e829eb2296967",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 5,
+        "observable": "dimensions",
+        "observed": 5,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 32,
+        "observable": "boundary_states",
+        "observed": 32,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 24,
+        "observable": "refinements",
+        "observed": 24,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 800,
+        "observable": "adaptive_states",
+        "observed": 800,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 832,
+        "observable": "sampled_states",
+        "observed": 832,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "directions_per_state",
+        "observed": 4,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 3328,
+        "observable": "symbol_evaluations",
+        "observed": 3328,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2,
+        "observable": "maximum_refinement_depth",
+        "observed": 25,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "failures",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 832,
+        "observable": "activated_states",
+        "observed": 832,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1.0000000001,
+        "observable": "maximum_absolute_speed",
+        "observed": 1.0000000000000018,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_imaginary_speed",
+        "observed": 4.34864608495744e-17,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 100.0,
+        "observable": "maximum_eigenvector_condition",
+        "observed": 54.96192298069045,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 8.0,
+        "observable": "maximum_constraint_reduced_condition",
+        "observed": 3.437746343039567,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_eigenspace_residual",
+        "observed": 1.0935472939981105e-14,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_reduction_spectrum_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre_eigenvalue",
+        "observed": 0.25839746689845,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic_eigenvalue",
+        "observed": 0.12324473272469352,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "minimum_distinct_mode_gap",
+        "observed": 0.008714036938829883,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "maximum_effective_mass_squared",
+        "observed": -0.013263534432530394,
+        "operator": "<",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "9f5cef074c5ff5be4ca5553caa876ddc86ad0d145a79c9dbb779bdc3c1772411",
+  "started_utc": "2026-07-22T08:05:16.292388+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-004"
+  ],
+  "termination": "completed"
+}

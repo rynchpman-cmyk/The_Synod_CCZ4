@@ -1,0 +1,21 @@
+{
+  "carrier_velocity_effect_relative_change_16_to_32": 0.012963760663241423,
+  "high_resolution_kinetic_effect": -0.00015698014009789263,
+  "long_peak_scalar_amplitude": 0.1424025600748232,
+  "long_peak_to_final_drop": 0.10625301683382189,
+  "long_run_promoted": 1,
+  "maximum_gauss_l2": 2.4842931960220883e-18,
+  "maximum_gravitational_constraint_l2": 7.80045849202114e-06,
+  "maximum_number_relative_drift": 9.251856944456128e-16,
+  "maximum_restart_error": 7.549516567451064e-15,
+  "maximum_scalar_constraint_l2": 0.0,
+  "minimum_legendre_eigenvalue": 0.3650504925240601,
+  "minimum_thermodynamic_eigenvalue": 0.28584675550742333,
+  "nonlinear_turnover": 1,
+  "scalar_amplitude_relative_change_16_to_32": 0.0028633968806995426,
+  "short_resolution_gate_passes": 4,
+  "short_resolution_runs": 4,
+  "source_process_completed": 1,
+  "source_run_id": "NUL-SPL-001-3aec69fdbb40b1de",
+  "suppressive_sign_consistent_16_to_32": 1
+}

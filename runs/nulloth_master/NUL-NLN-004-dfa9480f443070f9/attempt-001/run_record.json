@@ -1,0 +1,196 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-NLN-004",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_stress_edge.py",
+    "--points",
+    "4",
+    "--duration",
+    "3.0",
+    "--dt",
+    "0.01",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-NLN-004-dfa9480f443070f9\\attempt-001/stress_edge.json"
+  ],
+  "duration_seconds": 0.09257810001145117,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T10:20:44.882318+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T10:20:44.981565+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_production_regimes.py": "6bb320fa713786ae1fb6fb455339ca97991a68ca99b4a02eb9f3ca71e028bfc2",
+    "experiments/map_nulloth_stress_edge.py": "3ed590da08da7ef37ec5fd4b3008ded378e59e3d4bf4f17444d1bc2c36fafc7e",
+    "experiments/nulloth_master/NULLOTH_STRESS_EDGE.md": "9c89bb6f89612c56473d6869d53bcc40ad8b9fdd101f2b89d5d283bd8ba753d0",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/initial_constraints.py": "0f60088dd771693958f04b6fb4baf13909954026aa5299019c08cb4223b60f95",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-NLN-004.json",
+  "manifest_sha256": "81ebdacabc6c9324f41221bdab046013781caa8857947b3b5e1c79c34428fc23",
+  "missing_declared_outputs": [
+    "stress_edge.json"
+  ],
+  "output_artifacts": {
+    "stderr.txt": "59a58906fa2c0008b92eae74e0617fb52a2c5aa948f7c47a6e35a024b9387245",
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "parsed_stdout": null,
+  "return_code": 1,
+  "run_id": "NUL-NLN-004-dfa9480f443070f9",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 1,
+        "observable": "completed",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": "dispersed",
+        "observable": "outcome",
+        "observed": null,
+        "operator": "==",
+        "passed": false
+      },
+      {
+        "expected": 2.99,
+        "observable": "final_time",
+        "observed": null,
+        "operator": ">=",
+        "passed": false
+      },
+      {
+        "expected": 0.06,
+        "observable": "final_amplitude",
+        "observed": null,
+        "operator": "<",
+        "passed": false
+      },
+      {
+        "expected": 0.5,
+        "observable": "peak_to_final_drop_fraction",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0.4,
+        "observable": "maximum_high_wavenumber_fraction",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 1e-12,
+        "observable": "baryon_relative_drift",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 1e-12,
+        "observable": "carrier_relative_drift",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "entropy_change",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_step_entropy_change",
+        "observed": null,
+        "operator": ">=",
+        "passed": false
+      },
+      {
+        "expected": 1e-12,
+        "observable": "entropy_telescope_error",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.001,
+        "observable": "maximum_hamiltonian_l2",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.001,
+        "observable": "maximum_momentum_l2",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_gauss_l2",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_scalar_constraint_l2",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic",
+        "observed": null,
+        "operator": ">",
+        "passed": false
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": null,
+        "operator": "<=",
+        "passed": false
+      }
+    ],
+    "passed": false
+  },
+  "source_fingerprint": "462a738c2ef59bd7a0172bc771087db4d894c9b41dff6bae65ddc22a502c9188",
+  "started_utc": "2026-07-22T10:20:44.776947+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-NLN-004"
+  ],
+  "termination": "failed"
+}

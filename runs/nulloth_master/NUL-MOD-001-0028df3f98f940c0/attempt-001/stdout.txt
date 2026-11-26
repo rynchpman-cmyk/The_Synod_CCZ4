@@ -1,0 +1,10 @@
+{
+  "duration": 0.5,
+  "effective_mass_squared": -0.32000000000000006,
+  "final_amplitude": 1.3268964411453444e-08,
+  "initial_amplitude": 1e-08,
+  "measured_rate": 0.5656854249492044,
+  "predicted_rate": 0.5656854249492381,
+  "relative_error": 5.966351342998344e-14,
+  "steps": 1000
+}

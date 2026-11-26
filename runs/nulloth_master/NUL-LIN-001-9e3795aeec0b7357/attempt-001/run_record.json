@@ -1,0 +1,237 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-LIN-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_linear_spectrum.py",
+    "--resolutions",
+    "16",
+    "24",
+    "32",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-LIN-001-9e3795aeec0b7357\\attempt-001/spectrum.json"
+  ],
+  "duration_seconds": 4.075555699993856,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:54:55.413215+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:54:55.521236+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_ccz4_composition.py": "1d1b1757d59ad02125550ed5e214ce16f71247a8d9519326c20a8c8d11f2552e",
+    "experiments/audit_nulloth_linear_spectrum.py": "dd863d5f68ccb82d23876ac6de907ec4ed7a9a19bbc2e83a1cadb2585ae124b7",
+    "experiments/nulloth_master/NULLOTH_LINEAR_SPECTRUM.md": "d80f2ec2c3765a4e599803ef35af15ec1246af634ad79ff6fcc4ee93e0e8bd79",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-LIN-001.json",
+  "manifest_sha256": "689d39f16773a0ce58b0d3057f15276a96ceb0b253c955f4849690745a1b49c6",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "spectrum.json": "843afe1b329239bb5e1d71f05ae864f074a5d4eb506b3e734edcf154ce447fb4",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "843afe1b329239bb5e1d71f05ae864f074a5d4eb506b3e734edcf154ce447fb4"
+  },
+  "parsed_stdout": {
+    "branch_families_identified": 7,
+    "ccz4_gamma_driver_modes": 2,
+    "ccz4_gauge_constraint_modes": 17,
+    "ccz4_gravitational_tensor_modes": 4,
+    "equilibria": [
+      {
+        "acoustic_modes": 4,
+        "carrier_density": 0.1,
+        "contact_or_vorticity_modes": 4,
+        "effective_mass_squared": 0.04000000000000001,
+        "maximum_acoustic_speed": 0.9373804091983289,
+        "maximum_scalar_dispersion_error": 1.2500001034254637e-12,
+        "minimum_acoustic_speed": 0.40840897716217384,
+        "name": "symmetric-stable",
+        "scalar_amplitude": 0.0,
+        "scalar_curvature": 0.04000000000000001,
+        "unstable_fourier_modes": 0
+      },
+      {
+        "acoustic_modes": 4,
+        "carrier_density": 0.18,
+        "contact_or_vorticity_modes": 4,
+        "effective_mass_squared": -0.22879999999999995,
+        "maximum_acoustic_speed": 0.9303794792837341,
+        "maximum_scalar_dispersion_error": 6.871170301764254e-13,
+        "minimum_acoustic_speed": 0.4084672368205676,
+        "name": "symmetric-activated",
+        "scalar_amplitude": 0.0,
+        "scalar_curvature": -0.22879999999999995,
+        "unstable_fourier_modes": 3
+      },
+      {
+        "acoustic_modes": 4,
+        "carrier_density": 0.18,
+        "contact_or_vorticity_modes": 4,
+        "effective_mass_squared": -0.22879999999999995,
+        "maximum_acoustic_speed": 0.9215362324873874,
+        "maximum_scalar_dispersion_error": 2.0455748206416047e-11,
+        "minimum_acoustic_speed": 0.4084514872840549,
+        "name": "condensed",
+        "scalar_amplitude": 0.06764613810115104,
+        "scalar_curvature": 0.45759999999999984,
+        "unstable_fourier_modes": 0
+      }
+    ],
+    "finite_volume_critical_length": 13.135658776307194,
+    "finite_volume_unstable_mode_count": 3,
+    "material_modes_per_equilibrium": 8,
+    "maximum_ccz4_principal_frequency_error": 3.470617127021569e-10,
+    "maximum_resolution_spectrum_change": 1.3973822099554792e-11,
+    "maximum_spurious_real_growth": 1.2073675392798577e-15,
+    "maximum_vector_dispersion_error": 1.0219982327368713e-14,
+    "proca_cleaning_modes": 4,
+    "proca_physical_modes": 12,
+    "resolutions": [
+      16,
+      24,
+      32
+    ],
+    "scalar_fourier_modes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "scalar_physical_modes": 2,
+    "scalar_reduction_constraint_modes": 3,
+    "vector_fourier_modes": [
+      1,
+      2,
+      3
+    ]
+  },
+  "return_code": 0,
+  "run_id": "NUL-LIN-001-9e3795aeec0b7357",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 8,
+        "observable": "material_modes_per_equilibrium",
+        "observed": 8,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2,
+        "observable": "scalar_physical_modes",
+        "observed": 2,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 3,
+        "observable": "scalar_reduction_constraint_modes",
+        "observed": 3,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 12,
+        "observable": "proca_physical_modes",
+        "observed": 12,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "proca_cleaning_modes",
+        "observed": 4,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "ccz4_gravitational_tensor_modes",
+        "observed": 4,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2,
+        "observable": "ccz4_gamma_driver_modes",
+        "observed": 2,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 17,
+        "observable": "ccz4_gauge_constraint_modes",
+        "observed": 17,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_vector_dispersion_error",
+        "observed": 1.0219982327368713e-14,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_ccz4_principal_frequency_error",
+        "observed": 3.470617127021569e-10,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_resolution_spectrum_change",
+        "observed": 1.3973822099554792e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_spurious_real_growth",
+        "observed": 1.2073675392798577e-15,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 3,
+        "observable": "finite_volume_unstable_mode_count",
+        "observed": 3,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 7,
+        "observable": "branch_families_identified",
+        "observed": 7,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "815340c3d1e32dc8e6401d14d11641a35e1168d19b4eadeeffa86605826376ed",
+  "started_utc": "2026-07-22T08:54:51.329618+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-LIN-001"
+  ],
+  "termination": "completed"
+}

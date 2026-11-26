@@ -1,0 +1,68 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-MOD-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/run_nulloth_homogeneous_growth.py",
+    "--duration",
+    "0.5",
+    "--dt",
+    "0.0005",
+    "--amplitude",
+    "1e-8"
+  ],
+  "duration_seconds": 1.3470437999931164,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T06:31:22.317968+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T06:31:22.427129+00:00",
+  "input_artifacts": {
+    "experiments/run_nulloth_homogeneous_growth.py": "f1662d1405be4e841bb29cc76cc2a76a7b408164352f64356170d7f11bc18a9f",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/integrators.py": "f3a796c0bfbf40c238a64bdcf7310fffb0daa2db49f306ddcca3195cd086f607",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production33.py": "e5b440e9172295b2c14c6ace3c72a42b530de9f30debb8bd7578006c8225d297",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-MOD-001.json",
+  "manifest_sha256": "1b3128ce02475e91da323ec1ad99395b3e149dc23fe0885b3c95d9312a9f4e5b",
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "a077e37581947e161b5aea9f9166f9bc7c2f4c8e980e0ff410898f8d83b5efe1"
+  },
+  "parsed_stdout": {
+    "duration": 0.5,
+    "effective_mass_squared": -0.32000000000000006,
+    "final_amplitude": 1.3268964411453444e-08,
+    "initial_amplitude": 1e-08,
+    "measured_rate": 0.5656854249492044,
+    "predicted_rate": 0.5656854249492381,
+    "relative_error": 5.966351342998344e-14,
+    "steps": 1000
+  },
+  "return_code": 0,
+  "run_id": "NUL-MOD-001-dc3d6d425c132820",
+  "run_record_schema": "nulloth.run.v1",
+  "source_fingerprint": "df4ea7f36f760b60429c1b304090956f56fe2720ed2a86b5e19934992bbcc109",
+  "started_utc": "2026-07-22T06:31:20.965440+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-MOD-001"
+  ],
+  "termination": "completed"
+}

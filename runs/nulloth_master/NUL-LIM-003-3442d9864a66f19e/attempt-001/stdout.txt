@@ -1,0 +1,27 @@
+{
+  "condensed_static_source_error": 0.0,
+  "proca_A_to_B_cross_excitation": 0.0,
+  "proca_B_to_A_cross_excitation": 0.0,
+  "proca_relabeling_max_error": 0.0,
+  "scalar_energy_relative_drift": 2.592490009946511e-16,
+  "scalar_field_max_error": 1.2565903179106996e-16,
+  "scalar_frequency": 2.039607805437114,
+  "scalar_momentum_max_error": 1.6393136847980827e-16,
+  "scalar_time_reversal_max_error": 1.734723475976807e-18,
+  "vacuum_carrier_floors": [
+    0.0004,
+    0.0002,
+    0.0001
+  ],
+  "vacuum_ccz4_rhs_errors": [
+    5.468884491369099e-06,
+    1.3672211228422612e-06,
+    3.4180528071055174e-07
+  ],
+  "vacuum_error_ratios": [
+    0.24999999999999753,
+    0.2499999999999901
+  ],
+  "vacuum_minimum_scaling_order": 2.000000000000014,
+  "vacuum_smallest_floor_error": 3.4180528071055174e-07
+}

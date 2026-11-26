@@ -1,0 +1,25 @@
+{
+  "activated_samples": 3072,
+  "approximate_covering_radius_radians": 0.15552091707264187,
+  "directions_per_state": 256,
+  "failures": 0,
+  "first_failure": null,
+  "maximum_absolute_speed": 1.0,
+  "maximum_characteristic_multiplicity": 7,
+  "maximum_constraint_reduced_condition": 3.3360128721916418,
+  "maximum_eigenspace_residual": 9.103039224112986e-15,
+  "maximum_eigenvector_condition": 54.55280564527796,
+  "maximum_imaginary_speed": 1.3902256627836107e-16,
+  "maximum_reduction_spectrum_error": 0.0,
+  "minimum_distinct_characteristic_families": 8,
+  "minimum_legendre_eigenvalue": 0.25839746689845,
+  "minimum_thermodynamic_eigenvalue": 0.12324473272469352,
+  "samples": 3072,
+  "states": 12,
+  "worst_direction": [
+    -0.07385948884723555,
+    -0.04839439139159193,
+    -0.99609375
+  ],
+  "worst_state_index": 2
+}

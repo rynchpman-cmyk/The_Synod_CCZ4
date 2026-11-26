@@ -1,0 +1,228 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-002",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_ccz4_composition.py",
+    "--grid-points",
+    "16",
+    "--modes",
+    "1",
+    "2",
+    "4"
+  ],
+  "duration_seconds": 15.544474700000137,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T07:56:27.850600+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T07:56:27.955202+00:00",
+  "input_artifacts": {
+    "NULLOTH_SPEC.md": "3b9baf03f531a193fcef428c120ca68cf7ca344f53bf7e4a37f38d4924654adf",
+    "experiments/audit_nulloth_ccz4_composition.py": "1d1b1757d59ad02125550ed5e214ce16f71247a8d9519326c20a8c8d11f2552e",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production3.py": "2232bc341830deda5627344851baa768271ff17b35521b4443f62f477d52a10c",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-002.json",
+  "manifest_sha256": "6a5b6445f3844aac82f25bc151af20e6b3e7615b042cf7e7d428579ca6edd173",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "bc00220f6c45a68fcd95e29111e2df344c863038a1be8aefc83c9e198158cfd0"
+  },
+  "parsed_stdout": {
+    "ccz4_eigenvector_condition": 33.927390496504415,
+    "ccz4_eigenvector_rank": 23,
+    "ccz4_maximum_eigenspace_residual": 1.4674686975788274e-10,
+    "ccz4_maximum_gauge_speed": 1.1547005387263132,
+    "ccz4_maximum_real_growth": 8.326672684688674e-16,
+    "ccz4_reduced_variables": 23,
+    "ccz4_spectrum_variation": 2.15473638932064e-10,
+    "composed_eigenvector_condition": 33.927390485351204,
+    "composed_eigenvector_rank": 48,
+    "composed_maximum_eigenspace_residual": 7.637207550152257e-11,
+    "composed_principal_variables": 48,
+    "composed_spectrum_union_error": 4.518280359883027e-16,
+    "highest_mode_cross_block_fraction": 0.24960391119776326,
+    "minimum_cross_block_decay_order": 0.9968909794934206,
+    "normalized_cross_block_norms": [
+      129.07540918783522,
+      64.67693388143587,
+      32.21772697273538
+    ],
+    "nulloth_physical_eigenvector_condition": 5.276541422385974,
+    "nulloth_physical_eigenvector_rank": 25,
+    "nulloth_physical_maximum_speed": 1.0,
+    "nulloth_physical_variables": 25,
+    "principal_limit_cross_block_norm": 0.0,
+    "sampled_fourier_modes": [
+      1,
+      2,
+      4
+    ]
+  },
+  "return_code": 0,
+  "run_id": "NUL-CHR-002-ff54097f25f47011",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 23,
+        "observable": "ccz4_reduced_variables",
+        "observed": 23,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 25,
+        "observable": "nulloth_physical_variables",
+        "observed": 25,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 48,
+        "observable": "composed_principal_variables",
+        "observed": 48,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 23,
+        "observable": "ccz4_eigenvector_rank",
+        "observed": 23,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1000000.0,
+        "observable": "ccz4_eigenvector_condition",
+        "observed": 33.927390496504415,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-05,
+        "observable": "ccz4_maximum_eigenspace_residual",
+        "observed": 1.4674686975788274e-10,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-06,
+        "observable": "ccz4_maximum_real_growth",
+        "observed": 8.326672684688674e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1.2,
+        "observable": "ccz4_maximum_gauge_speed",
+        "observed": 1.1547005387263132,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-06,
+        "observable": "ccz4_spectrum_variation",
+        "observed": 2.15473638932064e-10,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 25,
+        "observable": "nulloth_physical_eigenvector_rank",
+        "observed": 25,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1000000.0,
+        "observable": "nulloth_physical_eigenvector_condition",
+        "observed": 5.276541422385974,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1.00000001,
+        "observable": "nulloth_physical_maximum_speed",
+        "observed": 1.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 48,
+        "observable": "composed_eigenvector_rank",
+        "observed": 48,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1000000.0,
+        "observable": "composed_eigenvector_condition",
+        "observed": 33.927390485351204,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-05,
+        "observable": "composed_maximum_eigenspace_residual",
+        "observed": 7.637207550152257e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "composed_spectrum_union_error",
+        "observed": 4.518280359883027e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.5,
+        "observable": "minimum_cross_block_decay_order",
+        "observed": 0.9968909794934206,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0.5,
+        "observable": "highest_mode_cross_block_fraction",
+        "observed": 0.24960391119776326,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "principal_limit_cross_block_norm",
+        "observed": 0.0,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "a767aaeb9a81bf0ba2f72e63f6794d6f5436381d240979a76d0609980784b2d7",
+  "started_utc": "2026-07-22T07:56:12.293868+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-002"
+  ],
+  "termination": "completed"
+}

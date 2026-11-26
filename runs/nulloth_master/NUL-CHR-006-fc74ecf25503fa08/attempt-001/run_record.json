@@ -1,0 +1,155 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-006",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/derive_nulloth_admissibility_bounds.py"
+  ],
+  "duration_seconds": 0.42008239999995567,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:17:27.139420+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:17:27.245888+00:00",
+  "input_artifacts": {
+    "experiments/derive_nulloth_admissibility_bounds.py": "bfd5c592ca72980488da34581902607696ec6831dc6b24d093c3870c46ddf999",
+    "experiments/nulloth_master/NULLOTH_ADMISSIBILITY_BOUNDS.md": "18fe801c58e7e4e32116aea8efb1588910cefed09a1a0dfd4c09660130e32334",
+    "runs/nulloth_master/NUL-CHR-005-b0c4808240f050c8/attempt-001/run_record.json": "a0fbf4d5df15465ca66146ec6105f19a387b1b26bff12edfb86032ee4c4be398",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-006.json",
+  "manifest_sha256": "dc6b34d97869e820db121ace20ac06174e7e60e97904642942d01c0e4a852865",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "7ed085c6783f941dfe36ead6635840bb81364f1ec80c566045ca1bdc37d76db7"
+  },
+  "parsed_stdout": {
+    "binary64_legendre_root_error": 0.0,
+    "binary64_thermodynamic_root_error": 0.0,
+    "central_condition_denial_amplitude": 0.20536348521709444,
+    "central_legendre_zero_amplitude": 0.223878303178276,
+    "central_thermodynamic_zero_amplitude": 0.20536350922158442,
+    "condition_to_thermodynamic_gap": 2.400448998527252e-08,
+    "global_legendre_guaranteed_amplitude": 0.210715778106871,
+    "global_thermodynamic_guaranteed_amplitude": 0.1999063457268485,
+    "legendre_cap_margin_fraction": 0.23950457709924122,
+    "legendre_sufficient_lower_bound_at_cap": 0.1875637836325276,
+    "precision_decimal_digits": 80,
+    "production_scalar_amplitude_cap": 0.17,
+    "thermodynamic_cap_margin_fraction": 0.17591968074616765,
+    "thermodynamic_sufficient_lower_bound_at_cap": 0.11870679012345679,
+    "thermodynamic_to_legendre_gap": 0.01851479395669159
+  },
+  "return_code": 0,
+  "run_id": "NUL-CHR-006-fc74ecf25503fa08",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 80,
+        "observable": "precision_decimal_digits",
+        "observed": 80,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.17,
+        "observable": "production_scalar_amplitude_cap",
+        "observed": 0.17,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "thermodynamic_sufficient_lower_bound_at_cap",
+        "observed": 0.11870679012345679,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "legendre_sufficient_lower_bound_at_cap",
+        "observed": 0.1875637836325276,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.17,
+        "observable": "global_thermodynamic_guaranteed_amplitude",
+        "observed": 0.1999063457268485,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.17,
+        "observable": "global_legendre_guaranteed_amplitude",
+        "observed": 0.210715778106871,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "condition_to_thermodynamic_gap",
+        "observed": 2.400448998527252e-08,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "thermodynamic_to_legendre_gap",
+        "observed": 0.01851479395669159,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "thermodynamic_cap_margin_fraction",
+        "observed": 0.17591968074616765,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "legendre_cap_margin_fraction",
+        "observed": 0.23950457709924122,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-14,
+        "observable": "binary64_thermodynamic_root_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-14,
+        "observable": "binary64_legendre_root_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "e089602cd0e1a1607322c86035335abc519ccf3f5be34895e5558b8c372a49ee",
+  "started_utc": "2026-07-22T08:17:26.706873+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-006"
+  ],
+  "termination": "completed"
+}

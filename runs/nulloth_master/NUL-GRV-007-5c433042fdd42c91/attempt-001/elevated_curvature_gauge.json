@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "entropy_change": 0.002910333128880893,
+      "final_extrinsic_curvature_l2": 0.21375842309264464,
+      "final_metric_deviation_l2": 0.10919603168416708,
+      "final_scalar_amplitude": 0.02044516282894824,
+      "maximum_field_constraint_l2": 8.495430815141416e-23,
+      "maximum_gravitational_constraint_l2": 0.000520958973976551,
+      "maximum_number_relative_drift": 1.432300494947835e-16,
+      "maximum_recovery_residual": 1.7703197113026263e-09,
+      "minimum_lapse": 0.9479624918737637,
+      "minimum_legendre": 0.5607616685929221,
+      "minimum_thermodynamic": 0.36356738201688854,
+      "slicing": "harmonic"
+    },
+    {
+      "entropy_change": 0.0028308276100617036,
+      "final_extrinsic_curvature_l2": 0.2137817905327181,
+      "final_metric_deviation_l2": 0.1092403553121074,
+      "final_scalar_amplitude": 0.020432568673207297,
+      "maximum_field_constraint_l2": 9.558142669338356e-23,
+      "maximum_gravitational_constraint_l2": 0.0005056075148022552,
+      "maximum_number_relative_drift": 1.432300494947835e-16,
+      "maximum_recovery_residual": 1.7574338901819665e-09,
+      "minimum_lapse": 0.8960532671618533,
+      "minimum_legendre": 0.5608989233086021,
+      "minimum_thermodynamic": 0.36375431559047566,
+      "slicing": "1+log"
+    }
+  ],
+  "dt": 0.01,
+  "duration": 0.05,
+  "extrinsic_curvature_relative_spread": 0.00010930510037930481,
+  "maximum_field_constraint_l2": 9.558142669338356e-23,
+  "maximum_gravitational_constraint_l2": 0.000520958973976551,
+  "maximum_number_relative_drift": 1.432300494947835e-16,
+  "maximum_recovery_residual": 1.7703197113026263e-09,
+  "metric_deviation_relative_spread": 0.00040574408435131774,
+  "minimum_entropy_change": 0.0028308276100617036,
+  "minimum_lapse_relative_spread": 0.05475873271030531,
+  "minimum_legendre": 0.5607616685929221,
+  "minimum_thermodynamic": 0.36356738201688854,
+  "points": 16,
+  "scalar_amplitude_relative_spread": 0.0006159968422022123
+}

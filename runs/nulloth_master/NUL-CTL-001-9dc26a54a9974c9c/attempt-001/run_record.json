@@ -1,0 +1,179 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CTL-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/validate_nulloth_control_registry.py",
+    "--registry",
+    "experiments/nulloth_master/control_registry.json"
+  ],
+  "duration_seconds": 0.08391319998190738,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T12:29:40.253975+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T12:29:40.359867+00:00",
+  "input_artifacts": {
+    "../WORLDBUILDING_THE_URUMES.txt": "ced08d6e616f67e78e88619f3a3998848ac646f218f86f0290906e8ff33faa8b",
+    "experiments/nulloth_master/NULLOTH_3P1_SYSTEM.md": "43af4bf09e3da710e96a8d28d6074c55fe8356412206b774830a8f7612698a19",
+    "experiments/nulloth_master/NULLOTH_ACTION_DERIVATION.md": "e18bed6a863320b4d9d41aeccb3d3d481915aca2dd9663b2360aba8cf90d2d56",
+    "experiments/nulloth_master/NULLOTH_CONTROL_CHARTER.md": "33508a54636511d28df0a4d7bd2e6d49b0b19b4dba98db613f5b93b60ed319ca",
+    "experiments/nulloth_master/control_registry.json": "fe9739907c4b7b349c7b612a23baec39da32745b7791b890797348d5accd8780",
+    "experiments/validate_nulloth_control_registry.py": "99e4fb48d8522f2e0537a92e590c0436bff9fd0e0cb191d3c2fd7e08100fd86a"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CTL-001.json",
+  "manifest_sha256": "818ddb7f711b7a4f115a101eb7f305e79263961b6fbd5cb4631f59f80583d623",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "7ed31a2b0202761fe125249baa1be163adc32fccf6ec5724792b59fcc17e0fce"
+  },
+  "parsed_stdout": {
+    "accounting_dimension_count": 6,
+    "canonical_name_correct": 1,
+    "channel_count": 6,
+    "decision_state_count": 7,
+    "direct_state_overrides": 0,
+    "duplicate_channel_ids": 0,
+    "duplicate_objective_ids": 0,
+    "global_forbidden_shortcut_count": 6,
+    "missing_channel_cost_links": 0,
+    "objective_count": 8,
+    "objectives_without_abort": 0,
+    "objectives_without_controls": 0,
+    "required_accounting_dimensions_present": 1,
+    "required_objectives_present": 1,
+    "unknown_channel_references": 0
+  },
+  "return_code": 0,
+  "run_id": "NUL-CTL-001-9dc26a54a9974c9c",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 1,
+        "observable": "canonical_name_correct",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 6,
+        "observable": "channel_count",
+        "observed": 6,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 8,
+        "observable": "objective_count",
+        "observed": 8,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "required_objectives_present",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 6,
+        "observable": "accounting_dimension_count",
+        "observed": 6,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "required_accounting_dimensions_present",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 7,
+        "observable": "decision_state_count",
+        "observed": 7,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 6,
+        "observable": "global_forbidden_shortcut_count",
+        "observed": 6,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "duplicate_channel_ids",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "duplicate_objective_ids",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "unknown_channel_references",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "missing_channel_cost_links",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "direct_state_overrides",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "objectives_without_controls",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "objectives_without_abort",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "5beecf16f380e35fca45a76da4bb2e8d465d68bdb28e948c3b37ef2e73566b75",
+  "started_utc": "2026-07-22T12:29:40.157785+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CTL-001"
+  ],
+  "termination": "completed"
+}

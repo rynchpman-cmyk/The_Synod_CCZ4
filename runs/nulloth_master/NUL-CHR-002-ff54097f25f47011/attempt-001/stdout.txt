@@ -1,0 +1,31 @@
+{
+  "ccz4_eigenvector_condition": 33.927390496504415,
+  "ccz4_eigenvector_rank": 23,
+  "ccz4_maximum_eigenspace_residual": 1.4674686975788274e-10,
+  "ccz4_maximum_gauge_speed": 1.1547005387263132,
+  "ccz4_maximum_real_growth": 8.326672684688674e-16,
+  "ccz4_reduced_variables": 23,
+  "ccz4_spectrum_variation": 2.15473638932064e-10,
+  "composed_eigenvector_condition": 33.927390485351204,
+  "composed_eigenvector_rank": 48,
+  "composed_maximum_eigenspace_residual": 7.637207550152257e-11,
+  "composed_principal_variables": 48,
+  "composed_spectrum_union_error": 4.518280359883027e-16,
+  "highest_mode_cross_block_fraction": 0.24960391119776326,
+  "minimum_cross_block_decay_order": 0.9968909794934206,
+  "normalized_cross_block_norms": [
+    129.07540918783522,
+    64.67693388143587,
+    32.21772697273538
+  ],
+  "nulloth_physical_eigenvector_condition": 5.276541422385974,
+  "nulloth_physical_eigenvector_rank": 25,
+  "nulloth_physical_maximum_speed": 1.0,
+  "nulloth_physical_variables": 25,
+  "principal_limit_cross_block_norm": 0.0,
+  "sampled_fourier_modes": [
+    1,
+    2,
+    4
+  ]
+}

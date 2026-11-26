@@ -1,0 +1,72 @@
+{
+  "declared_bounds": {
+    "carrier_density": [
+      0.12,
+      0.24
+    ],
+    "carrier_speed": [
+      0.0,
+      0.3
+    ],
+    "density": [
+      0.4,
+      0.9
+    ],
+    "fluid_speed": [
+      0.0,
+      0.2
+    ],
+    "specific_internal_energy": [
+      0.1,
+      0.35
+    ],
+    "varphi": [
+      -0.16,
+      0.16
+    ]
+  },
+  "parameters": {
+    "carrier_K": 0.2,
+    "carrier_charge": 1.0,
+    "carrier_floor": 1e-10,
+    "carrier_sound_speed": 0.9,
+    "characteristic_condition_limit": 100000000.0,
+    "chemical_susceptibility": 10.0,
+    "convexity_floor": 1e-10,
+    "effective_mass_floor": -1000000.0,
+    "entrainment_linear": 0.0,
+    "entrainment_quadratic": 0.0,
+    "entrainment_scale_fourth": 1.0,
+    "gamma_ad": 1.6666666666666667,
+    "maximum_relative_lorentz_factor": 2.0,
+    "relaxation_time": 1.0,
+    "scalar_amplitude_limit": 0.17,
+    "scalar_baryon_coupling": 0.0,
+    "scalar_baryon_scale": 1.0,
+    "scalar_carrier_coupling": 12.0,
+    "scalar_carrier_scale": 1.0,
+    "scalar_constraint_damping": 0.0,
+    "scalar_counterflow_coupling": 0.2,
+    "scalar_counterflow_scale": 1.0,
+    "scalar_mass": 0.4,
+    "scalar_quartic": 50.0,
+    "target_fraction": 0.05
+  },
+  "qualification": {
+    "activated_samples": 1240,
+    "failures": 0,
+    "first_failure": null,
+    "maximum_absolute_speed": 1.000000000000002,
+    "maximum_constraint_reduced_condition": 3.437746343039567,
+    "maximum_eigenspace_residual": 9.708635292093976e-15,
+    "maximum_eigenvector_condition": 54.96192298069045,
+    "maximum_equilibrium_amplitude": 0.10327496356294558,
+    "maximum_imaginary_speed": 6.106148826598552e-17,
+    "maximum_reduction_spectrum_error": 0.0,
+    "minimum_effective_mass_squared": -0.5332859049463868,
+    "minimum_legendre_eigenvalue": 0.25839746689845,
+    "minimum_thermodynamic_eigenvalue": 0.12324473272469352,
+    "sampled_domain_qualified": true,
+    "samples": 1240
+  }
+}

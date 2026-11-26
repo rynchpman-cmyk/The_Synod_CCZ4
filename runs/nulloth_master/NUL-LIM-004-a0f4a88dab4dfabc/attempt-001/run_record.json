@@ -1,0 +1,186 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-LIM-004",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_symmetries.py",
+    "--seed",
+    "20260723",
+    "--covariance-samples",
+    "32",
+    "--recovery-samples",
+    "64"
+  ],
+  "duration_seconds": 2.035855800000718,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T07:36:15.053545+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T07:36:15.158223+00:00",
+  "input_artifacts": {
+    "NULLOTH_SPEC.md": "3b9baf03f531a193fcef428c120ca68cf7ca344f53bf7e4a37f38d4924654adf",
+    "experiments/audit_nulloth_symmetries.py": "b9486d619f0c7ccd61cdb103b52458f8e10c34c4dfacd8f04668742676ad86c2",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-LIM-004.json",
+  "manifest_sha256": "55cc81ce575acfd3fd14b81b8e755c81710a03a55969395785165e743674aa41",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "504826363dc99702b741c0f2e8e748f6df899ab7c08e9b608963f391b6e59798"
+  },
+  "parsed_stdout": {
+    "covariance_samples": 32,
+    "maximum_boost_stress_error": 7.771561172376096e-16,
+    "maximum_material_time_reversal_error": 0.0,
+    "maximum_proca_rhs_time_reversal_error": 0.0,
+    "maximum_recovery_primitive_error": 8.326672684688674e-17,
+    "maximum_rotation_characteristic_error": 8.791256611573317e-11,
+    "maximum_rotation_scalar_error": 0.0,
+    "maximum_rotation_tensor_error": 1.3877787807814457e-16,
+    "maximum_rotation_vector_error": 2.7755575615628914e-17,
+    "maximum_scalar_rhs_time_reversal_error": 0.0,
+    "maximum_scalar_sign_characteristic_error": 2.886579864025407e-15,
+    "maximum_scalar_sign_even_error": 0.0,
+    "maximum_scalar_sign_odd_error": 0.0,
+    "recovery_failures": 0,
+    "recovery_samples": 64
+  },
+  "return_code": 0,
+  "run_id": "NUL-LIM-004-a0f4a88dab4dfabc",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 32,
+        "observable": "covariance_samples",
+        "observed": 32,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "observable": "recovery_samples",
+        "observed": 64,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "recovery_failures",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_rotation_scalar_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_rotation_vector_error",
+        "observed": 2.7755575615628914e-17,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_rotation_tensor_error",
+        "observed": 1.3877787807814457e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_rotation_characteristic_error",
+        "observed": 8.791256611573317e-11,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_boost_stress_error",
+        "observed": 7.771561172376096e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_scalar_sign_even_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_scalar_sign_odd_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_scalar_sign_characteristic_error",
+        "observed": 2.886579864025407e-15,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_material_time_reversal_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_scalar_rhs_time_reversal_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-09,
+        "observable": "maximum_proca_rhs_time_reversal_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-09,
+        "observable": "maximum_recovery_primitive_error",
+        "observed": 8.326672684688674e-17,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "a7dae66883670c929bf732e8a53779f4a9bcae4410c9c4dcaae42e8cb692baa7",
+  "started_utc": "2026-07-22T07:36:13.005134+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-LIM-004"
+  ],
+  "termination": "completed"
+}

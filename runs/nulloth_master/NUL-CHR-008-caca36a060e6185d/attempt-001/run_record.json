@@ -1,0 +1,154 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-CHR-008",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_runtime_guard.py"
+  ],
+  "duration_seconds": 3.8737666999804787,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T08:26:45.243166+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T08:26:45.360220+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_runtime_guard.py": "6fbfc2b8e0d01a5aa69eae14ac9211eb0dbbcccf574fb97b79e7de8ebb804908",
+    "src/causal_repair/matter.py": "450cf00fc626ce719f3c9929d4faeb9f83b1ebbf0c5eec4553ff0e78b89d5e30",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_guard.py": "bc3d562d98474a898a186b432c51c36f8d22d3aa03cff4a226a772bc5cb6ace7",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory33.py": "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-CHR-008.json",
+  "manifest_sha256": "ba93c04619b3b1ef52bf6a4bd27a83302e9d078a6afab90b7af4a56d8ab03a31",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "d09a27bedd848c2e19976b4b1c0de92fd23f64ee5b9c5b5357c44b6ab14b828f"
+  },
+  "parsed_stdout": {
+    "amplitude_deny_status_correct": 1,
+    "direction_count": 18,
+    "enforce_raised_on_deny": 1,
+    "frame_maximum_metric_speed_error": 2.168404344971009e-19,
+    "frame_status_agreement": 1,
+    "production_recovery_status_correct": 1,
+    "production_symbol_evaluations": 72,
+    "safe_minimum_legendre": 0.5542731189680571,
+    "safe_minimum_thermodynamic": 0.3845923475536002,
+    "safe_status_correct": 1,
+    "superluminal_deny_status_correct": 1,
+    "watch_maximum_condition": 39.58718081752122,
+    "watch_status_correct": 1
+  },
+  "return_code": 0,
+  "run_id": "NUL-CHR-008-caca36a060e6185d",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 18,
+        "observable": "direction_count",
+        "observed": 18,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "safe_status_correct",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "watch_status_correct",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "amplitude_deny_status_correct",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "superluminal_deny_status_correct",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "enforce_raised_on_deny",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "production_recovery_status_correct",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "frame_status_agreement",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1e-14,
+        "observable": "frame_maximum_metric_speed_error",
+        "observed": 2.168404344971009e-19,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "safe_minimum_legendre",
+        "observed": 0.5542731189680571,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "safe_minimum_thermodynamic",
+        "observed": 0.3845923475536002,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 72,
+        "observable": "production_symbol_evaluations",
+        "observed": 72,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "10d53ca8412c8fcca800a8cc78b801fbfc7ec882e660c894204631395ce8e064",
+  "started_utc": "2026-07-22T08:26:41.354900+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-CHR-008"
+  ],
+  "termination": "completed"
+}

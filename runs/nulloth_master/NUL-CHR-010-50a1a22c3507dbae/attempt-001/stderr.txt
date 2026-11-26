@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\map_nulloth_boundary_surfaces.py", line 402, in <module>
+    main()
+    ~~~~^^
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\map_nulloth_boundary_surfaces.py", line 393, in main
+    result = run_atlas(
+        coherence_points=arguments.coherence_points,
+        thermodynamic_points=arguments.thermodynamic_points,
+        grid_points=arguments.grid_points,
+    )
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\map_nulloth_boundary_surfaces.py", line 317, in run_atlas
+    carrier = _carrier_surface(master, thermodynamic_points)
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\map_nulloth_boundary_surfaces.py", line 206, in _carrier_surface
+    boundary, width = _bisect_transition(
+                      ~~~~~~~~~~~~~~~~~~^
+        lambda carrier: _physical_pass(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        0.12,
+        ^^^^^
+    )
+    ^
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\map_nulloth_boundary_surfaces.py", line 117, in _bisect_transition
+    raise ValueError("transition bracket does not contain pass-to-fail")
+ValueError: transition bracket does not contain pass-to-fail

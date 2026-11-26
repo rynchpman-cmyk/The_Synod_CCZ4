@@ -1,0 +1,16 @@
+{
+  "field_variables": 16,
+  "longitudinal_power": 0.008400000000000001,
+  "maximum_force_projection_error": 0.0,
+  "maximum_power_projection_error": 0.0,
+  "maximum_principal_block_variation": 0.0,
+  "maximum_principal_spectrum_variation": 0.0,
+  "maximum_sampled_mismatch_angle": 3.0724027498146045,
+  "maximum_source_orientation_field_jacobian_error": 4.5330628140050067e-11,
+  "maximum_transverse_power": 0.0008340504602131637,
+  "minimum_sampled_mismatch_angle": 0.12025456659224762,
+  "numerical_jacobian_source_orientations": 3,
+  "proca_parameter_sets": 4,
+  "target_orientations": 128,
+  "transverse_power": 0.0
+}

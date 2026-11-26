@@ -1,0 +1,182 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-NLN-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_homogeneous_nonlinear_phases.py",
+    "--duration",
+    "40.0",
+    "--dt",
+    "0.002",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-NLN-001-f56957c25f9bac26\\attempt-001/homogeneous_phases.json"
+  ],
+  "duration_seconds": 1.920401799987303,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T09:08:03.761843+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T09:08:03.864410+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_homogeneous_nonlinear_phases.py": "a09ec03efbe536b54158c4fcda0325f00578ec7f9f3f6af790e9eb97bf3b3521",
+    "experiments/nulloth_master/NULLOTH_HOMOGENEOUS_PHASES.md": "6d7a3115a9b98f4b292e9ee0909f79ec3ec802a3fd67f5c024142f7bd6bf2622",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-NLN-001.json",
+  "manifest_sha256": "71df38831a80e067d5640d9b79d4bf386e16aa8de5b3a4d8e851314aecd16a7e",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "homogeneous_phases.json": "40ece64f82556dcb9f400d98fe306d6841ab5a34e8096550461cc3b90eec90e4",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "40ece64f82556dcb9f400d98fe306d6841ab5a34e8096550461cc3b90eec90e4"
+  },
+  "parsed_stdout": {
+    "activated_carrier_densities": [
+      0.16,
+      0.18,
+      0.2,
+      0.22,
+      0.24
+    ],
+    "activation_carrier_density": 0.11547005383792516,
+    "basin_boundary_stationary": 1,
+    "basin_sign_failures": 0,
+    "blowup_runs": 0,
+    "bounded_turnover_runs": 15,
+    "equilibrium_branches_above_threshold": 270,
+    "first_order_transition_detected": 0,
+    "initial_amplitudes": [
+      0.001,
+      0.005,
+      0.02
+    ],
+    "maximum_energy_drift": 7.149716169314087e-16,
+    "maximum_hysteresis_branch_difference": 0.0,
+    "maximum_turnover_amplitude": 0.14579273435485204,
+    "maximum_turnover_amplitude_error": 2.7050831657993157e-08,
+    "maximum_turnover_time": 13.120000000000001,
+    "metastable_lifetime_lower_bound": 100.0,
+    "minimum_turnover_time": 3.6620000000000004,
+    "stable_basin_count": 2,
+    "turnover_runs": 15,
+    "turnover_time_relative_change_fine_pair": 1.166200656118862e-16
+  },
+  "return_code": 0,
+  "run_id": "NUL-NLN-001-f56957c25f9bac26",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 15,
+        "observable": "turnover_runs",
+        "observed": 15,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 15,
+        "observable": "bounded_turnover_runs",
+        "observed": 15,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0.17,
+        "observable": "maximum_turnover_amplitude",
+        "observed": 0.14579273435485204,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-06,
+        "observable": "maximum_turnover_amplitude_error",
+        "observed": 2.7050831657993157e-08,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.001,
+        "observable": "turnover_time_relative_change_fine_pair",
+        "observed": 1.166200656118862e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_hysteresis_branch_difference",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2,
+        "observable": "stable_basin_count",
+        "observed": 2,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "observable": "basin_boundary_stationary",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "basin_sign_failures",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 100.0,
+        "observable": "metastable_lifetime_lower_bound",
+        "observed": 100.0,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_energy_drift",
+        "observed": 7.149716169314087e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "blowup_runs",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "first_order_transition_detected",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "24c20ffa0b1fa8b01719f5c74710c1ea6875b654dcedf9d57f3c12cb3c62c171",
+  "started_utc": "2026-07-22T09:08:01.827888+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-NLN-001"
+  ],
+  "termination": "completed"
+}

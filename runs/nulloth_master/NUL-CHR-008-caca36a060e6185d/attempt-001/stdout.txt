@@ -1,0 +1,15 @@
+{
+  "amplitude_deny_status_correct": 1,
+  "direction_count": 18,
+  "enforce_raised_on_deny": 1,
+  "frame_maximum_metric_speed_error": 2.168404344971009e-19,
+  "frame_status_agreement": 1,
+  "production_recovery_status_correct": 1,
+  "production_symbol_evaluations": 72,
+  "safe_minimum_legendre": 0.5542731189680571,
+  "safe_minimum_thermodynamic": 0.3845923475536002,
+  "safe_status_correct": 1,
+  "superluminal_deny_status_correct": 1,
+  "watch_maximum_condition": 39.58718081752122,
+  "watch_status_correct": 1
+}

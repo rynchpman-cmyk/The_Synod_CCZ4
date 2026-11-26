@@ -1,0 +1,2 @@
+# The experiment registry validates artifacts using hashes of their exact bytes.
+* -text

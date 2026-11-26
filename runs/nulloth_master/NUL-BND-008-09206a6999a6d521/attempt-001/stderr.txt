@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\qualify_nulloth_driven_latency.py", line 173, in <module>
+    main()
+    ~~~~^^
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\qualify_nulloth_driven_latency.py", line 141, in main
+    runs = (_run(24, 0.001), _run(48, 0.0005))
+                             ~~~~^^^^^^^^^^^^
+  File "F:\FORGE\Tools\causal_repair_solver\experiments\qualify_nulloth_driven_latency.py", line 84, in _run
+    state = solver.step(state, dt)
+  File "F:\FORGE\Tools\causal_repair_solver\src\causal_repair\finite_nulloth.py", line 180, in step
+    y4 = stage(values, k3, 1.0, time + dt)
+  File "F:\FORGE\Tools\causal_repair_solver\src\causal_repair\finite_nulloth.py", line 172, in stage
+    candidate = self._project_to_master_manifold(candidate)
+  File "F:\FORGE\Tools\causal_repair_solver\src\causal_repair\production_nulloth.py", line 405, in _project_to_master_manifold
+    fluid, carrier, entropy, residual, failed = self._recover_cells_from_energy(
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        h,
+        ^^
+    ...<8 lines>...
+        state.scalar.varphi,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\FORGE\Tools\causal_repair_solver\src\causal_repair\production_nulloth.py", line 342, in _recover_cells_from_energy
+    delta = np.linalg.solve(jac, -residual)
+  File "C:\Users\rynch\miniconda3\Lib\site-packages\numpy\linalg\_linalg.py", line 471, in solve
+    r = gufunc(a, b, signature=signature)
+  File "C:\Users\rynch\miniconda3\Lib\site-packages\numpy\linalg\_linalg.py", line 163, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix

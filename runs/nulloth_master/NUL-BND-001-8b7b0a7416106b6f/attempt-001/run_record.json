@@ -1,0 +1,178 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-BND-001",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/audit_nulloth_finite_scalar_outflow.py",
+    "--points",
+    "24",
+    "--duration",
+    "0.12",
+    "--dt",
+    "0.001",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-BND-001-8b7b0a7416106b6f\\attempt-001/finite_scalar_outflow.json"
+  ],
+  "duration_seconds": 48.39347290000296,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T11:38:18.826700+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T11:38:18.938489+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_finite_scalar_outflow.py": "8cfe3299f0087b62b9305e935dc994a567f367b6be94084519cb2d196ca59eaf",
+    "experiments/nulloth_master/NULLOTH_FINITE_SCALAR_OUTFLOW.md": "cf5607b03f2e8323c0d3285d01b3020ced637267869bcf4cfc5975a503b04ef7",
+    "src/causal_repair/adm.py": "c50f1bcff46597f440b95dc07ac3f8b294c4a29b073db9ebc43237d120ceb204",
+    "src/causal_repair/boundary.py": "dabdf02574039989a996daa1908728faee15b3511bad3d433e3ec48268d10251",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/finite_nulloth.py": "3436258b56608e73602d4fdb3482f04fd192f1d296cdcbf3f3e488708d77b6e4",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-BND-001.json",
+  "manifest_sha256": "100e6ed6cdfa2a54d338a3f3d8c6bf1798a1a6819673494ae6ccecea1243ab53",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "finite_scalar_outflow.json": "e0a9877ed95147922bb03bdc7d0934db739ad16ce49bc5189564398ddbaa0c32",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "e0a9877ed95147922bb03bdc7d0934db739ad16ce49bc5189564398ddbaa0c32"
+  },
+  "parsed_stdout": {
+    "cumulative_entropy_balance_residual": -1.6801676708117026e-08,
+    "dt": 0.001,
+    "duration": 0.12,
+    "final_peak_amplitude": 7.2034722502618e-06,
+    "final_scalar_energy": 9.458699272208269e-10,
+    "incoming_to_outgoing_characteristic_ratio": 0.0,
+    "initial_peak_amplitude": 9.929388798876333e-06,
+    "initial_scalar_energy": 1.7977737801974904e-09,
+    "maximum_carrier_number_balance_residual": 4.336808925228947e-19,
+    "maximum_gravitational_constraint_l2": 3.031628353282893e-13,
+    "maximum_opposite_edge_amplitude": 7.245704434577525e-26,
+    "maximum_proca_constraint_l2": 2.7625543548956546e-23,
+    "maximum_recovery_residual": 1.9989117073620206e-09,
+    "maximum_right_incoming_characteristic": 0.0,
+    "maximum_right_outgoing_characteristic": 0.00025966027825827703,
+    "maximum_scalar_constraint_l2": 1.3103792289098401e-09,
+    "maximum_step_entropy_balance_residual": 5.875854700076785e-08,
+    "minimum_legendre_eigenvalue": 0.7881165142350675,
+    "minimum_thermodynamic_eigenvalue": 0.6708688589067977,
+    "points": 24,
+    "retained_scalar_energy_fraction": 0.5261340095397989,
+    "scalar_energy_loss_fraction": 0.47386599046020106,
+    "steps": 120
+  },
+  "return_code": 0,
+  "run_id": "NUL-BND-001-8b7b0a7416106b6f",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 0.35,
+        "observable": "scalar_energy_loss_fraction",
+        "observed": 0.47386599046020106,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "incoming_to_outgoing_characteristic_ratio",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_opposite_edge_amplitude",
+        "observed": 7.245704434577525e-26,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-07,
+        "observable": "maximum_scalar_constraint_l2",
+        "observed": 1.3103792289098401e-09,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": 3.031628353282893e-13,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "maximum_proca_constraint_l2",
+        "observed": 2.7625543548956546e-23,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": 1.9989117073620206e-09,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre_eigenvalue",
+        "observed": 0.7881165142350675,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic_eigenvalue",
+        "observed": 0.6708688589067977,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-06,
+        "observable": "maximum_step_entropy_balance_residual",
+        "observed": 5.875854700076785e-08,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": -1e-06,
+        "observable": "cumulative_entropy_balance_residual",
+        "observed": -1.6801676708117026e-08,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_carrier_number_balance_residual",
+        "observed": 4.336808925228947e-19,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "d31681c54b5221c134ac8260dbc1c497a5457a99af6466c8150000a062800621",
+  "started_utc": "2026-07-22T11:37:30.418730+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-BND-001"
+  ],
+  "termination": "completed"
+}

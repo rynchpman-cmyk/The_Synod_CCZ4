@@ -1,0 +1,142 @@
+{
+  "active_beats_scalar_coupling_free": 1,
+  "all_branches_admissible": 1,
+  "bracket_lower_amplitude": 0.010124999999999999,
+  "bracket_upper_amplitude": 0.010249999999999999,
+  "bracket_width": 0.0001250000000000001,
+  "branches": [
+    {
+      "admissible": true,
+      "baryon_relative_drift": 1.8503713881852237e-16,
+      "branch": "no_command",
+      "carrier_kinetic_proxy": 0.004501697220726061,
+      "carrier_relative_drift": 3.083640407089066e-16,
+      "entropy_change": 0.07348981565051105,
+      "final_scalar_amplitude": 0.0,
+      "gauss_max_l2": 1.9664486025787174e-19,
+      "hamiltonian_l2": 4.6233635257576746e-06,
+      "minimum_legendre_eigenvalue": 0.5629766734113737,
+      "minimum_thermodynamic_eigenvalue": 0.35934950422320666,
+      "momentum_l2": 1.5575030159916278e-06,
+      "recovery_residual": 8.710223459634102e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.0,
+      "seed_coordinate_energy": 0.0
+    },
+    {
+      "admissible": true,
+      "baryon_relative_drift": 1.8503713883707554e-16,
+      "branch": "active",
+      "carrier_kinetic_proxy": 0.004408148274164338,
+      "carrier_relative_drift": 0.0,
+      "entropy_change": 0.07337507318022318,
+      "final_scalar_amplitude": 0.03468789788411297,
+      "gauss_max_l2": 2.0965391565296018e-19,
+      "hamiltonian_l2": 4.622332002125095e-06,
+      "minimum_legendre_eigenvalue": 0.5488645795426449,
+      "minimum_thermodynamic_eigenvalue": 0.35938595829341907,
+      "momentum_l2": 1.5549286353687146e-06,
+      "recovery_residual": 7.945561343865092e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.010249999999999999,
+      "seed_coordinate_energy": 0.0004898210232490026
+    },
+    {
+      "admissible": true,
+      "baryon_relative_drift": 1.8503713881837915e-16,
+      "branch": "scalar_coupling_free",
+      "carrier_kinetic_proxy": 0.004501711755368298,
+      "carrier_relative_drift": 6.167280813972116e-16,
+      "entropy_change": 0.07348951745193233,
+      "final_scalar_amplitude": 0.017599039446795244,
+      "gauss_max_l2": 2.586905739223091e-19,
+      "hamiltonian_l2": 4.623770799282206e-06,
+      "minimum_legendre_eigenvalue": 0.5629765869265638,
+      "minimum_thermodynamic_eigenvalue": 0.3593403201151019,
+      "momentum_l2": 1.5576883637035335e-06,
+      "recovery_residual": 8.716147853286819e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.010249999999999999,
+      "seed_coordinate_energy": 0.0004898210466381101
+    }
+  ],
+  "coupling_attributed_suppression": 0.020784045797924523,
+  "duration": 2.0,
+  "lower_bracket_passes": 0,
+  "maximum_gauss_l2": 2.586905739223091e-19,
+  "maximum_gravitational_constraint_l2": 4.623770799282206e-06,
+  "maximum_number_relative_drift": 6.167280813972116e-16,
+  "maximum_recovery_residual": 8.716147853286819e-11,
+  "maximum_scalar_constraint_l2": 0.0,
+  "minimum_entropy_change": 0.07337507318022318,
+  "minimum_legendre_eigenvalue": 0.5488645795426449,
+  "minimum_thermodynamic_eigenvalue": 0.3593403201151019,
+  "no_command_scalar_amplitude": 0.0,
+  "points": 8,
+  "samples": [
+    {
+      "amplitude": 0.001,
+      "passes_target": false,
+      "relative_suppression": 0.00011516142273679474
+    },
+    {
+      "amplitude": 0.002,
+      "passes_target": false,
+      "relative_suppression": 0.00032460890599303525
+    },
+    {
+      "amplitude": 0.004,
+      "passes_target": false,
+      "relative_suppression": 0.0014830940773896
+    },
+    {
+      "amplitude": 0.008,
+      "passes_target": false,
+      "relative_suppression": 0.010745098182891977
+    },
+    {
+      "amplitude": 0.016,
+      "passes_target": true,
+      "relative_suppression": 0.04401723246459716
+    },
+    {
+      "amplitude": 0.012,
+      "passes_target": true,
+      "relative_suppression": 0.023803750825854272
+    },
+    {
+      "amplitude": 0.01,
+      "passes_target": false,
+      "relative_suppression": 0.014739568483176875
+    },
+    {
+      "amplitude": 0.011,
+      "passes_target": true,
+      "relative_suppression": 0.021885717219388177
+    },
+    {
+      "amplitude": 0.010499999999999999,
+      "passes_target": true,
+      "relative_suppression": 0.021324809013958012
+    },
+    {
+      "amplitude": 0.010249999999999999,
+      "passes_target": true,
+      "relative_suppression": 0.02078081709516562
+    },
+    {
+      "amplitude": 0.010124999999999999,
+      "passes_target": false,
+      "relative_suppression": 0.015015516336054689
+    }
+  ],
+  "search_evaluations": 11,
+  "search_method": "coarse_bracket_plus_bisection",
+  "selected_relative_suppression": 0.02078081709516562,
+  "selected_seed_amplitude": 0.010249999999999999,
+  "selected_seed_coordinate_energy": 0.0004898210232490026,
+  "target_relative_suppression": 0.02,
+  "time_step": 0.01,
+  "uncoupled_relative_suppression": -3.228702758902602e-06,
+  "upper_bracket_passes": 1
+}

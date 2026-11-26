@@ -1,0 +1,17 @@
+{
+  "binary64_legendre_root_error": 0.0,
+  "binary64_thermodynamic_root_error": 0.0,
+  "central_condition_denial_amplitude": 0.20536348521709444,
+  "central_legendre_zero_amplitude": 0.223878303178276,
+  "central_thermodynamic_zero_amplitude": 0.20536350922158442,
+  "condition_to_thermodynamic_gap": 2.400448998527252e-08,
+  "global_legendre_guaranteed_amplitude": 0.210715778106871,
+  "global_thermodynamic_guaranteed_amplitude": 0.1999063457268485,
+  "legendre_cap_margin_fraction": 0.23950457709924122,
+  "legendre_sufficient_lower_bound_at_cap": 0.1875637836325276,
+  "precision_decimal_digits": 80,
+  "production_scalar_amplitude_cap": 0.17,
+  "thermodynamic_cap_margin_fraction": 0.17591968074616765,
+  "thermodynamic_sufficient_lower_bound_at_cap": 0.11870679012345679,
+  "thermodynamic_to_legendre_gap": 0.01851479395669159
+}

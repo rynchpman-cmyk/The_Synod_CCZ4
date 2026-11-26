@@ -1,0 +1,238 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-GRV-005",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/measure_nulloth_source_pulses.py",
+    "--points",
+    "4",
+    "--duration",
+    "0.01",
+    "--dt",
+    "0.005",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-GRV-005-7e27341d50e18bbc\\attempt-001/source_pulses.json"
+  ],
+  "duration_seconds": 17.423282700008713,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T10:48:31.083588+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T10:48:31.194582+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_production_regimes.py": "6bb320fa713786ae1fb6fb455339ca97991a68ca99b4a02eb9f3ca71e028bfc2",
+    "experiments/measure_nulloth_periodic_tensor_response.py": "7a162431c1b656e9891b1566b89151951d8f0e24dd13849cff526060e483cd40",
+    "experiments/measure_nulloth_source_pulses.py": "3b196aa09c289e09de20827f0294b50258ba64bba05d913194cd36cc287941b9",
+    "experiments/nulloth_master/NULLOTH_SOURCE_PULSES.md": "dc5096c00ffcde5e6451975a36860d54ba2eccf3e2c589ff01316fff7852e3dd",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/initial_constraints.py": "0f60088dd771693958f04b6fb4baf13909954026aa5299019c08cb4223b60f95",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-GRV-005.json",
+  "manifest_sha256": "e755d16969753820dbdcff06fc1cb8dddd867d35ec1c6b015daaebf7b817bcfa",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "source_pulses.json": "4a93b34ba58af905f6b6c2d3850681bfd14951b11236f2d7a37243dec23df849",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "4a93b34ba58af905f6b6c2d3850681bfd14951b11236f2d7a37243dec23df849"
+  },
+  "parsed_stdout": {
+    "cases": [
+      {
+        "dynamical_physical_metric_contrast_l2": 2.994911882209964e-11,
+        "entropy_change": 0.15830276998894988,
+        "final_extrinsic_curvature_tt_l2": 3.5348486468392686e-12,
+        "final_physical_metric_contrast_l2": 9.361485408892012e-10,
+        "final_pulse_amplitude": 0.0009999730864850025,
+        "initial_extrinsic_curvature_tt_l2": 9.664677997817102e-31,
+        "initial_physical_metric_contrast_l2": 9.359651316969842e-10,
+        "initial_pulse_amplitude": 0.001,
+        "maximum_field_constraint_l2": 5.849050204022881e-25,
+        "maximum_gravitational_constraint_l2": 5.218143563589664e-07,
+        "maximum_number_relative_drift": 3.083889866877725e-16,
+        "maximum_recovery_residual": 7.380055903027179e-13,
+        "minimum_legendre": 0.5772397423779502,
+        "minimum_thermodynamic": 0.37036858567615266,
+        "pulse_retention": 0.9999730864850024,
+        "source": "vector"
+      },
+      {
+        "dynamical_physical_metric_contrast_l2": 4.90426024926772e-08,
+        "entropy_change": 0.15830276998894988,
+        "final_extrinsic_curvature_tt_l2": 3.4722755906345905e-12,
+        "final_physical_metric_contrast_l2": 0.00015228512631055115,
+        "final_pulse_amplitude": 0.011990364477891507,
+        "initial_extrinsic_curvature_tt_l2": 4.135934663310467e-25,
+        "initial_physical_metric_contrast_l2": 0.00015233416705238398,
+        "initial_pulse_amplitude": 0.011999999999999927,
+        "maximum_field_constraint_l2": 1.654411711433641e-24,
+        "maximum_gravitational_constraint_l2": 5.218141466842386e-07,
+        "maximum_number_relative_drift": 0.0,
+        "maximum_recovery_residual": 9.68035347790628e-13,
+        "minimum_legendre": 0.5769371197456303,
+        "minimum_thermodynamic": 0.3631271577971537,
+        "pulse_retention": 0.9991970398242983,
+        "source": "material"
+      }
+    ],
+    "dt": 0.005,
+    "duration": 0.01,
+    "material_final_metric_contrast_l2": 0.00015228512631055115,
+    "material_pulse_retention": 0.9991970398242983,
+    "maximum_field_constraint_l2": 1.654411711433641e-24,
+    "maximum_gravitational_constraint_l2": 5.218143563589664e-07,
+    "maximum_initial_extrinsic_curvature_tt_l2": 4.135934663310467e-25,
+    "maximum_number_relative_drift": 3.083889866877725e-16,
+    "maximum_recovery_residual": 9.68035347790628e-13,
+    "minimum_dynamical_metric_contrast_l2": 2.994911882209964e-11,
+    "minimum_entropy_change": 0.15830276998894988,
+    "minimum_final_extrinsic_curvature_tt_l2": 3.4722755906345905e-12,
+    "minimum_legendre": 0.5769371197456303,
+    "minimum_thermodynamic": 0.3631271577971537,
+    "points_per_axis": 4,
+    "vector_final_metric_contrast_l2": 9.361485408892012e-10,
+    "vector_pulse_retention": 0.9999730864850024
+  },
+  "return_code": 0,
+  "run_id": "NUL-GRV-005-7e27341d50e18bbc",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 0.99,
+        "observable": "vector_pulse_retention",
+        "observed": 0.9999730864850024,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1.01,
+        "observable": "vector_pulse_retention",
+        "observed": 0.9999730864850024,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.99,
+        "observable": "material_pulse_retention",
+        "observed": 0.9991970398242983,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1.01,
+        "observable": "material_pulse_retention",
+        "observed": 0.9991970398242983,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-10,
+        "observable": "vector_final_metric_contrast_l2",
+        "observed": 9.361485408892012e-10,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-05,
+        "observable": "material_final_metric_contrast_l2",
+        "observed": 0.00015228512631055115,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-14,
+        "observable": "minimum_dynamical_metric_contrast_l2",
+        "observed": 2.994911882209964e-11,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "minimum_final_extrinsic_curvature_tt_l2",
+        "observed": 3.4722755906345905e-12,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-20,
+        "observable": "maximum_initial_extrinsic_curvature_tt_l2",
+        "observed": 4.135934663310467e-25,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0001,
+        "observable": "maximum_gravitational_constraint_l2",
+        "observed": 5.218143563589664e-07,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_field_constraint_l2",
+        "observed": 1.654411711433641e-24,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_number_relative_drift",
+        "observed": 3.083889866877725e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_entropy_change",
+        "observed": 0.15830276998894988,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre",
+        "observed": 0.5769371197456303,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic",
+        "observed": 0.3631271577971537,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": 9.68035347790628e-13,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "05cf30cb11b6fb622a805b8970eecb1970251001629ba96857a9e4a500b7609b",
+  "started_utc": "2026-07-22T10:48:13.645976+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-GRV-005"
+  ],
+  "termination": "completed"
+}

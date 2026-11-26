@@ -1,0 +1,225 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-NLN-004",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/map_nulloth_stress_edge.py",
+    "--points",
+    "4",
+    "--duration",
+    "3.0",
+    "--dt",
+    "0.01",
+    "--output",
+    "F:\\FORGE\\Tools\\causal_repair_solver\\runs\\nulloth_master\\NUL-NLN-004-58bf16c1a640a598\\attempt-001/stress_edge.json"
+  ],
+  "duration_seconds": 68.54995250000502,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T10:22:31.965955+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T10:22:32.078977+00:00",
+  "input_artifacts": {
+    "experiments/map_nulloth_production_regimes.py": "6bb320fa713786ae1fb6fb455339ca97991a68ca99b4a02eb9f3ca71e028bfc2",
+    "experiments/map_nulloth_stress_edge.py": "8d295c6d4dd37926a88f7df5fcbe64c60b702155e9f96c4c9aebb559f8d1ee94",
+    "experiments/nulloth_master/NULLOTH_STRESS_EDGE.md": "9c89bb6f89612c56473d6869d53bcc40ad8b9fdd101f2b89d5d283bd8ba753d0",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/grid.py": "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226",
+    "src/causal_repair/initial_constraints.py": "0f60088dd771693958f04b6fb4baf13909954026aa5299019c08cb4223b60f95",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/nulloth_scalar.py": "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973",
+    "src/causal_repair/production_nulloth.py": "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1",
+    "src/causal_repair/theory3.py": "9f7d496f4c9c373ee1ef7485b05a7a410a7134b9c14b1fb5f791132cf2990a04"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-NLN-004.json",
+  "manifest_sha256": "81ebdacabc6c9324f41221bdab046013781caa8857947b3b5e1c79c34428fc23",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "8094428a3bfa4837b3691e3199ec0b5451c2c4d3b08a2ee75e1a3804d0c0a43c",
+    "stress_edge.json": "8094428a3bfa4837b3691e3199ec0b5451c2c4d3b08a2ee75e1a3804d0c0a43c"
+  },
+  "parsed_stdout": {
+    "baryon_relative_drift": 1.8503714754353947e-16,
+    "carrier_density": 0.18,
+    "carrier_relative_drift": 0.0,
+    "combined_energy_relative_change": 0.02521690170973723,
+    "completed": 1,
+    "cumulative_damping_heat": 0.0,
+    "cumulative_drag_entropy": 0.005486129136278117,
+    "cumulative_drag_heat": 0.0007933443466360222,
+    "cumulative_projection_entropy": 0.31937397504246867,
+    "cumulative_step_entropy_change": 0.11190942564340389,
+    "entropy_change": 0.11190942564340389,
+    "entropy_telescope_error": 0.0,
+    "failure": null,
+    "final_amplitude": 0.049534981352079024,
+    "final_time": 2.99999999999998,
+    "initial_amplitude": 0.12,
+    "maximum_gauss_l2": 8.467889666272201e-19,
+    "maximum_hamiltonian_l2": 7.993565395083062e-06,
+    "maximum_high_wavenumber_fraction": 0.48455160545581843,
+    "maximum_momentum_l2": 4.818626564187994e-06,
+    "maximum_recovery_residual": 1.2936464612997764e-10,
+    "maximum_scalar_constraint_l2": 0.0,
+    "minimum_legendre": 0.4016633771934195,
+    "minimum_step_entropy_change": 0.00024683693292359976,
+    "minimum_thermodynamic": 0.31904156343516255,
+    "name": "high-amplitude-stress",
+    "outcome": "dispersed",
+    "peak_amplitude": 0.12,
+    "peak_to_final_drop_fraction": 0.5872084887326747
+  },
+  "return_code": 0,
+  "run_id": "NUL-NLN-004-58bf16c1a640a598",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 1,
+        "observable": "completed",
+        "observed": 1,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": "dispersed",
+        "observable": "outcome",
+        "observed": "dispersed",
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 2.99,
+        "observable": "final_time",
+        "observed": 2.99999999999998,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0.06,
+        "observable": "final_amplitude",
+        "observed": 0.049534981352079024,
+        "operator": "<",
+        "passed": true
+      },
+      {
+        "expected": 0.5,
+        "observable": "peak_to_final_drop_fraction",
+        "observed": 0.5872084887326747,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.4,
+        "observable": "maximum_high_wavenumber_fraction",
+        "observed": 0.48455160545581843,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "baryon_relative_drift",
+        "observed": 1.8503714754353947e-16,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "carrier_relative_drift",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "entropy_change",
+        "observed": 0.11190942564340389,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_step_entropy_change",
+        "observed": 0.00024683693292359976,
+        "operator": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "entropy_telescope_error",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.001,
+        "observable": "maximum_hamiltonian_l2",
+        "observed": 7.993565395083062e-06,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.001,
+        "observable": "maximum_momentum_l2",
+        "observed": 4.818626564187994e-06,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_gauss_l2",
+        "observed": 8.467889666272201e-19,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_scalar_constraint_l2",
+        "observed": 0.0,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_legendre",
+        "observed": 0.4016633771934195,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 0.0,
+        "observable": "minimum_thermodynamic",
+        "observed": 0.31904156343516255,
+        "operator": ">",
+        "passed": true
+      },
+      {
+        "expected": 1e-08,
+        "observable": "maximum_recovery_residual",
+        "observed": 1.2936464612997764e-10,
+        "operator": "<=",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "source_fingerprint": "9e5de70c0d5eafdf35f27f5853dd6785bd53102daae7a8a30feef40d3de845c7",
+  "started_utc": "2026-07-22T10:21:23.401233+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-NLN-004"
+  ],
+  "termination": "completed"
+}

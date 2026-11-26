@@ -1,0 +1,272 @@
+{
+  "attempt": "attempt-001",
+  "campaign_id": "NUL-BND-007",
+  "command": [
+    "C:\\Users\\rynch\\miniconda3\\python.exe",
+    "experiments/derive_nulloth_boundary_characteristics.py",
+    "--grid-points",
+    "16"
+  ],
+  "duration_seconds": 2.7916747000126634,
+  "environment": {
+    "byteorder": "little",
+    "captured_utc": "2026-07-22T12:21:55.020594+00:00",
+    "default_float_dtype": "float64",
+    "float64_epsilon": 2.220446049250313e-16,
+    "git_revision": null,
+    "machine": "AMD64",
+    "numerical_backend": "numpy",
+    "numpy_version": "2.3.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "project_distribution_version": null,
+    "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\rynch\\miniconda3\\python.exe"
+  },
+  "finished_utc": "2026-07-22T12:21:55.129248+00:00",
+  "input_artifacts": {
+    "experiments/audit_nulloth_ccz4_composition.py": "1d1b1757d59ad02125550ed5e214ce16f71247a8d9519326c20a8c8d11f2552e",
+    "experiments/derive_nulloth_boundary_characteristics.py": "487bcb9c2e7a6c9209e71d92a6227a24572dcaacb5f98d65ff328fecf54a2895",
+    "experiments/nulloth_master/NULLOTH_BOUNDARY_CHARACTERISTICS.md": "6764aa84de66f94f438591e08b40f31e03a21a7ae290ce9c0f2914d693f34157",
+    "src/causal_repair/boundary.py": "dabdf02574039989a996daa1908728faee15b3511bad3d433e3ec48268d10251",
+    "src/causal_repair/ccz4.py": "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d",
+    "src/causal_repair/finite_nulloth.py": "3436258b56608e73602d4fdb3482f04fd192f1d296cdcbf3f3e488708d77b6e4",
+    "src/causal_repair/nulloth.py": "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11",
+    "src/causal_repair/production3.py": "2232bc341830deda5627344851baa768271ff17b35521b4443f62f477d52a10c"
+  },
+  "manifest_path": "experiments/nulloth_master/campaigns/NUL-BND-007.json",
+  "manifest_sha256": "7cdf9200b13de3ccae365ea9198c17772e841a637677b91aba9481a6a3a53050",
+  "missing_declared_outputs": [],
+  "output_artifacts": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "6133abf5a165d6ea2a9ac787cd44e97f0292845a099d6766e19996f1001c38b4"
+  },
+  "parsed_stdout": {
+    "ccz4_glancing_modes": 3,
+    "ccz4_incoming_modes": 10,
+    "ccz4_outgoing_modes": 10,
+    "ccz4_projector_commutator_error": 1.0040403267150646e-09,
+    "ccz4_projector_completeness_error": 2.995934312895242e-15,
+    "ccz4_projector_condition": 33.92739048878494,
+    "ccz4_projector_idempotence_error": 3.1626446471068384e-15,
+    "complete_coupled_boundary_qualified": 0,
+    "componentwise_radiative_incoming_modes": 15,
+    "composed_principal_variables": 48,
+    "count_conservation_failures": 0,
+    "distinct_face_signatures": 3,
+    "exact_characteristic_incoming_modes_implemented": 2,
+    "face_signatures": [
+      {
+        "glancing": 8,
+        "incoming": 19,
+        "occurrences": 32,
+        "outgoing": 21
+      },
+      {
+        "glancing": 10,
+        "incoming": 19,
+        "occurrences": 128,
+        "outgoing": 19
+      },
+      {
+        "glancing": 8,
+        "incoming": 21,
+        "occurrences": 32,
+        "outgoing": 19
+      }
+    ],
+    "flux_only_material_incoming_modes": 4,
+    "generic_composed_glancing_modes": 6,
+    "generic_composed_incoming_modes": 21,
+    "generic_composed_outgoing_modes": 21,
+    "generic_physical_glancing_modes": 3,
+    "generic_physical_incoming_modes": 11,
+    "generic_physical_outgoing_modes": 11,
+    "maximum_glancing_modes": 10,
+    "maximum_incoming_modes": 21,
+    "maximum_incoming_modes_without_exact_data": 19,
+    "maximum_physical_eigenspace_residual": 4.014577114113399e-15,
+    "maximum_physical_projector_commutator_error": 7.500872875760753e-14,
+    "maximum_physical_projector_completeness_error": 1.1398217581934254e-14,
+    "maximum_physical_projector_condition": 54.96192298069045,
+    "maximum_physical_projector_idempotence_error": 1.1615661268132306e-14,
+    "minimum_incoming_modes": 19,
+    "sampled_face_states": 192
+  },
+  "return_code": 0,
+  "run_id": "NUL-BND-007-bcd1fe88fccc0ac1",
+  "run_record_schema": "nulloth.run.v1",
+  "scientific_acceptance": {
+    "criteria": [
+      {
+        "expected": 48,
+        "observable": "composed_principal_variables",
+        "observed": 48,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 21,
+        "observable": "generic_composed_incoming_modes",
+        "observed": 21,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 6,
+        "observable": "generic_composed_glancing_modes",
+        "observed": 6,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 21,
+        "observable": "generic_composed_outgoing_modes",
+        "observed": 21,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 192,
+        "observable": "sampled_face_states",
+        "observed": 192,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 3,
+        "observable": "distinct_face_signatures",
+        "observed": 3,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 19,
+        "observable": "minimum_incoming_modes",
+        "observed": 19,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 21,
+        "observable": "maximum_incoming_modes",
+        "observed": 21,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 10,
+        "observable": "maximum_glancing_modes",
+        "observed": 10,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "count_conservation_failures",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 100.0,
+        "observable": "maximum_physical_projector_condition",
+        "observed": 54.96192298069045,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_physical_eigenspace_residual",
+        "observed": 4.014577114113399e-15,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_physical_projector_idempotence_error",
+        "observed": 1.1615661268132306e-14,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_physical_projector_commutator_error",
+        "observed": 7.500872875760753e-14,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 1e-12,
+        "observable": "maximum_physical_projector_completeness_error",
+        "observed": 1.1398217581934254e-14,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-10,
+        "observable": "ccz4_projector_idempotence_error",
+        "observed": 3.1626446471068384e-15,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2e-10,
+        "observable": "ccz4_projector_commutator_error",
+        "observed": 1.0040403267150646e-09,
+        "operator": "<=",
+        "passed": false
+      },
+      {
+        "expected": 2e-10,
+        "observable": "ccz4_projector_completeness_error",
+        "observed": 2.995934312895242e-15,
+        "operator": "<=",
+        "passed": true
+      },
+      {
+        "expected": 2,
+        "observable": "exact_characteristic_incoming_modes_implemented",
+        "observed": 2,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 15,
+        "observable": "componentwise_radiative_incoming_modes",
+        "observed": 15,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "observable": "flux_only_material_incoming_modes",
+        "observed": 4,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 19,
+        "observable": "maximum_incoming_modes_without_exact_data",
+        "observed": 19,
+        "operator": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "observable": "complete_coupled_boundary_qualified",
+        "observed": 0,
+        "operator": "==",
+        "passed": true
+      }
+    ],
+    "passed": false
+  },
+  "source_fingerprint": "b5f6bab0ea9eb5818965c74754455d7c17377e88a3356b21ff8ec5e8c88701cf",
+  "started_utc": "2026-07-22T12:21:52.214868+00:00",
+  "stdout_format": "json",
+  "stdout_parse_error": null,
+  "supports_claims": [
+    "NUL-BND-007"
+  ],
+  "termination": "completed"
+}

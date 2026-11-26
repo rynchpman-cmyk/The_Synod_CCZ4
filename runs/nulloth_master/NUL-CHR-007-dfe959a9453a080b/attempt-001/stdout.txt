@@ -1,0 +1,41 @@
+{
+  "activated_points": 543,
+  "adaptive_points": 528,
+  "canonical_point_failures": 0,
+  "complex_mode_failure_points": 10,
+  "corner_points": 16,
+  "coupling_dimensions": 4,
+  "coupling_points": 545,
+  "directions_per_probe": 4,
+  "incomplete_or_condition_failure_points": 0,
+  "initial_cells": 16,
+  "least_severe_proscribed_point": [
+    3.71484375,
+    19.9609375,
+    13.09375,
+    0.15373046875
+  ],
+  "legendre_failure_points": 0,
+  "maximum_refinement_depth": 15,
+  "nearest_qualified_point_to_failure": [
+    3.71539306640625,
+    19.9468994140625,
+    13.12353515625,
+    0.15318572998046875
+  ],
+  "proscribed_points": 56,
+  "qualified_maximum_condition": 11786071.706676004,
+  "qualified_maximum_eigenspace_residual": 9.609357012832913e-14,
+  "qualified_maximum_reduced_condition": 106321.0507201693,
+  "qualified_maximum_speed": 1.0000000000000018,
+  "qualified_minimum_legendre": 0.25839746689845,
+  "qualified_minimum_thermodynamic": 0.007264778008046803,
+  "qualified_points": 489,
+  "refinements": 32,
+  "state_probes": 5,
+  "superluminal_failure_points": 0,
+  "symbol_evaluations": 10900,
+  "thermodynamic_failure_points": 46,
+  "unclassified_failures": 0,
+  "zero_coupling_point_failures": 0
+}

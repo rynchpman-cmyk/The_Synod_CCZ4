@@ -1,0 +1,149 @@
+{
+  "all_new_branches_admissible": 1,
+  "final_bracket_width": 0.0005000000000000004,
+  "final_lower_amplitude": 0.014499999999999999,
+  "final_lower_suppression": 0.01656462533054475,
+  "final_upper_amplitude": 0.015,
+  "final_upper_suppression": 0.020139769712451586,
+  "initial_lower_passes": 0,
+  "maximum_gauss_l2": 1.0065581588448508e-18,
+  "maximum_gravitational_constraint_l2": 1.2899790750109584e-06,
+  "maximum_number_relative_drift": 1.8503713898181826e-16,
+  "maximum_recovery_residual": 3.6206719809916206e-11,
+  "maximum_scalar_constraint_l2": 0.0,
+  "minimum_entropy_change": 0.023732274308088108,
+  "minimum_legendre_eigenvalue": 0.5282652148572152,
+  "minimum_thermodynamic_eigenvalue": 0.35895634003458277,
+  "new_branches": [
+    {
+      "admissible": true,
+      "baryon_relative_drift": 0.0,
+      "branch": "active_32",
+      "carrier_kinetic_proxy": 0.004793228190766285,
+      "carrier_relative_drift": 1.5418205754423658e-16,
+      "entropy_change": 0.023790690644702295,
+      "final_scalar_amplitude": 0.040700865705929616,
+      "gauss_max_l2": 4.610910033000639e-19,
+      "hamiltonian_l2": 1.2899790750109584e-06,
+      "minimum_legendre_eigenvalue": 0.5423379139315707,
+      "minimum_thermodynamic_eigenvalue": 0.3589962431492055,
+      "momentum_l2": 2.985665782241937e-07,
+      "recovery_residual": 2.004340855086994e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.012,
+      "seed_coordinate_energy": 0.0006721959895735023
+    },
+    {
+      "admissible": true,
+      "baryon_relative_drift": 0.0,
+      "branch": "active_32",
+      "carrier_kinetic_proxy": 0.004739778879373675,
+      "carrier_relative_drift": 0.0,
+      "entropy_change": 0.023732274308088108,
+      "final_scalar_amplitude": 0.05341863255277493,
+      "gauss_max_l2": 1.0065581588448508e-18,
+      "hamiltonian_l2": 1.2896476447938773e-06,
+      "minimum_legendre_eigenvalue": 0.5282652148572152,
+      "minimum_thermodynamic_eigenvalue": 0.35895634003458277,
+      "momentum_l2": 2.981552888290392e-07,
+      "recovery_residual": 2.7290791868703504e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.016,
+      "seed_coordinate_energy": 0.0011993159451287737
+    },
+    {
+      "admissible": true,
+      "baryon_relative_drift": 1.85037138979313e-16,
+      "branch": "active_32",
+      "carrier_kinetic_proxy": 0.004770706407635119,
+      "carrier_relative_drift": 1.5418205979175765e-16,
+      "entropy_change": 0.023761910979800405,
+      "final_scalar_amplitude": 0.04713675740536202,
+      "gauss_max_l2": 7.612569305294378e-19,
+      "hamiltonian_l2": 1.2898229369192765e-06,
+      "minimum_legendre_eigenvalue": 0.5356919916180005,
+      "minimum_thermodynamic_eigenvalue": 0.3589762137121472,
+      "momentum_l2": 2.9838141249396096e-07,
+      "recovery_residual": 2.0476129058229907e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.014,
+      "seed_coordinate_energy": 0.000916462248839021
+    },
+    {
+      "admissible": true,
+      "baryon_relative_drift": 0.0,
+      "branch": "active_32",
+      "carrier_kinetic_proxy": 0.004753786239906913,
+      "carrier_relative_drift": 1.541820610451769e-16,
+      "entropy_change": 0.02374961764000716,
+      "final_scalar_amplitude": 0.050298083732204395,
+      "gauss_max_l2": 6.397900078333189e-19,
+      "hamiltonian_l2": 1.289737626041932e-06,
+      "minimum_legendre_eigenvalue": 0.5320705765405254,
+      "minimum_thermodynamic_eigenvalue": 0.35896548267271433,
+      "momentum_l2": 2.982749703747205e-07,
+      "recovery_residual": 1.7961139473843386e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.015,
+      "seed_coordinate_energy": 0.0010530400170258188
+    },
+    {
+      "admissible": true,
+      "baryon_relative_drift": 1.8503713898181826e-16,
+      "branch": "active_32",
+      "carrier_kinetic_proxy": 0.00477113103219775,
+      "carrier_relative_drift": 0.0,
+      "entropy_change": 0.02374935920934007,
+      "final_scalar_amplitude": 0.04872237966544742,
+      "gauss_max_l2": 7.39836611142477e-19,
+      "hamiltonian_l2": 1.2897807885922597e-06,
+      "minimum_legendre_eigenvalue": 0.5339049991327901,
+      "minimum_thermodynamic_eigenvalue": 0.3589707331462873,
+      "momentum_l2": 2.9832915773807906e-07,
+      "recovery_residual": 3.6206719809916206e-11,
+      "scalar_constraint_l2": 0.0,
+      "seed_amplitude": 0.014499999999999999,
+      "seed_coordinate_energy": 0.0009835422098612714
+    }
+  ],
+  "new_production_evaluations": 5,
+  "points": 32,
+  "relative_threshold_shift_from_sixteen_upper": 0.07142857142857137,
+  "samples": [
+    {
+      "amplitude": 0.012,
+      "relative_suppression": 0.01200991340389136,
+      "source": "new production run"
+    },
+    {
+      "amplitude": 0.02,
+      "relative_suppression": 0.03235707044116159,
+      "source": "sealed NUL-SPL-001 production run"
+    },
+    {
+      "amplitude": 0.016,
+      "relative_suppression": 0.023026995772933562,
+      "source": "new production run"
+    },
+    {
+      "amplitude": 0.014,
+      "relative_suppression": 0.01665214982170359,
+      "source": "new production run"
+    },
+    {
+      "amplitude": 0.015,
+      "relative_suppression": 0.020139769712451586,
+      "source": "new production run"
+    },
+    {
+      "amplitude": 0.014499999999999999,
+      "relative_suppression": 0.01656462533054475,
+      "source": "new production run"
+    }
+  ],
+  "sixteen_point_reference_upper": 0.014,
+  "sixteen_point_source_accepted": 1,
+  "source_assessment_accepted": 1,
+  "source_upper_passes": 1,
+  "threshold_converged_with_sixteen_points": 1
+}

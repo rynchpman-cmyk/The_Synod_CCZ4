@@ -1,0 +1,31 @@
+{
+  "activated_carrier_densities": [
+    0.16,
+    0.18,
+    0.2,
+    0.22,
+    0.24
+  ],
+  "activation_carrier_density": 0.11547005383792516,
+  "basin_boundary_stationary": 1,
+  "basin_sign_failures": 0,
+  "blowup_runs": 0,
+  "bounded_turnover_runs": 15,
+  "equilibrium_branches_above_threshold": 270,
+  "first_order_transition_detected": 0,
+  "initial_amplitudes": [
+    0.001,
+    0.005,
+    0.02
+  ],
+  "maximum_energy_drift": 7.149716169314087e-16,
+  "maximum_hysteresis_branch_difference": 0.0,
+  "maximum_turnover_amplitude": 0.14579273435485204,
+  "maximum_turnover_amplitude_error": 2.7050831657993157e-08,
+  "maximum_turnover_time": 13.120000000000001,
+  "metastable_lifetime_lower_bound": 100.0,
+  "minimum_turnover_time": 3.6620000000000004,
+  "stable_basin_count": 2,
+  "turnover_runs": 15,
+  "turnover_time_relative_change_fine_pair": 1.166200656118862e-16
+}
