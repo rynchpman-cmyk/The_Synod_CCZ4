@@ -63,7 +63,7 @@
   "timeout_seconds": 30,
   "stdout_format": "json",
   "inputs": [
-    "../WORLDBUILDING_THE_URUMES.txt",
+    "WORLDBUILDING_THE_URUMES.txt",
     "experiments/validate_nulloth_control_registry.py",
     "experiments/nulloth_master/control_registry.json",
     "experiments/nulloth_master/NULLOTH_ACTION_DERIVATION.md",

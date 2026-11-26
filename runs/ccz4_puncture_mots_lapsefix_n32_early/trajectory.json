@@ -1,0 +1,6195 @@
+[
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 96.2236005734343,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.7715973878450169,
+          -0.0656669249059583,
+          -0.019523912839835966,
+          -0.000540404083169824
+        ],
+        "complementarity_residual": 0.510648360645349,
+        "coordinate_radius_maximum": 0.469105582360245,
+        "coordinate_radius_mean": 0.4623596129694495,
+        "coordinate_radius_minimum": 0.43663663293191873,
+        "failed_observations": 1,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.3835850928548903,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.8920946491716845,
+        "mean_expansion": 0.3979814615160846,
+        "merit": 0.128004068013428,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.510648360645349,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 300429.3470142857,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          16.727353071372338,
+          -7.0112406594933425,
+          8.945122512764703e-05,
+          4.605406529204655
+        ],
+        "rms_expansion": 0.5141471993871999,
+        "spectral_residual_norm": 0.5059724656805507,
+        "successful_observations": 0,
+        "time": 0.0,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.37570214116292,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.9935896593524502,
+          0.8842819239277427,
+          0.018555026274451193,
+          -0.024908242880548173
+        ],
+        "complementarity_residual": 0.04792083769053145,
+        "coordinate_radius_maximum": 0.6365366002017383,
+        "coordinate_radius_mean": 0.38258036418315805,
+        "coordinate_radius_minimum": 0.28474526403813183,
+        "failed_observations": 1,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9911096725639877,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.1103132135291044,
+        "mean_expansion": 0.020898922992667775,
+        "merit": 0.0003406091254761943,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.04792083769053145,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 1138.390910011449,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.031199171177290985,
+          2.361817979637121,
+          6.409314558975823,
+          17.022048419327636
+        ],
+        "rms_expansion": 0.04425534616125108,
+        "spectral_residual_norm": 0.02610015806374338,
+        "successful_observations": 0,
+        "time": 0.0,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "hamiltonian_l2_full": 0.7930456900938246,
+      "hamiltonian_l2_masked": 0.043001055398205264,
+      "momentum_l2_full": 0.0,
+      "momentum_l2_masked": 0.0,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828494764492353,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.5938520897869833,
+      "maximum_lapse": 0.5938520897869833,
+      "minimum_conformal_factor": 0.022798993396706047,
+      "minimum_conformal_metric_eigenvalue": 1.0,
+      "minimum_lapse": 0.022798993396706047
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39142473822461765,
+      0.39142473822461765
+    ],
+    "step": 0,
+    "time": 0.0
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 104.82406279607127,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.29726010026206606,
+          -0.9240514406574379,
+          -0.35418922030910654,
+          -0.11607991061548416
+        ],
+        "complementarity_residual": 0.45600257444399933,
+        "coordinate_radius_maximum": 0.9197603463775114,
+        "coordinate_radius_mean": 0.7681152421972144,
+        "coordinate_radius_minimum": 0.2826530112009989,
+        "failed_observations": 2,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.444094342008599,
+        "iterations": 11,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.092267957261647,
+        "mean_expansion": 0.6148252506676134,
+        "merit": 0.19147554778499354,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.45600257444399933,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 57.229676911576604,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.557872641564904,
+          -1.6539194472524568,
+          -0.28078441654220887,
+          3.4936351280141777
+        ],
+        "rms_expansion": 0.6571194104304017,
+        "spectral_residual_norm": 0.6188304255367435,
+        "successful_observations": 0,
+        "time": 0.024999999999999998,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.35989220260915,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0046823335422488,
+          0.9111074621170131,
+          0.01669101864139118,
+          -0.029668491432776094
+        ],
+        "complementarity_residual": 0.020956101265598527,
+        "coordinate_radius_maximum": 0.6363573222718669,
+        "coordinate_radius_mean": 0.3791351727130716,
+        "coordinate_radius_minimum": 0.27948894739808783,
+        "failed_observations": 2,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9909509848201593,
+        "iterations": 12,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07490039708493998,
+        "mean_expansion": 0.01633945905283228,
+        "merit": 0.00022513003162447776,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.020956101265598527,
+        "reason": "line search could not reduce expansion residual",
+        "response_condition_number": 3585.288522952073,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.010026396276019867,
+          2.281744285520226,
+          6.325031342063471,
+          16.955225180723396
+        ],
+        "rms_expansion": 0.04537378894390651,
+        "spectral_residual_norm": 0.021219332299791043,
+        "successful_observations": 0,
+        "time": 0.024999999999999998,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "hamiltonian_l2_full": 2.369322346228952,
+      "hamiltonian_l2_masked": 2.2696848797939535,
+      "momentum_l2_full": 0.02538417586959253,
+      "momentum_l2_masked": 0.025777438601622578,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828495770770476,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.5958453440521733,
+      "maximum_lapse": 0.5966137083273094,
+      "minimum_conformal_factor": 0.022798994057363745,
+      "minimum_conformal_metric_eigenvalue": 0.9999554571600849,
+      "minimum_lapse": 0.022799221114661043
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3914247885385238,
+      0.3914247885385238
+    ],
+    "step": 10,
+    "time": 0.024999999999999998
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 103.77606475584585,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.2996260166522826,
+          -0.9305608031222915,
+          -0.35208655516820264,
+          -0.11481595762962807
+        ],
+        "complementarity_residual": 0.40813500067875397,
+        "coordinate_radius_maximum": 0.9169077723544231,
+        "coordinate_radius_mean": 0.7641560002060631,
+        "coordinate_radius_minimum": 0.2808094544623396,
+        "failed_observations": 3,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4368574077008083,
+        "iterations": 9,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.1176694327573853,
+        "mean_expansion": 0.6172978865766646,
+        "merit": 0.19299793415081204,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.40813500067875397,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 22.76281954683126,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          12.196991166993149,
+          4.741099538424013,
+          -0.7865104853772665,
+          0.563866266853487
+        ],
+        "rms_expansion": 0.6589101980929107,
+        "spectral_residual_norm": 0.6212856575695467,
+        "successful_observations": 0,
+        "time": 0.05000000000000001,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.33916941577159,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0082900271078943,
+          0.9085014845766958,
+          0.02086795454558035,
+          -0.02623211036752131
+        ],
+        "complementarity_residual": 0.052262216670946944,
+        "coordinate_radius_maximum": 0.6371781781128603,
+        "coordinate_radius_mean": 0.3777067435769493,
+        "coordinate_radius_minimum": 0.2787844795206882,
+        "failed_observations": 3,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9907429472729361,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.11568018053667264,
+        "mean_expansion": 0.01810629200320282,
+        "merit": 0.00026797649052904285,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.052262216670946944,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 2216.2911081364396,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.01617229162136047,
+          2.323809534882184,
+          6.3298145178182414,
+          16.98314718264453
+        ],
+        "rms_expansion": 0.044715658286739686,
+        "spectral_residual_norm": 0.023150658328826974,
+        "successful_observations": 0,
+        "time": 0.05000000000000001,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "hamiltonian_l2_full": 3.4445851974404063,
+      "hamiltonian_l2_masked": 3.4073381209619615,
+      "momentum_l2_full": 0.07052591514695632,
+      "momentum_l2_masked": 0.07164890180367248,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828498783645476,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.5975811892726622,
+      "maximum_lapse": 0.5987018548213999,
+      "minimum_conformal_factor": 0.0227989874528251,
+      "minimum_conformal_metric_eigenvalue": 0.9998134669975032,
+      "minimum_lapse": 0.022799918067282265
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3914249391822738,
+      0.3914249391822738
+    ],
+    "step": 20,
+    "time": 0.05000000000000001
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 104.14190109504239,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.300480723988198,
+          -0.9324126317371686,
+          -0.3502345013703931,
+          -0.11435592650099176
+        ],
+        "complementarity_residual": 0.43036704330346026,
+        "coordinate_radius_maximum": 0.9197799160497954,
+        "coordinate_radius_mean": 0.7659207778529514,
+        "coordinate_radius_minimum": 0.2815526574184058,
+        "failed_observations": 4,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4393878187559142,
+        "iterations": 12,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.1161194419459488,
+        "mean_expansion": 0.6134709673158971,
+        "merit": 0.19059688393525645,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.43036704330346026,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 25.188928037519958,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          12.126448898318783,
+          4.690327302512119,
+          -0.819269284620048,
+          0.5360422141960033
+        ],
+        "rms_expansion": 0.6553219557362154,
+        "spectral_residual_norm": 0.6174089146347929,
+        "successful_observations": 0,
+        "time": 0.07500000000000002,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.33850242775169,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0083623818468537,
+          0.9080266912949788,
+          0.01807343328083174,
+          -0.027890169917770744
+        ],
+        "complementarity_residual": 0.025860517223961904,
+        "coordinate_radius_maximum": 0.634545750022033,
+        "coordinate_radius_mean": 0.3776559693003475,
+        "coordinate_radius_minimum": 0.2787028235867711,
+        "failed_observations": 4,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9907362506065982,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07609840738098628,
+        "mean_expansion": 0.016194849022394733,
+        "merit": 0.00025087368121248224,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.025860517223961904,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 2595.2435325088995,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.013837436904679645,
+          2.3153690950870645,
+          6.323311836327348,
+          16.982229643632614
+        ],
+        "rms_expansion": 0.044562456731324564,
+        "spectral_residual_norm": 0.022399717909495298,
+        "successful_observations": 0,
+        "time": 0.07500000000000002,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 3.936300646794776,
+      "hamiltonian_l2_interior": 0.014760506281950303,
+      "hamiltonian_l2_masked": 3.9191691508502213,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.11510012225766936,
+      "momentum_l2_interior": 0.000586670324891542,
+      "momentum_l2_masked": 0.11694116183476853,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828503292379446,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.5988700482512824,
+      "maximum_lapse": 0.6000734287512974,
+      "minimum_conformal_factor": 0.02279904048920731,
+      "minimum_conformal_metric_eigenvalue": 0.9995473195061155,
+      "minimum_lapse": 0.022801191907609663
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3914251646189723,
+      0.3914251646189723
+    ],
+    "step": 30,
+    "time": 0.07500000000000002
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 104.10579260919623,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.3011724105067634,
+          -0.9328563832968121,
+          -0.3484113234715867,
+          -0.11400377939883635
+        ],
+        "complementarity_residual": 0.4408091214239313,
+        "coordinate_radius_maximum": 0.9197890566228708,
+        "coordinate_radius_mean": 0.7654769432519918,
+        "coordinate_radius_minimum": 0.2818123752945154,
+        "failed_observations": 5,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4391382620449158,
+        "iterations": 11,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.1201271320874604,
+        "mean_expansion": 0.6121761571897679,
+        "merit": 0.18978567068423713,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.4408091214239313,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 26.635397172107268,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          12.09435771295183,
+          4.665543369833334,
+          -0.8330382351756942,
+          0.5444290856026468
+        ],
+        "rms_expansion": 0.6541014658809838,
+        "spectral_residual_norm": 0.6160936141273291,
+        "successful_observations": 0,
+        "time": 0.10000000000000005,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.33196483252328,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0107349736511373,
+          0.9130324522129598,
+          0.018347612249660895,
+          -0.028598999173626356
+        ],
+        "complementarity_residual": 0.0227883974979585,
+        "coordinate_radius_maximum": 0.6347428947014737,
+        "coordinate_radius_mean": 0.3769092965103052,
+        "coordinate_radius_minimum": 0.27768953690971837,
+        "failed_observations": 5,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9906706097091269,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07404184377694667,
+        "mean_expansion": 0.014784412090048524,
+        "merit": 0.00021530218934176192,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.0227883974979585,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 1726.247535683961,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.02096572414942033,
+          2.313324978379038,
+          6.3367437554002395,
+          16.9949110801197
+        ],
+        "rms_expansion": 0.044671533014035175,
+        "spectral_residual_norm": 0.020751009100367236,
+        "successful_observations": 0,
+        "time": 0.10000000000000005,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 4.087607889836272,
+      "hamiltonian_l2_interior": 0.01491312072266219,
+      "hamiltonian_l2_masked": 4.07616279297637,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.15358630346853278,
+      "momentum_l2_interior": 0.0008030755773937825,
+      "momentum_l2_masked": 0.15604308217275895,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828507194118532,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.5997718889870505,
+      "maximum_lapse": 0.601206362338674,
+      "minimum_conformal_factor": 0.02279950114970371,
+      "minimum_conformal_metric_eigenvalue": 0.9991189822277982,
+      "minimum_lapse": 0.02280340140860088
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3914253597059266,
+      0.3914253597059266
+    ],
+    "step": 40,
+    "time": 0.10000000000000005
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 103.71336462385537,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.3015816895601373,
+          -0.9327938360956218,
+          -0.34658916832528075,
+          -0.11378985407213824
+        ],
+        "complementarity_residual": 0.4419956091591393,
+        "coordinate_radius_maximum": 0.9162173190902554,
+        "coordinate_radius_mean": 0.7625523622985341,
+        "coordinate_radius_minimum": 0.2818693845307364,
+        "failed_observations": 6,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4364232769529797,
+        "iterations": 9,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.1270576193740403,
+        "mean_expansion": 0.6134811892789644,
+        "merit": 0.19059165504984718,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.4419956091591393,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 27.455765797549713,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          12.111727990382642,
+          -0.8311662074009276,
+          0.5772189370173013,
+          4.663173450474382
+        ],
+        "rms_expansion": 0.6551814753711205,
+        "spectral_residual_norm": 0.6174004454968383,
+        "successful_observations": 0,
+        "time": 0.12500000000000006,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.32587408939304,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0211244141228368,
+          0.9064253837674343,
+          0.024061012485402933,
+          -0.023957599130085692
+        ],
+        "complementarity_residual": 0.07986088039084939,
+        "coordinate_radius_maximum": 0.6311748999305142,
+        "coordinate_radius_mean": 0.3728410611973685,
+        "coordinate_radius_minimum": 0.27549290894185974,
+        "failed_observations": 6,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.990609451528158,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.10384545717289762,
+        "mean_expansion": 0.01986380022358386,
+        "merit": 0.0005948739019787826,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.07986088039084939,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 5348.492822814848,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.006883731459710329,
+          2.3826595389535066,
+          6.323614105981978,
+          17.105424030236705
+        ],
+        "rms_expansion": 0.05171075463769556,
+        "spectral_residual_norm": 0.034492721028610736,
+        "successful_observations": 0,
+        "time": 0.12500000000000006,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 4.0388674926166,
+      "hamiltonian_l2_interior": 0.015144569376517609,
+      "hamiltonian_l2_masked": 4.025842347764306,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.1856051842149159,
+      "momentum_l2_interior": 0.0009933457828314924,
+      "momentum_l2_masked": 0.18856917544653395,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828505980168053,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6004520607354643,
+      "maximum_lapse": 0.6024693472380765,
+      "minimum_conformal_factor": 0.022801153372246436,
+      "minimum_conformal_metric_eigenvalue": 0.9984998838599698,
+      "minimum_lapse": 0.022807299832060698
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39142529900840267,
+      0.39142529900840267
+    ],
+    "step": 50,
+    "time": 0.12500000000000006
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 104.14456740828601,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.3018202666660684,
+          -0.9319149996667034,
+          -0.3448785565172063,
+          -0.1136176974139258
+        ],
+        "complementarity_residual": 0.5775129707039357,
+        "coordinate_radius_maximum": 0.9191401881108905,
+        "coordinate_radius_mean": 0.764475844660019,
+        "coordinate_radius_minimum": 0.2827450518568483,
+        "failed_observations": 7,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.439406244741031,
+        "iterations": 10,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.1247940745643221,
+        "mean_expansion": 0.609397533829967,
+        "merit": 0.18804330955924053,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.5775129707039357,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 24.93879846186974,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.141170184960332,
+          -1.5879361596722303,
+          -0.5887100694975994,
+          3.166641726007768
+        ],
+        "rms_expansion": 0.6516309101229827,
+        "spectral_residual_norm": 0.6132590147062504,
+        "successful_observations": 0,
+        "time": 0.15000000000000008,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.29913297135348,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0332689993836963,
+          0.9495866803906614,
+          0.020695271774878475,
+          -0.03111438648237334
+        ],
+        "complementarity_residual": 0.022603377071592445,
+        "coordinate_radius_maximum": 0.6346018977720622,
+        "coordinate_radius_mean": 0.36959718141969194,
+        "coordinate_radius_minimum": 0.2688164468752977,
+        "failed_observations": 7,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9903408947513694,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07433120187630426,
+        "mean_expansion": 0.01174409586578955,
+        "merit": 0.00015559352126143293,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.022603377071592445,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 14518606.513239546,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -2.563333445504412e-06,
+          2.3605618058971682,
+          6.301357957413402,
+          17.068832726057664
+        ],
+        "rms_expansion": 0.047684714905790924,
+        "spectral_residual_norm": 0.017640494395647358,
+        "successful_observations": 0,
+        "time": 0.15000000000000008,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 3.8699503527936243,
+      "hamiltonian_l2_interior": 0.015482478800405224,
+      "hamiltonian_l2_masked": 3.850910795544286,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.2121857839934102,
+      "momentum_l2_interior": 0.0011460733341415693,
+      "momentum_l2_masked": 0.21556539327840915,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828492900827938,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.601067864053808,
+      "maximum_lapse": 0.6039952799197646,
+      "minimum_conformal_factor": 0.022805177133947495,
+      "minimum_conformal_metric_eigenvalue": 0.9976851448653922,
+      "minimum_lapse": 0.022814045227326663
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3914246450413969,
+      0.3914246450413969
+    ],
+    "step": 60,
+    "time": 0.15000000000000008
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 103.66890261753699,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.3027930039837237,
+          -0.9363719020425528,
+          -0.3462183931272198,
+          -0.11337383384580614
+        ],
+        "complementarity_residual": 0.44622212773606207,
+        "coordinate_radius_maximum": 0.9181267548570672,
+        "coordinate_radius_mean": 0.7633025942626038,
+        "coordinate_radius_minimum": 0.28137354542650483,
+        "failed_observations": 8,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.436115346015656,
+        "iterations": 9,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.1395565862788477,
+        "mean_expansion": 0.6093643091596774,
+        "merit": 0.18785479616263256,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.44622212773606207,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 29.00958280615139,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          12.072935531693041,
+          -0.8458080794634057,
+          0.6345443386926573,
+          4.645541057613913
+        ],
+        "rms_expansion": 0.6524901867327427,
+        "spectral_residual_norm": 0.6129515415799728,
+        "successful_observations": 0,
+        "time": 0.1750000000000001,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.284875979040336,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.044526588324569,
+          0.9717009568786903,
+          0.02338102623614212,
+          -0.03272831820743023
+        ],
+        "complementarity_residual": 0.019796164630152303,
+        "coordinate_radius_maximum": 0.636620544841641,
+        "coordinate_radius_mean": 0.36613847757696805,
+        "coordinate_radius_minimum": 0.26432231838379383,
+        "failed_observations": 8,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9901976842867845,
+        "iterations": 10,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07554161874983875,
+        "mean_expansion": 0.010195253526060653,
+        "merit": 8.977106413915405e-05,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.019796164630152303,
+        "reason": "line search could not reduce expansion residual",
+        "response_condition_number": 1015316.8129666869,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -3.703731751469874e-05,
+          2.3646248833569623,
+          6.301449843985616,
+          17.11180871886264
+        ],
+        "rms_expansion": 0.05026913406539133,
+        "spectral_residual_norm": 0.01339933312811903,
+        "successful_observations": 0,
+        "time": 0.1750000000000001,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 3.62783980444824,
+      "hamiltonian_l2_interior": 0.015961614437715613,
+      "hamiltonian_l2_masked": 3.599639524824506,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.2343996383334959,
+      "momentum_l2_interior": 0.0012581501795870997,
+      "momentum_l2_masked": 0.2381208760332651,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828460128593969,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6017287119651871,
+      "maximum_lapse": 0.6057634223743426,
+      "minimum_conformal_factor": 0.02281288590969108,
+      "minimum_conformal_metric_eigenvalue": 0.9966891293985158,
+      "minimum_lapse": 0.02282501254726583
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39142300642969846,
+      0.39142300642969846
+    ],
+    "step": 70,
+    "time": 0.1750000000000001
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 103.94173360135231,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.3028892371342603,
+          -0.9343704991983501,
+          -0.34361068299667513,
+          -0.11309097219815872
+        ],
+        "complementarity_residual": 0.45170966362923365,
+        "coordinate_radius_maximum": 0.9194434006780647,
+        "coordinate_radius_mean": 0.7639962982016655,
+        "coordinate_radius_minimum": 0.28240466334687997,
+        "failed_observations": 9,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4380038550103131,
+        "iterations": 10,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.137260412126876,
+        "mean_expansion": 0.6063405932410645,
+        "merit": 0.18603754103574704,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.45170966362923365,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 30.035059388748486,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          12.050039060021513,
+          -0.8613642444327033,
+          0.6369142028701297,
+          4.618806131334981
+        ],
+        "rms_expansion": 0.6496982432836351,
+        "spectral_residual_norm": 0.6099795751264907,
+        "successful_observations": 0,
+        "time": 0.20000000000000012,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.27286347065511,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.053669886197851,
+          0.9890069188812708,
+          0.024063451862201508,
+          -0.03516065236262118
+        ],
+        "complementarity_residual": 0.010079519933728907,
+        "coordinate_radius_maximum": 0.6365797652180525,
+        "coordinate_radius_mean": 0.3633398710269117,
+        "coordinate_radius_minimum": 0.26074685536581504,
+        "failed_observations": 9,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.990077003422388,
+        "iterations": 10,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.08120795602016326,
+        "mean_expansion": 0.00846482540685554,
+        "merit": 6.208388795535312e-05,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.010079519933728907,
+        "reason": "line search could not reduce expansion residual",
+        "response_condition_number": 1343655.325276294,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -2.8263297187081093e-05,
+          2.362461914656839,
+          6.284978205975986,
+          17.14911607963653
+        ],
+        "rms_expansion": 0.05401700357075428,
+        "spectral_residual_norm": 0.01114305953994262,
+        "successful_observations": 0,
+        "time": 0.20000000000000012,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 3.342062639144557,
+      "hamiltonian_l2_interior": 0.01661969247490844,
+      "hamiltonian_l2_masked": 3.302134780188838,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.2530001835897219,
+      "momentum_l2_interior": 0.0013369363754413505,
+      "momentum_l2_masked": 0.2570013690371167,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828400195618029,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6024951389295368,
+      "maximum_lapse": 0.6076893156466444,
+      "minimum_conformal_factor": 0.02282535629498481,
+      "minimum_conformal_metric_eigenvalue": 0.9955307068412286,
+      "minimum_lapse": 0.022841453789915332
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39142000978090147,
+      0.39142000978090147
+    ],
+    "step": 80,
+    "time": 0.20000000000000012
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 104.34963245890691,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.30241468171778463,
+          -0.9310235892592192,
+          -0.3410332461228654,
+          -0.11255390679090263
+        ],
+        "complementarity_residual": 0.5796263619570066,
+        "coordinate_radius_maximum": 0.9190706817801061,
+        "coordinate_radius_mean": 0.7638971735097648,
+        "coordinate_radius_minimum": 0.2838461636059018,
+        "failed_observations": 10,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.440822673668481,
+        "iterations": 10,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.1326004330972763,
+        "mean_expansion": 0.603304150458035,
+        "merit": 0.1841463248824061,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.5796263619570066,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 21.70215398510574,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.135808882118276,
+          3.118821747493069,
+          -1.5084365729742724,
+          -0.6578118314889176
+        ],
+        "rms_expansion": 0.6469067244685037,
+        "spectral_residual_norm": 0.6068711970136762,
+        "successful_observations": 0,
+        "time": 0.22500000000000014,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.264801602430545,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.056143868017294,
+          0.9817762989802614,
+          0.023895836182587848,
+          -0.03263737052530406
+        ],
+        "complementarity_residual": 0.041334180370314416,
+        "coordinate_radius_maximum": 0.6335371459762689,
+        "coordinate_radius_mean": 0.36221775604538736,
+        "coordinate_radius_minimum": 0.2604845837883507,
+        "failed_observations": 10,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.989996003493723,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07959222658419134,
+        "mean_expansion": 0.008885653110191374,
+        "merit": 0.00014946044168540502,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.041334180370314416,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 878324.3276637332,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -4.3395371582821696e-05,
+          2.3738870181564438,
+          6.272635410416875,
+          17.158655405925384
+        ],
+        "rms_expansion": 0.051449875749380654,
+        "spectral_residual_norm": 0.017289328598034396,
+        "successful_observations": 0,
+        "time": 0.22500000000000014,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 3.033238819364958,
+      "hamiltonian_l2_interior": 0.017489318047259807,
+      "hamiltonian_l2_masked": 2.9792218528904604,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.26844527204872565,
+      "momentum_l2_interior": 0.001403699716238511,
+      "momentum_l2_masked": 0.27267209122127006,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828306707821773,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6033900525975986,
+      "maximum_lapse": 0.6096807888763673,
+      "minimum_conformal_factor": 0.022843143148584606,
+      "minimum_conformal_metric_eigenvalue": 0.9942211997905837,
+      "minimum_lapse": 0.02286416169831831
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39141533539108864,
+      0.39141533539108864
+    ],
+    "step": 90,
+    "time": 0.22500000000000014
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 111.2015167370296,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.28445729462835084,
+          -0.8633829907553097,
+          -0.3432064505256868,
+          -0.1255283603304476
+        ],
+        "complementarity_residual": 0.5765607060740612,
+        "coordinate_radius_maximum": 0.9197196386962253,
+        "coordinate_radius_mean": 0.7751132040467449,
+        "coordinate_radius_minimum": 0.2973344515195995,
+        "failed_observations": 11,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4873748295240845,
+        "iterations": 9,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.9966253696807466,
+        "mean_expansion": 0.5740373474343088,
+        "merit": 0.16550380438590312,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.5765607060740612,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 24.41483519889125,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.52021954208246,
+          -1.8279563161450434,
+          -0.6404517936044789,
+          3.402635805922468
+        ],
+        "rms_expansion": 0.6258722913489483,
+        "spectral_residual_norm": 0.5753326070820306,
+        "successful_observations": 0,
+        "time": 0.25000000000000017,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.24957794992061,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0638862245000316,
+          0.9958738622464308,
+          0.0241618894786556,
+          -0.03464632862228946
+        ],
+        "complementarity_residual": 0.02576484557146608,
+        "coordinate_radius_maximum": 0.6331538261553274,
+        "coordinate_radius_mean": 0.35985764222063993,
+        "coordinate_radius_minimum": 0.25751423031645443,
+        "failed_observations": 11,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.989843028964661,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07833199473282358,
+        "mean_expansion": 0.007177549049542644,
+        "merit": 0.00010995262729291426,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.02576484557146608,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 23008386.337292537,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -1.670579990342702e-06,
+          2.3714931238535844,
+          6.258072707456766,
+          17.191549779834784
+        ],
+        "rms_expansion": 0.05394177398060123,
+        "spectral_residual_norm": 0.014829202762988594,
+        "successful_observations": 0,
+        "time": 0.25000000000000017,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 2.71802710922061,
+      "hamiltonian_l2_interior": 0.0185900483493559,
+      "hamiltonian_l2_masked": 2.6475838007335937,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.2810186744370085,
+      "momentum_l2_interior": 0.0014956892054945707,
+      "momentum_l2_masked": 0.28542124516573425,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7828173757948662,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6044110291811854,
+      "maximum_lapse": 0.6116661875951056,
+      "minimum_conformal_factor": 0.022866234275459044,
+      "minimum_conformal_metric_eigenvalue": 0.9927612070876853,
+      "minimum_lapse": 0.022893319944456758
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3914086878974331,
+      0.3914086878974331
+    ],
+    "step": 100,
+    "time": 0.25000000000000017
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 111.24482972804222,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.2849526128780128,
+          -0.862555313186103,
+          -0.3411091511861277,
+          -0.1262189743242583
+        ],
+        "complementarity_residual": 0.5833122930030945,
+        "coordinate_radius_maximum": 0.9195958613915439,
+        "coordinate_radius_mean": 0.7745435490912698,
+        "coordinate_radius_minimum": 0.2976562020895859,
+        "failed_observations": 12,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4876644675730037,
+        "iterations": 8,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.0010233980393501,
+        "mean_expansion": 0.5719076322722646,
+        "merit": 0.16418495998848656,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.5833122930030945,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 23.270470026522986,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.520364446667838,
+          -1.792189548061809,
+          -0.6663450692639413,
+          3.3915753832869684
+        ],
+        "rms_expansion": 0.6244463162912536,
+        "spectral_residual_norm": 0.5730357056737155,
+        "successful_observations": 0,
+        "time": 0.2750000000000002,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.238271573517764,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0813904466491777,
+          1.0208182716382161,
+          0.028383872435832205,
+          -0.03640324076042951
+        ],
+        "complementarity_residual": 0.021653646674879283,
+        "coordinate_radius_maximum": 0.6330246020348097,
+        "coordinate_radius_mean": 0.3543998716264928,
+        "coordinate_radius_minimum": 0.25153858716281324,
+        "failed_observations": 12,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9897294017954168,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.09218792715416467,
+        "mean_expansion": 0.0075505992329307076,
+        "merit": 8.291638530905364e-05,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.021653646674879283,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 5894.402666941551,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.006712371819289853,
+          2.3508790693238497,
+          6.2256589174773485,
+          17.240992367894375
+        ],
+        "rms_expansion": 0.06002979508131586,
+        "spectral_residual_norm": 0.012877607332812539,
+        "successful_observations": 0,
+        "time": 0.2750000000000002,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 2.4123503976246035,
+      "hamiltonian_l2_interior": 0.01992519997260261,
+      "hamiltonian_l2_masked": 2.3232150530271447,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.29094197310771086,
+      "momentum_l2_interior": 0.0016603252745551209,
+      "momentum_l2_masked": 0.2954737760770121,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7827994314172887,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6055404540635415,
+      "maximum_lapse": 0.613604678679613,
+      "minimum_conformal_factor": 0.022894262734264138,
+      "minimum_conformal_metric_eigenvalue": 0.9911447186090222,
+      "minimum_lapse": 0.022928631048842598
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39139971570864435,
+      0.39139971570864435
+    ],
+    "step": 110,
+    "time": 0.2750000000000002
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 111.29665626247812,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.2856826577001471,
+          -0.8615649904732572,
+          -0.3386711128876,
+          -0.12666928061210844
+        ],
+        "complementarity_residual": 0.5902699296304376,
+        "coordinate_radius_maximum": 0.9194357413606881,
+        "coordinate_radius_mean": 0.7739025070859422,
+        "coordinate_radius_minimum": 0.2980779380141428,
+        "failed_observations": 13,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4880109623996787,
+        "iterations": 10,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.004786348128016,
+        "mean_expansion": 0.5696508919198676,
+        "merit": 0.16281777511083567,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.5902699296304376,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 22.148068646210444,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.518364328124607,
+          -1.7575957531671251,
+          -0.694044485355782,
+          3.3786122301119894
+        ],
+        "rms_expansion": 0.6228359694318917,
+        "spectral_residual_norm": 0.5706448547228576,
+        "successful_observations": 0,
+        "time": 0.3000000000000002,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.237351350193876,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.07575842241576,
+          1.0162329224637607,
+          0.02971893142522996,
+          -0.0351044306763042
+        ],
+        "complementarity_residual": 0.03210828079032817,
+        "coordinate_radius_maximum": 0.6362282339230356,
+        "coordinate_radius_mean": 0.3562633017831318,
+        "coordinate_radius_minimum": 0.2533281060457419,
+        "failed_observations": 13,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9897201531326774,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.08685371230706451,
+        "mean_expansion": 0.006286791148960389,
+        "merit": 6.127318894665501e-05,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.03210828079032817,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 9771.780724799055,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.003983897220375621,
+          2.3929297151769564,
+          6.324903758539904,
+          17.290026239230784
+        ],
+        "rms_expansion": 0.058069823287438864,
+        "spectral_residual_norm": 0.011070066751980768,
+        "successful_observations": 0,
+        "time": 0.3000000000000002,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 2.133743274673025,
+      "hamiltonian_l2_interior": 0.02148452867455468,
+      "hamiltonian_l2_masked": 2.024209710835108,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.2984481259179574,
+      "momentum_l2_interior": 0.001937749616900979,
+      "momentum_l2_masked": 0.3030661798357391,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7827758570636583,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6067530625325657,
+      "maximum_lapse": 0.6154852052947186,
+      "minimum_conformal_factor": 0.022926848445477786,
+      "minimum_conformal_metric_eigenvalue": 0.9893654257945285,
+      "minimum_lapse": 0.022969651375043962
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39138792853182913,
+      0.39138792853182913
+    ],
+    "step": 120,
+    "time": 0.3000000000000002
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 111.0015969438848,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.28667623166295847,
+          -0.8626680171473067,
+          -0.3357740539346453,
+          -0.12643121243496466
+        ],
+        "complementarity_residual": 0.5966563109788444,
+        "coordinate_radius_maximum": 0.9166664983619757,
+        "coordinate_radius_mean": 0.771325969807713,
+        "coordinate_radius_minimum": 0.2982882020284779,
+        "failed_observations": 14,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.486037215411911,
+        "iterations": 8,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.0135883444254423,
+        "mean_expansion": 0.5697936792495294,
+        "merit": 0.1628452477777372,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.5966563109788444,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 21.1071467267509,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.528484206654106,
+          3.364268743357178,
+          -1.7032859860569245,
+          -0.7192810611226848
+        ],
+        "rms_expansion": 0.6226253998715998,
+        "spectral_residual_norm": 0.5706929958878718,
+        "successful_observations": 0,
+        "time": 0.32500000000000023,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.23098152815969,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0865163264940154,
+          1.0394676553031599,
+          0.029754656826920738,
+          -0.03809469249598476
+        ],
+        "complementarity_residual": 0.018390474954310808,
+        "coordinate_radius_maximum": 0.6368485505185886,
+        "coordinate_radius_mean": 0.353180206278447,
+        "coordinate_radius_minimum": 0.24902920993491356,
+        "failed_observations": 14,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9896561311556912,
+        "iterations": 15,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.09788907458608025,
+        "mean_expansion": 0.0038085570812902794,
+        "merit": 1.796324670098245e-05,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.018390474954310808,
+        "reason": "line search could not reduce expansion residual",
+        "response_condition_number": 1300496.2528598648,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -3.059112498648986e-05,
+          2.384578367803218,
+          6.324915850280708,
+          17.293474400821424
+        ],
+        "rms_expansion": 0.06255003813433625,
+        "spectral_residual_norm": 0.00599387132010397,
+        "successful_observations": 0,
+        "time": 0.32500000000000023,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 1.902656366264606,
+      "hamiltonian_l2_interior": 0.023249737855314617,
+      "hamiltonian_l2_masked": 1.772888209626685,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.3038168027624062,
+      "momentum_l2_interior": 0.0023445186505765543,
+      "momentum_l2_masked": 0.3084824606681715,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7827453313023357,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6080212199342695,
+      "maximum_lapse": 0.6173186919292805,
+      "minimum_conformal_factor": 0.022963877231013587,
+      "minimum_conformal_metric_eigenvalue": 0.98742093320154,
+      "minimum_lapse": 0.023016139101145038
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39137266565116785,
+      0.39137266565116785
+    ],
+    "step": 130,
+    "time": 0.32500000000000023
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 111.18859085014945,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.28738573673567785,
+          -0.8618702216344761,
+          -0.3331357748312878,
+          -0.12648618765254296
+        ],
+        "complementarity_residual": 0.6033656661836201,
+        "coordinate_radius_maximum": 0.9181624309584988,
+        "coordinate_radius_mean": 0.7717277744582629,
+        "coordinate_radius_minimum": 0.29883322999089923,
+        "failed_observations": 15,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4872883819733638,
+        "iterations": 9,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.0154342581273663,
+        "mean_expansion": 0.5660498174397072,
+        "merit": 0.16064786419076887,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.6033656661836201,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 19.935685400283027,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.505963463092641,
+          3.3436091513404795,
+          -1.674880330165719,
+          -0.7545925191794818
+        ],
+        "rms_expansion": 0.6197222112388674,
+        "spectral_residual_norm": 0.5668295408511608,
+        "successful_observations": 0,
+        "time": 0.35000000000000026,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.223975636147685,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.087749815784061,
+          1.0424886662812176,
+          0.03045290268057778,
+          -0.03868291300501868
+        ],
+        "complementarity_residual": 0.00686126502744073,
+        "coordinate_radius_maximum": 0.6372742291519802,
+        "coordinate_radius_mean": 0.3528443330826971,
+        "coordinate_radius_minimum": 0.24858360595673132,
+        "failed_observations": 15,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9895857113666259,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.10230749646861055,
+        "mean_expansion": 0.0028637866948402492,
+        "merit": 6.889324035923566e-06,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.00686126502744073,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 11069.927095953026,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.003617736010159689,
+          2.397449097982178,
+          6.359721772110812,
+          17.327465294647126
+        ],
+        "rms_expansion": 0.0641032162098325,
+        "spectral_residual_norm": 0.003711960138774005,
+        "successful_observations": 0,
+        "time": 0.35000000000000026,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 1.741241179598432,
+      "hamiltonian_l2_interior": 0.025198844654696403,
+      "hamiltonian_l2_masked": 1.5954827608818143,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.30737929712158557,
+      "momentum_l2_interior": 0.0028741094459610247,
+      "momentum_l2_masked": 0.31205916612094464,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7827062720164109,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6093185025638378,
+      "maximum_lapse": 0.6191273490903558,
+      "minimum_conformal_factor": 0.023005580919609022,
+      "minimum_conformal_metric_eigenvalue": 0.9853133966895159,
+      "minimum_lapse": 0.023068223369218682
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3913531360082054,
+      0.3913531360082054
+    ],
+    "step": 140,
+    "time": 0.35000000000000026
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 111.28056899698836,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.2878761274093785,
+          -0.862180882614147,
+          -0.33168113250612136,
+          -0.1264638422907066
+        ],
+        "complementarity_residual": 0.608204833373462,
+        "coordinate_radius_maximum": 0.9196851647712709,
+        "coordinate_radius_mean": 0.7722702535093533,
+        "coordinate_radius_minimum": 0.2990320780563888,
+        "failed_observations": 16,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4879034169742595,
+        "iterations": 8,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.0200694140421023,
+        "mean_expansion": 0.5623538329098682,
+        "merit": 0.1584578893872632,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.608204833373462,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 18.80042079917393,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.482097066614513,
+          3.322131386230928,
+          -1.6386824418122814,
+          -0.7919855809786551
+        ],
+        "rms_expansion": 0.6168651822824325,
+        "spectral_residual_norm": 0.5629527322737908,
+        "successful_observations": 0,
+        "time": 0.3750000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.21564270964515,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.0891683623856865,
+          1.047223181051895,
+          0.03016609598167547,
+          -0.03917909345625636
+        ],
+        "complementarity_residual": 0.007992943183516484,
+        "coordinate_radius_maximum": 0.6378090290085456,
+        "coordinate_radius_mean": 0.35249368560017,
+        "coordinate_radius_minimum": 0.2478795203948346,
+        "failed_observations": 16,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 0.9895019463525974,
+        "iterations": 20,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.10593730107846595,
+        "mean_expansion": 0.0011401296427523283,
+        "merit": 2.5693108694444107e-06,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.007992943183516484,
+        "reason": "maximum iterations reached",
+        "response_condition_number": 6503.514360596065,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.0061946977303128925,
+          2.410939559400947,
+          6.3997835755092085,
+          17.34785408828264
+        ],
+        "rms_expansion": 0.06447363276665405,
+        "spectral_residual_norm": 0.0022668528269141827,
+        "successful_observations": 0,
+        "time": 0.3750000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 1.667398799182365,
+      "hamiltonian_l2_interior": 0.027307713629455655,
+      "hamiltonian_l2_masked": 1.515380236333789,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.3095018574624445,
+      "momentum_l2_interior": 0.00350762158994824,
+      "momentum_l2_masked": 0.3141684824171483,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7826570129185085,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6106220820466638,
+      "maximum_lapse": 0.620934377107204,
+      "minimum_conformal_factor": 0.023052412782602602,
+      "minimum_conformal_metric_eigenvalue": 0.9830476811325768,
+      "minimum_lapse": 0.02312632763790809
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39132850645925427,
+      0.39132850645925427
+    ],
+    "step": 150,
+    "time": 0.3750000000000003
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 111.5620734560168,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.28855815969748266,
+          -0.8605267612557712,
+          -0.32718564355317176,
+          -0.12587455439245615
+        ],
+        "complementarity_residual": 0.6167125269798893,
+        "coordinate_radius_maximum": 0.9197917904852126,
+        "coordinate_radius_mean": 0.7716849072111077,
+        "coordinate_radius_minimum": 0.3003875796841829,
+        "failed_observations": 17,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.4897841895768915,
+        "iterations": 11,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.0164448935061785,
+        "mean_expansion": 0.5586477989993989,
+        "merit": 0.15635541273164938,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.6167125269798893,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 17.81134535780615,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          11.466350433073389,
+          3.301158918090208,
+          -1.6225292757400043,
+          -0.8305760834425023
+        ],
+        "rms_expansion": 0.613501677869261,
+        "spectral_residual_norm": 0.5592055306086473,
+        "successful_observations": 0,
+        "time": 0.4000000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.2157412550186,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.472819063425624,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.0448827588435535,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1247892262227617,
+          1.1063699995428529,
+          0.031965905848399645,
+          -0.04550743968240381
+        ],
+        "complementarity_residual": 0.007341715583036832,
+        "coordinate_radius_maximum": 0.6357710685826253,
+        "coordinate_radius_mean": 0.3420511914641015,
+        "coordinate_radius_minimum": 0.23539978570693956,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9895029370009426,
+        "iterations": 11,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.13116436368201295,
+        "mean_expansion": 0.0005226197552943125,
+        "merit": 1.913823458522915e-06,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": true,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.13517935317681737,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.087505032989023,
+            -0.0448827588435535,
+            1.2192210963695946,
+            3.4704434989527924
+          ],
+          "finite_difference_relative_error": 1.7779099158142016e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.10296562250929,
+          "normalizer_roundtrip_error": 2.220446049250313e-16,
+          "operator_condition_number": 440.58739341377145,
+          "operator_matrix": [
+            [
+              -0.29615885795959396,
+              -0.2178352484310471,
+              0.524703546901354,
+              -0.20779029132090288
+            ],
+            [
+              2.3012754204528756,
+              1.9464700810355513,
+              -3.0520529512843053,
+              1.9878691434162987
+            ],
+            [
+              -0.7560753777165097,
+              -0.8703704778240289,
+              5.735879383433911,
+              -3.6798480322711438
+            ],
+            [
+              0.14583329878294787,
+              0.5979819948390344,
+              -2.5428675958102502,
+              7.346096262957998
+            ]
+          ],
+          "physical_step": 6.841023829282031e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.0448827588435535,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.007341715583036832,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 819.0029994129537,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.050992015595414664,
+          2.3149434264209297,
+          6.214839602026166,
+          17.453750406856237
+        ],
+        "rms_expansion": 0.07843507127850577,
+        "spectral_residual_norm": 0.0019564373020993617,
+        "successful_observations": 1,
+        "time": 0.4000000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 1.685506405622859,
+      "hamiltonian_l2_interior": 0.029549710846010664,
+      "hamiltonian_l2_masked": 1.5397127933044474,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.3105556902296707,
+      "momentum_l2_interior": 0.004221737099748506,
+      "momentum_l2_masked": 0.31518776535919646,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.7825959753141335,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6119141881494492,
+      "maximum_lapse": 0.6227564882247408,
+      "minimum_conformal_factor": 0.023104828548988925,
+      "minimum_conformal_metric_eigenvalue": 0.9806290674700823,
+      "minimum_lapse": 0.023190935816620812
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39129798765706675,
+      0.39129798765706675
+    ],
+    "step": 160,
+    "time": 0.4000000000000003
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 136.02342221992248,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": NaN,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": NaN,
+          "principal_mode_real": NaN,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "no valid MOTS stability measurement",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.21178225745807625,
+          -0.5427866864403919,
+          -0.2664328140794449,
+          -0.13895954265445684
+        ],
+        "complementarity_residual": 0.23549523402509806,
+        "coordinate_radius_maximum": 0.9198044052342181,
+        "coordinate_radius_mean": 0.8200474136763609,
+        "coordinate_radius_minimum": 0.4101005983042024,
+        "failed_observations": 18,
+        "first_found_time": null,
+        "found": false,
+        "irreducible_mass": 1.6450227970523925,
+        "iterations": 12,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 1.0497608606534636,
+        "mean_expansion": 0.40922876638421984,
+        "merit": 0.1110472302517801,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": null,
+        "projected_gradient_norm": 0.23549523402509806,
+        "reason": "cannot construct surface Jacobian for coefficient 0",
+        "response_condition_number": 28.997820642181633,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -10.830127773077002,
+          -0.8014371472949541,
+          3.4978469315791676,
+          12.693620405746175
+        ],
+        "rms_expansion": 0.5680642077280591,
+        "spectral_residual_norm": 0.47126898954159946,
+        "successful_observations": 0,
+        "time": 0.4250000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.204483845849154,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.41687874153641,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.05395750229922452,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1371684478751043,
+          1.1278387274552533,
+          0.03327450057492102,
+          -0.048009856846963794
+        ],
+        "complementarity_residual": 0.0005645999923934013,
+        "coordinate_radius_maximum": 0.6355984410847695,
+        "coordinate_radius_mean": 0.3385549213460256,
+        "coordinate_radius_minimum": 0.23121415920498406,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9893897630832986,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.1434456708329276,
+        "mean_expansion": 4.9792583847918187e-05,
+        "merit": 1.2597075493993782e-08,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.1413392471298458,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.153370783447802,
+            -0.05395750229922452,
+            1.2209199509325195,
+            3.4637643396843765
+          ],
+          "finite_difference_relative_error": 1.8018931108774882e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.181279100416802,
+          "normalizer_roundtrip_error": 4.718447854656915e-16,
+          "operator_condition_number": 376.1800195306382,
+          "operator_matrix": [
+            [
+              -0.3154016300216143,
+              -0.2238622965750764,
+              0.5465065153247324,
+              -0.21418509580903422
+            ],
+            [
+              2.3754206630449493,
+              1.974210697769361,
+              -3.1245512069862498,
+              2.0388057542383997
+            ],
+            [
+              -0.7855886006630192,
+              -0.8936030567672701,
+              5.788503795144967,
+              -3.700324445661597
+            ],
+            [
+              0.17227945328173155,
+              0.6223834365647185,
+              -2.5840874354584065,
+              7.3367847088727425
+            ]
+          ],
+          "physical_step": 6.771098426920512e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.05395750229922452,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0005645999923934013,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 699.7059896441455,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.06040735779028639,
+          2.2943502453695443,
+          6.1885545560100885,
+          17.530970595301184
+        ],
+        "rms_expansion": 0.08511424478560876,
+        "spectral_residual_norm": 0.00015872665493856905,
+        "successful_observations": 2,
+        "time": 0.4250000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "common_classified": {
+      "ambiguous_seed_names": [],
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.204483845849154,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.41687874153641,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.05395750229922452,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1371684478751043,
+          1.1278387274552533,
+          0.03327450057492102,
+          -0.048009856846963794
+        ],
+        "complementarity_residual": 0.0005645999923934013,
+        "coordinate_radius_maximum": 0.6355984410847695,
+        "coordinate_radius_mean": 0.3385549213460256,
+        "coordinate_radius_minimum": 0.23121415920498406,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9893897630832986,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.1434456708329276,
+        "mean_expansion": 4.9792583847918187e-05,
+        "merit": 1.2597075493993782e-08,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.1413392471298458,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.153370783447802,
+            -0.05395750229922452,
+            1.2209199509325195,
+            3.4637643396843765
+          ],
+          "finite_difference_relative_error": 1.8018931108774882e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.181279100416802,
+          "normalizer_roundtrip_error": 4.718447854656915e-16,
+          "operator_condition_number": 376.1800195306382,
+          "operator_matrix": [
+            [
+              -0.3154016300216143,
+              -0.2238622965750764,
+              0.5465065153247324,
+              -0.21418509580903422
+            ],
+            [
+              2.3754206630449493,
+              1.974210697769361,
+              -3.1245512069862498,
+              2.0388057542383997
+            ],
+            [
+              -0.7855886006630192,
+              -0.8936030567672701,
+              5.788503795144967,
+              -3.700324445661597
+            ],
+            [
+              0.17227945328173155,
+              0.6223834365647185,
+              -2.5840874354584065,
+              7.3367847088727425
+            ]
+          ],
+          "physical_step": 6.771098426920512e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.05395750229922452,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0005645999923934013,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 699.7059896441455,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.06040735779028639,
+          2.2943502453695443,
+          6.1885545560100885,
+          17.530970595301184
+        ],
+        "rms_expansion": 0.08511424478560876,
+        "spectral_residual_norm": 0.00015872665493856905,
+        "successful_observations": 2,
+        "time": 0.4250000000000003,
+        "tracker_seed_name": "common_outer",
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": null
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 1.7825296198235703,
+      "hamiltonian_l2_interior": 0.03189537758256998,
+      "hamiltonian_l2_masked": 1.6524778934481144,
+      "interior_fraction": 0.29296875,
+      "momentum_l2_full": 0.31088140841239964,
+      "momentum_l2_interior": 0.004991663470913897,
+      "momentum_l2_masked": 0.31546339545289837,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968017578125
+    },
+    "coordinate_separation": 0.782521750302218,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6131827352402041,
+      "maximum_lapse": 0.6246004265060549,
+      "minimum_conformal_factor": 0.02316311357360707,
+      "minimum_conformal_metric_eigenvalue": 0.9780619228242866,
+      "minimum_lapse": 0.02326236749835751
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.391260875151109,
+      0.391260875151109
+    ],
+    "step": 170,
+    "time": 0.4250000000000003
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.19394690161664,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.41687874153641,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.051650707369213414,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1371684478751043,
+          1.1278387274552533,
+          0.03327450057492102,
+          -0.048009856846963794
+        ],
+        "complementarity_residual": 0.0008442867178660782,
+        "coordinate_radius_maximum": 0.6355984410847695,
+        "coordinate_radius_mean": 0.3385549213460256,
+        "coordinate_radius_minimum": 0.23121415920498406,
+        "failed_observations": 18,
+        "first_found_time": 0.45000000000000034,
+        "found": true,
+        "irreducible_mass": 0.9892838204727017,
+        "iterations": 1,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.14420424249575003,
+        "mean_expansion": -0.001155975372464943,
+        "merit": 9.025185916778801e-07,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": true,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.14000486591850228,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.160827363231219,
+            -0.051650707369213414,
+            1.22775347840862,
+            3.482008202928357
+          ],
+          "finite_difference_relative_error": 1.876782472368012e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.179769831117465,
+          "normalizer_roundtrip_error": 2.8449465006019636e-16,
+          "operator_condition_number": 393.9859661058585,
+          "operator_matrix": [
+            [
+              -0.3131656346783496,
+              -0.22294892128509183,
+              0.546919555104582,
+              -0.21460266220771315
+            ],
+            [
+              2.3916107557821977,
+              1.980519821951489,
+              -3.1228830107548635,
+              2.0432645094115447
+            ],
+            [
+              -0.7858863258006202,
+              -0.8931097178951732,
+              5.791652771743564,
+              -3.696475055889472
+            ],
+            [
+              0.1658347659238135,
+              0.6238483295670801,
+              -2.571933064755146,
+              7.359931378182268
+            ]
+          ],
+          "physical_step": 6.771098426920512e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.051650707369213414,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0008442867178660782,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 732.3686234335032,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.05776937583279018,
+          2.307497871309712,
+          6.2220144497403576,
+          17.550298183466264
+        ],
+        "rms_expansion": 0.08517369757452205,
+        "spectral_residual_norm": 0.0013435167223952815,
+        "successful_observations": 1,
+        "time": 0.45000000000000034,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.2852507627807,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 6.529199243118028,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": 0.08384683328125005,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.9239605136890613,
+          0.8136195668084877,
+          0.018554761866703344,
+          -0.020395243182782897
+        ],
+        "complementarity_residual": 0.00017084366878993592,
+        "coordinate_radius_maximum": 0.65581423556296,
+        "coordinate_radius_mean": 0.40807495269487676,
+        "coordinate_radius_minimum": 0.31166336710242887,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9902014492276403,
+        "iterations": 5,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.08278302440391608,
+        "mean_expansion": 5.6479755171874516e-05,
+        "merit": 5.424525684280337e-09,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.05973655975202984,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            9.60391167871265,
+            0.08384683328125005,
+            1.3257903691316806,
+            3.90900631318488
+          ],
+          "finite_difference_relative_error": 1.5734802622328365e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 3.0371232502360677,
+          "normalizer_roundtrip_error": 1.734723475976807e-16,
+          "operator_condition_number": 164.35309636253143,
+          "operator_matrix": [
+            [
+              -0.049856663043411194,
+              -0.16065496520896014,
+              0.2839380720249547,
+              -0.08190355544434043
+            ],
+            [
+              1.3579365990311743,
+              1.7034098075756736,
+              -2.0533289061873106,
+              1.5209169363577697
+            ],
+            [
+              -0.42407281389236356,
+              -0.5282394865797563,
+              5.262678681913585,
+              -3.2098734775664055
+            ],
+            [
+              0.49956602520671417,
+              0.5556499365223961,
+              -1.7880123823324579,
+              8.006323367864617
+            ]
+          ],
+          "physical_step": 8.161499053897535e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": 0.08384683328125005,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.00017084366878993592,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 283.1348464381361,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.1208915200884233,
+          2.6223784581866743,
+          7.681065915497472,
+          17.39903520425707
+        ],
+        "rms_expansion": 0.030000979443888798,
+        "spectral_residual_norm": 0.00010415877960383692,
+        "successful_observations": 3,
+        "time": 0.45000000000000034,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "common_classified": {
+      "ambiguous_seed_names": [],
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.19394690161664,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.41687874153641,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.051650707369213414,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1371684478751043,
+          1.1278387274552533,
+          0.03327450057492102,
+          -0.048009856846963794
+        ],
+        "complementarity_residual": 0.0008442867178660782,
+        "coordinate_radius_maximum": 0.6355984410847695,
+        "coordinate_radius_mean": 0.3385549213460256,
+        "coordinate_radius_minimum": 0.23121415920498406,
+        "failed_observations": 18,
+        "first_found_time": 0.45000000000000034,
+        "found": true,
+        "irreducible_mass": 0.9892838204727017,
+        "iterations": 1,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.14420424249575003,
+        "mean_expansion": -0.001155975372464943,
+        "merit": 9.025185916778801e-07,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": true,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.14000486591850228,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.160827363231219,
+            -0.051650707369213414,
+            1.22775347840862,
+            3.482008202928357
+          ],
+          "finite_difference_relative_error": 1.876782472368012e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.179769831117465,
+          "normalizer_roundtrip_error": 2.8449465006019636e-16,
+          "operator_condition_number": 393.9859661058585,
+          "operator_matrix": [
+            [
+              -0.3131656346783496,
+              -0.22294892128509183,
+              0.546919555104582,
+              -0.21460266220771315
+            ],
+            [
+              2.3916107557821977,
+              1.980519821951489,
+              -3.1228830107548635,
+              2.0432645094115447
+            ],
+            [
+              -0.7858863258006202,
+              -0.8931097178951732,
+              5.791652771743564,
+              -3.696475055889472
+            ],
+            [
+              0.1658347659238135,
+              0.6238483295670801,
+              -2.571933064755146,
+              7.359931378182268
+            ]
+          ],
+          "physical_step": 6.771098426920512e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.051650707369213414,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0008442867178660782,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 732.3686234335032,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.05776937583279018,
+          2.307497871309712,
+          6.2220144497403576,
+          17.550298183466264
+        ],
+        "rms_expansion": 0.08517369757452205,
+        "spectral_residual_norm": 0.0013435167223952815,
+        "successful_observations": 1,
+        "time": 0.45000000000000034,
+        "tracker_seed_name": "common_inner",
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.2852507627807,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 6.529199243118028,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": 0.08384683328125005,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.9239605136890613,
+          0.8136195668084877,
+          0.018554761866703344,
+          -0.020395243182782897
+        ],
+        "complementarity_residual": 0.00017084366878993592,
+        "coordinate_radius_maximum": 0.65581423556296,
+        "coordinate_radius_mean": 0.40807495269487676,
+        "coordinate_radius_minimum": 0.31166336710242887,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9902014492276403,
+        "iterations": 5,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.08278302440391608,
+        "mean_expansion": 5.6479755171874516e-05,
+        "merit": 5.424525684280337e-09,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.05973655975202984,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            9.60391167871265,
+            0.08384683328125005,
+            1.3257903691316806,
+            3.90900631318488
+          ],
+          "finite_difference_relative_error": 1.5734802622328365e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 3.0371232502360677,
+          "normalizer_roundtrip_error": 1.734723475976807e-16,
+          "operator_condition_number": 164.35309636253143,
+          "operator_matrix": [
+            [
+              -0.049856663043411194,
+              -0.16065496520896014,
+              0.2839380720249547,
+              -0.08190355544434043
+            ],
+            [
+              1.3579365990311743,
+              1.7034098075756736,
+              -2.0533289061873106,
+              1.5209169363577697
+            ],
+            [
+              -0.42407281389236356,
+              -0.5282394865797563,
+              5.262678681913585,
+              -3.2098734775664055
+            ],
+            [
+              0.49956602520671417,
+              0.5556499365223961,
+              -1.7880123823324579,
+              8.006323367864617
+            ]
+          ],
+          "physical_step": 8.161499053897535e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": 0.08384683328125005,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.00017084366878993592,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 283.1348464381361,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.1208915200884233,
+          2.6223784581866743,
+          7.681065915497472,
+          17.39903520425707
+        ],
+        "rms_expansion": 0.030000979443888798,
+        "spectral_residual_norm": 0.00010415877960383692,
+        "successful_observations": 3,
+        "time": 0.45000000000000034,
+        "tracker_seed_name": "common_outer",
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 1.934863852722522,
+      "hamiltonian_l2_interior": 0.0342904191342429,
+      "hamiltonian_l2_masked": 1.8240187779971238,
+      "interior_fraction": 0.29345703125,
+      "momentum_l2_full": 0.3107563326685002,
+      "momentum_l2_interior": 0.005794198393956871,
+      "momentum_l2_masked": 0.3151980532566759,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968505859375
+    },
+    "coordinate_separation": 0.7824330767680728,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6144211806570479,
+      "maximum_lapse": 0.6264633491532854,
+      "minimum_conformal_factor": 0.023227336200783256,
+      "minimum_conformal_metric_eigenvalue": 0.9753496710371551,
+      "minimum_lapse": 0.023340686144218945
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3912165383840364,
+      0.3912165383840364
+    ],
+    "step": 180,
+    "time": 0.45000000000000034
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.16153959257194,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.291136337906945,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.09206981690163395,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1654873137368258,
+          1.1756962339711061,
+          0.03515381940989289,
+          -0.05336310098981662
+        ],
+        "complementarity_residual": 0.003489831392580444,
+        "coordinate_radius_maximum": 0.6343545927744317,
+        "coordinate_radius_mean": 0.33069602111918406,
+        "coordinate_radius_minimum": 0.22190430025489397,
+        "failed_observations": 18,
+        "first_found_time": 0.45000000000000034,
+        "found": true,
+        "irreducible_mass": 0.9889579134223652,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.17077547688594052,
+        "mean_expansion": -0.000653445318603657,
+        "merit": 1.00142959360306e-06,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.15642964051422245,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.276776724768665,
+            -0.09206981690163395,
+            1.1956004110782616,
+            3.428409586367405
+          ],
+          "finite_difference_relative_error": 1.771781354417665e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.3784873624315885,
+          "normalizer_roundtrip_error": 3.469446951953614e-16,
+          "operator_condition_number": 233.83930756461933,
+          "operator_matrix": [
+            [
+              -0.3778574353729117,
+              -0.24302186364654976,
+              0.5991375014264145,
+              -0.22723260988334462
+            ],
+            [
+              2.497326389793126,
+              2.0206228713646928,
+              -3.3021288941090443,
+              2.1584748689682947
+            ],
+            [
+              -0.8441333889385056,
+              -0.9602645631817666,
+              5.897034108486277,
+              -3.732996698561535
+            ],
+            [
+              0.2595050132993633,
+              0.6995685818978765,
+              -2.6717969080587007,
+              7.268917360834637
+            ]
+          ],
+          "physical_step": 6.613920422383681e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.09206981690163395,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.003489831392580444,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 434.2079652858984,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.10055757167914958,
+          2.187388879517378,
+          6.106575442195798,
+          17.67897150420251
+        ],
+        "rms_expansion": 0.09959726933357632,
+        "spectral_residual_norm": 0.001415224076676948,
+        "successful_observations": 2,
+        "time": 0.47500000000000037,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.27593619568991,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 6.529199243118028,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": 0.08136891204242436,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.9239605136890613,
+          0.8136195668084877,
+          0.018554761866703344,
+          -0.020395243182782897
+        ],
+        "complementarity_residual": 0.0009865644132769193,
+        "coordinate_radius_maximum": 0.65581423556296,
+        "coordinate_radius_mean": 0.40807495269487676,
+        "coordinate_radius_minimum": 0.31166336710242887,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9901078742380103,
+        "iterations": 1,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.08682056519237707,
+        "mean_expansion": -0.0011887763560568952,
+        "merit": 7.728417078484222e-07,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.05986908633904322,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            9.610787207734155,
+            0.08136891204242436,
+            1.3285898536418692,
+            3.9183232647800312
+          ],
+          "finite_difference_relative_error": 1.596153677544988e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 3.0361868112138333,
+          "normalizer_roundtrip_error": 3.5041414214731503e-16,
+          "operator_condition_number": 169.48976429254478,
+          "operator_matrix": [
+            [
+              -0.051809936576537444,
+              -0.16093332682466216,
+              0.2850189589394828,
+              -0.0804569457449166
+            ],
+            [
+              1.3570932589706635,
+              1.7043948621463292,
+              -2.047853049479884,
+              1.531653598981554
+            ],
+            [
+              -0.4159456699860691,
+              -0.5236365815983006,
+              5.266968968113503,
+              -3.2062085741166095
+            ],
+            [
+              0.5245444557248358,
+              0.5670988565168611,
+              -1.7789672469247235,
+              8.019515344515185
+            ]
+          ],
+          "physical_step": 8.161499053897535e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": 0.08136891204242436,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0009865644132769193,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 291.9861261812048,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.11734710837240003,
+          2.621845172512325,
+          7.711170463382398,
+          17.415655375182055
+        ],
+        "rms_expansion": 0.030421366605139732,
+        "spectral_residual_norm": 0.0012432551691816305,
+        "successful_observations": 4,
+        "time": 0.47500000000000037,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "common_classified": {
+      "ambiguous_seed_names": [],
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.16153959257194,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.291136337906945,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.09206981690163395,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1654873137368258,
+          1.1756962339711061,
+          0.03515381940989289,
+          -0.05336310098981662
+        ],
+        "complementarity_residual": 0.003489831392580444,
+        "coordinate_radius_maximum": 0.6343545927744317,
+        "coordinate_radius_mean": 0.33069602111918406,
+        "coordinate_radius_minimum": 0.22190430025489397,
+        "failed_observations": 18,
+        "first_found_time": 0.45000000000000034,
+        "found": true,
+        "irreducible_mass": 0.9889579134223652,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.17077547688594052,
+        "mean_expansion": -0.000653445318603657,
+        "merit": 1.00142959360306e-06,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.15642964051422245,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.276776724768665,
+            -0.09206981690163395,
+            1.1956004110782616,
+            3.428409586367405
+          ],
+          "finite_difference_relative_error": 1.771781354417665e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.3784873624315885,
+          "normalizer_roundtrip_error": 3.469446951953614e-16,
+          "operator_condition_number": 233.83930756461933,
+          "operator_matrix": [
+            [
+              -0.3778574353729117,
+              -0.24302186364654976,
+              0.5991375014264145,
+              -0.22723260988334462
+            ],
+            [
+              2.497326389793126,
+              2.0206228713646928,
+              -3.3021288941090443,
+              2.1584748689682947
+            ],
+            [
+              -0.8441333889385056,
+              -0.9602645631817666,
+              5.897034108486277,
+              -3.732996698561535
+            ],
+            [
+              0.2595050132993633,
+              0.6995685818978765,
+              -2.6717969080587007,
+              7.268917360834637
+            ]
+          ],
+          "physical_step": 6.613920422383681e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.09206981690163395,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.003489831392580444,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 434.2079652858984,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.10055757167914958,
+          2.187388879517378,
+          6.106575442195798,
+          17.67897150420251
+        ],
+        "rms_expansion": 0.09959726933357632,
+        "spectral_residual_norm": 0.001415224076676948,
+        "successful_observations": 2,
+        "time": 0.47500000000000037,
+        "tracker_seed_name": "common_inner",
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.27593619568991,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 6.529199243118028,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": 0.08136891204242436,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.9239605136890613,
+          0.8136195668084877,
+          0.018554761866703344,
+          -0.020395243182782897
+        ],
+        "complementarity_residual": 0.0009865644132769193,
+        "coordinate_radius_maximum": 0.65581423556296,
+        "coordinate_radius_mean": 0.40807495269487676,
+        "coordinate_radius_minimum": 0.31166336710242887,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9901078742380103,
+        "iterations": 1,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.08682056519237707,
+        "mean_expansion": -0.0011887763560568952,
+        "merit": 7.728417078484222e-07,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.05986908633904322,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            9.610787207734155,
+            0.08136891204242436,
+            1.3285898536418692,
+            3.9183232647800312
+          ],
+          "finite_difference_relative_error": 1.596153677544988e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 3.0361868112138333,
+          "normalizer_roundtrip_error": 3.5041414214731503e-16,
+          "operator_condition_number": 169.48976429254478,
+          "operator_matrix": [
+            [
+              -0.051809936576537444,
+              -0.16093332682466216,
+              0.2850189589394828,
+              -0.0804569457449166
+            ],
+            [
+              1.3570932589706635,
+              1.7043948621463292,
+              -2.047853049479884,
+              1.531653598981554
+            ],
+            [
+              -0.4159456699860691,
+              -0.5236365815983006,
+              5.266968968113503,
+              -3.2062085741166095
+            ],
+            [
+              0.5245444557248358,
+              0.5670988565168611,
+              -1.7789672469247235,
+              8.019515344515185
+            ]
+          ],
+          "physical_step": 8.161499053897535e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": 0.08136891204242436,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0009865644132769193,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 291.9861261812048,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.11734710837240003,
+          2.621845172512325,
+          7.711170463382398,
+          17.415655375182055
+        ],
+        "rms_expansion": 0.030421366605139732,
+        "spectral_residual_norm": 0.0012432551691816305,
+        "successful_observations": 4,
+        "time": 0.47500000000000037,
+        "tracker_seed_name": "common_outer",
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 2.118350517278245,
+      "hamiltonian_l2_interior": 0.03674872732263442,
+      "hamiltonian_l2_masked": 2.026955229554154,
+      "interior_fraction": 0.29345703125,
+      "momentum_l2_full": 0.3103744037934794,
+      "momentum_l2_interior": 0.006597076030516516,
+      "momentum_l2_masked": 0.31474813204215035,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968505859375
+    },
+    "coordinate_separation": 0.7823287720068404,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.615627776777692,
+      "maximum_lapse": 0.6283359054426599,
+      "minimum_conformal_factor": 0.023297412380924996,
+      "minimum_conformal_metric_eigenvalue": 0.9724957178824214,
+      "minimum_lapse": 0.02342575115502662
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.3911643860034202,
+      0.3911643860034202
+    ],
+    "step": 190,
+    "time": 0.47500000000000037
+  },
+  {
+    "common": {
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.13248704981875,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.182468592012758,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.0994344007493004,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1909755984431791,
+          1.2205632581511228,
+          0.03749683496397264,
+          -0.05863578396497211
+        ],
+        "complementarity_residual": 0.001168538211846465,
+        "coordinate_radius_maximum": 0.6340122023725293,
+        "coordinate_radius_mean": 0.3239042870007974,
+        "coordinate_radius_minimum": 0.21379720076963848,
+        "failed_observations": 18,
+        "first_found_time": 0.45000000000000034,
+        "found": true,
+        "irreducible_mass": 0.9886656525576017,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.19871717187428384,
+        "mean_expansion": 0.00020192903976018098,
+        "merit": 8.002737155543619e-08,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.17267453041402986,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.434990706994418,
+            -0.0994344007493004,
+            1.198436197268464,
+            3.392619160331832
+          ],
+          "finite_difference_relative_error": 1.7034624942609872e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.563136600305361,
+          "normalizer_roundtrip_error": 3.3306690738754696e-16,
+          "operator_condition_number": 229.20150944022575,
+          "operator_matrix": [
+            [
+              -0.41777025060628137,
+              -0.25126557580981956,
+              0.6358491909620533,
+              -0.23633875358299045
+            ],
+            [
+              2.7209735264451425,
+              2.0631525779454223,
+              -3.448802865526324,
+              2.2438152536239775
+            ],
+            [
+              -1.046672955412649,
+              -0.9935101433672868,
+              6.034040967752741,
+              -3.7909746970910465
+            ],
+            [
+              0.4232146271139938,
+              0.7326450841330591,
+              -2.8014300348296777,
+              7.247188368753542
+            ]
+          ],
+          "physical_step": 6.478085740015948e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.0994344007493004,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.001168538211846465,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 428.8932475871505,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.10467198318007709,
+          2.1397979917665175,
+          6.029031880071701,
+          17.871110430877774
+        ],
+        "rms_expansion": 0.11508786190155647,
+        "spectral_residual_norm": 0.0004000684230364506,
+        "successful_observations": 3,
+        "time": 0.5000000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.20968692353202,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 6.685405539432385,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": 0.06394416034616036,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.8980601816605311,
+          0.7804421166451804,
+          0.01731497603464173,
+          -0.01839610267113601
+        ],
+        "complementarity_residual": 0.0006455207513607885,
+        "coordinate_radius_maximum": 0.6598318531342814,
+        "coordinate_radius_mean": 0.4178378462145241,
+        "coordinate_radius_minimum": 0.3228540425100418,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9894420727033951,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07398199327245003,
+        "mean_expansion": 0.0003530327512334367,
+        "merit": 2.5773588721902555e-07,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.05580677319632363,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            9.467719234241525,
+            0.06394416034616036,
+            1.2224861563753215,
+            3.696081419635023
+          ],
+          "finite_difference_relative_error": 1.0076304900293143e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 2.92617489870161,
+          "normalizer_roundtrip_error": 2.498001805406602e-16,
+          "operator_condition_number": 199.72588508562524,
+          "operator_matrix": [
+            [
+              -0.05794358395577791,
+              -0.1668293823872981,
+              0.25494210570617903,
+              -0.09016025822041436
+            ],
+            [
+              1.1192292277346607,
+              1.6086795135721685,
+              -2.0672231803604166,
+              1.3087657007248215
+            ],
+            [
+              -0.43875687031342353,
+              -0.5665693085691847,
+              5.111849724571345,
+              -3.2898062698558594
+            ],
+            [
+              0.20945504161956202,
+              0.3757851375539567,
+              -1.9357518688599922,
+              7.787645316410294
+            ]
+          ],
+          "physical_step": 8.356756924290482e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": 0.06394416034616036,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0006455207513607885,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 337.7887830629784,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.09605033436789423,
+          2.4773338446395803,
+          7.15372661161364,
+          17.144994405050987
+        ],
+        "rms_expansion": 0.026928942930606017,
+        "spectral_residual_norm": 0.0007179636303031312,
+        "successful_observations": 5,
+        "time": 0.5000000000000003,
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "common_classified": {
+      "ambiguous_seed_names": [],
+      "common_inner": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.13248704981875,
+        "branch": "common_inner",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 5.182468592012758,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": -0.0994344007493004,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -1.1909755984431791,
+          1.2205632581511228,
+          0.03749683496397264,
+          -0.05863578396497211
+        ],
+        "complementarity_residual": 0.001168538211846465,
+        "coordinate_radius_maximum": 0.6340122023725293,
+        "coordinate_radius_mean": 0.3239042870007974,
+        "coordinate_radius_minimum": 0.21379720076963848,
+        "failed_observations": 18,
+        "first_found_time": 0.45000000000000034,
+        "found": true,
+        "irreducible_mass": 0.9886656525576017,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.19871717187428384,
+        "mean_expansion": 0.00020192903976018098,
+        "merit": 8.002737155543619e-08,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.17267453041402986,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            10.434990706994418,
+            -0.0994344007493004,
+            1.198436197268464,
+            3.392619160331832
+          ],
+          "finite_difference_relative_error": 1.7034624942609872e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 4.563136600305361,
+          "normalizer_roundtrip_error": 3.3306690738754696e-16,
+          "operator_condition_number": 229.20150944022575,
+          "operator_matrix": [
+            [
+              -0.41777025060628137,
+              -0.25126557580981956,
+              0.6358491909620533,
+              -0.23633875358299045
+            ],
+            [
+              2.7209735264451425,
+              2.0631525779454223,
+              -3.448802865526324,
+              2.2438152536239775
+            ],
+            [
+              -1.046672955412649,
+              -0.9935101433672868,
+              6.034040967752741,
+              -3.7909746970910465
+            ],
+            [
+              0.4232146271139938,
+              0.7326450841330591,
+              -2.8014300348296777,
+              7.247188368753542
+            ]
+          ],
+          "physical_step": 6.478085740015948e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": -0.0994344007493004,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.001168538211846465,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 428.8932475871505,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          -0.10467198318007709,
+          2.1397979917665175,
+          6.029031880071701,
+          17.871110430877774
+        ],
+        "rms_expansion": 0.11508786190155647,
+        "spectral_residual_norm": 0.0004000684230364506,
+        "successful_observations": 3,
+        "time": 0.5000000000000003,
+        "tracker_seed_name": "common_inner",
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "common_outer": {
+        "active_lower": [],
+        "active_upper": [],
+        "area": 49.20968692353202,
+        "branch": "common_outer",
+        "cartesian_qualification": {
+          "cells_per_mean_radius": 6.685405539432385,
+          "continuum_zero_qualified": false,
+          "minimum_cells_per_mean_radius": 16.0,
+          "minimum_resolved_mode_magnitude": 0.005,
+          "principal_mode_imaginary": 0.0,
+          "principal_mode_real": 0.06394416034616036,
+          "principal_mode_sign_gate_passed": false,
+          "reason": "surface is below the calibrated Cartesian resolution",
+          "resolution_gate_passed": false
+        },
+        "center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coefficients": [
+          -0.8980601816605311,
+          0.7804421166451804,
+          0.01731497603464173,
+          -0.01839610267113601
+        ],
+        "complementarity_residual": 0.0006455207513607885,
+        "coordinate_radius_maximum": 0.6598318531342814,
+        "coordinate_radius_mean": 0.4178378462145241,
+        "coordinate_radius_minimum": 0.3228540425100418,
+        "failed_observations": 16,
+        "first_found_time": 0.4000000000000003,
+        "found": true,
+        "irreducible_mass": 0.9894420727033951,
+        "iterations": 2,
+        "lower_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_expansion": 0.07398199327245003,
+        "mean_expansion": 0.0003530327512334367,
+        "merit": 2.5773588721902555e-07,
+        "modes": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "newly_found": false,
+        "newly_lost": false,
+        "normal_stability": {
+          "area_adjoint_defect": 0.05580677319632363,
+          "eigenvalues_imag": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eigenvalues_real": [
+            9.467719234241525,
+            0.06394416034616036,
+            1.2224861563753215,
+            3.696081419635023
+          ],
+          "finite_difference_relative_error": 1.0076304900293143e-09,
+          "modes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "normalizer_condition_number": 2.92617489870161,
+          "normalizer_roundtrip_error": 2.498001805406602e-16,
+          "operator_condition_number": 199.72588508562524,
+          "operator_matrix": [
+            [
+              -0.05794358395577791,
+              -0.1668293823872981,
+              0.25494210570617903,
+              -0.09016025822041436
+            ],
+            [
+              1.1192292277346607,
+              1.6086795135721685,
+              -2.0672231803604166,
+              1.3087657007248215
+            ],
+            [
+              -0.43875687031342353,
+              -0.5665693085691847,
+              5.111849724571345,
+              -3.2898062698558594
+            ],
+            [
+              0.20945504161956202,
+              0.3757851375539567,
+              -1.9357518688599922,
+              7.787645316410294
+            ]
+          ],
+          "physical_step": 8.356756924290482e-05,
+          "principal_eigenvalue_imag": 0.0,
+          "principal_eigenvalue_real": 0.06394416034616036,
+          "reason": "ok",
+          "valid": true
+        },
+        "projected_gradient_norm": 0.0006455207513607885,
+        "reason": "expansion tolerance reached",
+        "response_condition_number": 337.7887830629784,
+        "response_eigenvalues_imag": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "response_eigenvalues_real": [
+          0.09605033436789423,
+          2.4773338446395803,
+          7.15372661161364,
+          17.144994405050987
+        ],
+        "rms_expansion": 0.026928942930606017,
+        "spectral_residual_norm": 0.0007179636303031312,
+        "successful_observations": 5,
+        "time": 0.5000000000000003,
+        "tracker_seed_name": "common_outer",
+        "upper_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "constraints": {
+      "boundary_mask_radius": 0.3125,
+      "hamiltonian_l2_full": 2.313562107641156,
+      "hamiltonian_l2_interior": 0.03922025806267157,
+      "hamiltonian_l2_masked": 2.239624027430435,
+      "interior_fraction": 0.29345703125,
+      "momentum_l2_full": 0.30984794399734594,
+      "momentum_l2_interior": 0.007375906185690022,
+      "momentum_l2_masked": 0.3141484854871387,
+      "puncture_mask_radius": 0.3125,
+      "unmasked_fraction": 0.968505859375
+    },
+    "coordinate_separation": 0.7822076962300747,
+    "health": {
+      "finite": true,
+      "maximum_conformal_factor": 0.6168044330763125,
+      "maximum_lapse": 0.6302063592759576,
+      "minimum_conformal_factor": 0.02337320642030262,
+      "minimum_conformal_metric_eigenvalue": 0.9695047859641602,
+      "minimum_lapse": 0.02351733386926675
+    },
+    "individual": null,
+    "puncture_z": [
+      -0.39110384811503734,
+      0.39110384811503734
+    ],
+    "step": 200,
+    "time": 0.5000000000000003
+  }
+]

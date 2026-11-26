@@ -8,3 +8,11 @@ __pycache__/
 /runs/*
 !/runs/nulloth_master/
 *.pid
+!/runs/repair_showcases/
+/runs/repair_showcases/*
+!/runs/repair_showcases/interaction_dominant/
+!/runs/repair_showcases/ringing_trap/
+!/runs/ccz4_puncture_mots_lapsefix_n32_early/
+/runs/ccz4_puncture_mots_lapsefix_n32_early/*
+!/runs/ccz4_puncture_mots_lapsefix_n32_early/trajectory.json
+!/runs/kkt_mots_brill_lindquist_direct_l16_refined.json

@@ -1,0 +1,25 @@
+[
+  {
+    "case": {
+      "mass": 0.6,
+      "tau_star": 0.15,
+      "coupling": 30.0,
+      "peak_density": 0.08,
+      "beta_target": 1.76
+    },
+    "name": "m0p6_tau0p15_g30_rho0p08_b1p76",
+    "stable": true,
+    "peak_mismatch_over_initial_a": 0.8664770246511535,
+    "peak_interaction_fraction": 0.5617016003616183,
+    "maximum_exterior_energy_fraction": 0.8783254802414048,
+    "late_field_fraction": 0.8948832679034737,
+    "profile_zero_crossings": 5,
+    "maximum_spectral_entropy": 0.5324259695511273,
+    "minimum_causal_margin": 6.759292715062321e-23,
+    "final_gauss_l2": 2.880350293563453e-19,
+    "dt_limit": 0.012,
+    "points": 160,
+    "length": 24.0,
+    "final_time": 8.0
+  }
+]

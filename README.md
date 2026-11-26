@@ -14,7 +14,7 @@ Physical Nulloth couples ordinary matter to a second current called the Null, a 
 
 ## Your first shift
 
-From the repository root, with Python 3.10 or newer:
+Use Python 3.10 or newer and run these commands from the repository root.
 
 ```sh
 python -m pip install -e .
