@@ -1,0 +1,176 @@
+{
+  "trace_schema": "nulloth.production-trace.v1",
+  "state_groups": 27,
+  "rhs_order": [
+    "recover",
+    "geometry",
+    "matter",
+    "carrier",
+    "proca",
+    "scalar"
+  ],
+  "step_order": [
+    "rk_evolution",
+    "ccz4_projection",
+    "scalar_gradient_projection",
+    "master_manifold_projection",
+    "carrier_drag",
+    "vector_damping",
+    "final_recovery"
+  ],
+  "entries": [
+    {
+      "id": "NUL-PRD-001",
+      "operation": "Recover all physical primitives and subtract complete vector and scalar stress before the material solve.",
+      "kind": "VALIDATION",
+      "continuum_basis": "NULLOTH_SPEC.md section 14",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "def recover("},
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_smallest_real_periodic_grid_initializes_and_recovers"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-002",
+      "operation": "Construct material, vector, scalar, and total Eulerian stress partitions.",
+      "kind": "PHYSICAL",
+      "continuum_basis": "NULLOTH_SPEC.md sections 9-12",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "total = _add_stress(_add_stress(material_stress, vector_stress), scalar_stress)"},
+      "verification": [
+        {"path": "experiments/audit_nulloth_action.py", "symbol": "def hilbert_material_stress_error("},
+        {"path": "tests/test_nulloth_foundation.py", "symbol": "test_curved_spatial_scalar_stress_matches_canonical_projection"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-003",
+      "operation": "Evolve CCZ4 geometry using only the total physical stress projections.",
+      "kind": "PHYSICAL",
+      "continuum_basis": "NULLOTH_SPEC.md section 11",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "geometry_rhs = self.ccz4.rhs"},
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_zero_scalar_first_24_rhs_groups_match_theory33"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-004",
+      "operation": "Evolve total conservative energy-momentum and baryon transport.",
+      "kind": "PHYSICAL",
+      "continuum_basis": "NULLOTH_SPEC.md sections 3, 11, and 13",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "matter_rhs = list(self._conservative_rhs"},
+      "verification": [
+        {"path": "experiments/qualify_nulloth_spell_001.py", "symbol": "maximum_number_relative_drift"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-005",
+      "operation": "Evolve carrier number and densitized carrier canonical momentum.",
+      "kind": "PHYSICAL",
+      "continuum_basis": "NULLOTH_SPEC.md sections 3, 8, and 13",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "target_charge_rhs, target_momentum_rhs = self._target_rhs("},
+      "verification": [
+        {"path": "tests/test_theory33.py", "symbol": "test_periodic_rhs_conserves_both_number_currents_and_total_energy"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-006",
+      "operation": "Evolve both mixed-Proca fields, longitudinal charges, and cleaners.",
+      "kind": "PHYSICAL",
+      "continuum_basis": "NULLOTH_ACTION_DERIVATION.md section 5",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "field_rhs = self.system.rhs_fields("},
+      "verification": [
+        {"path": "tests/test_theory3.py", "symbol": "test_field_and_charge_rhs_preserves_satisfied_gauss_data"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-007",
+      "operation": "Evolve varphi, Pi, and Phi_i using the action-derived scalar source.",
+      "kind": "PHYSICAL",
+      "continuum_basis": "NULLOTH_SPEC.md sections 10 and 12",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "scalar_rhs = self.scalar_system.rhs("},
+      "verification": [
+        {"path": "tests/test_nulloth_foundation.py", "symbol": "test_scalar_momentum_sign_pair_is_preserved"},
+        {"path": "experiments/run_nulloth_homogeneous_growth.py", "symbol": "def run_homogeneous_growth("}
+      ]
+    },
+    {
+      "id": "NUL-PRD-008",
+      "operation": "Project the CCZ4 algebraic constraints at Runge-Kutta stages and the final state.",
+      "kind": "NUMERICAL",
+      "continuum_basis": "CCZ4 algebraic representation constraints",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "candidate.geometry = self.ccz4.project_algebraic"},
+      "verification": [
+        {"path": "tests/test_ccz4.py", "symbol": "test_projection_enforces_algebraic_constraints"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-009",
+      "operation": "Project Phi_i to the discrete gradient of varphi without adding physical energy or activation.",
+      "kind": "NUMERICAL",
+      "continuum_basis": "NULLOTH_SPEC.md section 12 first-order reduction constraint",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "candidate.scalar.gradient = self.grid.gradient(candidate.scalar.varphi)"},
+      "verification": [
+        {"path": "experiments/qualify_nulloth_spell_001.py", "symbol": "maximum_scalar_constraint_l2"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-010",
+      "operation": "Reconcile redundant entropy with the master-function energy manifold and record the correction.",
+      "kind": "NUMERICAL",
+      "continuum_basis": "NULLOTH_SPEC.md sections 14 and 18",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _project_to_master_manifold("},
+      "verification": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "last_projection_entropy_change"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-011",
+      "operation": "Apply implicit entropy-positive carrier drag.",
+      "kind": "IRREVERSIBLE",
+      "continuum_basis": "NULLOTH_SPEC.md section 15",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _apply_carrier_drag("},
+      "verification": [
+        {"path": "tests/test_theory33.py", "symbol": "test_stiff_drag_map_is_unconditionally_decaying_and_conservative"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-012",
+      "operation": "Apply exact vector damping and deposit only positive electric loss as heat.",
+      "kind": "IRREVERSIBLE",
+      "continuum_basis": "NULLOTH_SPEC.md section 15",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _apply_damping("},
+      "verification": [
+        {"path": "tests/test_theory33.py", "symbol": "test_exact_vector_damping_closes_without_reservoir"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-013",
+      "operation": "Perform final recovery, admissibility rejection, and entropy nondecrease check.",
+      "kind": "VALIDATION",
+      "continuum_basis": "NULLOTH_SPEC.md sections 16 and 18",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "self.recover(result)"},
+      "verification": [
+        {"path": "experiments/qualify_nulloth_spell_001.py", "symbol": "minimum_legendre_eigenvalue"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-014",
+      "operation": "Persist every evolved group and reproduce the uninterrupted branch across restart.",
+      "kind": "VALIDATION",
+      "continuum_basis": "NULLOTH_SPEC.md section 19",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "def save_nulloth_production_state("},
+      "verification": [
+        {"path": "experiments/qualify_nulloth_spell_001.py", "symbol": "maximum_restart_error"}
+      ]
+    },
+    {
+      "id": "NUL-PRD-015",
+      "operation": "Report physical, constraint, conservation, entropy, projection, admissibility, and recovery diagnostics separately.",
+      "kind": "VALIDATION",
+      "continuum_basis": "NULLOTH_SPEC.md section 20",
+      "implementation": {"path": "src/causal_repair/production_nulloth.py", "symbol": "def diagnostics("},
+      "verification": [
+        {"path": "experiments/promote_nulloth_spell_candidates.py", "symbol": "class FullCandidateRun"}
+      ]
+    }
+  ]
+}
+

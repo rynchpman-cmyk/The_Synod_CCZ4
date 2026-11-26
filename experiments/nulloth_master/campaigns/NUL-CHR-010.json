@@ -1,0 +1,96 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-010",
+  "title": "High-precision denial-surface mesh",
+  "question": "Do production, characteristic-condition, thermodynamic-zero, and Legendre-zero coherence surfaces remain correctly ordered across carrier density, and how do low-carrier superluminal and high-coherence nonhyperbolic regions occupy a two-dimensional slice?",
+  "prediction": "All seventeen coherence-surface points retain the registered denial ordering with positive production margin; all twenty-five thermodynamic states yield a low-carrier causal crossing; the 31-by-31 plane contains safe, superluminal, and complex or ill-conditioned regions; every bracket is narrower than 1e-9.",
+  "falsifier": "Any surface ordering is reversed, a carrier crossing is missing, a required region is absent, an unclassified cell appears, or a characteristic bracket exceeds tolerance.",
+  "decisive_observables": [
+    "precision_decimal_digits",
+    "coherence_surface_points",
+    "carrier_causal_surface_points",
+    "carrier_coherence_grid_cells",
+    "counterflow_coherence_grid_cells",
+    "safe_grid_cells",
+    "superluminal_grid_cells",
+    "complex_or_ill_conditioned_grid_cells",
+    "thermodynamic_grid_cells",
+    "legendre_grid_cells",
+    "unclassified_grid_cells",
+    "failed_region_components",
+    "production_to_condition_order_violations",
+    "condition_to_thermodynamic_order_violations",
+    "thermodynamic_to_legendre_order_violations",
+    "missing_carrier_causal_crossings",
+    "maximum_characteristic_bracket_width",
+    "minimum_condition_margin_above_production_cap",
+    "minimum_thermodynamic_to_legendre_gap",
+    "minimum_qualified_carrier_density",
+    "maximum_qualified_carrier_density"
+  ],
+  "acceptance_criteria": [
+    {"observable": "precision_decimal_digits", "operator": "==", "value": 80},
+    {"observable": "coherence_surface_points", "operator": "==", "value": 17},
+    {"observable": "carrier_causal_surface_points", "operator": "==", "value": 25},
+    {"observable": "carrier_coherence_grid_cells", "operator": "==", "value": 961},
+    {"observable": "counterflow_coherence_grid_cells", "operator": "==", "value": 961},
+    {"observable": "safe_grid_cells", "operator": ">", "value": 0},
+    {"observable": "superluminal_grid_cells", "operator": ">", "value": 0},
+    {"observable": "complex_or_ill_conditioned_grid_cells", "operator": ">", "value": 0},
+    {"observable": "unclassified_grid_cells", "operator": "==", "value": 0},
+    {"observable": "failed_region_components", "operator": ">=", "value": 1},
+    {"observable": "production_to_condition_order_violations", "operator": "==", "value": 0},
+    {"observable": "condition_to_thermodynamic_order_violations", "operator": "==", "value": 0},
+    {"observable": "thermodynamic_to_legendre_order_violations", "operator": "==", "value": 0},
+    {"observable": "missing_carrier_causal_crossings", "operator": "==", "value": 0},
+    {"observable": "maximum_characteristic_bracket_width", "operator": "<=", "value": 1e-9},
+    {"observable": "minimum_condition_margin_above_production_cap", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_to_legendre_gap", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "Thermodynamic and Legendre determinant roots are solved at 80 decimal digits independently of the characteristic bisection.",
+    "Every coherence characteristic bracket begins at the canonical production cap and ends beyond the exact thermodynamic zero.",
+    "The low-carrier surface spans five baryon densities and five internal energies rather than reusing one central state.",
+    "The central carrier-coherence and cold dense counterflow-coherence planes classify every cell by an ordered causal, complex/conditioning, thermodynamic, and Legendre taxonomy.",
+    "Four-neighbor connected components distinguish separated failed regions without assuming their topology."
+  ],
+  "resolution_ladder": [
+    {"carrier_density_surface_points": 17, "root_precision_digits": 80},
+    {"thermodynamic_mesh": [5, 5], "carrier_bisection_iterations": 32},
+    {"carrier_coherence_grid": [31, 31], "counterflow_coherence_grid": [31, 31], "directions_per_cell": 2}
+  ],
+  "seed": null,
+  "seed_rationale": "Surface coordinates, meshes, directions, root solves, and bisections are deterministic.",
+  "parameters": {
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "coherence_surface_carrier_bounds": [0.12, 0.24],
+    "causal_surface_density_bounds": [0.4, 0.9],
+    "causal_surface_internal_bounds": [0.1, 0.35],
+    "carrier_coherence_plane_bounds": [[0.01, 0.3], [0.0, 0.26]],
+    "counterflow_coherence_plane_bounds": [[-0.6, 0.6], [0.0, 0.26]],
+    "counterflow_coherence_plane_state": [0.9, 0.1, 0.24]
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_boundary_surfaces.py",
+    "--coherence-points",
+    "17",
+    "--thermodynamic-points",
+    "5",
+    "--grid-points",
+    "31"
+  ],
+  "timeout_seconds": 1800,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_boundary_surfaces.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/matter.py",
+    "src/causal_repair/adm.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-010"
+  ]
+}

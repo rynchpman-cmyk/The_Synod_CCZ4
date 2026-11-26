@@ -1,0 +1,84 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-003",
+  "title": "Near-uniform all-direction characteristic scan",
+  "question": "Do the qualified Nulloth characteristic gates remain healthy over near-uniform spherical propagation coverage at boundary and seeded interior states?",
+  "prediction": "All 3,072 state-direction pairs remain activated, causal, and strongly hyperbolic; the 256-direction covering radius remains below 0.18 radians; condition numbers remain below 100 and all constitutive minima remain positive.",
+  "falsifier": "Any sampled direction fails a causal, rank, eigenspace, reduction, Legendre, thermodynamic, activation, or angular-coverage criterion.",
+  "decisive_observables": [
+    "states",
+    "directions_per_state",
+    "samples",
+    "failures",
+    "activated_samples",
+    "approximate_covering_radius_radians",
+    "maximum_absolute_speed",
+    "maximum_imaginary_speed",
+    "maximum_eigenvector_condition",
+    "maximum_constraint_reduced_condition",
+    "maximum_eigenspace_residual",
+    "maximum_reduction_spectrum_error",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue",
+    "maximum_characteristic_multiplicity",
+    "minimum_distinct_characteristic_families"
+  ],
+  "acceptance_criteria": [
+    {"observable": "states", "operator": "==", "value": 12},
+    {"observable": "directions_per_state", "operator": "==", "value": 256},
+    {"observable": "samples", "operator": "==", "value": 3072},
+    {"observable": "failures", "operator": "==", "value": 0},
+    {"observable": "activated_samples", "operator": "==", "value": 3072},
+    {"observable": "approximate_covering_radius_radians", "operator": "<=", "value": 0.18},
+    {"observable": "maximum_absolute_speed", "operator": "<=", "value": 1.0000000001},
+    {"observable": "maximum_imaginary_speed", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_eigenvector_condition", "operator": "<=", "value": 100.0},
+    {"observable": "maximum_constraint_reduced_condition", "operator": "<=", "value": 8.0},
+    {"observable": "maximum_eigenspace_residual", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_reduction_spectrum_error", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "Four deterministic boundary states include orthogonal and counter-propagating material and carrier velocities.",
+    "Eight seeded interior states independently vary both velocity orientations and all scalar-domain coordinates.",
+    "Each state is evaluated on the identical 256-point Fibonacci sphere; a separate 4,096-point probe sphere estimates the largest angular hole.",
+    "Raw and regular scalar-constraint-reduced spectra, repeated eigenspaces, and constitutive convexity gates are checked at every direction.",
+    "Characteristic multiplicities and distinct-family counts are recorded rather than inferred from a single axis."
+  ],
+  "resolution_ladder": [
+    {"states": 12, "directions_per_state": 256, "covering_probe_directions": 4096}
+  ],
+  "seed": 20260725,
+  "seed_rationale": "Eight interior physical states are generated from a fixed NumPy seed; the boundary states and direction sphere are deterministic.",
+  "parameters": {
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "density_bounds": [0.4, 0.9],
+    "specific_internal_energy_bounds": [0.1, 0.35],
+    "carrier_density_bounds": [0.12, 0.24],
+    "fluid_speed_bounds": [0.0, 0.2],
+    "carrier_speed_bounds": [0.0, 0.3],
+    "varphi_bounds": [-0.16, 0.16]
+  },
+  "command": [
+    "{python}",
+    "experiments/scan_nulloth_direction_sphere.py",
+    "--seed",
+    "20260725",
+    "--directions-per-state",
+    "256"
+  ],
+  "timeout_seconds": 1200,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/scan_nulloth_direction_sphere.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/matter.py",
+    "src/causal_repair/adm.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-003"
+  ]
+}

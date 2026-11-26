@@ -1,0 +1,88 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CTL-004-ASSESS-001",
+  "title": "Thirty-two-point brake-threshold corrected assessment",
+  "question": "Did the immutable NUL-CTL-004 production run fail exclusively because exact decimal bracket equality accumulated four binary ulps?",
+  "prediction": "The source process completed, raw scientific acceptance is false, the width comparison is the sole failed criterion, its excess lies within eight ulps of the unchanged 0.0005 bound, and every physical and cross-resolution gate passed.",
+  "falsifier": "An incomplete source process, any additional failed criterion, an excess beyond eight ulps, a failed convergence decision, or violation of any original physical veto falsifies the correction.",
+  "decisive_observables": [
+    "source_process_completed",
+    "raw_scientific_acceptance_passed",
+    "raw_failed_criteria",
+    "all_nonwidth_criteria_passed",
+    "only_width_roundoff_failure",
+    "declared_bracket_width",
+    "observed_bracket_width",
+    "bracket_width_excess",
+    "roundoff_allowance",
+    "bracket_width_equal_within_eight_ulps",
+    "final_lower_amplitude",
+    "final_upper_amplitude",
+    "final_lower_suppression",
+    "final_upper_suppression",
+    "relative_threshold_shift_from_sixteen_upper",
+    "threshold_converged_with_sixteen_points",
+    "all_new_branches_admissible",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue"
+  ],
+  "acceptance_criteria": [
+    {"observable": "source_process_completed", "operator": "==", "value": 1},
+    {"observable": "raw_scientific_acceptance_passed", "operator": "==", "value": 0},
+    {"observable": "raw_failed_criteria", "operator": "==", "value": 1},
+    {"observable": "all_nonwidth_criteria_passed", "operator": "==", "value": 1},
+    {"observable": "only_width_roundoff_failure", "operator": "==", "value": 1},
+    {"observable": "declared_bracket_width", "operator": "==", "value": 0.0005},
+    {"observable": "bracket_width_excess", "operator": "<=", "value": 8.673617379884035e-19},
+    {"observable": "bracket_width_equal_within_eight_ulps", "operator": "==", "value": 1},
+    {"observable": "final_lower_suppression", "operator": "<", "value": 0.02},
+    {"observable": "final_upper_suppression", "operator": ">=", "value": 0.02},
+    {"observable": "relative_threshold_shift_from_sixteen_upper", "operator": "<=", "value": 0.10},
+    {"observable": "threshold_converged_with_sixteen_points", "operator": "==", "value": 1},
+    {"observable": "all_new_branches_admissible", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": -1e-12},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "The assessment reads the immutable raw run and performs no new physical evolution.",
+    "The 0.0005 scientific width remains unchanged; only eight-ulp representational equality is recognized.",
+    "The width comparison must be the sole raw failure and every original non-width criterion must pass.",
+    "The raw failed record remains preserved and addressable."
+  ],
+  "resolution_ladder": [
+    {"source": "NUL-CTL-004 attempt-001", "role": "immutable production and literal-comparison record"}
+  ],
+  "seed": null,
+  "seed_rationale": "The assessment is a deterministic parse of a content-addressed run record.",
+  "parameters": {
+    "correction": "NUL-CTL-004-CR-001",
+    "unchanged_bracket_width": 0.0005,
+    "representational_allowance_ulps": 8
+  },
+  "command": [
+    "{python}",
+    "experiments/assess_nulloth_brake_threshold_32.py",
+    "runs/nulloth_master/NUL-CTL-004-4ceb45997c80a0b3/attempt-001/run_record.json"
+  ],
+  "timeout_seconds": 30,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/assess_nulloth_brake_threshold_32.py",
+    "experiments/nulloth_master/corrections/NUL-CTL-004-CR-001.md",
+    "runs/nulloth_master/NUL-CTL-004-4ceb45997c80a0b3/attempt-001/run_record.json"
+  ],
+  "outputs": [],
+  "supports_claims": ["NUL-CTL-004"]
+}

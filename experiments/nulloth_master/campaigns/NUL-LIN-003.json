@@ -1,0 +1,86 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-LIN-003",
+  "title": "Mode mixing, avoided crossings, damping, and drag",
+  "question": "Do the implemented lower-order vector and carrier operators reproduce exact crossings, mixed-mode repulsion, cleaning decay, electric damping, and relaxation-time-dependent counterflow decay without violating conservation or entropy production?",
+  "prediction": "The uncoupled vector mass sweep has one exact crossing while nonzero mixing opens one avoided crossing with 50 percent field mixing; cleaning and electric decay match their analytic matrix exponents within 1e-10; and production carrier drag follows exp(-dt/tau), strengthens monotonically as tau decreases, conserves energy and momentum, and produces nonnegative entropy.",
+  "falsifier": "Failure to resolve the crossing controls, damping error above tolerance, nonmonotone drag, negative heat or entropy, or a drag-induced energy or momentum change falsifies the lower-order map.",
+  "decisive_observables": [
+    "exact_crossings_detected",
+    "avoided_crossings_detected",
+    "coupled_minimum_mass_squared_gap",
+    "maximum_mode_mixing_fraction",
+    "maximum_cleaning_dispersion_error",
+    "electric_damping_modes",
+    "maximum_electric_damping_error",
+    "minimum_irreversible_heat",
+    "maximum_carrier_drag_decay_error",
+    "carrier_drag_monotonic_with_inverse_relaxation_time",
+    "minimum_drag_entropy_change",
+    "maximum_drag_energy_conservation_error",
+    "maximum_drag_momentum_conservation_error"
+  ],
+  "acceptance_criteria": [
+    {"observable": "exact_crossings_detected", "operator": "==", "value": 1},
+    {"observable": "avoided_crossings_detected", "operator": "==", "value": 1},
+    {"observable": "coupled_minimum_mass_squared_gap", "operator": ">=", "value": 0.09},
+    {"observable": "maximum_mode_mixing_fraction", "operator": ">=", "value": 0.49},
+    {"observable": "maximum_cleaning_dispersion_error", "operator": "<=", "value": 1e-10},
+    {"observable": "electric_damping_modes", "operator": "==", "value": 6},
+    {"observable": "maximum_electric_damping_error", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_irreversible_heat", "operator": ">=", "value": -1e-14},
+    {"observable": "maximum_carrier_drag_decay_error", "operator": "<=", "value": 1e-10},
+    {"observable": "carrier_drag_monotonic_with_inverse_relaxation_time", "operator": "==", "value": 1},
+    {"observable": "minimum_drag_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "maximum_drag_energy_conservation_error", "operator": "<=", "value": 1e-13},
+    {"observable": "maximum_drag_momentum_conservation_error", "operator": "<=", "value": 1e-13}
+  ],
+  "controls": [
+    "The zero-mixing mass sweep is the exact-crossing control for the nonzero-mixing avoided crossing.",
+    "Vector eigenmass gaps and field participation are computed from the production Gauss matrix.",
+    "Cleaning damping is measured from the actual Fourier RHS generator and compared to its quadratic roots.",
+    "Electric damping initializes each analytic damping-matrix eigenvector independently.",
+    "The gamma_B=0 common electric mode is retained as an undamped zero-heat control.",
+    "Carrier drag is applied through the production implicit collision map, not a stand-alone exponential assignment.",
+    "Pre-drag conserved energy and momentum arrays are immutable comparison controls."
+  ],
+  "resolution_ladder": [
+    {"mass_samples": 81},
+    {"cleaning_damping_values": [0.0, 0.5, 1.0, 3.0], "fourier_grid_points": 24},
+    {"carrier_relaxation_times": [0.25, 0.5, 1.0, 2.0], "production_grid_points": 4}
+  ],
+  "seed": null,
+  "seed_rationale": "All parameter sweeps, eigenmodes, and homogeneous production states are deterministic.",
+  "parameters": {
+    "mass_A": 0.5,
+    "mass_B_range": [0.3, 0.7],
+    "coupled_mixing_mass_squared": 0.05,
+    "cleaning_wavenumber": 1.0,
+    "electric_step": 0.1,
+    "carrier_drag_step": 0.05,
+    "carrier_initial_speed": 0.2
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_mixing_and_relaxation.py",
+    "--output",
+    "{run_dir}/mixing_relaxation.json"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_mixing_and_relaxation.py",
+    "experiments/audit_nulloth_linear_spectrum.py",
+    "experiments/nulloth_master/NULLOTH_MIXING_DAMPING.md",
+    "src/causal_repair/backend.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "mixing_relaxation.json"
+  ],
+  "supports_claims": [
+    "NUL-LIN-003"
+  ]
+}

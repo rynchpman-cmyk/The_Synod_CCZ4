@@ -1,0 +1,91 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-004",
+  "title": "Adaptive thermodynamic, counterflow, and coherence atlas",
+  "question": "Where are the narrowest constitutive and characteristic margins inside the declared discovery box when sampling is adaptively concentrated around convexity loss, poor eigenspace conditioning, and mode collisions?",
+  "prediction": "All 832 boundary and adaptively selected states remain activated, causal, convex, and strongly hyperbolic in four directional orientations, while the adaptive search resolves finite positive convexity and distinct-mode margins.",
+  "falsifier": "Any sampled state fails activation, causality, complete eigenspaces, scalar-constraint reduction, Legendre positivity, thermodynamic positivity, or the registered numerical tolerances.",
+  "decisive_observables": [
+    "dimensions",
+    "boundary_states",
+    "refinements",
+    "adaptive_states",
+    "sampled_states",
+    "directions_per_state",
+    "symbol_evaluations",
+    "maximum_refinement_depth",
+    "failures",
+    "activated_states",
+    "maximum_absolute_speed",
+    "maximum_imaginary_speed",
+    "maximum_eigenvector_condition",
+    "maximum_constraint_reduced_condition",
+    "maximum_eigenspace_residual",
+    "maximum_reduction_spectrum_error",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue",
+    "minimum_distinct_mode_gap",
+    "maximum_effective_mass_squared"
+  ],
+  "acceptance_criteria": [
+    {"observable": "dimensions", "operator": "==", "value": 5},
+    {"observable": "boundary_states", "operator": "==", "value": 32},
+    {"observable": "refinements", "operator": "==", "value": 24},
+    {"observable": "adaptive_states", "operator": "==", "value": 800},
+    {"observable": "sampled_states", "operator": "==", "value": 832},
+    {"observable": "directions_per_state", "operator": "==", "value": 4},
+    {"observable": "symbol_evaluations", "operator": "==", "value": 3328},
+    {"observable": "maximum_refinement_depth", "operator": ">=", "value": 2},
+    {"observable": "failures", "operator": "==", "value": 0},
+    {"observable": "activated_states", "operator": "==", "value": 832},
+    {"observable": "maximum_absolute_speed", "operator": "<=", "value": 1.0000000001},
+    {"observable": "maximum_imaginary_speed", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_eigenvector_condition", "operator": "<=", "value": 100.0},
+    {"observable": "maximum_constraint_reduced_condition", "operator": "<=", "value": 8.0},
+    {"observable": "maximum_eigenspace_residual", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_reduction_spectrum_error", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_distinct_mode_gap", "operator": ">", "value": 1e-8},
+    {"observable": "maximum_effective_mass_squared", "operator": "<", "value": 0.0}
+  ],
+  "controls": [
+    "The exact 32 corners of the registered five-dimensional state box are always included.",
+    "The initial 32 cells cover the full box before priority refinement begins.",
+    "Cell priority is the maximum hazard from inverse convexity margin, eigenspace condition, and inverse distinct-mode gap.",
+    "Each selected five-dimensional cell is split in every coordinate, preventing one preferred coordinate from controlling refinement.",
+    "Every state is audited longitudinally, transversely, and in two oblique directions.",
+    "Repeated characteristic families are clustered before the nearest distinct-mode gap is measured."
+  ],
+  "resolution_ladder": [
+    {"boundary_states": 32, "initial_cells": 32},
+    {"priority_refinements": 24, "adaptive_states": 800, "directions_per_state": 4}
+  ],
+  "seed": null,
+  "seed_rationale": "The adaptive priority rule, tie order, cells, corners, and directions are deterministic; no random sampling is used.",
+  "parameters": {
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "coordinates": ["density", "specific_internal_energy", "carrier_density", "signed_counterflow", "varphi"],
+    "lower_bounds": [0.4, 0.1, 0.12, -0.3, -0.16],
+    "upper_bounds": [0.9, 0.35, 0.24, 0.3, 0.16]
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_adaptive_state_atlas.py",
+    "--refinements",
+    "24"
+  ],
+  "timeout_seconds": 1200,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_adaptive_state_atlas.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/matter.py",
+    "src/causal_repair/adm.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-004"
+  ]
+}

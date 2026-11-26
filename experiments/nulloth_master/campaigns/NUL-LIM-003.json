@@ -1,0 +1,74 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-LIM-003",
+  "title": "Vacuum, canonical-scalar, and single-Proca limits",
+  "question": "Do the production equations recover vacuum CCZ4 as atmosphere support vanishes, canonical Klein-Gordon dynamics when the scalar decouples, and two independent symmetric Proca sectors when mixing and sources vanish?",
+  "prediction": "The CCZ4 source error decreases with at least 1.5 order in carrier floor, the scalar mode matches its analytic frequency and time reverse within 1e-8, the homogeneous condensed source vanishes, and isolated Proca sectors neither cross-excite nor violate field relabeling above 1e-13.",
+  "falsifier": "Any registered limit fails its convergence, analytic-solution, static-source, decoupling, or relabeling tolerance.",
+  "decisive_observables": [
+    "vacuum_minimum_scaling_order",
+    "vacuum_smallest_floor_error",
+    "scalar_field_max_error",
+    "scalar_momentum_max_error",
+    "scalar_energy_relative_drift",
+    "scalar_time_reversal_max_error",
+    "condensed_static_source_error",
+    "proca_A_to_B_cross_excitation",
+    "proca_B_to_A_cross_excitation",
+    "proca_relabeling_max_error"
+  ],
+  "acceptance_criteria": [
+    {"observable": "vacuum_minimum_scaling_order", "operator": ">=", "value": 1.5},
+    {"observable": "vacuum_smallest_floor_error", "operator": "<=", "value": 1e-4},
+    {"observable": "scalar_field_max_error", "operator": "<=", "value": 1e-8},
+    {"observable": "scalar_momentum_max_error", "operator": "<=", "value": 1e-8},
+    {"observable": "scalar_energy_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "scalar_time_reversal_max_error", "operator": "<=", "value": 1e-8},
+    {"observable": "condensed_static_source_error", "operator": "<=", "value": 1e-12},
+    {"observable": "proca_A_to_B_cross_excitation", "operator": "<=", "value": 1e-13},
+    {"observable": "proca_B_to_A_cross_excitation", "operator": "<=", "value": 1e-13},
+    {"observable": "proca_relabeling_max_error", "operator": "<=", "value": 1e-13}
+  ],
+  "controls": [
+    "Vacuum comparison uses the same perturbed geometry with exactly zero CCZ4 matter sources.",
+    "The scalar comparison uses the analytic Fourier solution with frequency sqrt(k squared plus mass squared).",
+    "Scalar time reversal flips Pi while retaining varphi and Phi_i.",
+    "The Proca comparison sets mixing, sources, damping, and cleaners to zero with equal kinetic and mass coefficients."
+  ],
+  "resolution_ladder": [
+    {"carrier_floor": 0.0004},
+    {"carrier_floor": 0.0002},
+    {"carrier_floor": 0.0001},
+    {"scalar_points": 32, "dt": 0.001, "duration": 0.5}
+  ],
+  "seed": null,
+  "seed_rationale": "All profiles, limits, and integration parameters are deterministic.",
+  "parameters": {
+    "scalar_mode": 2,
+    "scalar_mass": 0.4,
+    "scalar_amplitude": 0.001,
+    "proca_mass": 0.5,
+    "proca_mixing_mass_squared": 0.0
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_decoupled_limits.py"
+  ],
+  "timeout_seconds": 300,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_decoupled_limits.py",
+    "NULLOTH_SPEC.md",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/integrators.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-LIM-003"
+  ]
+}

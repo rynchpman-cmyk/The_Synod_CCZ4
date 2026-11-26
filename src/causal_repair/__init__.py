@@ -1,0 +1,252 @@
+"""Numerical reference implementation of covariant causal repair."""
+
+from .causal_map import causal_current, project_spatial, tanh_over_x
+from .adm import ADMParameters, ADMSolver, ADMState
+from .coupled import CoupledADMProcaSolver, CoupledState
+from .curved_proca import CurvedProcaSystem
+from .curved_proca import Theory2ProcaSystem
+from .fixed_theory2 import Theory2FixedSolver, Theory2FixedState
+from .matter import FluidPrimitive, IdealGasEOS
+from .theory2 import Theory2Parameters
+from .ccz4 import CCZ4Parameters, CCZ4Solver, CCZ4State
+from .grhd import GRHDParameters, GRHDState, ValenciaGRHD
+from .production import ProductionParameters, ProductionSolver, ProductionState
+from .theory3 import DampingResult, Theory3Parameters, Theory3System
+from .production3 import (
+    FiniteDampingReport,
+    MaterialRecoveryReport,
+    Theory3MatterState,
+    Theory3ProductionParameters,
+    Theory3ProductionSolver,
+    Theory3ProductionState,
+    Theory3Recovery,
+    load_theory3_production_state,
+    save_theory3_production_state,
+)
+from .theory33 import (
+    CarrierPrimitive,
+    CharacteristicAudit,
+    MasterState,
+    Theory33MasterFunction,
+    Theory33MasterParameters,
+)
+from .production33 import (
+    Theory33ProductionSolver,
+    Theory33Recovery,
+    Theory33RecoveryReport,
+    load_theory33_production_state,
+    save_theory33_production_state,
+)
+from .nulloth import (
+    NULLOTH_DISCOVERY_PARAMETERS,
+    NullothCharacteristicScreen,
+    NullothCoupledCharacteristicAudit,
+    NullothMasterFunction,
+    NullothMasterState,
+    NullothParameters,
+)
+from .nulloth_scalar import (
+    NullothScalarDiagnostics,
+    NullothScalarState,
+    NullothScalarSystem,
+)
+from .production_nulloth import (
+    NullothProductionSolver,
+    NullothProductionState,
+    NullothRecovery,
+    NullothRecoveryReport,
+    load_nulloth_production_state,
+    save_nulloth_production_state,
+)
+from .finite_nulloth import (
+    FiniteNullothProductionSolver,
+    NullothScalarCharacteristicBoundary,
+)
+from .grid import CartesianGrid, GhostZonePatch, PeriodicGrid
+from .initial_constraints import (
+    CTTInitialDataSolver,
+    CTTParameters,
+    CTTReport,
+    CTTResult,
+    PeriodicCMCInitialDataSolver,
+    PeriodicCMCReport,
+    PeriodicCMCResult,
+)
+from .initial_data import constraint_solved_rotating_two_lobe_data
+from .amr import (
+    BergerColellaStepper,
+    FluxRegister,
+    Theory3AMRFields,
+    Theory3FluxRegisters,
+    conservative_prolong,
+    conservative_restrict,
+    project_theory3_gauss,
+    prolong_theory3_fields,
+    restrict_theory3_fields,
+)
+from .backend import (
+    ArrayBackend,
+    ParallelContext,
+    SlabPartition,
+    apply_constant_2x2_exponential,
+    exchange_theory3_halos,
+)
+from .nr_diagnostics import ApparentHorizonFinder, HorizonResult, Psi4Extractor, WaveExtraction
+from .kkt_horizon import (
+    CCZ4PhysicalNormalMOTSObservation,
+    CCZ4PhysicalNormalMOTSTracker,
+    CCZ4MOTSQualification,
+    DirectBrillLindquistMOTSFinder,
+    KKTIteration,
+    MOTSBranchDefinition,
+    MOTSBranchObservation,
+    MOTSBranchTracker,
+    NormalMOTSStabilityOperator,
+    NormalMOTSStabilityResult,
+    ParametricAxisymmetricMOTSFinder,
+    ParametricMOTSFinder,
+    SpectralMOTSFinder,
+    SpectralMOTSParameters,
+    SpectralMOTSResult,
+    real_spherical_harmonic,
+    spectral_modes,
+)
+from .proca import ProcaParameters, ProcaSolver, ProcaState
+from .relaxation import RelaxationParameters, RelaxationSolver, RelaxationState
+from .bns_shadertoy import (
+    BNSOrbitalState,
+    BNSReducedModel,
+    BNSShaderParameters,
+    MOTSShaderBake,
+    render_shadertoy_glsl,
+    write_shadertoy_package,
+)
+from .mots_shader_adapter import ccz4_campaign_bake, direct_surface_bake
+
+__all__ = [
+    "PeriodicGrid",
+    "CartesianGrid",
+    "GhostZonePatch",
+    "CTTInitialDataSolver",
+    "CTTParameters",
+    "CTTReport",
+    "CTTResult",
+    "PeriodicCMCInitialDataSolver",
+    "PeriodicCMCReport",
+    "PeriodicCMCResult",
+    "constraint_solved_rotating_two_lobe_data",
+    "BergerColellaStepper",
+    "FluxRegister",
+    "conservative_prolong",
+    "conservative_restrict",
+    "Theory3AMRFields",
+    "Theory3FluxRegisters",
+    "project_theory3_gauss",
+    "prolong_theory3_fields",
+    "restrict_theory3_fields",
+    "ArrayBackend",
+    "ParallelContext",
+    "SlabPartition",
+    "apply_constant_2x2_exponential",
+    "exchange_theory3_halos",
+    "ApparentHorizonFinder",
+    "HorizonResult",
+    "Psi4Extractor",
+    "WaveExtraction",
+    "KKTIteration",
+    "CCZ4PhysicalNormalMOTSObservation",
+    "CCZ4PhysicalNormalMOTSTracker",
+    "CCZ4MOTSQualification",
+    "DirectBrillLindquistMOTSFinder",
+    "MOTSBranchDefinition",
+    "MOTSBranchObservation",
+    "MOTSBranchTracker",
+    "NormalMOTSStabilityOperator",
+    "NormalMOTSStabilityResult",
+    "ParametricAxisymmetricMOTSFinder",
+    "ParametricMOTSFinder",
+    "SpectralMOTSFinder",
+    "SpectralMOTSParameters",
+    "SpectralMOTSResult",
+    "real_spherical_harmonic",
+    "spectral_modes",
+    "ADMParameters",
+    "ADMSolver",
+    "ADMState",
+    "CoupledADMProcaSolver",
+    "CoupledState",
+    "CurvedProcaSystem",
+    "Theory2ProcaSystem",
+    "Theory2FixedSolver",
+    "Theory2FixedState",
+    "Theory2Parameters",
+    "FluidPrimitive",
+    "IdealGasEOS",
+    "CCZ4Parameters",
+    "CCZ4Solver",
+    "CCZ4State",
+    "GRHDParameters",
+    "GRHDState",
+    "ValenciaGRHD",
+    "ProductionParameters",
+    "ProductionSolver",
+    "ProductionState",
+    "Theory3Parameters",
+    "Theory3System",
+    "DampingResult",
+    "Theory3ProductionParameters",
+    "Theory3ProductionSolver",
+    "Theory3ProductionState",
+    "Theory3MatterState",
+    "Theory3Recovery",
+    "MaterialRecoveryReport",
+    "FiniteDampingReport",
+    "save_theory3_production_state",
+    "load_theory3_production_state",
+    "CarrierPrimitive",
+    "CharacteristicAudit",
+    "MasterState",
+    "Theory33MasterFunction",
+    "Theory33MasterParameters",
+    "Theory33ProductionSolver",
+    "Theory33Recovery",
+    "Theory33RecoveryReport",
+    "save_theory33_production_state",
+    "load_theory33_production_state",
+    "NullothCharacteristicScreen",
+    "NULLOTH_DISCOVERY_PARAMETERS",
+    "NullothCoupledCharacteristicAudit",
+    "NullothMasterFunction",
+    "NullothMasterState",
+    "NullothParameters",
+    "NullothScalarDiagnostics",
+    "NullothScalarState",
+    "NullothScalarSystem",
+    "NullothProductionSolver",
+    "NullothProductionState",
+    "NullothRecovery",
+    "NullothRecoveryReport",
+    "save_nulloth_production_state",
+    "load_nulloth_production_state",
+    "FiniteNullothProductionSolver",
+    "NullothScalarCharacteristicBoundary",
+    "ProcaParameters",
+    "ProcaSolver",
+    "ProcaState",
+    "RelaxationParameters",
+    "RelaxationSolver",
+    "RelaxationState",
+    "causal_current",
+    "project_spatial",
+    "tanh_over_x",
+    "BNSOrbitalState",
+    "BNSReducedModel",
+    "BNSShaderParameters",
+    "MOTSShaderBake",
+    "ccz4_campaign_bake",
+    "direct_surface_bake",
+    "render_shadertoy_glsl",
+    "write_shadertoy_package",
+]
+
+__version__ = "0.1.0"

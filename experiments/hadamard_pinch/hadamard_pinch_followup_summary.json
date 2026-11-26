@@ -1,0 +1,2464 @@
+{
+  "controlled": {
+    "cases": [
+      {
+        "label": "carrier_weak",
+        "initial_phi_v_pi": [
+          0.010884443568990347,
+          0.43,
+          0.05
+        ],
+        "background_n_d_eps": [
+          1.0,
+          0.25,
+          0.3
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          3.0,
+          0.0
+        ],
+        "dt": 0.001,
+        "failure": {
+          "time": 0.010000000000000002,
+          "stage": "second half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.3075734448189777,
+        "maximum_energy_balance_error": 0.0,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      },
+      {
+        "label": "carrier_strong",
+        "initial_phi_v_pi": [
+          0.010884443568990347,
+          0.43,
+          0.05
+        ],
+        "background_n_d_eps": [
+          1.0,
+          0.25,
+          0.3
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          12.0,
+          0.0
+        ],
+        "dt": 0.001,
+        "failure": {
+          "time": 0.002,
+          "stage": "first half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.3127837360967409,
+        "maximum_energy_balance_error": 0.0,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      },
+      {
+        "label": "carrier_strong_refined",
+        "initial_phi_v_pi": [
+          0.010884443568990347,
+          0.43,
+          0.05
+        ],
+        "background_n_d_eps": [
+          1.0,
+          0.25,
+          0.3
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          12.0,
+          0.0
+        ],
+        "dt": 0.0005,
+        "failure": {
+          "time": 0.0025,
+          "stage": "second half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.31047942507848236,
+        "maximum_energy_balance_error": 0.0,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      },
+      {
+        "label": "scalar_redirect",
+        "initial_phi_v_pi": [
+          0.02,
+          0.32,
+          0.1
+        ],
+        "background_n_d_eps": [
+          1.0,
+          0.25,
+          0.3
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          7.0,
+          4.0
+        ],
+        "dt": 0.001,
+        "failure": {
+          "time": 0.009000000000000001,
+          "stage": "second half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.3795463910483124,
+        "maximum_energy_balance_error": 1.2836953722228372e-16,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      },
+      {
+        "label": "reverse_scalar",
+        "initial_phi_v_pi": [
+          0.02,
+          0.32,
+          0.0
+        ],
+        "background_n_d_eps": [
+          1.0,
+          0.25,
+          0.3
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          7.0,
+          -3.0
+        ],
+        "dt": 0.001,
+        "failure": {
+          "time": 0.01,
+          "stage": "first half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.38955259234309103,
+        "maximum_energy_balance_error": 2.8449465006019636e-16,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      },
+      {
+        "label": "warm_redirect",
+        "initial_phi_v_pi": [
+          0.010884443568990347,
+          0.43,
+          0.1
+        ],
+        "background_n_d_eps": [
+          0.95,
+          0.2625,
+          0.315
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          8.0,
+          3.0
+        ],
+        "dt": 0.001,
+        "failure": {
+          "time": 0.004,
+          "stage": "second half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.3063523990701742,
+        "maximum_energy_balance_error": 2.905661822261152e-16,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      },
+      {
+        "label": "warm_redirect_refined",
+        "initial_phi_v_pi": [
+          0.010884443568990347,
+          0.43,
+          0.1
+        ],
+        "background_n_d_eps": [
+          0.95,
+          0.2625,
+          0.315
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          8.0,
+          3.0
+        ],
+        "dt": 0.0005,
+        "failure": {
+          "time": 0.004,
+          "stage": "second half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.30493997299021003,
+        "maximum_energy_balance_error": 1.3530843112619095e-16,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      },
+      {
+        "label": "cool_redirect",
+        "initial_phi_v_pi": [
+          0.012,
+          0.42,
+          0.1
+        ],
+        "background_n_d_eps": [
+          1.05,
+          0.2375,
+          0.285
+        ],
+        "rates_carrier_q_and_scalar_pi": [
+          8.0,
+          3.0
+        ],
+        "dt": 0.001,
+        "failure": {
+          "time": 0.003,
+          "stage": "first half impulse",
+          "reason": [
+            "oblique zero-speed defect"
+          ]
+        },
+        "minimum_screened_pinch_distance": 0.31949944831322336,
+        "maximum_energy_balance_error": 1.6479873021779667e-16,
+        "maximum_momentum_balance_error": 0.0,
+        "maximum_carrier_balance_error": 0.0
+      }
+    ],
+    "target_velocity_outcomes": {
+      "oblique defect": 324
+    },
+    "detour_state_count": 1296,
+    "maximum_screened_detour_velocity": 0.44
+  },
+  "longitudinal": {
+    "cases": {
+      "pairs": [
+        {
+          "seed": "mode_1",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.9999999999969189,
+            2.754884207077347e-11
+          ],
+          "final_modal_amplitudes": [
+            0.9042841853716154,
+            0.0005566516438349228
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.010775553725259726,
+          "final_higher_harmonic_norm": 1.1563059064829973e-06,
+          "maximum_unseeded_mode_amplitude": 0.0005566516438349228
+        },
+        {
+          "seed": "mode_2",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            9.233247935838893e-13,
+            1.000000000029713
+          ],
+          "final_modal_amplitudes": [
+            0.002154824376276199,
+            0.902560630292412
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.01880922800124331,
+          "final_higher_harmonic_norm": 0.00025901586201845957,
+          "maximum_unseeded_mode_amplitude": 0.002154824376276199
+        },
+        {
+          "seed": "in_phase",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.6753020469397317,
+            0.6753020469732665
+          ],
+          "final_modal_amplitudes": [
+            0.6108738057215395,
+            0.6099210301702481
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.012978874393653079,
+          "final_higher_harmonic_norm": 6.529774217057843e-07
+        },
+        {
+          "seed": "opposite_phase",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.7438747727354341,
+            0.7438747727049886
+          ],
+          "final_modal_amplitudes": [
+            0.6724478507966236,
+            0.6710266314504955
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.017982484735633335,
+          "final_higher_harmonic_norm": 7.081189749753489e-07
+        },
+        {
+          "seed": "broadband",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.21938485794909263,
+            0.10500589845556271
+          ],
+          "final_modal_amplitudes": [
+            0.4526066674434553,
+            1.6025141845243203
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 1.1703565582974724,
+          "final_higher_harmonic_norm": 49.120870904063956
+        }
+      ],
+      "refine": [
+        {
+          "seed": "mode_1",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.000125,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.9999999999990667,
+            2.0446218733085673e-11
+          ],
+          "final_modal_amplitudes": [
+            0.9498181658644568,
+            0.0005711640998931886
+          ],
+          "endtime": 0.004000000000000003,
+          "final_outside_subspace_norm": 0.011652407369389255,
+          "final_higher_harmonic_norm": 9.7530643185186e-07,
+          "maximum_unseeded_mode_amplitude": 0.0005711640998931886
+        },
+        {
+          "seed": "mode_2",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.000125,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            1.6073537538540993e-13,
+            1.0000000000197873
+          ],
+          "final_modal_amplitudes": [
+            0.0009302402986752286,
+            0.9479034658141917
+          ],
+          "endtime": 0.004000000000000003,
+          "final_outside_subspace_norm": 0.008308161502189547,
+          "final_higher_harmonic_norm": 7.43843737799366e-07,
+          "maximum_unseeded_mode_amplitude": 0.0009302402986752286
+        },
+        {
+          "seed": "in_phase",
+          "points": 16,
+          "k": 64,
+          "length": 0.09817477042468103,
+          "amplitude": 0.001,
+          "dt": 0.00025,
+          "light_cfl": 0.04074366543152521,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.6753020469387665,
+            0.6753020469388867
+          ],
+          "final_modal_amplitudes": [
+            0.641843333385563,
+            0.6407589965870544
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.008808113604159137,
+          "final_higher_harmonic_norm": 4.046051077489068e-05
+        },
+        {
+          "seed": "opposite_phase",
+          "points": 16,
+          "k": 256,
+          "length": 0.02454369260617026,
+          "amplitude": 0.001,
+          "dt": 0.000125,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.7438747727363173,
+            0.7438747727360293
+          ],
+          "final_modal_amplitudes": [
+            0.6085760540380551,
+            0.6085144545114382
+          ],
+          "endtime": 0.004000000000000003,
+          "final_outside_subspace_norm": 0.04933272611201514,
+          "final_higher_harmonic_norm": 8.900765615680123e-05
+        },
+        {
+          "seed": "broadband",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.000125,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.21938485794982643,
+            0.1050058984581436
+          ],
+          "final_modal_amplitudes": [
+            0.4668112275590607,
+            1.7582564530137974
+          ],
+          "endtime": 0.004000000000000003,
+          "final_outside_subspace_norm": 1.2223378090835495,
+          "final_higher_harmonic_norm": 49.155767252397986
+        }
+      ],
+      "small": [
+        {
+          "seed": "mode_1",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 0.001,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            1.0000000000000364,
+            1.9506513798466896e-13
+          ],
+          "final_modal_amplitudes": [
+            0.9042841599561489,
+            0.0005560725981752181
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.010776098983068711,
+          "final_higher_harmonic_norm": 0.00011446163480749382,
+          "maximum_unseeded_mode_amplitude": 0.0005560725981752181
+        },
+        {
+          "seed": "mode_1",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-07,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            1.0000000003100191,
+            3.377403014814958e-09
+          ],
+          "final_modal_amplitudes": [
+            0.9042841875922502,
+            0.0005566774858890921
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.01077551108678763,
+          "final_higher_harmonic_norm": 2.3203094785011685e-07,
+          "maximum_unseeded_mode_amplitude": 0.0005566774858890921
+        },
+        {
+          "seed": "mode_1",
+          "points": 16,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-09,
+          "dt": 0.00025,
+          "light_cfl": 0.08148733086305042,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            1.0000000028402574,
+            1.3706893859951706e-07
+          ],
+          "final_modal_amplitudes": [
+            0.9042842986259555,
+            0.0005613362482732826
+          ],
+          "endtime": 0.004000000000000002,
+          "final_outside_subspace_norm": 0.010768868106766982,
+          "final_higher_harmonic_norm": 3.374746303336645e-05,
+          "maximum_unseeded_mode_amplitude": 0.0005613362482732826
+        }
+      ],
+      "extended": [
+        {
+          "seed": "mode_1",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 0.001,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            1.0000000000000213,
+            1.168038461503603e-13
+          ],
+          "final_modal_amplitudes": [
+            0.8095792212637956,
+            0.009049345397947724
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 0.029878508471758172,
+          "final_higher_harmonic_norm": 0.00024675291479320363,
+          "maximum_unseeded_mode_amplitude": 0.009049345397947724
+        },
+        {
+          "seed": "mode_2",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 0.001,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            1.616427374707049e-14,
+            1.0000000000001144
+          ],
+          "final_modal_amplitudes": [
+            0.010219851892191458,
+            0.7970986512471493
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 0.12149702151134405,
+          "final_higher_harmonic_norm": 0.00023971011115122014,
+          "maximum_unseeded_mode_amplitude": 0.010219851892191458
+        },
+        {
+          "seed": "in_phase",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 0.001,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.6753020469387438,
+            0.6753020469389897
+          ],
+          "final_modal_amplitudes": [
+            0.5466074067607506,
+            0.5439481182681973
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 0.06527623469313383,
+          "final_higher_harmonic_norm": 0.0001536872759765822
+        },
+        {
+          "seed": "opposite_phase",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 0.001,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.7438747727363242,
+            0.7438747727360616
+          ],
+          "final_modal_amplitudes": [
+            0.6024341549465146,
+            0.5867114543901876
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 0.11024671055973405,
+          "final_higher_harmonic_norm": 0.00016321642853294022
+        },
+        {
+          "seed": "broadband",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 0.001,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.21938485795042087,
+            0.10500589847552627
+          ],
+          "final_modal_amplitudes": [
+            1.5038945558172574,
+            8.612211323735696
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 4.605517285804561,
+          "final_higher_harmonic_norm": 37.785171838619966
+        }
+      ],
+      "broadband_weak": [
+        {
+          "seed": "broadband",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.21938485794982643,
+            0.1050058984581436
+          ],
+          "final_modal_amplitudes": [
+            1.4924534747096105,
+            8.57367742143572
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 4.563759893910955,
+          "final_higher_harmonic_norm": 37.73441281933692
+        }
+      ],
+      "broadband_material": [
+        {
+          "seed": "broadband_material",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.21938485794982643,
+            0.1050058984581436
+          ],
+          "final_modal_amplitudes": [
+            0.6227616610738973,
+            0.08969744291505151
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 0.5554204209701132,
+          "final_higher_harmonic_norm": 0.21703281428240853
+        }
+      ],
+      "broadband_scalar": [
+        {
+          "seed": "broadband_scalar",
+          "points": 32,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.16297466172610084,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            1.7510694633925788e-13,
+            1.213390592355733e-11
+          ],
+          "final_modal_amplitudes": [
+            1.0629630247311819,
+            8.559211967345153
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 4.262449278755813,
+          "final_higher_harmonic_norm": 37.73775266007071
+        }
+      ],
+      "broadband_fine": [
+        {
+          "seed": "broadband",
+          "points": 40,
+          "k": 128,
+          "length": 0.04908738521234052,
+          "amplitude": 1e-05,
+          "dt": 0.00025,
+          "light_cfl": 0.20371832715762606,
+          "failure": null,
+          "mode_residuals": [
+            1.3327885344497273e-11,
+            4.061022046561479e-11
+          ],
+          "initial_modal_amplitudes": [
+            0.21938485794806245,
+            0.10500589845332473
+          ],
+          "final_modal_amplitudes": [
+            1.570176423760841,
+            8.822441949948802
+          ],
+          "endtime": 0.01600000000000001,
+          "final_outside_subspace_norm": 4.639059773563874,
+          "final_higher_harmonic_norm": 37.74456974052176
+        }
+      ]
+    },
+    "maximum_superposition_fundamental_error": {
+      "pairs_in_phase": 0.0001628962255458651,
+      "pairs_opposite_phase": 0.0001794342540797707,
+      "extended_in_phase": 2.2664390658933387e-06,
+      "extended_opposite_phase": 2.7516967580311998e-06
+    },
+    "broadband_endpoint_material_gain_per_harmonic": {
+      "pairs": [
+        2.8609477137289985,
+        8.789284108855288,
+        9.310620089501782
+      ],
+      "refine": [
+        3.073506016078722,
+        10.190254391888669,
+        10.361732340197515
+      ],
+      "extended": [
+        13.798809618241334,
+        22.13260320792062,
+        26.614162737159358
+      ],
+      "broadband_weak": [
+        13.718927122790136,
+        21.482564024477984,
+        26.52872965405176
+      ],
+      "broadband_material": [
+        1.1760594670298292,
+        0.5732625271824571,
+        0.1894293869739744
+      ],
+      "broadband_scalar": [
+        13.463816327323958,
+        21.55576487341088,
+        26.539227510729436
+      ],
+      "broadband_fine": [
+        14.089761616210374,
+        21.986217866168385,
+        26.23297075602201
+      ]
+    },
+    "broadband_decomposition_maximum_difference": 0.0004856254662221776
+  },
+  "sourced": {
+    "low_flow_5_0.0002": {
+      "case": "low_flow",
+      "linearization_step": 0.000125,
+      "amplitude": 0.0002,
+      "wavenumber": 256.0,
+      "equivalent_cells": 64,
+      "fourier_samples": 4,
+      "nodes": [
+        0.0,
+        0.004000000000000003,
+        0.008000000000000005,
+        0.012000000000000009,
+        0.01600000000000001
+      ],
+      "field_count": 23,
+      "norms": [
+        "primitive",
+        "fractional current and entropy"
+      ],
+      "models": {
+        "frozen_full": {
+          "peak_gains": [
+            1.8862896393312911,
+            1.961776111011035
+          ],
+          "peak_times": [
+            0.01250000000000001,
+            0.01275000000000001
+          ],
+          "endpoint_gains": [
+            1.7904345966310744,
+            1.8762158044578245
+          ]
+        },
+        "evolving_full": {
+          "peak_gains": [
+            1.8860689025142845,
+            1.9617025939331316
+          ],
+          "peak_times": [
+            0.01250000000000001,
+            0.01275000000000001
+          ],
+          "endpoint_gains": [
+            1.7900092465116093,
+            1.875934888136411
+          ]
+        },
+        "evolving_principal": {
+          "peak_gains": [
+            2.234979760847666,
+            2.3402649262324218
+          ],
+          "peak_times": [
+            0.01400000000000001,
+            0.014375000000000011
+          ],
+          "endpoint_gains": [
+            2.1961079385206244,
+            2.31498694848906
+          ]
+        },
+        "without_scalar_cross_blocks": {
+          "peak_gains": [
+            1.886133090954937,
+            1.9618030708693268
+          ],
+          "peak_times": [
+            0.01250000000000001,
+            0.01275000000000001
+          ],
+          "endpoint_gains": [
+            1.7900840038004329,
+            1.8760424098558386
+          ]
+        },
+        "without_vector_cross_blocks": {
+          "peak_gains": [
+            1.8876000941895894,
+            1.9652376222701933
+          ],
+          "peak_times": [
+            0.01237500000000001,
+            0.01275000000000001
+          ],
+          "endpoint_gains": [
+            1.7897146690771566,
+            1.8854579140150385
+          ]
+        },
+        "without_native_drag_linear_term": {
+          "peak_gains": [
+            1.8950541767398141,
+            1.9720459865758673
+          ],
+          "peak_times": [
+            0.01250000000000001,
+            0.01275000000000001
+          ],
+          "endpoint_gains": [
+            1.8024637659767562,
+            1.88854501364675
+          ]
+        }
+      },
+      "k0_source_matrix_norm": [
+        19.52844240647956,
+        19.370065030923485,
+        19.213000794184023,
+        19.05723518243273,
+        18.90271909076571
+      ],
+      "drag_matrix_norm": [
+        2.424852033777548,
+        2.4078462233958056,
+        2.391088861566859,
+        2.3745743993449486,
+        2.3582962198775124
+      ],
+      "maximum_cleaner_response": 3.8216702890748496e-18,
+      "screened_background": [
+        {
+          "time": 0.0,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.57630066364462,
+          "longitudinal_pinch_pair_separation": 0.12681400392371345,
+          "convexity_margin": 0.3412733297553943,
+          "reasons": []
+        },
+        {
+          "time": 0.0005,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.57828724210729,
+          "longitudinal_pinch_pair_separation": 0.12674663872747538,
+          "convexity_margin": 0.3412796696019254,
+          "reasons": []
+        },
+        {
+          "time": 0.001,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.5803123908218404,
+          "longitudinal_pinch_pair_separation": 0.12667878723134957,
+          "convexity_margin": 0.3412860027635442,
+          "reasons": []
+        },
+        {
+          "time": 0.0015000000000000005,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.5823758279714633,
+          "longitudinal_pinch_pair_separation": 0.1266104502422341,
+          "convexity_margin": 0.34129232933479997,
+          "reasons": []
+        },
+        {
+          "time": 0.002000000000000001,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.584477402375692,
+          "longitudinal_pinch_pair_separation": 0.12654162841171857,
+          "convexity_margin": 0.34129864930947973,
+          "reasons": []
+        },
+        {
+          "time": 0.0025000000000000014,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.586616029389557,
+          "longitudinal_pinch_pair_separation": 0.12647232219531174,
+          "convexity_margin": 0.3413049626813866,
+          "reasons": []
+        },
+        {
+          "time": 0.003000000000000002,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.5887913961805924,
+          "longitudinal_pinch_pair_separation": 0.12640253264801116,
+          "convexity_margin": 0.34131126944436646,
+          "reasons": []
+        },
+        {
+          "time": 0.0035000000000000022,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.5910028316579257,
+          "longitudinal_pinch_pair_separation": 0.1263322601785693,
+          "convexity_margin": 0.34131756959232473,
+          "reasons": []
+        },
+        {
+          "time": 0.004000000000000003,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.593249453371161,
+          "longitudinal_pinch_pair_separation": 0.1262615057060869,
+          "convexity_margin": 0.34132386311919183,
+          "reasons": []
+        },
+        {
+          "time": 0.004500000000000003,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.5955299965762215,
+          "longitudinal_pinch_pair_separation": 0.126190269733435,
+          "convexity_margin": 0.3413301500189252,
+          "reasons": []
+        },
+        {
+          "time": 0.005000000000000004,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.5978435858865945,
+          "longitudinal_pinch_pair_separation": 0.12611855297659347,
+          "convexity_margin": 0.34133643028554533,
+          "reasons": []
+        },
+        {
+          "time": 0.005500000000000004,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.600188905850946,
+          "longitudinal_pinch_pair_separation": 0.12604635634140893,
+          "convexity_margin": 0.3413427039130914,
+          "reasons": []
+        },
+        {
+          "time": 0.0060000000000000045,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.602564141816739,
+          "longitudinal_pinch_pair_separation": 0.12597368031928557,
+          "convexity_margin": 0.34134897089565897,
+          "reasons": []
+        },
+        {
+          "time": 0.006500000000000005,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6049678149373876,
+          "longitudinal_pinch_pair_separation": 0.12590052567805754,
+          "convexity_margin": 0.3413552312273569,
+          "reasons": []
+        },
+        {
+          "time": 0.007000000000000005,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6073977301451805,
+          "longitudinal_pinch_pair_separation": 0.12582689288581306,
+          "convexity_margin": 0.341361484902359,
+          "reasons": []
+        },
+        {
+          "time": 0.007500000000000006,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6098519271902587,
+          "longitudinal_pinch_pair_separation": 0.12575278302996967,
+          "convexity_margin": 0.3413677319148587,
+          "reasons": []
+        },
+        {
+          "time": 0.008000000000000005,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6123274780821912,
+          "longitudinal_pinch_pair_separation": 0.1256781965045366,
+          "convexity_margin": 0.34137397225910193,
+          "reasons": []
+        },
+        {
+          "time": 0.008500000000000006,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6148215286938994,
+          "longitudinal_pinch_pair_separation": 0.12560313388707883,
+          "convexity_margin": 0.3413802059293519,
+          "reasons": []
+        },
+        {
+          "time": 0.009000000000000006,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6173308335563523,
+          "longitudinal_pinch_pair_separation": 0.12552759618964826,
+          "convexity_margin": 0.34138643291993315,
+          "reasons": []
+        },
+        {
+          "time": 0.009500000000000007,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.619851348367332,
+          "longitudinal_pinch_pair_separation": 0.1254515839706148,
+          "convexity_margin": 0.3413926532251858,
+          "reasons": []
+        },
+        {
+          "time": 0.010000000000000007,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.622379230206242,
+          "longitudinal_pinch_pair_separation": 0.1253750978339615,
+          "convexity_margin": 0.3413988668395143,
+          "reasons": []
+        },
+        {
+          "time": 0.010500000000000008,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6249096782986796,
+          "longitudinal_pinch_pair_separation": 0.1252981383999593,
+          "convexity_margin": 0.3414050737573275,
+          "reasons": []
+        },
+        {
+          "time": 0.011000000000000008,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6274370668616833,
+          "longitudinal_pinch_pair_separation": 0.12522070653144513,
+          "convexity_margin": 0.3414112739730929,
+          "reasons": []
+        },
+        {
+          "time": 0.011500000000000008,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6299554868438095,
+          "longitudinal_pinch_pair_separation": 0.12514280278273626,
+          "convexity_margin": 0.3414174674813162,
+          "reasons": []
+        },
+        {
+          "time": 0.012000000000000009,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.632458353851085,
+          "longitudinal_pinch_pair_separation": 0.12506442789806088,
+          "convexity_margin": 0.3414236542765244,
+          "reasons": []
+        },
+        {
+          "time": 0.01250000000000001,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.634937762798623,
+          "longitudinal_pinch_pair_separation": 0.12498558241685132,
+          "convexity_margin": 0.34142983435329816,
+          "reasons": []
+        },
+        {
+          "time": 0.01300000000000001,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6373850380775328,
+          "longitudinal_pinch_pair_separation": 0.1249062672093939,
+          "convexity_margin": 0.34143600770623755,
+          "reasons": []
+        },
+        {
+          "time": 0.01350000000000001,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.639791061485116,
+          "longitudinal_pinch_pair_separation": 0.12482648287471221,
+          "convexity_margin": 0.34144217432999846,
+          "reasons": []
+        },
+        {
+          "time": 0.01400000000000001,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6421447899341226,
+          "longitudinal_pinch_pair_separation": 0.12474623001789081,
+          "convexity_margin": 0.34144833421925513,
+          "reasons": []
+        },
+        {
+          "time": 0.014500000000000011,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6444341679439787,
+          "longitudinal_pinch_pair_separation": 0.12466550939832965,
+          "convexity_margin": 0.34145448736872674,
+          "reasons": []
+        },
+        {
+          "time": 0.015000000000000012,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6466461587089376,
+          "longitudinal_pinch_pair_separation": 0.12458432154840998,
+          "convexity_margin": 0.3414606337731752,
+          "reasons": []
+        },
+        {
+          "time": 0.015500000000000012,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6487652923460243,
+          "longitudinal_pinch_pair_separation": 0.12450266737008198,
+          "convexity_margin": 0.3414667734273823,
+          "reasons": []
+        },
+        {
+          "time": 0.01600000000000001,
+          "oblique_collision_angle": null,
+          "maximum_imaginary": 0.0,
+          "maximum_characteristic_modulus": 1.0,
+          "maximum_finite_basis_condition": 3.6507750778456116,
+          "longitudinal_pinch_pair_separation": 0.12442054721624979,
+          "convexity_margin": 0.3414729063261816,
+          "reasons": []
+        }
+      ]
+    },
+    "transverse_5_0.0002": {
+      "case": "transverse",
+      "linearization_step": 0.000125,
+      "amplitude": 0.0002,
+      "wavenumber": 256.0,
+      "equivalent_cells": 64,
+      "fourier_samples": 4,
+      "nodes": [
+        0.0,
+        0.004000000000000003,
+        0.008000000000000005,
+        0.012000000000000009,
+        0.01600000000000001
+      ],
+      "field_count": 23,
+      "norms": [
+        "primitive",
+        "fractional current and entropy"
+      ],
+      "models": {
+        "frozen_full": {
+          "peak_gains": [
+            135.53782114862366,
+            159.66531129776644
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            135.53782114862366,
+            159.66531129776644
+          ],
+          "seed_end_gain": 2.54355195887218
+        },
+        "evolving_full": {
+          "peak_gains": [
+            77.76780522073149,
+            99.787535157807
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            77.76780522073149,
+            99.787535157807
+          ],
+          "seed_end_gain": 1.2041217433397957
+        },
+        "evolving_principal": {
+          "peak_gains": [
+            73.23711085790252,
+            98.42498043366788
+          ],
+          "peak_times": [
+            0.01575000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            73.19038466228176,
+            98.42498043366788
+          ],
+          "seed_end_gain": 1.3594994012810664
+        },
+        "without_scalar_cross_blocks": {
+          "peak_gains": [
+            77.16476788449134,
+            99.36277881983305
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            77.16476788449134,
+            99.36277881983305
+          ],
+          "seed_end_gain": 1.1988221327380533
+        },
+        "without_vector_cross_blocks": {
+          "peak_gains": [
+            78.89728957341573,
+            100.76313169190551
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            78.89728957341573,
+            100.76313169190551
+          ],
+          "seed_end_gain": 1.24697391773614
+        },
+        "without_native_drag_linear_term": {
+          "peak_gains": [
+            79.52603963089051,
+            107.10926559571556
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            79.52603963089051,
+            107.10926559571556
+          ],
+          "seed_end_gain": 1.0283931985905195
+        }
+      },
+      "k0_source_matrix_norm": [
+        2084.872936325976,
+        1645.1398539243976,
+        1432.9517530161347,
+        1330.595858878452,
+        1302.4377323441756
+      ],
+      "drag_matrix_norm": [
+        1954.6695107236076,
+        1492.6591897356193,
+        1299.8583325251898,
+        1238.9191210922638,
+        1249.8218988977785
+      ],
+      "maximum_cleaner_response": 7.228014483236873e-19,
+      "screened_background": null,
+      "native_seed_end_gain": 1.232881933783094,
+      "maximum_seed_signal_difference": 0.03460338374329967
+    },
+    "transverse_5_0.0004": {
+      "case": "transverse",
+      "linearization_step": 0.000125,
+      "amplitude": 0.0004,
+      "wavenumber": 256.0,
+      "equivalent_cells": 64,
+      "fourier_samples": 4,
+      "nodes": [
+        0.0,
+        0.004000000000000003,
+        0.008000000000000005,
+        0.012000000000000009,
+        0.01600000000000001
+      ],
+      "field_count": 23,
+      "norms": [
+        "primitive",
+        "fractional current and entropy"
+      ],
+      "models": {
+        "frozen_full": {
+          "peak_gains": [
+            135.53785547275274,
+            159.6653523909805
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            135.53785547275274,
+            159.6653523909805
+          ],
+          "seed_end_gain": 2.5435553613454647
+        },
+        "evolving_full": {
+          "peak_gains": [
+            77.76779956220794,
+            99.78753989322232
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            77.76779956220794,
+            99.78753989322232
+          ],
+          "seed_end_gain": 1.2041230750102447
+        },
+        "evolving_principal": {
+          "peak_gains": [
+            73.23711085790252,
+            98.42498043366788
+          ],
+          "peak_times": [
+            0.01575000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            73.19038466228176,
+            98.42498043366788
+          ],
+          "seed_end_gain": 1.3594994012810664
+        },
+        "without_scalar_cross_blocks": {
+          "peak_gains": [
+            77.16476398168324,
+            99.36278565709549
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            77.16476398168324,
+            99.36278565709549
+          ],
+          "seed_end_gain": 1.198823482063109
+        },
+        "without_vector_cross_blocks": {
+          "peak_gains": [
+            78.89727629168364,
+            100.7631306484897
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            78.89727629168364,
+            100.7631306484897
+          ],
+          "seed_end_gain": 1.2469749545927165
+        },
+        "without_native_drag_linear_term": {
+          "peak_gains": [
+            79.52600227901279,
+            107.1092109460617
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            79.52600227901279,
+            107.1092109460617
+          ],
+          "seed_end_gain": 1.0283937705222825
+        }
+      },
+      "k0_source_matrix_norm": [
+        2084.872648765217,
+        1645.139607418953,
+        1432.951483354507,
+        1330.5956414401019,
+        1302.4381149563212
+      ],
+      "drag_matrix_norm": [
+        1954.6693093995161,
+        1492.659034380242,
+        1299.858154790344,
+        1238.918957061257,
+        1249.8222802585503
+      ],
+      "maximum_cleaner_response": 7.2280144832367755e-19,
+      "screened_background": null,
+      "native_seed_end_gain": 1.232881933783094,
+      "maximum_seed_signal_difference": 0.034602389921581135
+    },
+    "transverse_9_0.0004": {
+      "case": "transverse",
+      "linearization_step": 0.000125,
+      "amplitude": 0.0004,
+      "wavenumber": 256.0,
+      "equivalent_cells": 64,
+      "fourier_samples": 4,
+      "nodes": [
+        0.0,
+        0.002000000000000001,
+        0.004000000000000003,
+        0.0060000000000000045,
+        0.008000000000000005,
+        0.010000000000000007,
+        0.012000000000000009,
+        0.01400000000000001,
+        0.01600000000000001
+      ],
+      "field_count": 23,
+      "norms": [
+        "primitive",
+        "fractional current and entropy"
+      ],
+      "models": {
+        "frozen_full": {
+          "peak_gains": [
+            135.53785547275274,
+            159.6653523909805
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            135.53785547275274,
+            159.6653523909805
+          ],
+          "seed_end_gain": 2.5435553613454647
+        },
+        "evolving_full": {
+          "peak_gains": [
+            76.82224782449376,
+            98.59822299563336
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            76.82224782449376,
+            98.59822299563336
+          ],
+          "seed_end_gain": 1.21936783507978
+        },
+        "evolving_principal": {
+          "peak_gains": [
+            73.23711085790252,
+            98.42498043366788
+          ],
+          "peak_times": [
+            0.01575000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            73.19038466228176,
+            98.42498043366788
+          ],
+          "seed_end_gain": 1.3594994012810664
+        },
+        "without_scalar_cross_blocks": {
+          "peak_gains": [
+            76.22493375637379,
+            98.1808235324926
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            76.22493375637379,
+            98.1808235324926
+          ],
+          "seed_end_gain": 1.2138525347292004
+        },
+        "without_vector_cross_blocks": {
+          "peak_gains": [
+            77.9418848276121,
+            99.56326919476824
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            77.9418848276121,
+            99.56326919476824
+          ],
+          "seed_end_gain": 1.262248986474925
+        },
+        "without_native_drag_linear_term": {
+          "peak_gains": [
+            78.657737621678,
+            105.931217142761
+          ],
+          "peak_times": [
+            0.01600000000000001,
+            0.01600000000000001
+          ],
+          "endpoint_gains": [
+            78.657737621678,
+            105.931217142761
+          ],
+          "seed_end_gain": 1.0514400375928696
+        }
+      },
+      "k0_source_matrix_norm": [
+        2084.872648765217,
+        1821.111863511187,
+        1645.139607418953,
+        1521.5905555676873,
+        1432.951483354507,
+        1370.716123354932,
+        1330.5956414401019,
+        1309.3463697763855,
+        1302.4381149563212
+      ],
+      "drag_matrix_norm": [
+        1954.6693093995161,
+        1674.1404274557244,
+        1492.659034380242,
+        1374.440778935986,
+        1299.858154790344,
+        1257.2518634888704,
+        1238.918957061257,
+        1238.6411914143885,
+        1249.8222802585503
+      ],
+      "maximum_cleaner_response": 7.228014483237598e-19,
+      "screened_background": null,
+      "native_seed_end_gain": 1.232881933783094,
+      "maximum_seed_signal_difference": 0.01538478938813474
+    }
+  },
+  "nonlinear_optimal_replays": {
+    "low_flow_0.0002": {
+      "case": "low_flow",
+      "amplitude": 0.0002,
+      "failure": null,
+      "last_time": 0.01600000000000001,
+      "measured_peak_gain": 1.886049846383109,
+      "model_peak_gain": 1.8860689025142852,
+      "measured_end_gain": 1.768785997391049,
+      "model_end_gain": 1.7688125878414667,
+      "maximum_primitive_signal_difference": 6.113906518863194e-05
+    },
+    "low_flow_2e-05": {
+      "case": "low_flow",
+      "amplitude": 2e-05,
+      "failure": null,
+      "last_time": 0.01600000000000001,
+      "measured_peak_gain": 1.8860595624655196,
+      "model_peak_gain": 1.8860689025142852,
+      "measured_end_gain": 1.7687981116870937,
+      "model_end_gain": 1.7688125878414667,
+      "maximum_primitive_signal_difference": 5.0695970282570295e-05,
+      "directional_screen": [
+        {
+          "time": 0.0,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5762561616510227,
+              "longitudinal_pinch_pair_separation": 0.12681757327360105,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5763060145321397,
+              "longitudinal_pinch_pair_separation": 0.12681426838197124,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5763527041586887,
+              "longitudinal_pinch_pair_separation": 0.12681080900519337,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5763687924915315,
+              "longitudinal_pinch_pair_separation": 0.12680922126677646,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5763450888273534,
+              "longitudinal_pinch_pair_separation": 0.12681043512621248,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5762953692293813,
+              "longitudinal_pinch_pair_separation": 0.1268137394731224,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.57624862513419,
+              "longitudinal_pinch_pair_separation": 0.12681719935337188,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.576232384247633,
+              "longitudinal_pinch_pair_separation": 0.1268187875077333,
+              "convexity_margin": 0.34127293803390596,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.002000000000000001,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5842790989752116,
+              "longitudinal_pinch_pair_separation": 0.12654559281191885,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5843494415838917,
+              "longitudinal_pinch_pair_separation": 0.12654227858235217,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5844946612896234,
+              "longitudinal_pinch_pair_separation": 0.12653858386534422,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5846295830051473,
+              "longitudinal_pinch_pair_separation": 0.12653667275314634,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5846752792683,
+              "longitudinal_pinch_pair_separation": 0.12653766432580787,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.584605147972791,
+              "longitudinal_pinch_pair_separation": 0.12654097808443232,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5844600089301193,
+              "longitudinal_pinch_pair_separation": 0.12654467323514945,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5843249529186134,
+              "longitudinal_pinch_pair_separation": 0.1265465848078567,
+              "convexity_margin": 0.34129784428515264,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.004000000000000003,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5929322979395346,
+              "longitudinal_pinch_pair_separation": 0.12626562180996098,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5930155028176447,
+              "longitudinal_pinch_pair_separation": 0.12626248153358133,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5932355441894552,
+              "longitudinal_pinch_pair_separation": 0.12625876964026422,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.593463486890418,
+              "longitudinal_pinch_pair_separation": 0.126256660840165,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5935658637955896,
+              "longitudinal_pinch_pair_separation": 0.1262573899215957,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.593482990317693,
+              "longitudinal_pinch_pair_separation": 0.1262605299715704,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.593263110591226,
+              "longitudinal_pinch_pair_separation": 0.12626424188163327,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.5930350390500747,
+              "longitudinal_pinch_pair_separation": 0.1262663510622678,
+              "convexity_margin": 0.34132266969390074,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.0060000000000000045,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.602168400594691,
+              "longitudinal_pinch_pair_separation": 0.12597770538264164,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.602256587784074,
+              "longitudinal_pinch_pair_separation": 0.12597489332493628,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6025247512339744,
+              "longitudinal_pinch_pair_separation": 0.12597137099521755,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.60281555323463,
+              "longitudinal_pinch_pair_separation": 0.12596920156107383,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6029590159372122,
+              "longitudinal_pinch_pair_separation": 0.12596965553354122,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.602871275493137,
+              "longitudinal_pinch_pair_separation": 0.1259724672971982,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6026034564969613,
+              "longitudinal_pinch_pair_separation": 0.1259759898779808,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.602312288199414,
+              "longitudinal_pinch_pair_separation": 0.12597815965232384,
+              "convexity_margin": 0.3413474369922501,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.008000000000000005,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.611895869090362,
+              "longitudinal_pinch_pair_separation": 0.12568190290494957,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6119812968510407,
+              "longitudinal_pinch_pair_separation": 0.12567953995526926,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.612269262035859,
+              "longitudinal_pinch_pair_separation": 0.12567639010900916,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.612590661025826,
+              "longitudinal_pinch_pair_separation": 0.12567429847299316,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6127576524753624,
+              "longitudinal_pinch_pair_separation": 0.12567449019936078,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.612672711054289,
+              "longitudinal_pinch_pair_separation": 0.1256768529669069,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.612385504000246,
+              "longitudinal_pinch_pair_separation": 0.1256800028408192,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.612063484358683,
+              "longitudinal_pinch_pair_separation": 0.12568209472272857,
+              "convexity_margin": 0.3413721653247663,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.010000000000000007,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.621954357398019,
+              "longitudinal_pinch_pair_separation": 0.12537828665120487,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.622029942973968,
+              "longitudinal_pinch_pair_separation": 0.12537645653402707,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.622309970181988,
+              "longitudinal_pinch_pair_separation": 0.12537383057313461,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.622629713312791,
+              "longitudinal_pinch_pair_separation": 0.12537194690602255,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.622802444361118,
+              "longitudinal_pinch_pair_separation": 0.12537190893838607,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6227278883465126,
+              "longitudinal_pinch_pair_separation": 0.12537373898151621,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.622448833457982,
+              "longitudinal_pinch_pair_separation": 0.1253763650566459,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6221280291144535,
+              "longitudinal_pinch_pair_separation": 0.12537824895586874,
+              "convexity_margin": 0.3413968694512693,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.012000000000000009,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6320784461332822,
+              "longitudinal_pinch_pair_separation": 0.1250669391665637,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6321380833342864,
+              "longitudinal_pinch_pair_separation": 0.12506568858676786,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6323848090515005,
+              "longitudinal_pinch_pair_separation": 0.12506369975412768,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6326736741150834,
+              "longitudinal_pinch_pair_separation": 0.12506213737664135,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6328360537979654,
+              "longitudinal_pinch_pair_separation": 0.1250619167269209,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.632777536555154,
+              "longitudinal_pinch_pair_separation": 0.1250631670621118,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6325317989750467,
+              "longitudinal_pinch_pair_separation": 0.1250651562776191,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.632241954367686,
+              "longitudinal_pinch_pair_separation": 0.12506671849968054,
+              "convexity_margin": 0.3414215589384217,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.01400000000000001,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.641841859111461,
+              "longitudinal_pinch_pair_separation": 0.12474794939165063,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6418807354452145,
+              "longitudinal_pinch_pair_separation": 0.12474729017186309,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.642073903521524,
+              "longitudinal_pinch_pair_separation": 0.12474600992804868,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.642307618332447,
+              "longitudinal_pinch_pair_separation": 0.12474485871878443,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.642445574776325,
+              "longitudinal_pinch_pair_separation": 0.1247445105801051,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.642407724648258,
+              "longitudinal_pinch_pair_separation": 0.12474516986648237,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6422155271637586,
+              "longitudinal_pinch_pair_separation": 0.12474644999484186,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6419809515732275,
+              "longitudinal_pinch_pair_separation": 0.12474760144200586,
+              "convexity_margin": 0.34144623752053427,
+              "reasons": []
+            }
+          ]
+        },
+        {
+          "time": 0.01600000000000001,
+          "cells": [
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6505700048680234,
+              "longitudinal_pinch_pair_separation": 0.12442141045147809,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.650585550154626,
+              "longitudinal_pinch_pair_separation": 0.12442132268792244,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.650711875254353,
+              "longitudinal_pinch_pair_separation": 0.12442078056416545,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6508744367338837,
+              "longitudinal_pinch_pair_separation": 0.12442010195538328,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.650978476833437,
+              "longitudinal_pinch_pair_separation": 0.12441968396872394,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.6509634335515395,
+              "longitudinal_pinch_pair_separation": 0.12441977170147173,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.650838165435382,
+              "longitudinal_pinch_pair_separation": 0.12442031373558765,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            },
+            {
+              "oblique_collision_angle": null,
+              "maximum_imaginary": 0.0,
+              "maximum_characteristic_modulus": 1.0,
+              "maximum_finite_basis_condition": 3.650674917159082,
+              "longitudinal_pinch_pair_separation": 0.12442099258034794,
+              "convexity_margin": 0.3414709027394475,
+              "reasons": []
+            }
+          ]
+        }
+      ]
+    },
+    "transverse_0.0002": {
+      "case": "transverse",
+      "amplitude": 0.0002,
+      "failure": null,
+      "last_time": 0.01600000000000001,
+      "measured_peak_gain": 76.77897552601395,
+      "model_peak_gain": 77.7678052207315,
+      "measured_end_gain": 76.77897552601395,
+      "model_end_gain": 77.7678052207315,
+      "maximum_primitive_signal_difference": 1.130896492520349
+    },
+    "transverse_2e-05": {
+      "case": "transverse",
+      "amplitude": 2e-05,
+      "failure": null,
+      "last_time": 0.01600000000000001,
+      "measured_peak_gain": 76.79543842034236,
+      "model_peak_gain": 77.7678052207315,
+      "measured_end_gain": 76.79543842034236,
+      "model_end_gain": 77.7678052207315,
+      "maximum_primitive_signal_difference": 1.1135247808636803
+    }
+  }
+}

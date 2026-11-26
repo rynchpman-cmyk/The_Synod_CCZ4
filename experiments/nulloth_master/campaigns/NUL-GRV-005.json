@@ -1,0 +1,96 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-005",
+  "title": "Three-dimensional vector and material pulse trial",
+  "question": "Can independently initialized vector and material modes survive complete 3D production evolution and source dynamical geometry while all physical and numerical vetoes pass?",
+  "prediction": "Both Fourier pulse amplitudes retain at least 99 percent over the short horizon, both generate nonzero dynamical metric and TT-curvature contrasts against the control, and all constraint, conservation, entropy, convexity, and recovery vetoes pass.",
+  "falsifier": "Pulse loss above tolerance, absent dynamical geometric response, a seeded initial TT curvature contrast, or failure of any independent constraint, conservation, entropy, convexity, or recovery veto falsifies the observation.",
+  "decisive_observables": [
+    "vector_pulse_retention",
+    "material_pulse_retention",
+    "vector_final_metric_contrast_l2",
+    "material_final_metric_contrast_l2",
+    "minimum_dynamical_metric_contrast_l2",
+    "minimum_final_extrinsic_curvature_tt_l2",
+    "maximum_initial_extrinsic_curvature_tt_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "vector_pulse_retention", "operator": ">=", "value": 0.99},
+    {"observable": "vector_pulse_retention", "operator": "<=", "value": 1.01},
+    {"observable": "material_pulse_retention", "operator": ">=", "value": 0.99},
+    {"observable": "material_pulse_retention", "operator": "<=", "value": 1.01},
+    {"observable": "vector_final_metric_contrast_l2", "operator": ">", "value": 1e-10},
+    {"observable": "material_final_metric_contrast_l2", "operator": ">", "value": 1e-5},
+    {"observable": "minimum_dynamical_metric_contrast_l2", "operator": ">", "value": 1e-14},
+    {"observable": "minimum_final_extrinsic_curvature_tt_l2", "operator": ">", "value": 1e-12},
+    {"observable": "maximum_initial_extrinsic_curvature_tt_l2", "operator": "<=", "value": 1e-20},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-4},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "Vector, material, and control states receive independent 3D periodic CMC constraint solves.",
+    "The vector momentum mode is transverse and begins with zero Gauss constraint.",
+    "Pulse amplitudes are isolated by Fourier coefficients along the source axis.",
+    "Initial constraint backreaction and subsequent dynamical geometry are reported separately.",
+    "All cases share carrier modulation, grid, gravity coupling, gauge, time step, and duration."
+  ],
+  "resolution_ladder": [
+    {"points": [4, 4, 4], "duration": 0.01, "dt": 0.005, "role": "3D source-pulse reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "Profiles, Fourier diagnostics, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "vector_mode_amplitude": 0.001,
+    "material_fractional_amplitude": 0.02,
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.1,
+    "kappa_gravity": 0.001,
+    "slicing": "harmonic",
+    "box_lengths": [32.0, 32.0, 32.0]
+  },
+  "command": [
+    "{python}",
+    "experiments/measure_nulloth_source_pulses.py",
+    "--points",
+    "4",
+    "--duration",
+    "0.01",
+    "--dt",
+    "0.005",
+    "--output",
+    "{run_dir}/source_pulses.json"
+  ],
+  "timeout_seconds": 240,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/measure_nulloth_source_pulses.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/measure_nulloth_periodic_tensor_response.py",
+    "experiments/nulloth_master/NULLOTH_SOURCE_PULSES.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "source_pulses.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-005"
+  ]
+}

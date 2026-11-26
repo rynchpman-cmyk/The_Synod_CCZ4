@@ -1,0 +1,85 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-002",
+  "title": "Short-horizon gauge robustness",
+  "question": "Are the weak-field Nulloth scalar amplitude and active-versus-control geometric response robust between harmonic and 1+log slicing while the coordinate lapse responds to the gauge choice?",
+  "prediction": "The scalar amplitude and physical-metric contrast differ by less than 0.2 percent between slicings, while the lapse contrast differs by more than 25 percent. All conservation, entropy, constraint, convexity, and recovery vetoes pass.",
+  "falsifier": "A primary-observable spread above tolerance, an insensitive lapse control, failed conservation or entropy account, constraint violation, nonpositive convexity margin, or recovery failure falsifies the short-horizon robustness claim.",
+  "decisive_observables": [
+    "scalar_amplitude_relative_spread",
+    "physical_metric_contrast_relative_spread",
+    "lapse_contrast_relative_spread",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "scalar_amplitude_relative_spread", "operator": "<=", "value": 0.002},
+    {"observable": "physical_metric_contrast_relative_spread", "operator": "<=", "value": 0.002},
+    {"observable": "lapse_contrast_relative_spread", "operator": ">=", "value": 0.25},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-4},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "Harmonic and 1+log pairs share matter, carrier modulation, scalar seed, gravity coupling, grid, time step, and duration.",
+    "Each active state is compared to an independently constraint-solved scalar-free control under the same slicing.",
+    "Scalar amplitude and physical-metric contrast are primary observables; lapse contrast is the gauge-sensitive control.",
+    "Constraint, conservation, entropy, convexity, and recovery accounts are evaluated independently."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 0.25, "dt": 0.01, "role": "short-horizon gauge reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "Both slicing trials are deterministic.",
+  "parameters": {
+    "slicing": ["harmonic", "1+log"],
+    "evolve_shift": false,
+    "kappa_gravity": 0.001,
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "active_scalar_amplitude": 0.02,
+    "control_scalar_amplitude": 0.0,
+    "box_length": 32.0
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_gauge_robustness.py",
+    "--points",
+    "4",
+    "--duration",
+    "0.25",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/gauge_robustness.json"
+  ],
+  "timeout_seconds": 180,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_gauge_robustness.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_GAUGE_ROBUSTNESS.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "gauge_robustness.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-002"
+  ]
+}

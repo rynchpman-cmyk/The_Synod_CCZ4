@@ -1,0 +1,92 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CTL-005",
+  "title": "Conservative brake targeting-robustness envelope",
+  "question": "Does the original 0.02 Carrier Coherence Brake seed retain the two-percent objective under bounded amplitude, alignment, shape, and growing-momentum errors at thirty-two points?",
+  "prediction": "All six perturbed production trajectories retain at least two-percent suppression, opposite phase errors agree within five percent, amplitude response remains ordered, and every independent veto passes.",
+  "falsifier": "Any perturbation loses the objective, the phase pair differs by more than five percent, amplitude ordering reverses, or any trajectory violates admissibility, number, entropy, field constraints, gravitational constraints, or recovery.",
+  "decisive_observables": [
+    "source_assessment_accepted",
+    "points",
+    "variant_count",
+    "sealed_nominal_relative_suppression",
+    "variants_meeting_objective",
+    "minimum_variant_relative_suppression",
+    "amplitude_response_ordered",
+    "phase_pair_relative_asymmetry",
+    "shape_noise_meets_objective",
+    "momentum_underdrive_meets_objective",
+    "all_variants_admissible",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue"
+  ],
+  "acceptance_criteria": [
+    {"observable": "source_assessment_accepted", "operator": "==", "value": 1},
+    {"observable": "points", "operator": "==", "value": 32},
+    {"observable": "variant_count", "operator": "==", "value": 6},
+    {"observable": "sealed_nominal_relative_suppression", "operator": ">=", "value": 0.03},
+    {"observable": "variants_meeting_objective", "operator": "==", "value": 6},
+    {"observable": "minimum_variant_relative_suppression", "operator": ">=", "value": 0.02},
+    {"observable": "amplitude_response_ordered", "operator": "==", "value": 1},
+    {"observable": "phase_pair_relative_asymmetry", "operator": "<=", "value": 0.05},
+    {"observable": "shape_noise_meets_objective", "operator": "==", "value": 1},
+    {"observable": "momentum_underdrive_meets_objective", "operator": "==", "value": 1},
+    {"observable": "all_variants_admissible", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": -1e-12},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "The no-command kinetic control and nominal amplitude-0.02 response are read from the immutable accepted thirty-two-point Spell 001 campaign.",
+    "Every perturbed profile receives an independent periodic CMC solve and complete production evolution.",
+    "The scalar profile is renormalized after shape perturbation so commanded peak amplitude remains fixed.",
+    "Opposite phase offsets test numerical and physical alignment symmetry.",
+    "The two-percent objective and all error radii are fixed before execution."
+  ],
+  "resolution_ladder": [
+    {"points": 32, "duration": 2.0, "dt": 0.01, "role": "qualified-domain robustness"}
+  ],
+  "seed": null,
+  "seed_rationale": "All perturbation profiles, phases, amplitudes, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "nominal_amplitude": 0.02,
+    "amplitude_error_fraction": 0.10,
+    "phase_error_radians": 0.39269908169872414,
+    "second_harmonic_fraction": 0.10,
+    "momentum_underdrive_fraction": 0.20,
+    "target_relative_suppression": 0.02
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_brake_robustness.py",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json",
+    "runs/nulloth_master/NUL-SPL-001-ASSESS-001-688a045f626aa0f0/attempt-001/run_record.json"
+  ],
+  "timeout_seconds": 10800,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_brake_robustness.py",
+    "experiments/search_nulloth_brake_controls.py",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json",
+    "runs/nulloth_master/NUL-SPL-001-ASSESS-001-688a045f626aa0f0/attempt-001/run_record.json",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/grid.py"
+  ],
+  "outputs": [],
+  "supports_claims": ["NUL-CTL-005"]
+}

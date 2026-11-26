@@ -1,0 +1,90 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-003",
+  "title": "Independent finite vector and material outflow",
+  "question": "Can independently seeded transverse-vector and co-moving material pulses lose content through the finite upper face relative to evolved controls without contaminating the opposite edge or violating the coupled vetoes?",
+  "prediction": "Both active-minus-control pulses lose at least one percent of their registered norm or excess content, opposite-edge signals remain below tolerance, and all constraint, recovery, convexity, entropy-residual, and carrier-balance vetoes pass.",
+  "falsifier": "Absent outward loss, opposite-edge contamination, failed recovery or convexity, excessive constraints, entropy residual, or carrier imbalance falsifies the corresponding finite passage.",
+  "decisive_observables": [
+    "vector_norm_loss_fraction",
+    "material_excess_baryon_loss_fraction",
+    "material_excess_carrier_loss_fraction",
+    "vector_opposite_edge_amplitude",
+    "material_opposite_edge_density_contrast",
+    "maximum_gravitational_constraint_l2",
+    "maximum_proca_constraint_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue",
+    "maximum_step_entropy_balance_residual",
+    "maximum_absolute_cumulative_entropy_balance_residual",
+    "maximum_carrier_number_balance_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "vector_norm_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "material_excess_baryon_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "material_excess_carrier_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "vector_opposite_edge_amplitude", "operator": "<=", "value": 1e-10},
+    {"observable": "material_opposite_edge_density_contrast", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-7},
+    {"observable": "maximum_proca_constraint_l2", "operator": "<=", "value": 1e-7},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "maximum_step_entropy_balance_residual", "operator": "<=", "value": 1e-5},
+    {"observable": "maximum_absolute_cumulative_entropy_balance_residual", "operator": "<=", "value": 1e-5},
+    {"observable": "maximum_carrier_number_balance_residual", "operator": "<=", "value": 1e-12}
+  ],
+  "controls": [
+    "Vector and material observables are active-minus-control quantities after independent full production evolutions.",
+    "The transverse vector seed has zero principal divergence and right-moving conjugate momentum.",
+    "The material seed co-moves ordinary and carrier currents to avoid interpreting drag relaxation as boundary transport.",
+    "All three cases share grid, background, weak gravity, gauge, duration, and time step."
+  ],
+  "resolution_ladder": [
+    {"points": 24, "length": 1.0, "duration": 0.12, "dt": 0.001, "role": "vector, material, and control finite-patch trials"}
+  ],
+  "seed": null,
+  "seed_rationale": "The Gaussian sources and production trajectories are deterministic.",
+  "parameters": {
+    "vector_potential_amplitude": 1e-5,
+    "material_density_amplitude": 0.02,
+    "carrier_density_amplitude": 0.006,
+    "material_velocity_amplitude": 0.25,
+    "pulse_center": 0.4,
+    "pulse_width": 0.05
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_finite_vector_material_outflow.py",
+    "--points",
+    "24",
+    "--duration",
+    "0.12",
+    "--dt",
+    "0.001",
+    "--output",
+    "{run_dir}/finite_vector_material_outflow.json"
+  ],
+  "timeout_seconds": 240,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_finite_scalar_outflow.py",
+    "experiments/audit_nulloth_finite_vector_material_outflow.py",
+    "experiments/nulloth_master/NULLOTH_FINITE_VECTOR_MATERIAL_OUTFLOW.md",
+    "src/causal_repair/boundary.py",
+    "src/causal_repair/finite_nulloth.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "finite_vector_material_outflow.json"
+  ],
+  "supports_claims": [
+    "NUL-BND-003"
+  ]
+}

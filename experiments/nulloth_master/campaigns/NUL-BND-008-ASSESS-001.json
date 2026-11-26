@@ -1,0 +1,39 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-008-ASSESS-001",
+  "title": "Assessment of unresolved driven finite scalar latency",
+  "question": "Did the immutable NUL-BND-008 run fail in primitive recovery before producing any decisive driven-latency observable?",
+  "prediction": "The original run did not complete or pass acceptance, produced no decisive observables, and reported a singular recovery Jacobian.",
+  "falsifier": "A completed or accepted original run, any produced decisive observable, or absence of the singular recovery-Jacobian diagnostic falsifies this classification.",
+  "decisive_observables": ["original_run_completed", "original_scientific_acceptance_passed", "decisive_observables_produced", "singular_recovery_jacobian_reported", "failed_return_code", "duration_seconds"],
+  "acceptance_criteria": [
+    {"observable": "original_run_completed", "operator": "==", "value": 0},
+    {"observable": "original_scientific_acceptance_passed", "operator": "==", "value": 0},
+    {"observable": "decisive_observables_produced", "operator": "==", "value": 0},
+    {"observable": "singular_recovery_jacobian_reported", "operator": "==", "value": 1},
+    {"observable": "failed_return_code", "operator": "==", "value": 1}
+  ],
+  "controls": [
+    "The assessment reads the immutable original run record and performs no new physical evolution.",
+    "No original gate, tolerance, source, or diagnostic is altered.",
+    "An execution failure is classified as UNKNOWN, not as physical falsification."
+  ],
+  "resolution_ladder": [{"source": "NUL-BND-008 attempt-001", "role": "immutable failed qualification record"}],
+  "seed": null,
+  "seed_rationale": "The assessment is a deterministic parse of a hashed run record.",
+  "parameters": {
+    "original_campaign": "NUL-BND-008",
+    "original_run_id": "NUL-BND-008-09206a6999a6d521",
+    "original_attempt": "attempt-001"
+  },
+  "command": ["{python}", "experiments/assess_nulloth_driven_latency_failure.py", "--record", "runs/nulloth_master/NUL-BND-008-09206a6999a6d521/attempt-001/run_record.json", "--output", "{run_dir}/driven_latency_failure_assessment.json"],
+  "timeout_seconds": 30,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/assess_nulloth_driven_latency_failure.py",
+    "experiments/nulloth_master/corrections/NUL-BND-008-CR-001.md",
+    "runs/nulloth_master/NUL-BND-008-09206a6999a6d521/attempt-001/run_record.json"
+  ],
+  "outputs": ["driven_latency_failure_assessment.json"],
+  "supports_claims": ["NUL-BND-008"]
+}

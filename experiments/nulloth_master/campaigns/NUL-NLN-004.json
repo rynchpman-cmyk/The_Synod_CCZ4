@@ -1,0 +1,100 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-NLN-004",
+  "title": "High-amplitude production dispersal edge",
+  "question": "Does the previously costly coherence-amplitude 0.12 seed complete a short production trajectory, and what coarse-grid outcome and resolution warning does it exhibit?",
+  "prediction": "The trajectory completes through three time units and crosses the registered dispersal threshold while preserving number, constraints, constitutive margins, recovery, and complete-step entropy monotonicity. High-wavenumber occupation is expected to warn that the outcome is not converged.",
+  "falsifier": "A production denial, failure to cross the dispersal threshold, negative complete-step entropy, failed recovery, nonpositive convexity margin, or constraint violation falsifies the predicted coarse-grid observation.",
+  "decisive_observables": [
+    "completed",
+    "outcome",
+    "final_time",
+    "final_amplitude",
+    "peak_to_final_drop_fraction",
+    "maximum_high_wavenumber_fraction",
+    "baryon_relative_drift",
+    "carrier_relative_drift",
+    "entropy_change",
+    "minimum_step_entropy_change",
+    "entropy_telescope_error",
+    "maximum_hamiltonian_l2",
+    "maximum_momentum_l2",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "completed", "operator": "==", "value": 1},
+    {"observable": "outcome", "operator": "==", "value": "dispersed"},
+    {"observable": "final_time", "operator": ">=", "value": 2.99},
+    {"observable": "final_amplitude", "operator": "<", "value": 0.06},
+    {"observable": "peak_to_final_drop_fraction", "operator": ">", "value": 0.5},
+    {"observable": "maximum_high_wavenumber_fraction", "operator": ">", "value": 0.4},
+    {"observable": "baryon_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "carrier_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "entropy_change", "operator": ">", "value": 0.0},
+    {"observable": "minimum_step_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "entropy_telescope_error", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_hamiltonian_l2", "operator": "<=", "value": 0.001},
+    {"observable": "maximum_momentum_l2", "operator": "<=", "value": 0.001},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "The trajectory uses an independently solved periodic CMC state.",
+    "It shares the production atlas carrier modulation and complete operator ordering.",
+    "The absolute amplitude, spectral occupation, conservation, entropy, constraints, convexity, and recovery are reported separately.",
+    "High-wavenumber occupation is a resolution warning and is not interpreted as turbulence."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 3.0, "dt": 0.01, "role": "isolated high-amplitude stress reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "The carrier modulation, scalar mode, constraint solve, and evolution are deterministic.",
+  "parameters": {
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "scalar_initial_amplitude": 0.12,
+    "scalar_initial_momentum": "zero",
+    "box_length": 32.0,
+    "gravity_coupling": 0.001,
+    "slicing": "harmonic"
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_stress_edge.py",
+    "--points",
+    "4",
+    "--duration",
+    "3.0",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/stress_edge.json"
+  ],
+  "timeout_seconds": 300,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_stress_edge.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_STRESS_EDGE.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "stress_edge.json"
+  ],
+  "supports_claims": [
+    "NUL-NLN-004"
+  ]
+}

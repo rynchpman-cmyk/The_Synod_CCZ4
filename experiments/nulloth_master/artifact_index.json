@@ -1,0 +1,1315 @@
+{
+    "artifact_index_schema":  "nulloth.artifacts.v1",
+    "artifacts":  [
+                      {
+                          "path":  "experiments/NULLOTH_01_INTEGRATION_REPORT.md",
+                          "role":  "imported qualification report",
+                          "sha256":  "a49ef698e764156e467299328e5005e57f0576a32f334288411b42a648bceef4"
+                      },
+                      {
+                          "path":  "experiments/NULLOTH_SPELL_001_REPORT.md",
+                          "role":  "imported spell promotion report",
+                          "sha256":  "0705797a90660f749082da2bb6ef3002ce5a62e6ff408f5f9291056b8583d717"
+                      },
+                      {
+                          "path":  "experiments/run_nulloth_homogeneous_growth.py",
+                          "role":  "homogeneous growth campaign implementation",
+                          "sha256":  "f1662d1405be4e841bb29cc76cc2a76a7b408164352f64356170d7f11bc18a9f"
+                      },
+                      {
+                          "path":  "experiments/qualify_nulloth_discovery_domain.py",
+                          "role":  "sampled discovery-domain qualification implementation",
+                          "sha256":  "abeb153a9f461968d259054a3dbf86f68adbc96f56892bbf6b7de61bd63616c5"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_coupled_symbol.py",
+                          "role":  "coupled-symbol audit implementation",
+                          "sha256":  "c8d219dd87b58d9b329ef41b4b8a929cdc675c9e9604147aa7b1205cab2fd819"
+                      },
+                      {
+                          "path":  "experiments/discover_nulloth_linear_modes.py",
+                          "role":  "linear-mode discovery implementation",
+                          "sha256":  "acab84853137d8d3a6a53a84215ca689d004d24708d539443b8966df97738bb7"
+                      },
+                      {
+                          "path":  "experiments/promote_nulloth_spell_candidates.py",
+                          "role":  "spell promotion implementation",
+                          "sha256":  "94217da0983d9d57f19de63c6e7538ceb806838d796983f03b2d743c968a400c"
+                      },
+                      {
+                          "path":  "src/causal_repair/nulloth.py",
+                          "role":  "canonical constitutive implementation",
+                          "sha256":  "a25f8e6125fb2e38654271e01e36911690d1c5b6f494fae2853f4db0947d5a11"
+                      },
+                      {
+                          "path":  "src/causal_repair/nulloth_scalar.py",
+                          "role":  "canonical scalar implementation",
+                          "sha256":  "1630bf93a942fe25c61b4de432a5c42d600372af452b23ea3eaed50d76f58973"
+                      },
+                      {
+                          "path":  "src/causal_repair/production_nulloth.py",
+                          "role":  "canonical production implementation",
+                          "sha256":  "19774fb82301ceaeb81caaadc9c8c94257a12bb06da31613a93139ca97c600e1"
+                      },
+                      {
+                          "path":  "src/causal_repair/theory33.py",
+                          "role":  "constitutive regression oracle",
+                          "sha256":  "4f09cc094f50a8af42f6366f9a2de413f44ea67260313f442083b8410943c683"
+                      },
+                      {
+                          "path":  "src/causal_repair/production33.py",
+                          "role":  "production regression oracle",
+                          "sha256":  "e5b440e9172295b2c14c6ace3c72a42b530de9f30debb8bd7578006c8225d297"
+                      },
+                      {
+                          "path":  "src/causal_repair/ccz4.py",
+                          "role":  "gravitational evolution implementation",
+                          "sha256":  "53cfb7da116c9126d161db36aa907cc40023fff1134390c4cc457ef67f02e41d"
+                      },
+                      {
+                          "path":  "src/causal_repair/grid.py",
+                          "role":  "grid implementation",
+                          "sha256":  "14546eb2d4029e9c64480ca824fc0ef6e55448d2a89768c049abc799d58ee226"
+                      },
+                      {
+                          "path":  "src/causal_repair/integrators.py",
+                          "role":  "time integration implementation",
+                          "sha256":  "f3a796c0bfbf40c238a64bdcf7310fffb0daa2db49f306ddcca3195cd086f607"
+                      },
+                      {
+                          "path":  "tests/test_nulloth.py",
+                          "role":  "initial Nulloth regression suite",
+                          "sha256":  "ac04eee4eb29248f8dcc6bac748fd548420740b571374d40ffbc8845efdc31e0"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-MOD-001.json",
+                          "role":  "registered homogeneous growth campaign",
+                          "sha256":  "7eee677a37e3a25a216fd8ba75a2300beef6b5221133a5ce747d6c9360e46a7b"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-MOD-001-0028df3f98f940c0/attempt-001/run_record.json",
+                          "role":  "accepted homogeneous growth execution record",
+                          "sha256":  "fdf03622bb770be6fc7265d28c6c5a18e1e53fe36034a99b64ce839ae80850bd"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_limits.py",
+                          "role":  "Theory 3.3 limit audit implementation",
+                          "sha256":  "2879ee7d6a20344584e6aea36e9266ea0b5919ce5b8e3e6891e05c8b715d3002"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-LIM-001.json",
+                          "role":  "registered Theory 3.3 limit campaign",
+                          "sha256":  "6a41ff9f29c216bbc463df7a4240c28ed18313ee90a2640434ac317ea1c648ba"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-LIM-001-e1bcdecde77d89d0/attempt-001/run_record.json",
+                          "role":  "accepted Theory 3.3 limit execution record",
+                          "sha256":  "a13a99f9f19f5ceab70d87ebba7ee09f3995935fc245709f5de2d7d0d6bb1a06"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-001.json",
+                          "role":  "registered activation-domain characteristic campaign",
+                          "sha256":  "637a18e618c8541cb8fabed584c16a452191b5b786247826b3713c685aa38a24"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-001-ac2ed23b575da3b5/attempt-001/run_record.json",
+                          "role":  "accepted activation-domain characteristic execution record",
+                          "sha256":  "b4d1f7698ab98e8c8e703914494540da7a872bd0bf116831c77903fd75482fab"
+                      },
+                      {
+                          "path":  "experiments/qualify_nulloth_spell_001.py",
+                          "role":  "raw Spell 001 qualification implementation",
+                          "sha256":  "0c9b2b4e4c3c8556811250021500194843c7d29302d82d02097844de1aabe045"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-SPL-001.json",
+                          "role":  "superseded raw Spell 001 campaign",
+                          "sha256":  "086bcf51ac7645fbd3e410fcf3e7ed00da910504ddc8009255eff4aa79fb84b5"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json",
+                          "role":  "completed raw Spell 001 execution with rejected composite criterion",
+                          "sha256":  "b21d6a646949669aa4c92c17243f0ac99f9987f4be5a383bd72d2c4900755091"
+                      },
+                      {
+                          "path":  "experiments/assess_nulloth_spell_001.py",
+                          "role":  "corrected Spell 001 assessment implementation",
+                          "sha256":  "a5b23570b5606af98305cb1a3815836757255008dd9715219b19b1c8b2837640"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-SPL-001-CR-001.md",
+                          "role":  "Spell 001 methodological correction record",
+                          "sha256":  "240fdfb9faac975acdecb491dabbebefee1a3cf39678a37236549445129a67af"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-SPL-001-ASSESS-001.json",
+                          "role":  "registered corrected Spell 001 assessment campaign",
+                          "sha256":  "eaf9fb61113f3a4f6db79b922199b4ddcc5744b3b606abecc64f9064b0504239"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-SPL-001-ASSESS-001-688a045f626aa0f0/attempt-001/run_record.json",
+                          "role":  "accepted corrected Spell 001 assessment record",
+                          "sha256":  "bdf900d00c1bbc4dbdd922031471a3215974ab18304dc295cb7a78eefa32def4"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_action.py",
+                          "role":  "fixed-current Nulloth material-stress audit",
+                          "sha256":  "b370452c852da46a9b599df6042892c774ea4c4308eb9f8f149b8784cd59243a"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-FND-001.json",
+                          "role":  "registered fixed-current material-stress campaign",
+                          "sha256":  "e239080be71a519565f2bbdb352c4045898de7264e63b4131a96f62c23cfc6f3"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-FND-001-581b685b1d00a1f5/attempt-001/run_record.json",
+                          "role":  "accepted fixed-current material-stress execution record",
+                          "sha256":  "11fbf053ab251e4e2a1566e498c6f693dee5382da091b5ef5411b95246a811a5"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_constitutive_derivatives.py",
+                          "role":  "complete constitutive finite-difference audit",
+                          "sha256":  "60f2c3f550646c87881bda1cb7ae46e0c8a284e5de0bfb2630e1e70c57ae3368"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-FND-002.json",
+                          "role":  "registered constitutive derivative campaign",
+                          "sha256":  "ece2777cc007a7497510812c4f5b7944828df56fd5809c37c177caa8ff313d60"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-FND-002-5ec031e2a507f568/attempt-001/run_record.json",
+                          "role":  "accepted constitutive derivative execution record",
+                          "sha256":  "cce7bf2a7afc3636393e333c1519c07a495bb5829d1f6446a0c52ae76f06fb73"
+                      },
+                      {
+                          "path":  "NULLOTH_SPEC.md",
+                          "role":  "canonical Nulloth formulation contract",
+                          "sha256":  "3b9baf03f531a193fcef428c120ca68cf7ca344f53bf7e4a37f38d4924654adf"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_ACTION_DERIVATION.md",
+                          "role":  "canonical action and exchange derivation",
+                          "sha256":  "e18bed6a863320b4d9d41aeccb3d3d481915aca2dd9663b2360aba8cf90d2d56"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-FND-001-d0451ccfce7e5bb9/attempt-001/run_record.json",
+                          "role":  "accepted material-stress record under the dimensional contract",
+                          "sha256":  "de58b6380fc9437fe405b464bd514710114f9977e7ae2e13348d04bb38160124"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-FND-002-82d81c22dce1d35f/attempt-001/run_record.json",
+                          "role":  "accepted derivative record under the dimensional contract",
+                          "sha256":  "8521ad93b11841b83705312284bfb253fb92b9fa6bf6cdf0dbe0e5b63d398690"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_decoupled_limits.py",
+                          "role":  "vacuum, scalar, and Proca limit audit",
+                          "sha256":  "8ccd3637660899fe390a441e92e19b4f2ffba3b9017e0c4b09c47fefe886894b"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-LIM-003.json",
+                          "role":  "registered decoupled-limit campaign",
+                          "sha256":  "df3df6423a8c5872221c1efa7d50d16c6033ce2b35fe2d738e14ae807274179b"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-LIM-003-3442d9864a66f19e/attempt-001/run_record.json",
+                          "role":  "accepted decoupled-limit execution record",
+                          "sha256":  "cdb9e7e2458ad812fcd69a841d7340bc767b0ab1c22597df765749453547d4e7"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_symmetries.py",
+                          "role":  "covariance, symmetry, and recovery audit",
+                          "sha256":  "b9486d619f0c7ccd61cdb103b52458f8e10c34c4dfacd8f04668742676ad86c2"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-LIM-004.json",
+                          "role":  "registered covariance and recovery campaign",
+                          "sha256":  "55cc81ce575acfd3fd14b81b8e755c81710a03a55969395785165e743674aa41"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-LIM-004-a0f4a88dab4dfabc/attempt-001/run_record.json",
+                          "role":  "accepted covariance and recovery execution record",
+                          "sha256":  "e233347ed1f05c13b347415b39c2df3b8c8b8e7e1b8c4264d39efdce497b23cd"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_noether_accounting.py",
+                          "role":  "internal exchange and periodic Noether-balance audit",
+                          "sha256":  "6605cdade56937157f6837e5ebbb92a87379a33fd4f3426b4fb80ed8858bab94"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-LIM-005.json",
+                          "role":  "registered Noether and stress-energy accounting campaign",
+                          "sha256":  "16c61c0d158af427a50679bf5d30d02e6f2b78afc156fda4768e75a26fd370ac"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-LIM-005-37a750db8de75176/attempt-001/run_record.json",
+                          "role":  "accepted Noether and stress-energy accounting execution record",
+                          "sha256":  "ffa7b6ce133d7828e1db4b7d2685de9265f9113c0b18412cf24e9ed7542cdaef"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_ccz4_composition.py",
+                          "role":  "CCZ4-inclusive principal composition audit",
+                          "sha256":  "1d1b1757d59ad02125550ed5e214ce16f71247a8d9519326c20a8c8d11f2552e"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-002.json",
+                          "role":  "registered CCZ4-inclusive composition campaign",
+                          "sha256":  "6a5b6445f3844aac82f25bc151af20e6b3e7615b042cf7e7d428579ca6edd173"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-002-4942f745d05abc3f/attempt-001/run_record.json",
+                          "role":  "rejected CCZ4 composition diagnostic execution",
+                          "sha256":  "f837308ac35ae53a83cc6459e78ba138cfaf62dd3a078a156bfb21e8bea6ad6f"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-CHR-002-CR-001.md",
+                          "role":  "CCZ4 composition diagnostic correction record",
+                          "sha256":  "f3868f5a989a701914055584206ba9e824b1d28aa69bca06e33f5d04090fba4d"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-002-ff54097f25f47011/attempt-001/run_record.json",
+                          "role":  "accepted corrected CCZ4 composition execution record",
+                          "sha256":  "1168948a2069124cacb0826315065fd0ebd579a65948707f484ac16c7e2ccf10"
+                      },
+                      {
+                          "path":  "experiments/scan_nulloth_direction_sphere.py",
+                          "role":  "near-uniform propagation-direction scan",
+                          "sha256":  "ae4c4a472f23a3286169d1baeaa26b02d50e6267c21d943fd0e69edcb3b4d6b5"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-003.json",
+                          "role":  "registered all-direction characteristic campaign",
+                          "sha256":  "098b64aeb7105b3204a36485af21f1b9252c5447e5d8d1afce9ed36d3917f7d0"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-003-ff864a29fd3d715b/attempt-001/run_record.json",
+                          "role":  "accepted all-direction characteristic execution record",
+                          "sha256":  "27b39b6003ad0f99161ad2ed624707c4211dd5173d2b37539c53bd229a937d2b"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_adaptive_state_atlas.py",
+                          "role":  "adaptive thermodynamic, counterflow, and coherence atlas",
+                          "sha256":  "fe127f61b0ee7950935c11415d461ee3ef16c2bae1f0197de3f6b672b3ada2b6"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-004.json",
+                          "role":  "registered adaptive state-atlas campaign",
+                          "sha256":  "59e041fc4012c4d752583451fe3f9d3d441a08723e5d0bb85bce9073f9814b2b"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-004-019e829eb2296967/attempt-001/run_record.json",
+                          "role":  "accepted adaptive state-atlas execution record",
+                          "sha256":  "060a643d9f220b6f69045f727fc9980ae9182201c4e1a5c89e80ce9c130398f1"
+                      },
+                      {
+                          "path":  "experiments/locate_nulloth_admissibility_boundaries.py",
+                          "role":  "expanded-envelope physical and production boundary locator",
+                          "sha256":  "89a4381977a812ee13c01b0b1894a9a35800b3dd3755e15f7723c1339ba22695"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-005.json",
+                          "role":  "registered expanded-envelope boundary campaign",
+                          "sha256":  "91afd5ecedea3e821b914575d1df8a93d4a54386650cac85dbc0efd1e548a644"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-005-d388198d44d63bd5/attempt-001/run_record.json",
+                          "role":  "accepted boundary execution before denial-taxonomy correction",
+                          "sha256":  "6f9d53040c142d89a5a8061d7d779496eadb36f05f11386550e93316d278366c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-CHR-005-CR-001.md",
+                          "role":  "expanded-envelope denial-taxonomy correction record",
+                          "sha256":  "cb3bdb12f945c54c7b4eaa0a3c7a739ac5c015f4ece1d58d49683d019cee9df6"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-005-b0c4808240f050c8/attempt-001/run_record.json",
+                          "role":  "accepted corrected boundary-classification execution record",
+                          "sha256":  "a0fbf4d5df15465ca66146ec6105f19a387b1b26bff12edfb86032ee4c4be398"
+                      },
+                      {
+                          "path":  "experiments/derive_nulloth_admissibility_bounds.py",
+                          "role":  "high-precision analytic admissibility derivation",
+                          "sha256":  "bfd5c592ca72980488da34581902607696ec6831dc6b24d093c3870c46ddf999"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_ADMISSIBILITY_BOUNDS.md",
+                          "role":  "analytic Legendre and thermodynamic bound derivation",
+                          "sha256":  "18fe801c58e7e4e32116aea8efb1588910cefed09a1a0dfd4c09660130e32334"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-006.json",
+                          "role":  "registered analytic-bound and high-precision boundary campaign",
+                          "sha256":  "dc6b34d97869e820db121ace20ac06174e7e60e97904642942d01c0e4a852865"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-006-fc74ecf25503fa08/attempt-001/run_record.json",
+                          "role":  "accepted analytic-bound execution record",
+                          "sha256":  "9e0f516de32b88bab1651305fd09ccec173cb921fe87a2f024b60315f1f84542"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_scalar_coupling_atlas.py",
+                          "role":  "adaptive three-coupling and coherence-amplitude atlas",
+                          "sha256":  "d59c12c6e545fec5c63488810de535cdf603286872e3872150382eca37ed6f99"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-007.json",
+                          "role":  "registered scalar-coupling atlas campaign",
+                          "sha256":  "0b5617eacb5db3191473d4e47fc58fda9c2d210174351ca4fbe019bfe8a34e1c"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-007-dfe959a9453a080b/attempt-001/run_record.json",
+                          "role":  "accepted scalar-coupling atlas execution record",
+                          "sha256":  "352dd99477ed661682a9babf13a4ecb4786688e0433e5bb7a1a059b77e494660"
+                      },
+                      {
+                          "path":  "src/causal_repair/nulloth_guard.py",
+                          "role":  "opt-in local-frame runtime admissibility guard",
+                          "sha256":  "bc3d562d98474a898a186b432c51c36f8d22d3aa03cff4a226a772bc5cb6ace7"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_runtime_guard.py",
+                          "role":  "runtime guard qualification implementation",
+                          "sha256":  "6fbfc2b8e0d01a5aa69eae14ac9211eb0dbbcccf574fb97b79e7de8ebb804908"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_guard.py",
+                          "role":  "runtime guard regression test",
+                          "sha256":  "3ad26b3c84517a062424f3cb541a42bebf4da3e0afbbda02e5f8fbaa9b1d2820"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-008.json",
+                          "role":  "registered runtime guard campaign",
+                          "sha256":  "ba93c04619b3b1ef52bf6a4bd27a83302e9d078a6afab90b7af4a56d8ab03a31"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-008-caca36a060e6185d/attempt-001/run_record.json",
+                          "role":  "accepted runtime guard execution record",
+                          "sha256":  "149533c1fd97ca9dc92534bbebad4cacc52df3297c3465a254298b6a5a4ad671"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_vector_target_orientation.py",
+                          "role":  "Proca principal and target-orientation audit",
+                          "sha256":  "a52d5e9d232b89435b60cfa71c605cb7587fc235386d6c6b3300bce06496e3d8"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-009.json",
+                          "role":  "registered vector-target orientation campaign",
+                          "sha256":  "0d89ae576930524859e4e241531930178eac02a44dc8be52679d19fc66541652"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-009-e75d77e6a4b52647/attempt-001/run_record.json",
+                          "role":  "failed vector-target setup execution",
+                          "sha256":  "f5d6997bd2650d9b38c4b8af128256053edef7c0c7752b72ac32621311f45d44"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-CHR-009-CR-001.md",
+                          "role":  "vector-target invalid-control correction record",
+                          "sha256":  "36e6ce02a0ef19f90aa1a0140f17b09027b28e5f1700d1775a546d56249be852"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-009-b8b84f93aca7842d/attempt-001/run_record.json",
+                          "role":  "accepted vector-target orientation execution record",
+                          "sha256":  "39644268351d32b97ae66b32dc521a3f7fe23f2ae5ba0cd580a9c1026db4a61b"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_boundary_surfaces.py",
+                          "role":  "high-precision convexity and characteristic surface mapper",
+                          "sha256":  "cd62d3b16e082d1c46548c193a6cca7568cdcb70859f7b5f8e9e46a339c309e3"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CHR-010.json",
+                          "role":  "registered high-precision denial-surface campaign",
+                          "sha256":  "a23c502ca2bbb13fd5378744b43fa10accf53b8ad92efe5ec2561623fb52239c"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-010-50a1a22c3507dbae/attempt-001/run_record.json",
+                          "role":  "failed denial-surface bisection-orientation setup",
+                          "sha256":  "68036ca2a9800e93e7b735088f5d3ba5cef1b694b5626d00e3b6dcf026cbed0b"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-010-11221d4e802e8eaf/attempt-001/run_record.json",
+                          "role":  "completed one-plane denial-surface scientific rejection",
+                          "sha256":  "e175460573cc9789f9d28382b37dc1c247cff038c041bd21612f7cfcbd492f6a"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-CHR-010-CR-001.md",
+                          "role":  "denial-surface bisection and slice correction record",
+                          "sha256":  "8a87930ce364ab531aabf7d05425f63956eecb0355f895f5644146e7914bf9a1"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CHR-010-8d80a385de6ccd9f/attempt-001/run_record.json",
+                          "role":  "accepted two-plane denial-surface execution record",
+                          "sha256":  "2505225d24d5599ac0efa9508ae368b2037e247ac0765ab2ce752c1201f425c8"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/SYNODIC_ARTICLE_LOCAL_PERMISSION.md",
+                          "role":  "Synodic characteristic-atlas and local-permission article",
+                          "sha256":  "1ce899936a089114617b4766cb130adbfd494265ce633992757e1a90ebf1930e"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_linear_spectrum.py",
+                          "role":  "branch-resolved linear-spectrum audit implementation",
+                          "sha256":  "dd863d5f68ccb82d23876ac6de907ec4ed7a9a19bbc2e83a1cadb2585ae124b7"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_LINEAR_SPECTRUM.md",
+                          "role":  "canonical linear-dispersion derivation",
+                          "sha256":  "d80f2ec2c3765a4e599803ef35af15ec1246af634ad79ff6fcc4ee93e0e8bd79"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-LIN-001.json",
+                          "role":  "registered branch-resolved spectrum campaign",
+                          "sha256":  "689d39f16773a0ce58b0d3057f15276a96ceb0b253c955f4849690745a1b49c6"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_linear_spectrum.py",
+                          "role":  "linear-spectrum regression tests",
+                          "sha256":  "77ed6cd7b94fcfd3815c2087c63c9eec1fed2da4f1e153134eb6096468baf2f8"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-LIN-001-9e3795aeec0b7357/attempt-001/run_record.json",
+                          "role":  "accepted branch-resolved spectrum execution record",
+                          "sha256":  "eeb58f9f28eba2f9b3f4779a2433d0031a5c4e7d0fc59ac7349ff0f2711c5fe3"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_linear_growth_atlas.py",
+                          "role":  "atlas-wide scalar growth and multidimensional audit",
+                          "sha256":  "bd14857fb2103a853e1baa8a31b4dfd800c6b3d1aed742e7f74cd714da9eaecd"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_LINEAR_CANDIDATES.md",
+                          "role":  "unpromoted linear candidate register",
+                          "sha256":  "2d95accc6557948ae61536c04e2060eae5e39fbb7eb4792e9271659d2450480d"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-LIN-002.json",
+                          "role":  "registered atlas-wide growth campaign",
+                          "sha256":  "7f072a873135b4a74676729279d3d640e63d7c67597c9d51316224e985e03f2c"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-LIN-002-8f06b25f9c395b6f/attempt-001/run_record.json",
+                          "role":  "accepted atlas-wide growth execution record",
+                          "sha256":  "75ed4a7ecc235dd4c71c16857d77ab8e91d632239c2b7df957f8b43be9a28d63"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_mixing_and_relaxation.py",
+                          "role":  "mode-mixing and lower-order relaxation audit",
+                          "sha256":  "2869e579f3e27d3605055a582b154447f546a9d1542d1004c14c500d9e553a6c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_MIXING_DAMPING.md",
+                          "role":  "mode-mixing and damping derivation",
+                          "sha256":  "5a31ab4f6ab44b3ba5c052e95a24d1ac62273df0d2c4d345a333d851af9c5ad4"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-LIN-003.json",
+                          "role":  "registered mixing and relaxation campaign",
+                          "sha256":  "1573506d55c0ae086b27750c4656ac13cdb406fc0c61ddeb755682a5dec8b763"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-LIN-003-e29fd1e04966e88a/attempt-001/run_record.json",
+                          "role":  "accepted mixing and relaxation execution record",
+                          "sha256":  "87e45c7ae0f4d374a0495aeff68c8a8f81642e42f210dfdf3e4bf6e5d6babc81"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_linear_atlas.py",
+                          "role":  "multidimensional dispersion and avoided-crossing regression tests",
+                          "sha256":  "011948cd4293eecf71b42545c784c779b1123fc5a0701abb9611d459f48002c8"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_homogeneous_nonlinear_phases.py",
+                          "role":  "homogeneous nonlinear phase and basin mapper",
+                          "sha256":  "a09ec03efbe536b54158c4fcda0325f00578ec7f9f3f6af790e9eb97bf3b3521"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_HOMOGENEOUS_PHASES.md",
+                          "role":  "homogeneous nonlinear phase derivation",
+                          "sha256":  "6d7a3115a9b98f4b292e9ee0909f79ec3ec802a3fd67f5c024142f7bd6bf2622"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-NLN-001.json",
+                          "role":  "registered homogeneous nonlinear phase campaign",
+                          "sha256":  "71df38831a80e067d5640d9b79d4bf386e16aa8de5b3a4d8e851314aecd16a7e"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-NLN-001-f56957c25f9bac26/attempt-001/run_record.json",
+                          "role":  "accepted homogeneous nonlinear phase execution record",
+                          "sha256":  "e5e2a79031393062c78e2067d9eb7d3db4993319c49d3f8c0ec3e4a42c14cdbc"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_nonlinear_phases.py",
+                          "role":  "nonlinear turnover and basin regression tests",
+                          "sha256":  "6b513d5d3e97377e6f41889ccbb4df1b2b9f154797b172c8243487b7057dcec3"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_wall_collisions.py",
+                          "role":  "domain-wall collision and dimensional-embedding implementation",
+                          "sha256":  "0f7ecaed9d2a37730093d16167153ae985964c12703e78b6d40af9d2e139480f"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_WALL_COLLISIONS.md",
+                          "role":  "domain-wall collision findings",
+                          "sha256":  "40e6ec8720635ad0a89678d06b8e3e0cdb8e5781efa2e0f138ed06011fab47ba"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-NLN-002.json",
+                          "role":  "registered domain-wall collision campaign",
+                          "sha256":  "4fda55199ec31a9b0d731c26478b0d24e72726a248ce0be4e36cbceda3bd187c"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-NLN-002-f258bde196d30084/attempt-001/run_record.json",
+                          "role":  "accepted domain-wall collision execution record",
+                          "sha256":  "c6679dd97043b5860c7c6e6773e85fa992e5b9493791645370c272effe5758f9"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_walls.py",
+                          "role":  "traveling-wall regression test",
+                          "sha256":  "356b2b7db01579792c52c91553cd088c23422dab5db533c857d9fc2cfb8579fe"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_production_regimes.py",
+                          "role":  "full-production nonlinear-regime and budget reconnaissance implementation",
+                          "sha256":  "6bb320fa713786ae1fb6fb455339ca97991a68ca99b4a02eb9f3ca71e028bfc2"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_PRODUCTION_REGIMES.md",
+                          "role":  "full-production nonlinear-regime and budget findings",
+                          "sha256":  "ae10e524f7621cbb7ff81a5da5b1be209488160e7b676addee4e2136250c38a8"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-NLN-003.json",
+                          "role":  "registered full-production nonlinear-regime campaign",
+                          "sha256":  "517fcdcdae12e6ca1288c2c59ede67dfd5caf5c821bc399f17dda03904f6ed1e"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-NLN-003-bfbbb052f7cfc767/attempt-001/run_record.json",
+                          "role":  "accepted full-production nonlinear-regime execution record",
+                          "sha256":  "df833c52a8e9f41915b5073f6107cd7bdfa8d995d752552eeea289a1824b3705"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_production_regimes.py",
+                          "role":  "nonlinear-regime classifier and spectral diagnostic regression tests",
+                          "sha256":  "5b484346f70694df12533249629b67a13a09a034d0c0ffbe94664f4b8a529def"
+                      },
+                      {
+                          "path":  "experiments/map_nulloth_stress_edge.py",
+                          "role":  "isolated high-amplitude production-stress implementation",
+                          "sha256":  "8d295c6d4dd37926a88f7df5fcbe64c60b702155e9f96c4c9aebb559f8d1ee94"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_STRESS_EDGE.md",
+                          "role":  "high-amplitude dispersal-edge findings and resolution veto",
+                          "sha256":  "9c89bb6f89612c56473d6869d53bcc40ad8b9fdd101f2b89d5d283bd8ba753d0"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-NLN-004.json",
+                          "role":  "registered high-amplitude production-stress campaign",
+                          "sha256":  "81ebdacabc6c9324f41221bdab046013781caa8857947b3b5e1c79c34428fc23"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-NLN-004-58bf16c1a640a598/attempt-002/run_record.json",
+                          "role":  "accepted high-amplitude production-stress execution record",
+                          "sha256":  "e4c56866ce3c661534825ab615f0952421b887526af5899514a0b13366f8591f"
+                      },
+                      {
+                          "path":  "experiments/measure_nulloth_weak_field_backreaction.py",
+                          "role":  "weak-field active-versus-control backreaction implementation",
+                          "sha256":  "fc2434ee373ea89d421432627e7a6f108c5bc8f63c2fbad816ba55a35c54f5b6"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_WEAK_FIELD_BACKREACTION.md",
+                          "role":  "weak-field backreaction findings and radiation boundary",
+                          "sha256":  "d68e3cd43fa33f4d4f25e61b351edda726ed1d8d833a6f2f20562455fe5623c3"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-001.json",
+                          "role":  "registered weak-field backreaction campaign",
+                          "sha256":  "17098d620d17aafb5d72b09dfe3508523a17b2d886de0bddcc0d0a79ead353c7"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-001-559eeb3cf409e299/attempt-001/run_record.json",
+                          "role":  "accepted weak-field backreaction execution record",
+                          "sha256":  "4e4473d02c44bb0637599a2d87213ad4e1122a8b29c629ffcb1c5ac8eb3ce645"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_gravity.py",
+                          "role":  "weak-field diagnostic and registered-gauge regression tests",
+                          "sha256":  "ef111eb1fbf95827435fbeea2366bb50fe08324d5fc4b8e263f81b316559ba79"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_gauge_robustness.py",
+                          "role":  "harmonic-versus-1+log active/control comparison implementation",
+                          "sha256":  "c29cc89e5ae7a5ad78edb1aeccfc504560a287e87c04217c47434151ff99f33d"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_GAUGE_ROBUSTNESS.md",
+                          "role":  "short-horizon gauge-robustness findings",
+                          "sha256":  "c408f065258e8a47be9806e87479a5175b6a34487eabdcf92078e2932f51d8da"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-002.json",
+                          "role":  "registered short-horizon gauge campaign",
+                          "sha256":  "1e17dd2beb158f1bdb7574c911b6d0184f6a2707d879225a3eaa6556304ae682"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-002-2a8c1ac485510215/attempt-001/run_record.json",
+                          "role":  "accepted short-horizon gauge execution record",
+                          "sha256":  "af9c4f059e6a01a36b959e5816a13d1dd5e8dfc235e3bc8f4bc4a992b101b120"
+                      },
+                      {
+                          "path":  "experiments/converge_nulloth_ccz4_constraints.py",
+                          "role":  "separate active-observable and CCZ4-constraint resolution ladder implementation",
+                          "sha256":  "164066feda209df24ac7188ef1c61fbe57420c38ac9d2e23924db58c8aecfcd3"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_CCZ4_CONVERGENCE.md",
+                          "role":  "weak-field CCZ4 constraint and observable convergence findings",
+                          "sha256":  "ac59e751efaca67ac71f2a08c64e2658b94656558484ea487e91ee57f7ad6aa5"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-003.json",
+                          "role":  "registered weak-field CCZ4 convergence campaign",
+                          "sha256":  "f91fb7837eac405712542a49c167506e668ea4e5b4d9d50c2b5560ed2e6dd950"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-003-092e650000a772e6/attempt-001/run_record.json",
+                          "role":  "accepted weak-field CCZ4 convergence execution record",
+                          "sha256":  "365171d523e839e6d4aa599e07e86ec66af340ad115afdfe2ef1e5b2ee747b7e"
+                      },
+                      {
+                          "path":  "experiments/measure_nulloth_periodic_tensor_response.py",
+                          "role":  "three-dimensional periodic tensor-response implementation",
+                          "sha256":  "7a162431c1b656e9891b1566b89151951d8f0e24dd13849cff526060e483cd40"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_PERIODIC_TENSOR_RESPONSE.md",
+                          "role":  "periodic tensor-response findings and radiation boundary",
+                          "sha256":  "c2177ae73b8b230b40bea72f117454c13c7485d409424d5ef5ac5d2d944b3c3a"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-004.json",
+                          "role":  "registered three-dimensional tensor-response campaign",
+                          "sha256":  "8e2997cf860048ff4c2fad7fa2ee91ceb9b4af67c4f42d6234450715527b0225"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-004-31cbc5ee06d392c4/attempt-001/run_record.json",
+                          "role":  "accepted three-dimensional tensor-response execution record",
+                          "sha256":  "65a6231931b19aefafdbe4b803acafae49570dc40a730cb2e661ee805f2cdaca"
+                      },
+                      {
+                          "path":  "experiments/measure_nulloth_source_pulses.py",
+                          "role":  "independent three-dimensional vector and material pulse implementation",
+                          "sha256":  "3b196aa09c289e09de20827f0294b50258ba64bba05d913194cd36cc287941b9"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_SOURCE_PULSES.md",
+                          "role":  "vector and material source-pulse findings",
+                          "sha256":  "dc5096c00ffcde5e6451975a36860d54ba2eccf3e2c589ff01316fff7852e3dd"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-005.json",
+                          "role":  "registered three-dimensional vector and material pulse campaign",
+                          "sha256":  "e755d16969753820dbdcff06fc1cb8dddd867d35ec1c6b015daaebf7b817bcfa"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-005-7e27341d50e18bbc/attempt-001/run_record.json",
+                          "role":  "accepted three-dimensional vector and material pulse execution record",
+                          "sha256":  "b710213ff120b4567e1d91dbc024497602ae3a737edc3c25ee2003b2d047181c"
+                      },
+                      {
+                          "path":  "experiments/converge_nulloth_elevated_curvature.py",
+                          "role":  "elevated-curvature periodic CMC resolution ladder implementation",
+                          "sha256":  "78d4941d07f93ea428fe3e6eff8b7f7fe4493ed0b5a29f613bbce980ecf0067f"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_ELEVATED_CURVATURE.md",
+                          "role":  "elevated-curvature CMC convergence findings",
+                          "sha256":  "74e03ca07832174c75802097a62af7a9761a3218684487bfbbc0d77b9215c90c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-006.json",
+                          "role":  "registered elevated-curvature periodic CMC campaign",
+                          "sha256":  "91b2cafad558dee21ce9ed80092486a4e20114f31dc4d07b4e47b4c68daa1844"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-006-48b15de383739cff/attempt-001/run_record.json",
+                          "role":  "accepted elevated-curvature periodic CMC execution record",
+                          "sha256":  "020431d5262a978846d8837af166343a1cc6b744097a71eea07c93e3b373e40d"
+                      },
+                      {
+                          "path":  "experiments/close_nulloth_entropy_budget.py",
+                          "role":  "complete-step physical and numerical entropy budget implementation",
+                          "sha256":  "85b15480cb79eb133114fabe8815bb9e517e00f18649bc56566acf7ae454d67c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_ENTROPY_BUDGET.md",
+                          "role":  "complete-step counterflow entropy findings and accounting rule",
+                          "sha256":  "0aebac13fcc536a8211885b8d673e8c6710cc747e04a6e5d3c5b7f3c108f6757"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-NLN-005.json",
+                          "role":  "registered counterflow entropy-budget campaign",
+                          "sha256":  "a4416f44485009f565da3855b90ed03f9c0cbb69c3dccebcf8df899d679eaabe"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-NLN-005-a3e3446c30e5c763/attempt-001/run_record.json",
+                          "role":  "accepted counterflow entropy-budget execution record",
+                          "sha256":  "3c9f0f014c275f401c20b9d251f1266d0a1fff34ad0ed646c1954d93fa9888f4"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_entropy_budget.py",
+                          "role":  "entropy-budget convergence diagnostic regression test",
+                          "sha256":  "47a3fa951bf3c0c1a7c92fbf6fa7791165884017db48820d0fe92cae989b17af"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_elevated_curvature_gauge.py",
+                          "role":  "elevated-curvature harmonic-versus-1+log comparison implementation",
+                          "sha256":  "b3ebf83faf2f13ff6377fbe105292db893cf48f4ceabb72928f6c7742f6ea77a"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_ELEVATED_CURVATURE_GAUGE.md",
+                          "role":  "elevated-curvature gauge-robustness findings",
+                          "sha256":  "e26a2f80d77ba5cef1e530480285658d49bde1f5299e725b92859e4272178467"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-007.json",
+                          "role":  "registered elevated-curvature gauge campaign",
+                          "sha256":  "61dbd0b45dcf0d49fcd5bd4e3b63342ecceebdf529294d42ec340a45c2b86a90"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-007-5c433042fdd42c91/attempt-001/run_record.json",
+                          "role":  "accepted elevated-curvature gauge execution record",
+                          "sha256":  "2f3df634db20ef9a2ca4d0b00711c4db3f0ad75c3e6500b73596937d59ba6b89"
+                      },
+                      {
+                          "path":  "experiments/close_nulloth_coordinate_energy_budget.py",
+                          "role":  "periodic coordinate-energy and geometric-work budget implementation",
+                          "sha256":  "a8ce834b10f9572c27cb3d92f190b880376ee581c1a15862a0aa9bfe84b4ab55"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_COORDINATE_ENERGY_BUDGET.md",
+                          "role":  "coordinate energy, geometric work, and global-energy proscription",
+                          "sha256":  "8edfec4bef24b5390cebf5a3e72a02f924a9d7d8de98fd736fc908a710413336"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-GRV-008.json",
+                          "role":  "registered coordinate-energy and geometric-work campaign",
+                          "sha256":  "684444e53c9c6795c86c15e37d36212828d5c78e07de684d177116a82ef06aef"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-GRV-008-3cc885a1f732fb02/attempt-001/run_record.json",
+                          "role":  "accepted coordinate-energy and geometric-work execution record",
+                          "sha256":  "86a0b775e3a4cab6b159a76bafdaf8fa9de6dfbcefa665f7e6746d906f53d18e"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_energy_budget.py",
+                          "role":  "geometric-work diagnostic regression test",
+                          "sha256":  "300c1ec7cef1cfb6d78df0d86c4dc2b0d73897df7246cea3de2134b968a64812"
+                      },
+                      {
+                          "path":  "experiments/measure_nulloth_long_horizon.py",
+                          "role":  "twelve-unit full-production coherence implementation",
+                          "sha256":  "31b044519e211314a4154d12a7e7ed0601847b3ee604aba6f61c739c5fed1a51"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_LONG_HORIZON.md",
+                          "role":  "twelve-unit coherence turnover and lifetime findings",
+                          "sha256":  "20db29d3ed1cb8e5704f640e833abcdddea8820c6e115a40bc27b76077c7ba83"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-NLN-006.json",
+                          "role":  "registered twelve-unit full-production campaign",
+                          "sha256":  "97acae20c4cea956b10f4d986b47d48c479b0499f56593e0906f74093b789407"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-NLN-006-739c3a7243293ecf/attempt-001/run_record.json",
+                          "role":  "accepted twelve-unit full-production execution record",
+                          "sha256":  "af82748e2df8f9b1f55b4969c058e904907808daaa46884abd25e55de56d55b9"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_long_horizon.py",
+                          "role":  "long-horizon wrapper and lifetime-promotion regression test",
+                          "sha256":  "a1a12f7dad8390cbf07c4a536fb732353e881ecce2d935ce71d63ab3883a0f9e"
+                      },
+                      {
+                          "path":  "src/causal_repair/finite_nulloth.py",
+                          "role":  "one-dimensional finite-patch Nulloth production backend",
+                          "sha256":  "3436258b56608e73602d4fdb3482f04fd192f1d296cdcbf3f3e488708d77b6e4"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_finite_scalar_outflow.py",
+                          "role":  "finite scalar-pulse passage implementation",
+                          "sha256":  "8cfe3299f0087b62b9305e935dc994a567f367b6be94084519cb2d196ca59eaf"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_FINITE_SCALAR_OUTFLOW.md",
+                          "role":  "Synodic finite-passage finding and proscription",
+                          "sha256":  "cf5607b03f2e8323c0d3285d01b3020ced637267869bcf4cfc5975a503b04ef7"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-001.json",
+                          "role":  "registered one-dimensional finite scalar-outflow campaign",
+                          "sha256":  "100e6ed6cdfa2a54d338a3f3d8c6bf1798a1a6819673494ae6ccecea1243ab53"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-001-8b7b0a7416106b6f/attempt-001/run_record.json",
+                          "role":  "accepted one-dimensional finite scalar-outflow execution record",
+                          "sha256":  "0dc653d3e7c5b550a0dd76b34c9e240c500eb75253bb5d48bbe899dd4d7239b8"
+                      },
+                      {
+                          "path":  "tests/test_finite_nulloth.py",
+                          "role":  "finite Nulloth characteristic and scope regression tests",
+                          "sha256":  "30b0a50bbe563a9ef1e8dac567f904bd7603d8d442faa315b2fa42616ab370bd"
+                      },
+                      {
+                          "path":  "experiments/converge_nulloth_finite_scalar_outflow.py",
+                          "role":  "finite scalar resolution and patch-size convergence implementation",
+                          "sha256":  "70f422875f5d93327e67dc0cc4494560e51ab69a73abdea59077c5c5dac6919a"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_FINITE_SCALAR_CONVERGENCE.md",
+                          "role":  "Synodic finite scalar convergence finding and proscription",
+                          "sha256":  "3e306aa362c742323fdbfd01c6b0fb1821fe7a45e569a7fa2fec1302d198e647"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-002.json",
+                          "role":  "registered finite scalar convergence campaign",
+                          "sha256":  "fadaad5a71df8f9a99ba4ef5eb2b8a713f6dedededcd85601ffede16617f8bec"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-002-1eb4c53bf380a6dd/attempt-001/run_record.json",
+                          "role":  "accepted finite scalar convergence execution record",
+                          "sha256":  "af108a7439e130ec744b51a12296e2809fd1d8e675fa1e7d0fa9c98ea8711e69"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_finite_vector_material_outflow.py",
+                          "role":  "finite vector and material passage implementation",
+                          "sha256":  "2f673c1c18427877d77a4a2665978a0527e03d224b78ba6470edcbd4907f0ad5"
+                      },
+                      {
+                          "path":  "experiments/assess_nulloth_finite_vector_material_outflow.py",
+                          "role":  "finite vector and material denial assessment",
+                          "sha256":  "bc823444ddc9dc581825f28afed5562b72e833754fd6e0debcd5e175ec71c3a6"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_FINITE_VECTOR_MATERIAL_OUTFLOW.md",
+                          "role":  "Synodic finite vector and material trial",
+                          "sha256":  "7f62a89366d7def49614259168abf85bcb25ca2c73d1db593d037f9177f4ef16"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-BND-003-CR-001.md",
+                          "role":  "finite vector and material entropy-denial record",
+                          "sha256":  "9878344cc028935df09ee51832e3e315b8e4d1a9beba77ac107a042e800b763c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-003.json",
+                          "role":  "original denied finite vector and material campaign",
+                          "sha256":  "b12741d6d08b4e197fe2d5f7983b563bdaa58b64ab79baf1e9267cc8cd2d335f"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-003-ASSESS-001.json",
+                          "role":  "registered finite vector and material denial assessment",
+                          "sha256":  "e380f932129a85d174b7bcc12a15a925522c7a8f0b892a77212166771a2484bd"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json",
+                          "role":  "completed but scientifically denied finite source-passage record",
+                          "sha256":  "5eb9a37524a01e72a93d1b651bcd2d279b79fa110d6a48ac30a8da7606f98637"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-003-ASSESS-001-419d8020859a32de/attempt-001/run_record.json",
+                          "role":  "accepted finite source-passage denial assessment record",
+                          "sha256":  "79d735771504adcb3ee15e8d056f59af2c91e2b48d1d7d0f588b4de877dbff7b"
+                      },
+                      {
+                          "path":  "experiments/converge_nulloth_finite_material_entropy.py",
+                          "role":  "finite material entropy convergence implementation",
+                          "sha256":  "518a230eaf62fb99fa329bc65b75778e77feb78a519b07c22388056fe3c1d35b"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_FINITE_MATERIAL_ENTROPY.md",
+                          "role":  "Synodic finite material numerical-entropy account",
+                          "sha256":  "dd8b2fe6cb2efe80b83a2e2aebbf2ceb067e33f2e6b0649f43462295418836f5"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-004.json",
+                          "role":  "registered finite material entropy convergence campaign",
+                          "sha256":  "fe99fc3a1f982e3f5c2442aba6dcffd8c3b2111a4e110ad51a8af7d658c920ac"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-004-45e0f80479f94f22/attempt-001/run_record.json",
+                          "role":  "accepted finite material entropy convergence record",
+                          "sha256":  "595d66f7550ab847b82f58bcf8aef3a8a58f23ba138b5323ad43d0349c1e4cdb"
+                      },
+                      {
+                          "path":  "experiments/requalify_nulloth_finite_vector_material.py",
+                          "role":  "full-horizon finite vector and material requalification implementation",
+                          "sha256":  "07f5f4131c8c44b2760f6e176dc12a4638fd66711bcbccaed0f876aed4141e4b"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_FINITE_VECTOR_MATERIAL_REQUALIFICATION.md",
+                          "role":  "Synodic full-horizon finite source requalification",
+                          "sha256":  "edd119e638dae530158f00fa5e6ff77f94454f0f6cea345ce72af62cf3ed2e94"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-005.json",
+                          "role":  "registered full-horizon finite source requalification campaign",
+                          "sha256":  "6535ef7677c28602161e2f969fe5606073bc8b8bf91dce54a7917ba209fc0ed8"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-005-83cf33b8b3e4a661/attempt-001/run_record.json",
+                          "role":  "accepted full-horizon finite source requalification record",
+                          "sha256":  "776c9b7f5fa0849db86e52f9e9daec33d535a372e25dbfb56c4780b8e030e452"
+                      },
+                      {
+                          "path":  "experiments/converge_nulloth_scalar_boundary_reflection.py",
+                          "role":  "scalar boundary-reflection convergence implementation",
+                          "sha256":  "251b4b891c7e47dcb5b9327692dd3a5eada4f68f14110dcfbfa0d410d5352d63"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_SCALAR_BOUNDARY_REFLECTION.md",
+                          "role":  "Synodic scalar boundary-reflection qualification",
+                          "sha256":  "649a26f62cb02159589d49b93e2e3564948cbadfd2b1a4d5db479329f9f1b31c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-006.json",
+                          "role":  "registered scalar boundary-reflection campaign",
+                          "sha256":  "d99ac25215bb21b8d84b7091e2002aa3ae9f5c3109a822ec28c2f82f994341fc"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-006-2dc43470aebdcc8c/attempt-001/run_record.json",
+                          "role":  "accepted scalar boundary-reflection record",
+                          "sha256":  "146927644673830502620351812d85288db2766990a7e51fae8eae4399917592"
+                      },
+                      {
+                          "path":  "experiments/derive_nulloth_boundary_characteristics.py",
+                          "role":  "complete finite-face characteristic projector derivation",
+                          "sha256":  "728b8f9fb13753d80c173e5e52de4073fad95aaa381d9df13925bea38cb4beed"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BOUNDARY_CHARACTERISTICS.md",
+                          "role":  "Synodic finite-face characteristic inventory and implementation judgment",
+                          "sha256":  "6764aa84de66f94f438591e08b40f31e03a21a7ae290ce9c0f2914d693f34157"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-007.json",
+                          "role":  "registered complete finite-face characteristic inventory campaign",
+                          "sha256":  "7cdf9200b13de3ccae365ea9198c17772e841a637677b91aba9481a6a3a53050"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-007-4d422f4c0e53f205/attempt-001/run_record.json",
+                          "role":  "accepted complete finite-face characteristic inventory record",
+                          "sha256":  "18e7963bd30d64163f325d337076d837781462d01171a5a585dc955cd51636b1"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_boundary_inventory.py",
+                          "role":  "clustered and sign-invariant boundary projector regression tests",
+                          "sha256":  "b8349b55fc8ac082eecf95f674a8cd4a039a086af6af371816e1963405e50eb5"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/control_registry.json",
+                          "role":  "machine-readable Synodic physical control grammar",
+                          "sha256":  "fe9739907c4b7b349c7b612a23baec39da32745b7791b890797348d5accd8780"
+                      },
+                      {
+                          "path":  "experiments/validate_nulloth_control_registry.py",
+                          "role":  "Synodic physical control grammar validator",
+                          "sha256":  "99e4fb48d8522f2e0537a92e590c0436bff9fd0e0cb191d3c2fd7e08100fd86a"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_CONTROL_CHARTER.md",
+                          "role":  "Synodic charter of permitted physical control",
+                          "sha256":  "33508a54636511d28df0a4d7bd2e6d49b0b19b4dba98db613f5b93b60ed319ca"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-001.json",
+                          "role":  "registered Synodic physical control grammar campaign",
+                          "sha256":  "818ddb7f711b7a4f115a101eb7f305e79263961b6fbd5cb4631f59f80583d623"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-001-9dc26a54a9974c9c/attempt-001/run_record.json",
+                          "role":  "accepted Synodic physical control grammar record",
+                          "sha256":  "a4617d1998d920563db7a5f92334ca9ff9a7043f0037bd1c81e708c33cd4abcf"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_controls.py",
+                          "role":  "physical control grammar regression test",
+                          "sha256":  "4606eda973115c9de5668f4bccd4d5666166384cd803bf63d0f91e0957c9b344"
+                      },
+                      {
+                          "path":  "experiments/search_nulloth_brake_controls.py",
+                          "role":  "Carrier Coherence Brake gradient-free inverse search",
+                          "sha256":  "55cfb647025a0465f4efed3492d5a6e9d80d4e88782176351d5561d619698afe"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BRAKE_CONTROL_SEARCH.md",
+                          "role":  "Synodic minimal-seed search finding",
+                          "sha256":  "308097c25addd4e0c71532d603daa41354f09886e6d86b9e7ec907890a29ac5e"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-002.json",
+                          "role":  "registered Carrier Coherence Brake inverse-search campaign",
+                          "sha256":  "807a5138613460d1af63875729c877bffc91b792fc1752506b12ceb75e59e50b"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-002-be68f5c873076f2c/attempt-001/run_record.json",
+                          "role":  "accepted Carrier Coherence Brake inverse-search record",
+                          "sha256":  "eac8dc82a58f4fab249387b18c610232e33cd72faffa76e0e922e94a4b23a3e6"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_control_search.py",
+                          "role":  "inverse-search objective-sign regression test",
+                          "sha256":  "55b5a3cc1e112d203dd40c80a53df1a98293684b1efa43c884dec26f2d21d946"
+                      },
+                      {
+                          "path":  "experiments/converge_nulloth_brake_threshold.py",
+                          "role":  "higher-resolution brake-threshold refinement",
+                          "sha256":  "1961d4e0cdd59cb7ba3600fa29e8b6280b0970d8ab75b0ff29bb34312bca0985"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BRAKE_THRESHOLD_CONVERGENCE.md",
+                          "role":  "Synodic brake-threshold resolution judgment",
+                          "sha256":  "dd154e2e5b673a0fea140d76331ef540d9748f213d9c3c38e7612b22a54582e6"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-003.json",
+                          "role":  "registered sixteen-point brake-threshold campaign",
+                          "sha256":  "5c2a889a474b7baf25639c73a52587c280be7d62605829146c731bb86889dd4e"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-003-52a4c8d75810fdaf/attempt-001/run_record.json",
+                          "role":  "accepted sixteen-point brake-threshold record",
+                          "sha256":  "d79a3c4816df46456072306a5f78d00a6572958e1e3657217622229a8b2f8944"
+                      },
+                      {
+                          "path":  "experiments/converge_nulloth_brake_threshold_32.py",
+                          "role":  "thirty-two-point brake-threshold qualification",
+                          "sha256":  "96298f6272af3befd07805dd4b5d7d2173a332a41fdc5e1ddd9253503c0ac6e6"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-004.json",
+                          "role":  "registered thirty-two-point brake-threshold campaign",
+                          "sha256":  "74a34a50bc077a87979aca7b0f3997f42190edfc8130f5a259b890741eacc4e6"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-004-4ceb45997c80a0b3/attempt-001/run_record.json",
+                          "role":  "immutable thirty-two-point threshold run before floating-equality assessment",
+                          "sha256":  "bebad599324d09076e8b90a15913a988b9158a02f4e72ae8ac9280ae7a11f70c"
+                      },
+                      {
+                          "path":  "experiments/assess_nulloth_brake_threshold_32.py",
+                          "role":  "thirty-two-point bracket floating-equality assessment",
+                          "sha256":  "0b019a54ff0b71b5f48b3a1726cfd6d288a7a22ee62eead1e8e2d6549029394b"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-CTL-004-CR-001.md",
+                          "role":  "thirty-two-point bracket representation correction record",
+                          "sha256":  "a1622fa2ba6166ab4646c48bf6159b8cfd3a03d79ab46212c60a33a253e32cae"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-004-ASSESS-001.json",
+                          "role":  "registered corrected thirty-two-point threshold assessment",
+                          "sha256":  "6913ec5f814254a62e4ea38b77bbaf95b245d604f0e0e6c2f2bc39d77a404204"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-004-ASSESS-001-53a485fec982e747/attempt-001/run_record.json",
+                          "role":  "accepted corrected thirty-two-point threshold assessment record",
+                          "sha256":  "6efae635920e307c26ff2e44431ac5c9e45e5312e149b672e291ac84530f6563"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BRAKE_SEED_QUALIFICATION.md",
+                          "role":  "Synodic periodic brake-seed qualification",
+                          "sha256":  "b1c0ac849d8c9ce9b080792fe6014879053c74d0a37a9bf6a102a1486fa14701"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_brake_robustness.py",
+                          "role":  "thirty-two-point brake targeting-robustness audit",
+                          "sha256":  "3fce87812ab1435af60fc5caed06da10d89a435513fc68a3164619acb6e6afba"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_brake_robustness.py",
+                          "role":  "brake perturbation-profile regression tests",
+                          "sha256":  "4fc7dee2f167707d0cd9f23e0240c1304b398a0f3f663b874ff90d87baae1456"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-005.json",
+                          "role":  "registered brake targeting-robustness campaign",
+                          "sha256":  "0989d9316aff4f23c7e611b19c71bfafd965aef17925b824caf2c78653a3ba9b"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-005-fc56077e9eaec75e/attempt-001/run_record.json",
+                          "role":  "immutable rejected brake targeting-robustness record",
+                          "sha256":  "4b1fa429b4f006a3c2d3e5220836c458d2160d5fae1b0f64ae2b33bce6dafa11"
+                      },
+                      {
+                          "path":  "experiments/assess_nulloth_brake_robustness.py",
+                          "role":  "brake robustness denial classifier",
+                          "sha256":  "1b64255c9cb9525e3e3e8aace1acfce586fe2bcf5385c02a45f79380851e1ee3"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-CTL-005-CR-001.md",
+                          "role":  "brake phase-target denial classification record",
+                          "sha256":  "6660e2c01f53f2b9a1988969c9e9bff6bebd02dbc038f7f50144ac6cd40e3ea2"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-005-ASSESS-001.json",
+                          "role":  "registered brake robustness denial assessment",
+                          "sha256":  "99f5d9b262271d12ce0fd0cbc9e8f27a8c72eeba0f85f2661f9740f72120d503"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-005-ASSESS-001-cd36ac92258ad15e/attempt-001/run_record.json",
+                          "role":  "accepted brake robustness denial assessment record",
+                          "sha256":  "9ecc607964fda82622e72551232a7d0eb55104c288bcdc40c7ca4d45d5aacf25"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BRAKE_ROBUSTNESS.md",
+                          "role":  "Synodic brake robustness and alignment judgment",
+                          "sha256":  "5f4210b833d308f6bf7512ef7d7717366d059b5ca6c1b0c48fcb143013b1b3b1"
+                      },
+                      {
+                          "path":  "experiments/bracket_nulloth_brake_phase_tolerance.py",
+                          "role":  "thirty-two-point brake phase-tolerance bisection",
+                          "sha256":  "40fb8135e994581bbfb1fbc092621c83aa550a2fab8f3439c3dc4de03d8f6835"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-006.json",
+                          "role":  "registered brake phase-tolerance campaign",
+                          "sha256":  "a0dface90c937dea771dfad6813357231be854bca81b601e127282ff082843a6"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-006-67d334b36a712cef/attempt-001/run_record.json",
+                          "role":  "accepted brake phase-tolerance record",
+                          "sha256":  "471932026c6691b1e0c0ef23b32c47ba5a697b53a952cad816e4ce1886a08220"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BRAKE_PHASE_TOLERANCE.md",
+                          "role":  "Synodic brake alignment decision writ",
+                          "sha256":  "59a9bda938503070865bcd66d54d8808db26c4301565830543114a99f523e5de"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_brake_combined_errors.py",
+                          "role":  "thirty-two-point combined targeting-error audit",
+                          "sha256":  "e5415a437ce5137d1f2f4fc9410e24aa81b570f3890dcf54219991baa87e8b81"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-007.json",
+                          "role":  "registered combined targeting-error campaign",
+                          "sha256":  "23246b6fad643c8f1b0793298bc871e80db2fb1490f922733fac2a6d037afd94"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-007-1d74e7cf52075281/attempt-001/run_record.json",
+                          "role":  "immutable rejected combined targeting-error record",
+                          "sha256":  "719a64af7ec7b2b6ca96493745e5fea86508094e9fc218a711d94095e60058b9"
+                      },
+                      {
+                          "path":  "experiments/assess_nulloth_brake_combined_errors.py",
+                          "role":  "combined-error shape-sign denial classifier",
+                          "sha256":  "670807e2b4ce8e4faa905a451a739f509581d7e8e1c89da2e54469ab08bb3f8b"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-CTL-007-CR-001.md",
+                          "role":  "combined-error invalid-control classification record",
+                          "sha256":  "bd1b700862af1afaa7da41e1a1d31e68e0f863a20e402990b74dbbdcde17ed0e"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-007-ASSESS-001.json",
+                          "role":  "registered combined-error denial assessment",
+                          "sha256":  "e5abe664814abad4bbedfa43f2af576d14ee6ed63f178fa4d34ebb81a02d989d"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-007-ASSESS-001-10f2b87d6e6ce35b/attempt-001/run_record.json",
+                          "role":  "accepted combined-error denial assessment record",
+                          "sha256":  "b7adab53e74458a8ef84b437587b63024f664c2de9751d58763681f96108ab2c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BRAKE_COMBINED_ERRORS.md",
+                          "role":  "Synodic combined targeting-reserve judgment",
+                          "sha256":  "aead5a4aed0eea4cc7e03b15249fbf66fc3f23dfa2d74ae543dcc33e5cfee60c"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_brake_stochastic_noise.py",
+                          "role":  "thirty-two-point stochastic shape-noise ensemble",
+                          "sha256":  "436243f2888ee5a2ed8ee0f50f7b0aedff1a5c8bd71c411827780a36373f6300"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_stochastic_noise.py",
+                          "role":  "stochastic profile normalization and reproducibility tests",
+                          "sha256":  "29f91ddd2ebc8d3ed1422d4da54cf78acbcfcee9fa6f209947b30f744f0b761c"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-CTL-008.json",
+                          "role":  "registered stochastic shape-noise campaign",
+                          "sha256":  "dc4b183f50e62abd5b0958cd9f88f432ffd31fc66a8c0ae8a6fef9e9340fd6f0"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-008-68099d5d38781c5a/attempt-001/run_record.json",
+                          "role":  "accepted stochastic shape-noise ensemble record",
+                          "sha256":  "1bc3d0383dcd0f6498bc4df8633f90c0d55060afd2685a38419f044bf927dbaf"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_BRAKE_STOCHASTIC_NOISE.md",
+                          "role":  "Synodic stochastic shape-noise judgment",
+                          "sha256":  "8b4a645e824c5058c5c6de67d38bccde2d19a285c4a4a3d216daeab531ba3bed"
+                      },
+                      {
+                          "path":  "src/causal_repair/driven_finite_nulloth.py",
+                          "role":  "driven finite scalar characteristic boundary implementation",
+                          "sha256":  "9d9bb849a8c8212e806cba476b1049ca65f6f1b89ff5d79de12d8a4eec095d8c"
+                      },
+                      {
+                          "path":  "experiments/qualify_nulloth_driven_latency.py",
+                          "role":  "driven finite scalar latency qualification implementation",
+                          "sha256":  "444ffda3f06d8a59fff8fcb4aa4d0a56d2af915a580181b6a9fb91bdcf7dbae1"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_driven_boundary.py",
+                          "role":  "driven scalar boundary unit tests",
+                          "sha256":  "16da72ae632e553caa514fabcbe2ca19490a7f50f4f13b9498e9b6f6e19879cb"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-008.json",
+                          "role":  "registered driven finite scalar latency campaign",
+                          "sha256":  "641759f8ec3dfbbec814c64e147ca1c272feb6653eeaa62602028614071b4440"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-008-09206a6999a6d521/attempt-001/run_record.json",
+                          "role":  "immutable failed driven finite scalar latency record",
+                          "sha256":  "bf8455d1b111969b6b107e25b91ee08c184f9ff3e0996c0ad0745fab8624f10f"
+                      },
+                      {
+                          "path":  "experiments/assess_nulloth_driven_latency_failure.py",
+                          "role":  "driven finite latency failure classifier",
+                          "sha256":  "9c8a45dbd47518387d52957b3975c13cbf74304a7c8ffac435488f3aa8b76eaf"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/campaigns/NUL-BND-008-ASSESS-001.json",
+                          "role":  "registered driven latency failure assessment",
+                          "sha256":  "b1635fde83c98b97625d7bc6e6fc6e96b8eb02895932df6426fb90aec47b33c9"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/corrections/NUL-BND-008-CR-001.md",
+                          "role":  "driven latency unresolved-domain record",
+                          "sha256":  "ae6550610a5e6122c7bffb2391cffcf0706d5d51f3e1ae96e16479c8c3608acc"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-BND-008-ASSESS-001-fbfbc98260fde78b/attempt-001/run_record.json",
+                          "role":  "accepted driven latency failure assessment record",
+                          "sha256":  "b549e7eab4f9915748abb163859605fbaa3004cdd1413e1570a8ea895457ce6f"
+                      },
+                      {
+                          "path":  "experiments/nulloth_master/NULLOTH_MASTER_SPEC.md",
+                          "role":  "private Synod physical-model registry",
+                          "sha256":  "745c5e04340f34be53c916e0465c1cc45f15e46e5bb7987094b513c0805c6485"
+                      },
+                      {
+                          "path":  "experiments/audit_nulloth_master_spec.py",
+                          "role":  "private registry contradiction, voice, and cross-link audit",
+                          "sha256":  "717b1a96eb7ba4b1167cd223b487ee6aad2b5b3b342001d1925aaa88b87f7400"
+                      },
+                      {
+                          "path":  "tests/test_nulloth_master_evidence.py",
+                          "role":  "private registry and evidence graph regression tests",
+                          "sha256":  "5e2fa499ca8d105b18327492515fe037f98cac413770e9385edcbce159936136"
+                      }
+                  ]
+}

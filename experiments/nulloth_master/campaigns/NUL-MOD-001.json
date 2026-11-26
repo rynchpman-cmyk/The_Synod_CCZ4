@@ -1,0 +1,66 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-MOD-001",
+  "title": "Homogeneous scalarization growth qualification",
+  "question": "Does the implemented homogeneous scalar sector reproduce the linear growth rate predicted by its negative effective mass squared?",
+  "prediction": "For the registered frozen-material state, the measured scalar growth rate equals sqrt(-m_eff^2) within a relative error of 1e-8.",
+  "falsifier": "The process fails, produces non-finite output, predicts a nonnegative effective mass squared, or measures a relative growth-rate error greater than 1e-8.",
+  "decisive_observables": [
+    "effective_mass_squared",
+    "predicted_rate",
+    "measured_rate",
+    "relative_error"
+  ],
+  "acceptance_criteria": [
+    {
+      "observable": "effective_mass_squared",
+      "operator": "<",
+      "value": 0.0
+    },
+    {
+      "observable": "relative_error",
+      "operator": "<=",
+      "value": 1e-8
+    }
+  ],
+  "controls": [
+    "The analytic linear solution is evaluated from the same registered effective mass squared.",
+    "The material state is frozen so transport and gravitational feedback cannot imitate scalar growth."
+  ],
+  "resolution_ladder": [],
+  "seed": null,
+  "seed_rationale": "The registered homogeneous initial state and evolution are deterministic and use no random sampling.",
+  "parameters": {
+    "duration": 0.5,
+    "dt": 0.0005,
+    "amplitude": 1e-8,
+    "relative_error_limit": 1e-8
+  },
+  "command": [
+    "{python}",
+    "experiments/run_nulloth_homogeneous_growth.py",
+    "--duration",
+    "0.5",
+    "--dt",
+    "0.0005",
+    "--amplitude",
+    "1e-8"
+  ],
+  "timeout_seconds": 120,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/run_nulloth_homogeneous_growth.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/production33.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/integrators.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-MOD-001"
+  ]
+}

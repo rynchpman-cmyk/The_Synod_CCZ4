@@ -1,0 +1,108 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-NLN-006",
+  "title": "Twelve-unit full-production coherence trial",
+  "question": "Does the small seed classified as sustained coherence at time six remain sustained, turn over, or disperse when complete production evolution is extended to time twelve?",
+  "prediction": "The trajectory completes, crosses into nonlinear turnover with a peak below the amplitude wall, and retains coherence at time twelve while all entropy, constraint, conservation, convexity, and recovery vetoes pass.",
+  "falsifier": "A production denial, failure to turn over, loss of coherence by the horizon, amplitude-wall approach, negative complete-step entropy, or violation of any independent veto falsifies the prediction.",
+  "decisive_observables": [
+    "completed",
+    "outcome",
+    "transitioned_from_sustained_to_turnover",
+    "coherence_lifetime_lower_bound",
+    "retained_coherence_at_horizon",
+    "peak_amplitude",
+    "final_amplitude",
+    "peak_to_final_drop_fraction",
+    "maximum_high_wavenumber_fraction",
+    "baryon_relative_drift",
+    "carrier_relative_drift",
+    "entropy_change",
+    "minimum_step_entropy_change",
+    "entropy_telescope_error",
+    "maximum_hamiltonian_l2",
+    "maximum_momentum_l2",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "completed", "operator": "==", "value": 1},
+    {"observable": "outcome", "operator": "==", "value": "nonlinear-turnover"},
+    {"observable": "transitioned_from_sustained_to_turnover", "operator": "==", "value": 1},
+    {"observable": "coherence_lifetime_lower_bound", "operator": ">=", "value": 11.9},
+    {"observable": "retained_coherence_at_horizon", "operator": "==", "value": 1},
+    {"observable": "peak_amplitude", "operator": ">", "value": 0.14},
+    {"observable": "peak_amplitude", "operator": "<=", "value": 0.17},
+    {"observable": "final_amplitude", "operator": ">", "value": 0.1},
+    {"observable": "peak_to_final_drop_fraction", "operator": ">", "value": 0.05},
+    {"observable": "maximum_high_wavenumber_fraction", "operator": "<", "value": 0.15},
+    {"observable": "baryon_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "carrier_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "entropy_change", "operator": ">", "value": 0.0},
+    {"observable": "minimum_step_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "entropy_telescope_error", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_hamiltonian_l2", "operator": "<=", "value": 0.001},
+    {"observable": "maximum_momentum_l2", "operator": "<=", "value": 0.001},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "The seed, carrier modulation, CMC solve, coupling, gauge, and complete production operator match the small-seed member of NUL-NLN-003.",
+    "The horizon is doubled from six to twelve while dt is doubled to retain tractable production cost.",
+    "The endpoint is classified by the same registered regime classifier used by NUL-NLN-003.",
+    "Coherence survival is reported as a lower bound, not an asymptotic lifetime.",
+    "Coordinate energy is interpreted through NUL-GRV-008 rather than as a global conserved charge."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 12.0, "dt": 0.02, "role": "long-horizon production reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "The initial profile, constraint solve, and evolution are deterministic.",
+  "parameters": {
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "scalar_initial_amplitude": 0.005,
+    "scalar_initial_momentum": "growing mode",
+    "kappa_gravity": 0.001,
+    "slicing": "harmonic",
+    "box_length": 32.0
+  },
+  "command": [
+    "{python}",
+    "experiments/measure_nulloth_long_horizon.py",
+    "--points",
+    "4",
+    "--duration",
+    "12.0",
+    "--dt",
+    "0.02",
+    "--output",
+    "{run_dir}/long_horizon.json"
+  ],
+  "timeout_seconds": 300,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/measure_nulloth_long_horizon.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_LONG_HORIZON.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "long_horizon.json"
+  ],
+  "supports_claims": [
+    "NUL-NLN-006"
+  ]
+}

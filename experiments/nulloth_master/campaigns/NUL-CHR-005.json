@@ -1,0 +1,82 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-005",
+  "title": "Expanded-envelope admissibility boundary search",
+  "question": "Where do declared production limits and genuine constitutive or characteristic denial surfaces first appear along outward rays from the qualified Nulloth box?",
+  "prediction": "All thirteen ray origins remain qualified; the expanded envelope contains at least three genuine physical denial crossings and at least four production-envelope crossings; every crossing is classified and bisected to fractional width below 1e-6.",
+  "falsifier": "Any starting point is unsafe, fewer than the predicted crossings are found, a crossing cannot be classified, or its final bracket exceeds the registered width.",
+  "decisive_observables": [
+    "rays",
+    "coarse_steps_per_ray",
+    "bisection_steps",
+    "safe_starting_points",
+    "physically_proscribed_rays",
+    "production_proscribed_rays",
+    "legendre_failure_rays",
+    "thermodynamic_failure_rays",
+    "complex_mode_rays",
+    "incomplete_basis_rays",
+    "ill_conditioned_rays",
+    "superluminal_rays",
+    "amplitude_cap_rays",
+    "relative_lorentz_cap_rays",
+    "unclassified_errors",
+    "minimum_physical_boundary_fraction",
+    "minimum_production_boundary_fraction",
+    "maximum_boundary_bracket_width"
+  ],
+  "acceptance_criteria": [
+    {"observable": "rays", "operator": "==", "value": 13},
+    {"observable": "coarse_steps_per_ray", "operator": "==", "value": 65},
+    {"observable": "bisection_steps", "operator": "==", "value": 24},
+    {"observable": "safe_starting_points", "operator": "==", "value": 13},
+    {"observable": "physically_proscribed_rays", "operator": ">=", "value": 3},
+    {"observable": "production_proscribed_rays", "operator": ">=", "value": 4},
+    {"observable": "unclassified_errors", "operator": "==", "value": 0},
+    {"observable": "minimum_physical_boundary_fraction", "operator": ">", "value": 0.0},
+    {"observable": "minimum_production_boundary_fraction", "operator": ">", "value": 0.0},
+    {"observable": "maximum_boundary_bracket_width", "operator": "<=", "value": 1e-6}
+  ],
+  "controls": [
+    "Every ray begins at a state already covered by accepted interior campaigns.",
+    "Production caps are evaluated using the canonical discovery parameters while physical symbols use widened administrative caps, preventing a declared limit from masquerading as mathematical failure.",
+    "Ten coordinate rays isolate density, internal energy, carrier density, signed counterflow, and signed coherence amplitude.",
+    "Three diagonal rays continue outward from the previously measured convexity, mode-gap, and condition-number corners.",
+    "Four longitudinal, transverse, and oblique directions are audited at each physical point.",
+    "The first coarse pass-to-fail interval is refined by deterministic bisection without changing its failure classification rule."
+  ],
+  "resolution_ladder": [
+    {"rays": 13, "coarse_steps_per_ray": 65},
+    {"bisection_steps_per_crossing": 24}
+  ],
+  "seed": null,
+  "seed_rationale": "All ray endpoints, coarse fractions, directions, and bisection decisions are deterministic.",
+  "parameters": {
+    "canonical_production_parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "physical_audit_scalar_amplitude_limit": 1.0,
+    "physical_audit_relative_lorentz_limit": 10.0,
+    "physical_failure_classes": ["legendre", "thermodynamic", "superluminal", "complex_mode", "incomplete_basis", "ill_conditioned"],
+    "production_failure_classes": ["amplitude_cap", "relative_lorentz_cap", "physical_failure"]
+  },
+  "command": [
+    "{python}",
+    "experiments/locate_nulloth_admissibility_boundaries.py",
+    "--coarse-steps",
+    "65",
+    "--bisection-steps",
+    "24"
+  ],
+  "timeout_seconds": 1800,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/locate_nulloth_admissibility_boundaries.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/matter.py",
+    "src/causal_repair/adm.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-005"
+  ]
+}

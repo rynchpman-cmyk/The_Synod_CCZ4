@@ -1,0 +1,93 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-008",
+  "title": "Coordinate energy and geometric work budget",
+  "question": "Does the retained periodic coordinate-energy change equal the RK-integrated geometric work, with periodic fluxes canceling and post-RK operators preserving total energy, in weak and elevated curvature?",
+  "prediction": "The coordinate-energy balance closes to relative error below 2e-10, periodic stage flux residuals and post-operator changes remain below tolerance, and elevated-curvature geometric work converges strongly across 4, 8, and 16 points while all independent vetoes pass.",
+  "falsifier": "Failure of the discrete energy identity, noncancelling periodic flux, a post-operator energy change above tolerance, nonconvergent elevated work, or violation of constraint, conservation, entropy, convexity, or recovery vetoes falsifies the account.",
+  "decisive_observables": [
+    "maximum_absolute_energy_balance_error",
+    "maximum_relative_energy_balance_error",
+    "maximum_stage_flux_cancellation_error",
+    "maximum_post_operator_energy_change",
+    "elevated_work_monotone_to_fine",
+    "coarse_to_medium_work_error_reduction",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "maximum_absolute_energy_balance_error", "operator": "<=", "value": 5e-11},
+    {"observable": "maximum_relative_energy_balance_error", "operator": "<=", "value": 2e-10},
+    {"observable": "maximum_stage_flux_cancellation_error", "operator": "<=", "value": 2e-8},
+    {"observable": "maximum_post_operator_energy_change", "operator": "<=", "value": 1e-11},
+    {"observable": "elevated_work_monotone_to_fine", "operator": "==", "value": 1},
+    {"observable": "coarse_to_medium_work_error_reduction", "operator": ">", "value": 100.0},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 0.005},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "Energy rates are evaluated at the exact projected RK stage states with the production RK4 weights.",
+    "The integrated conservative energy RHS is compared independently with the analytic geometric-work source at every stage.",
+    "The retained step change is compared with RK-integrated work after projection, drag, and damping.",
+    "A weak-field fine trajectory and a 4, 8, 16 point elevated-curvature ladder separate algebraic closure from physical convergence.",
+    "Coordinate energy is explicitly not interpreted as global gravitational energy."
+  ],
+  "resolution_ladder": [
+    {"points": 16, "kappa_gravity": 0.001, "duration": 0.05, "dt": 0.01, "role": "weak-field identity control"},
+    {"points": 4, "kappa_gravity": 0.5, "duration": 0.05, "dt": 0.01, "role": "elevated coarse"},
+    {"points": 8, "kappa_gravity": 0.5, "duration": 0.05, "dt": 0.01, "role": "elevated medium"},
+    {"points": 16, "kappa_gravity": 0.5, "duration": 0.05, "dt": 0.01, "role": "elevated fine"}
+  ],
+  "seed": null,
+  "seed_rationale": "Profiles, constraint solves, stage accounts, and evolutions are deterministic.",
+  "parameters": {
+    "kappa_gravity": [0.001, 0.5],
+    "slicing": "harmonic",
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "scalar_initial_amplitude": 0.02,
+    "box_length": 32.0
+  },
+  "command": [
+    "{python}",
+    "experiments/close_nulloth_coordinate_energy_budget.py",
+    "--duration",
+    "0.05",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/coordinate_energy_budget.json"
+  ],
+  "timeout_seconds": 300,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/close_nulloth_coordinate_energy_budget.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/measure_nulloth_weak_field_backreaction.py",
+    "experiments/nulloth_master/NULLOTH_COORDINATE_ENERGY_BUDGET.md",
+    "src/causal_repair/adm.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "coordinate_energy_budget.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-008"
+  ]
+}

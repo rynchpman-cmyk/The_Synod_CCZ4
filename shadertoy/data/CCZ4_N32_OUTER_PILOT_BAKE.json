@@ -1,0 +1,99 @@
+{
+  "format": "causal_repair.mots_shader_bake.v2",
+  "normalized_times": [
+    0.82,
+    0.89,
+    0.96
+  ],
+  "centers": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "modes": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      6,
+      0
+    ]
+  ],
+  "log_radius_coefficients": [
+    [
+      -0.9239605136890613,
+      0.8136195668084877,
+      0.018554761866703344,
+      -0.020395243182782897
+    ],
+    [
+      -0.9239605136890613,
+      0.8136195668084877,
+      0.018554761866703344,
+      -0.020395243182782897
+    ],
+    [
+      -0.8980601816605311,
+      0.7804421166451804,
+      0.01731497603464173,
+      -0.01839610267113601
+    ]
+  ],
+  "expansion_response_coefficients": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "principal_eigenvalues": [
+    0.08384683328125005,
+    0.08136891204242436,
+    0.06394416034616036
+  ],
+  "display_scale": 6.0,
+  "source_kind": "ccz4_puncture_campaign",
+  "source_label": "ccz4_puncture_mots_lapsefix_n32_early/trajectory.json:common_outer; coordinate time 0.45..0.5; UNDER-RESOLVED PILOT",
+  "qualified": false,
+  "source_parameter_name": "CCZ4 coordinate time",
+  "source_parameter_values": [
+    0.45000000000000034,
+    0.47500000000000037,
+    0.5000000000000003
+  ],
+  "response_semantics": "signed outgoing-expansion response on prescribed offset surfaces; not the vanishing MOTS residual"
+}

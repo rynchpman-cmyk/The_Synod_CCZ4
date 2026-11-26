@@ -1,0 +1,78 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-001",
+  "title": "Initial activation-domain characteristic qualification",
+  "question": "Does the coupled material-scalar-two-Proca principal symbol remain causal, diagonalizable, constraint-reduction consistent, and constitutively admissible throughout the registered activation-capable sampled box?",
+  "prediction": "All 216 boundary states and 1024 deterministic random three-dimensional states pass the registered causal, eigenspace, reduction, Legendre, and thermodynamic gates while retaining negative effective scalar mass squared.",
+  "falsifier": "Any sampled state fails the causal or strong-hyperbolicity gate, any repeated eigenspace becomes incomplete, the raw and reduced spectra disagree above tolerance, or a constitutive positivity gate becomes nonpositive.",
+  "decisive_observables": [
+    "qualification.samples",
+    "qualification.failures",
+    "qualification.activated_samples",
+    "qualification.maximum_absolute_speed",
+    "qualification.maximum_imaginary_speed",
+    "qualification.maximum_eigenvector_condition",
+    "qualification.maximum_constraint_reduced_condition",
+    "qualification.maximum_eigenspace_residual",
+    "qualification.maximum_reduction_spectrum_error",
+    "qualification.minimum_legendre_eigenvalue",
+    "qualification.minimum_thermodynamic_eigenvalue",
+    "qualification.minimum_effective_mass_squared"
+  ],
+  "acceptance_criteria": [
+    {"observable": "qualification.samples", "operator": "==", "value": 1240},
+    {"observable": "qualification.failures", "operator": "==", "value": 0},
+    {"observable": "qualification.activated_samples", "operator": "==", "value": 1240},
+    {"observable": "qualification.maximum_absolute_speed", "operator": "<=", "value": 1.0000000001},
+    {"observable": "qualification.maximum_imaginary_speed", "operator": "<=", "value": 1e-12},
+    {"observable": "qualification.maximum_eigenvector_condition", "operator": "<=", "value": 60.0},
+    {"observable": "qualification.maximum_constraint_reduced_condition", "operator": "<=", "value": 5.0},
+    {"observable": "qualification.maximum_eigenspace_residual", "operator": "<=", "value": 1e-10},
+    {"observable": "qualification.maximum_reduction_spectrum_error", "operator": "<=", "value": 1e-10},
+    {"observable": "qualification.minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "qualification.minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "qualification.minimum_effective_mass_squared", "operator": "<", "value": 0.0}
+  ],
+  "controls": [
+    "Boundary-product states are included separately from random interior samples.",
+    "Three independent propagation directions are used for the declared boundary product.",
+    "Raw and scalar-constraint-reduced spectra must agree.",
+    "Repeated eigenspaces are constructed by singular-value null-space analysis rather than accepted from raw eigensolver vectors."
+  ],
+  "resolution_ladder": [
+    {"kind": "boundary_product", "samples": 216},
+    {"kind": "seeded_random_interior", "samples": 1024}
+  ],
+  "seed": 20260721,
+  "seed_rationale": "The random interior state and direction sampling is reproduced from a fixed registered seed.",
+  "parameters": {
+    "random_samples": 1024,
+    "density_bounds": [0.4, 0.9],
+    "specific_internal_energy_bounds": [0.1, 0.35],
+    "carrier_density_bounds": [0.12, 0.24],
+    "fluid_speed_bounds": [0.0, 0.2],
+    "carrier_speed_bounds": [0.0, 0.3],
+    "varphi_bounds": [-0.16, 0.16]
+  },
+  "command": [
+    "{python}",
+    "experiments/qualify_nulloth_discovery_domain.py",
+    "--seed",
+    "20260721",
+    "--random-samples",
+    "1024"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/qualify_nulloth_discovery_domain.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/matter.py",
+    "src/causal_repair/adm.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-001"
+  ]
+}

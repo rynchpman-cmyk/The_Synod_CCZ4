@@ -1,0 +1,78 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-LIN-002",
+  "title": "Atlas-wide growth, volume selection, and 3D coherence",
+  "question": "How do scalar growth and oscillation partition the qualified characteristic atlas, how does periodic volume select unstable modes, and does the implemented coherence dispersion remain isotropic for oblique and fully 3D perturbations?",
+  "prediction": "All 832 registered atlas states remain characteristically admissible; both growing and oscillatory scalar-curvature regions occur; the count of states admitting a nonhomogeneous unstable mode is nondecreasing with box length; and axial, planar-oblique, and fully 3D Fourier generators match the isotropic dispersion within 1e-9 at three resolutions.",
+  "falsifier": "A characteristic failure, absence of either curvature phase, nonmonotone finite-volume selection, a multidimensional dispersion error above tolerance, or unresolved directional dependence falsifies the map.",
+  "decisive_observables": [
+    "sampled_states",
+    "characteristic_failures",
+    "locally_growing_states",
+    "locally_oscillatory_states",
+    "maximum_growth_rate",
+    "maximum_multidimensional_dispersion_error",
+    "maximum_directional_growth_difference",
+    "candidate_mechanisms_registered"
+  ],
+  "acceptance_criteria": [
+    {"observable": "sampled_states", "operator": "==", "value": 832},
+    {"observable": "characteristic_failures", "operator": "==", "value": 0},
+    {"observable": "locally_growing_states", "operator": ">", "value": 0},
+    {"observable": "locally_oscillatory_states", "operator": ">", "value": 0},
+    {"observable": "maximum_growth_rate", "operator": ">", "value": 0.0},
+    {"observable": "maximum_multidimensional_dispersion_error", "operator": "<=", "value": 1e-9},
+    {"observable": "maximum_directional_growth_difference", "operator": "<=", "value": 1e-9},
+    {"observable": "candidate_mechanisms_registered", "operator": "==", "value": 3}
+  ],
+  "controls": [
+    "The adaptive cells, boundary corners, priority rule, and four characteristic directions exactly reproduce the registered NUL-CHR-004 atlas construction.",
+    "Local scalar curvature includes the quartic second derivative at the sampled nonzero coherence amplitude; negative effective mass alone is not counted as local growth.",
+    "The stable-curvature atlas states are the oscillatory control for the growing subset.",
+    "Finite-volume counts use the analytic Fourier cutoff and are required to be nondecreasing with length.",
+    "Axial, planar-oblique, and spatial-diagonal perturbations are evaluated by the same scalar RHS on real multidimensional PeriodicGrid instances.",
+    "Candidate registration explicitly withholds spell status."
+  ],
+  "resolution_ladder": [
+    {"grid_points_per_axis": 8, "dimensions": [1, 2, 3]},
+    {"grid_points_per_axis": 12, "dimensions": [1, 2, 3]},
+    {"grid_points_per_axis": 16, "dimensions": [1, 2, 3]}
+  ],
+  "seed": null,
+  "seed_rationale": "The adaptive atlas and Fourier wavevectors are deterministic and use no random sampling.",
+  "parameters": {
+    "atlas_refinements": 24,
+    "atlas_bounds": [[0.4, 0.9], [0.1, 0.35], [0.12, 0.24], [-0.3, 0.3], [-0.16, 0.16]],
+    "box_lengths": [8.0, 16.0, 32.0, 64.0],
+    "wavevectors": [[1], [1, 1], [1, 1, 1]],
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS"
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_linear_growth_atlas.py",
+    "--refinements",
+    "24",
+    "--resolutions",
+    "8",
+    "12",
+    "16",
+    "--output",
+    "{run_dir}/growth_atlas.json"
+  ],
+  "timeout_seconds": 1200,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_linear_growth_atlas.py",
+    "experiments/map_nulloth_adaptive_state_atlas.py",
+    "experiments/nulloth_master/NULLOTH_LINEAR_CANDIDATES.md",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py"
+  ],
+  "outputs": [
+    "growth_atlas.json"
+  ],
+  "supports_claims": [
+    "NUL-LIN-002"
+  ]
+}

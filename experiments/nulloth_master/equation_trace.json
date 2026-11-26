@@ -1,0 +1,324 @@
+{
+  "trace_schema": "nulloth.equation-trace.v1",
+  "status_vocabulary": [
+    "IMPLEMENTED",
+    "TESTED",
+    "PARTIAL",
+    "UNIMPLEMENTED",
+    "DOCUMENTED"
+  ],
+  "entries": [
+    {
+      "id": "NUL-EQ-001",
+      "specification": "Sections 1-2: metric, current, vector, scalar, and entropy fields with Einstein-frame conventions",
+      "declaration": "Nulloth uses the CCZ4 physical metric, two timelike currents, two mixed-Proca fields, and one canonical real scalar without a hidden Jordan-frame term.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "class NullothParameters"},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "class NullothProductionState"}
+      ],
+      "verification": [],
+      "status": "PARTIAL",
+      "gap": "Field inventory is implemented, but the absence of a non-minimal metric coupling is documented rather than established by an automated action-level audit."
+    },
+    {
+      "id": "NUL-EQ-002",
+      "specification": "Section 3: conservation of baryon, carrier, and carrier-source currents",
+      "declaration": "The production balance laws conserve baryon and carrier number in the absence of an explicitly added reaction network.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def rhs("}
+      ],
+      "verification": [
+        {"path": "tests/test_theory33.py", "symbol": "test_periodic_rhs_conserves_both_number_currents_and_total_energy"},
+        {"path": "experiments/promote_nulloth_spell_candidates.py", "symbol": "carrier_relative_drift"}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-003",
+      "specification": "Sections 4 and 6: current invariants and carrier-induced scalar coupling coefficient",
+      "declaration": "The coupling is a function of baryon density, carrier density, and the nonnegative counterflow invariant, and enters the material master function algebraically as one half C varphi squared.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "def coupling_coefficient("},
+        {"path": "src/causal_repair/nulloth.py", "symbol": "def lambda_from_invariants("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_scalar_action_derivative_matches_finite_difference"},
+        {"path": "tests/test_nulloth.py", "symbol": "test_phi_zero_is_theory33_regression"},
+        {"path": "experiments/audit_nulloth_constitutive_derivatives.py", "symbol": "def run_derivative_audit("}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-004",
+      "specification": "Section 5: covariant action and pullback-current interpretation",
+      "declaration": "The implemented equations are intended to arise from the written covariant action with conserved pullback currents and no separately duplicated source-interaction stress.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "class NullothMasterFunction"},
+        {"path": "src/causal_repair/nulloth_scalar.py", "symbol": "class NullothScalarSystem"},
+        {"path": "experiments/nulloth_master/NULLOTH_ACTION_DERIVATION.md", "symbol": "## 1. Canonical action"}
+      ],
+      "verification": [
+        {"path": "experiments/audit_nulloth_action.py", "symbol": "def hilbert_material_stress_error("},
+        {"path": "experiments/audit_nulloth_constitutive_derivatives.py", "symbol": "def run_derivative_audit("}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-005",
+      "specification": "Section 7: effective mass, linear activation threshold, and condensed equilibrium",
+      "declaration": "Negative effective scalar mass squared destabilizes the symmetric branch and the quartic potential bounds the homogeneous condensed equilibrium.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "effective_mass_squared"},
+        {"path": "src/causal_repair/nulloth.py", "symbol": "scalar_equation_source"}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_homogeneous_condensed_stationary_point"},
+        {"path": "experiments/run_nulloth_homogeneous_growth.py", "symbol": "def run_homogeneous_growth("}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-006",
+      "specification": "Section 8: material conjugate coefficients and momenta",
+      "declaration": "The scalar coupling modifies both density derivatives and entrainment before Carter momenta and generalized pressure are constructed.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "def _evaluate_terms("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_phi_zero_is_theory33_regression"},
+        {"path": "tests/test_nulloth.py", "symbol": "test_cell_prediction_matches_tensor_projection"},
+        {"path": "experiments/audit_nulloth_constitutive_derivatives.py", "symbol": "def run_derivative_audit("}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-007",
+      "specification": "Section 9: complete multifluid material stress",
+      "declaration": "The scalarization interaction is represented once through the invariant master function and its conjugate coefficients.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "\"stress\": StressEnergy3p1("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_phi_zero_is_theory33_regression"},
+        {"path": "experiments/audit_nulloth_action.py", "symbol": "def hilbert_material_stress_error("}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-008",
+      "specification": "Section 10: scalar equation",
+      "declaration": "The scalar source is the potential derivative minus the material master-function derivative with the registered Pi sign convention.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "def scalar_potential_derivative("},
+        {"path": "src/causal_repair/nulloth_scalar.py", "symbol": "def rhs("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_scalar_action_derivative_matches_finite_difference"},
+        {"path": "tests/test_nulloth.py", "symbol": "test_homogeneous_rhs_uses_effective_source"},
+        {"path": "tests/test_nulloth.py", "symbol": "test_homogeneous_scalar_exchange_conserves_frozen_energy"}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-009",
+      "specification": "Sections 10 and 12: canonical scalar stress and Eulerian projections",
+      "declaration": "Scalar energy, momentum, and stress contain canonical kinetic and self-potential terms without a duplicate material coupling.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth_scalar.py", "symbol": "def stress("},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _scalar_stress("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_small_step_first_24_groups_converge_as_scalar_vanishes"},
+        {"path": "tests/test_nulloth_foundation.py", "symbol": "test_curved_spatial_scalar_stress_matches_canonical_projection"}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-010",
+      "specification": "Section 11: total stress supplied to Einstein gravity and CCZ4",
+      "declaration": "CCZ4 receives the sum of material, both vector, and scalar Eulerian stress projections, while numerical constraints remain nonphysical diagnostics.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "total_stress"},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "self.ccz4.rhs"}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_zero_scalar_first_24_rhs_groups_match_theory33"},
+        {"path": "experiments/promote_nulloth_spell_candidates.py", "symbol": "hamiltonian_l2"}
+      ],
+      "status": "PARTIAL",
+      "gap": "Vacuum, weak-wave, and strong-field CCZ4 coupling campaigns remain outstanding."
+    },
+    {
+      "id": "NUL-EQ-011",
+      "specification": "Section 12: first-order 3+1 scalar evolution and gradient constraint",
+      "declaration": "The production scalar state evolves varphi, Pi, and Phi_i and projects the first-order gradient constraint at Runge-Kutta stages.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth_scalar.py", "symbol": "class NullothScalarState"},
+        {"path": "src/causal_repair/nulloth_scalar.py", "symbol": "def constraint("},
+        {"path": "src/causal_repair/nulloth_scalar.py", "symbol": "def rhs("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_homogeneous_rhs_uses_effective_source"},
+        {"path": "tests/test_nulloth_foundation.py", "symbol": "test_scalar_momentum_sign_pair_is_preserved"},
+        {"path": "experiments/promote_nulloth_spell_candidates.py", "symbol": "scalar_constraint_l2"}
+      ],
+      "status": "PARTIAL",
+      "gap": "A smooth multidimensional scalar-wave convergence test and quantitative projection-correction convergence test are missing."
+    },
+    {
+      "id": "NUL-EQ-012",
+      "specification": "Section 13: 27-group total evolved state",
+      "declaration": "The production state appends varphi, Pi, and Phi_i to the 24-group Theory 3.3 state while retaining total conservative momentum and energy.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _pack("},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _unpack("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_smallest_real_periodic_grid_initializes_and_recovers"},
+        {"path": "experiments/audit_nulloth_limits.py", "symbol": "nulloth_state_groups"}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-013",
+      "specification": "Section 14: scalar-aware coupled primitive recovery",
+      "declaration": "Recovery subtracts complete vector and scalar stress before solving the material state and does not hide failure in an energy reservoir.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _recover_cells("},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _recover_cells_from_energy("},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def recover("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_smallest_real_periodic_grid_initializes_and_recovers"},
+        {"path": "tests/test_theory33.py", "symbol": "test_multifluid_recovery_round_trip_has_no_reservoir"}
+      ],
+      "status": "PARTIAL",
+      "gap": "A dedicated random-state round-trip campaign across the full nonzero-scalar discovery domain remains required."
+    },
+    {
+      "id": "NUL-EQ-014",
+      "specification": "Section 15: reversible scalar-material exchange",
+      "declaration": "Scalar-material exchange is internal and equal-and-opposite, producing no entropy by itself.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def rhs("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_homogeneous_scalar_exchange_conserves_frozen_energy"}
+      ],
+      "status": "PARTIAL",
+      "gap": "The equality of scalar and material exchange has only been isolated in a frozen homogeneous test, not a convergent transported-wave campaign."
+    },
+    {
+      "id": "NUL-EQ-015",
+      "specification": "Section 15: entropy-positive carrier drag and exact vector damping",
+      "declaration": "Irreversible carrier drag and vector damping deposit nonnegative heat while preserving the complete accounting rules inherited from Theory 3.3.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _apply_carrier_drag("},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def _apply_damping("}
+      ],
+      "verification": [
+        {"path": "tests/test_theory33.py", "symbol": "test_drag_is_orthogonal_and_entropy_positive"},
+        {"path": "tests/test_theory33.py", "symbol": "test_exact_vector_damping_closes_without_reservoir"},
+        {"path": "tests/test_theory33.py", "symbol": "test_stiff_drag_map_is_unconditionally_decaying_and_conservative"}
+      ],
+      "status": "PARTIAL",
+      "gap": "The inherited gates need a nonzero-scalar regression demonstrating that the scalar partition does not disturb irreversible accounting."
+    },
+    {
+      "id": "NUL-EQ-016",
+      "specification": "Section 16: admissible state inequalities and campaign walls",
+      "declaration": "Every qualified active state retains positive Legendre and thermodynamic margins and remains inside declared scalar, counterflow, and effective-mass walls.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "legendre_minimum_eigenvalue"},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "legendre_min <= self.master_parameters.convexity_floor"}
+      ],
+      "verification": [
+        {"path": "experiments/qualify_nulloth_discovery_domain.py", "symbol": "sampled_domain_qualified"},
+        {"path": "experiments/promote_nulloth_spell_candidates.py", "symbol": "minimum_legendre_eigenvalue"}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-017",
+      "specification": "Section 17: complete coupled characteristic gate",
+      "declaration": "A qualified domain requires a complete real causal eigensystem for the coupled material-scalar-two-Proca symbol and agreement with the scalar-constraint-reduced spectrum.",
+      "implementation": [
+        {"path": "src/causal_repair/nulloth.py", "symbol": "def coupled_characteristic_audit("},
+        {"path": "src/causal_repair/nulloth.py", "symbol": "def _clustered_eigenbasis("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_full_coupled_principal_symbol_has_complete_causal_basis"},
+        {"path": "experiments/qualify_nulloth_discovery_domain.py", "symbol": "def qualify_discovery_domain("}
+      ],
+      "status": "PARTIAL",
+      "gap": "The current 25-variable audit excludes the explicit CCZ4 gravitational, gauge, and constraint blocks and is sampled rather than analytic-global."
+    },
+    {
+      "id": "NUL-EQ-018",
+      "specification": "Section 18: discrete evolution order and projections",
+      "declaration": "Each production step performs recovery, coupled evolution, algebraic projections, constitutive reconciliation, irreversible maps, and final admissibility rejection in the declared order.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def step("}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth.py", "symbol": "test_small_step_first_24_groups_converge_as_scalar_vanishes"},
+        {"path": "tests/test_theory33.py", "symbol": "test_stage_projection_supports_practical_gradient_cfl"}
+      ],
+      "status": "PARTIAL",
+      "gap": "Scalar-gradient and entropy-projection correction magnitudes are not yet recorded and shown to converge away."
+    },
+    {
+      "id": "NUL-EQ-019",
+      "specification": "Section 19: checkpoint and restart contract",
+      "declaration": "A checkpoint stores the complete 27-group state and restart reproduces the uninterrupted diagnostic branch within tolerance.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def save_nulloth_production_state("},
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def load_nulloth_production_state("}
+      ],
+      "verification": [
+        {"path": "experiments/promote_nulloth_spell_candidates.py", "symbol": "restart_maximum_error"},
+        {"path": "tests/test_theory33.py", "symbol": "test_checkpoint_restart_matches_uninterrupted_next_step"}
+      ],
+      "status": "TESTED",
+      "gap": ""
+    },
+    {
+      "id": "NUL-EQ-020",
+      "specification": "Section 20: required diagnostics",
+      "declaration": "The solver reports gravitational, Proca, scalar, conservation, entropy, activation, constitutive, and recovery health separately.",
+      "implementation": [
+        {"path": "src/causal_repair/production_nulloth.py", "symbol": "def diagnostics("},
+        {"path": "src/causal_repair/nulloth_scalar.py", "symbol": "class NullothScalarDiagnostics"}
+      ],
+      "verification": [
+        {"path": "experiments/promote_nulloth_spell_candidates.py", "symbol": "FullCandidateRun"}
+      ],
+      "status": "PARTIAL",
+      "gap": "Projection corrections and a complete automated diagnostic-field contract test are still missing."
+    },
+    {
+      "id": "NUL-EQ-021",
+      "specification": "Sections 21-23: qualification law, limitations, and locked theory identity",
+      "declaration": "Capabilities not admitted by separately qualified equations remain outside Nulloth, regardless of narrative desirability.",
+      "implementation": [
+        {"path": "experiments/NULLOTH_MASTER_WORKPLAN.md", "symbol": "Promotion ladder"},
+        {"path": "experiments/nulloth_master/evidence.json", "symbol": "status_vocabulary"}
+      ],
+      "verification": [
+        {"path": "tests/test_nulloth_master_evidence.py", "symbol": "test_seed_ledger_is_valid"}
+      ],
+      "status": "DOCUMENTED",
+      "gap": ""
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-008",
+  "title": "Runtime admissibility guard qualification",
+  "question": "Does the opt-in Nulloth runtime guard correctly classify safe, approaching, and denied states in local orthonormal frames and on the real production recovery path?",
+  "prediction": "The canonical interior and production states classify SAFE, amplitude 0.16 classifies WATCH, amplitude beyond the production cap and the known low-carrier superluminal state classify DENY, enforcement raises only on denial, and frame transformation preserves physical speeds to roundoff.",
+  "falsifier": "Any registered status differs, denial enforcement fails, the production recovery path is not safe, or the local-frame speed invariant exceeds tolerance.",
+  "decisive_observables": [
+    "direction_count",
+    "safe_status_correct",
+    "watch_status_correct",
+    "amplitude_deny_status_correct",
+    "superluminal_deny_status_correct",
+    "enforce_raised_on_deny",
+    "production_recovery_status_correct",
+    "frame_status_agreement",
+    "frame_maximum_metric_speed_error",
+    "safe_minimum_legendre",
+    "safe_minimum_thermodynamic",
+    "watch_maximum_condition",
+    "production_symbol_evaluations"
+  ],
+  "acceptance_criteria": [
+    {"observable": "direction_count", "operator": "==", "value": 18},
+    {"observable": "safe_status_correct", "operator": "==", "value": 1},
+    {"observable": "watch_status_correct", "operator": "==", "value": 1},
+    {"observable": "amplitude_deny_status_correct", "operator": "==", "value": 1},
+    {"observable": "superluminal_deny_status_correct", "operator": "==", "value": 1},
+    {"observable": "enforce_raised_on_deny", "operator": "==", "value": 1},
+    {"observable": "production_recovery_status_correct", "operator": "==", "value": 1},
+    {"observable": "frame_status_agreement", "operator": "==", "value": 1},
+    {"observable": "frame_maximum_metric_speed_error", "operator": "<=", "value": 1e-14},
+    {"observable": "safe_minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "safe_minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "production_symbol_evaluations", "operator": "==", "value": 72}
+  ],
+  "controls": [
+    "The guard is diagnostic and never mutates the state or RHS.",
+    "Production caps are checked before a characteristic audit that would leave its declared domain.",
+    "A known superluminal low-carrier point from NUL-CHR-005 is an independent DENY control.",
+    "The WATCH control remains inside every hard gate and is not raised as an exception.",
+    "Coordinate velocities in a nontrivial metric are transformed by a Cholesky orthonormal frame and compared with the original physical vectors.",
+    "The real PeriodicGrid initialize and recover path supplies the final SAFE control."
+  ],
+  "resolution_ladder": [
+    {"cells": 4, "directions_per_cell": 18},
+    {"paths": ["flat primitive", "curved local frame", "production recovery"]}
+  ],
+  "seed": null,
+  "seed_rationale": "States, metric, cell selection, and Fibonacci directions are deterministic.",
+  "parameters": {
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "guard_mode": "opt-in diagnostic and enforce",
+    "statuses": ["SAFE", "WATCH", "DENY"]
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_runtime_guard.py"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_runtime_guard.py",
+    "src/causal_repair/nulloth_guard.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/matter.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-008"
+  ]
+}

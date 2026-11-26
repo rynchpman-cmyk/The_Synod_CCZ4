@@ -1,0 +1,49 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-FND-001",
+  "title": "Fixed-current Hilbert material-stress audit",
+  "question": "Does metric variation of the Nulloth material action at fixed densitized currents reproduce the written Carter stress when coherence and every scalar-material coupling are nonzero?",
+  "prediction": "The finite metric variation agrees with the analytic material stress to a maximum component error no greater than 2e-8 for the symmetric branch and two nonzero coherence amplitudes.",
+  "falsifier": "Any compared metric component differs above 2e-8 or a nonzero-coherence case cannot be evaluated without adding a separate interaction stress.",
+  "decisive_observables": [
+    "cases",
+    "hilbert_material_stress_max_error"
+  ],
+  "acceptance_criteria": [
+    {"observable": "cases", "operator": "==", "value": 3},
+    {"observable": "hilbert_material_stress_max_error", "operator": "<=", "value": 2e-8}
+  ],
+  "controls": [
+    "The zero-coherence case recovers the previously audited Theory 3.3 variation.",
+    "Positive and negative coherence amplitudes test the even scalar-material interaction independently of sign.",
+    "Densitized baryon and carrier currents are held fixed during metric variation, matching the pullback-current convention."
+  ],
+  "resolution_ladder": [
+    {"metric_difference_step": 2e-6}
+  ],
+  "seed": null,
+  "seed_rationale": "The currents, entropy, amplitudes, and centered metric variations are deterministic.",
+  "parameters": {
+    "coherence_amplitudes": [0.0, 0.23, -0.31],
+    "metric_difference_step": 2e-6,
+    "maximum_component_error": 2e-8
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_action.py"
+  ],
+  "timeout_seconds": 120,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_action.py",
+    "NULLOTH_SPEC.md",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/adm.py",
+    "src/causal_repair/matter.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-FND-001"
+  ]
+}

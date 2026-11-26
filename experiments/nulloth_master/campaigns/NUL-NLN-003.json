@@ -1,0 +1,103 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-NLN-003",
+  "title": "Low-resolution full-production nonlinear regimes",
+  "question": "Which nonlinear coherence outcomes survive six units of complete CCZ4, material, mixed-Proca, and scalar production evolution, and which conservation, entropy, constraint, and admissibility accounts close at that resolution?",
+  "prediction": "The scalar-free control remains scalar free; the small seed forms sustained coherence; the standard and near-condensed seeds turn over; all four trajectories complete below the amplitude wall with positive net and per-step entropy, roundoff number and field constraints, positive convexity margins, and CCZ4 constraints below 1e-3. The internal-stage projection sum is expected not to be an additive physical entropy channel.",
+  "falsifier": "A missing predicted outcome, incomplete trajectory, amplitude or convexity denial, negative complete-step entropy, number or field-constraint failure, CCZ4 constraint above tolerance, or recovery failure falsifies the observed regime map.",
+  "decisive_observables": [
+    "attempted_runs",
+    "completed_runs",
+    "denied_runs",
+    "distinct_outcomes",
+    "scalar_free_runs",
+    "nonlinear_turnover_runs",
+    "sustained_coherence_runs",
+    "maximum_peak_amplitude",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_step_entropy_change",
+    "maximum_entropy_telescope_error",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual",
+    "maximum_projection_stage_sum_to_net_entropy_ratio",
+    "metastable_lifetime_lower_bound"
+  ],
+  "acceptance_criteria": [
+    {"observable": "attempted_runs", "operator": "==", "value": 4},
+    {"observable": "completed_runs", "operator": "==", "value": 4},
+    {"observable": "denied_runs", "operator": "==", "value": 0},
+    {"observable": "distinct_outcomes", "operator": "==", "value": 3},
+    {"observable": "scalar_free_runs", "operator": "==", "value": 1},
+    {"observable": "nonlinear_turnover_runs", "operator": "==", "value": 2},
+    {"observable": "sustained_coherence_runs", "operator": "==", "value": 1},
+    {"observable": "maximum_peak_amplitude", "operator": "<=", "value": 0.17},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">", "value": 0.0},
+    {"observable": "minimum_step_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "maximum_entropy_telescope_error", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 0.001},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_projection_stage_sum_to_net_entropy_ratio", "operator": ">", "value": 1.0},
+    {"observable": "metastable_lifetime_lower_bound", "operator": ">=", "value": 5.9}
+  ],
+  "controls": [
+    "Each trajectory is initialized by an independent periodic CMC constraint solve.",
+    "The exact scalar-free trajectory controls spontaneous numerical scalar seeding.",
+    "Small growing, standard growing, and preloaded near-condensed seeds separate formation, turnover, and initial-condition dependence.",
+    "The carrier modulation activates the same physical drag entropy channel used by the qualified production spell.",
+    "Baryon number, carrier number, net entropy, per-step entropy, projection corrections, drag entropy and heat, coordinate energy, all field constraints, CCZ4 constraints, convexity margins, and recovery residuals are reported separately.",
+    "Coordinate combined energy is not treated as a conserved global energy in evolving periodic geometry.",
+    "Internal-stage projection corrections are not added as though they were distinct physical entropy events."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 6.0, "dt": 0.01, "role": "production regime reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "The carrier modulation, scalar modes, constraint solve, and evolution are deterministic.",
+  "parameters": {
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "scalar_initial_amplitudes": [0.0, 0.005, 0.02, 0.06],
+    "box_length": 32.0,
+    "gravity_coupling": 0.001,
+    "slicing": "harmonic"
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_production_regimes.py",
+    "--points",
+    "4",
+    "--duration",
+    "6.0",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/production_regimes.json"
+  ],
+  "timeout_seconds": 1200,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_PRODUCTION_REGIMES.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "production_regimes.json"
+  ],
+  "supports_claims": [
+    "NUL-NLN-003"
+  ]
+}

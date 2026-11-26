@@ -1,0 +1,93 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-SPL-001",
+  "title": "Carrier Coherence Brake promotion reproduction",
+  "question": "Does the localized coherence mode produce a resolved, conservative, admissible, restart-reproducible suppression of carrier kinetic response and enter a bounded nonlinear branch?",
+  "prediction": "The active-versus-control suppression remains negative and resolved from 16 to 32 points, all four resolution campaigns pass their promotion gates, and the eight-point long run turns over below the declared scalar-amplitude limit.",
+  "falsifier": "Any resolution fails promotion, the high-resolution kinetic effect changes sign, the primary carrier-velocity response changes by more than 2 percent from 16 to 32 points, the long run fails turnover, or any registered conservation, constraint, admissibility, or restart gate fails.",
+  "decisive_observables": [
+    "resolutions_count",
+    "promoted_resolutions",
+    "long_run_promoted",
+    "nonlinear_turnover",
+    "scalar_amplitude_relative_change_16_to_32",
+    "carrier_velocity_effect_relative_change_16_to_32",
+    "high_resolution_kinetic_effect",
+    "suppressive_sign_consistent_16_to_32",
+    "maximum_number_relative_drift",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue",
+    "maximum_restart_error",
+    "long_peak_scalar_amplitude",
+    "long_peak_to_final_drop"
+  ],
+  "acceptance_criteria": [
+    {"observable": "resolutions_count", "operator": "==", "value": 4},
+    {"observable": "promoted_resolutions", "operator": "==", "value": 4},
+    {"observable": "long_run_promoted", "operator": "==", "value": 1},
+    {"observable": "nonlinear_turnover", "operator": "==", "value": 1},
+    {"observable": "scalar_amplitude_relative_change_16_to_32", "operator": "<=", "value": 0.01},
+    {"observable": "carrier_velocity_effect_relative_change_16_to_32", "operator": "<=", "value": 0.02},
+    {"observable": "high_resolution_kinetic_effect", "operator": "<", "value": 0.0},
+    {"observable": "suppressive_sign_consistent_16_to_32", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "maximum_restart_error", "operator": "<=", "value": 1e-11},
+    {"observable": "long_peak_scalar_amplitude", "operator": "<=", "value": 0.17},
+    {"observable": "long_peak_to_final_drop", "operator": ">=", "value": 0.05}
+  ],
+  "controls": [
+    "Every active run is compared with an independently constraint-solved scalar-free control at the same resolution.",
+    "The primary spell observable is the control-subtracted carrier-velocity response.",
+    "The slower-converging carrier-density response is not used as the promotion observable.",
+    "Every run performs checkpoint/restart reproduction and trajectory-local constitutive audits."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 2.0, "dt": 0.01},
+    {"points": 8, "duration": 2.0, "dt": 0.01},
+    {"points": 16, "duration": 2.0, "dt": 0.01},
+    {"points": 32, "duration": 2.0, "dt": 0.01},
+    {"points": 8, "duration": 6.0, "dt": 0.01, "purpose": "nonlinear turnover"}
+  ],
+  "seed": null,
+  "seed_rationale": "The sinusoidal carrier profile, growing-mode scalar seed, constraint solve, and evolution are deterministic.",
+  "parameters": {
+    "box_length": 32.0,
+    "fluid_density": 0.6,
+    "specific_internal_energy": 0.2,
+    "carrier_mean_density": 0.18,
+    "carrier_modulation": 0.04,
+    "initial_scalar_amplitude": 0.02,
+    "gravity_coupling": 0.001,
+    "scalar_amplitude_limit": 0.17
+  },
+  "command": [
+    "{python}",
+    "experiments/qualify_nulloth_spell_001.py"
+  ],
+  "timeout_seconds": 1800,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/qualify_nulloth_spell_001.py",
+    "experiments/promote_nulloth_spell_candidates.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/integrators.py",
+    "src/causal_repair/io.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-SPL-001"
+  ]
+}

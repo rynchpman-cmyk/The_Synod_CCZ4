@@ -1,0 +1,152 @@
+{
+  "registry_schema": "nulloth.controls.v1",
+  "canonical_name": "Nulloth",
+  "governing_rule": "A caster requests an outcome; the Synod selects only physically actuated initial, boundary, routing, and infrastructure controls that preserve the canonical equations.",
+  "global_forbidden_shortcuts": [
+    "direct metric or extrinsic-curvature assignment during a cast",
+    "physical use of lapse, shift, gauge, or CCZ4 damping parameters",
+    "changing canonical masses, couplings, convexity floors, or production caps",
+    "adding an unmodelled scalar, vector, material, or energy right-hand-side source",
+    "counting numerical projection or constraint damping as spell energy",
+    "continuing through a runtime DENY state"
+  ],
+  "channels": [
+    {
+      "id": "CTL-CARRIER-ROUTE",
+      "name": "Null routing",
+      "changes": ["carrier density", "carrier current", "carrier boundary flux"],
+      "mechanism": "Valves, reservoirs, conduits, and pumps prepare or transport the conserved carrier current through physical initial and boundary data.",
+      "conservation": "Carrier inventory changes in a control volume only by measured boundary flux; ship-wide inventory is charged.",
+      "latency": "Limited by carrier characteristics, route length, congestion, and actuator response.",
+      "costs": ["energy", "heat", "carrier", "latency", "infrastructure", "admissibility"]
+    },
+    {
+      "id": "CTL-MATTER-PREP",
+      "name": "Material preconditioning",
+      "changes": ["baryon density", "material velocity", "specific internal energy", "entropy boundary flux"],
+      "mechanism": "Pumps, pressure systems, thermal plant, and mechanical interfaces prepare ordinary matter through conservative boundary and initial data.",
+      "conservation": "Baryon number changes only by measured flux; irreversible operations may increase entropy but never erase it locally.",
+      "latency": "Limited by material sound cones, transport routes, pressure equilibration, and thermal diffusion or circulation.",
+      "costs": ["energy", "heat", "carrier", "latency", "infrastructure", "admissibility"]
+    },
+    {
+      "id": "CTL-VECTOR-DRIVE",
+      "name": "Vector-field drive",
+      "changes": ["incoming A characteristics", "incoming B characteristics", "physical source current"],
+      "mechanism": "Licensed field hardware supplies finite-energy initial or incoming Proca data and modeled source currents.",
+      "conservation": "Injected field energy and momentum are charged to actuator work; Proca masses and mixing remain canonical.",
+      "latency": "Limited by causal field propagation, hardware bandwidth, and boundary distance.",
+      "costs": ["energy", "heat", "carrier", "latency", "infrastructure", "admissibility"]
+    },
+    {
+      "id": "CTL-SCALAR-SEED",
+      "name": "Coherence seeding",
+      "changes": ["initial varphi", "initial Pi", "incoming scalar characteristic", "carrier-supported effective mass"],
+      "mechanism": "A finite scalar seed is supplied as licensed initial or incoming data, or induced indirectly by preparing the carrier and counterflow environment.",
+      "conservation": "Seed energy is present in the evolved scalar stress or actuator boundary flux; no intention-dependent scalar RHS exists.",
+      "latency": "Limited by scalar propagation and, when carrier-induced, by preparation plus physical growth time.",
+      "costs": ["energy", "heat", "carrier", "latency", "infrastructure", "admissibility"]
+    },
+    {
+      "id": "CTL-BOUNDARY-CONFIG",
+      "name": "Interface configuration",
+      "changes": ["physical incoming data", "reflection state", "route connectivity", "control-volume topology"],
+      "mechanism": "Doors, shutters, field interfaces, conduit switches, and absorbers select modeled reflecting, absorbing, or driven physical boundaries.",
+      "conservation": "Every driven boundary carries an explicit flux account; homogeneous boundaries cannot supply hidden work.",
+      "latency": "Limited by mechanical switching, field establishment, and causal notification.",
+      "costs": ["energy", "heat", "carrier", "latency", "infrastructure", "admissibility"]
+    },
+    {
+      "id": "CTL-THERMAL-POWER",
+      "name": "Power and heat allocation",
+      "changes": ["available actuator work", "modeled heat boundary flux", "thermal reserve"],
+      "mechanism": "Power routing and heat sinks support other channels and export heat through physical infrastructure boundaries.",
+      "conservation": "Cooling exports heat; it does not impose negative entropy in the controlled volume without a receiving reservoir account.",
+      "latency": "Limited by power switching, coolant circulation, sink capacity, and downstream rejection.",
+      "costs": ["energy", "heat", "carrier", "latency", "infrastructure", "admissibility"]
+    }
+  ],
+  "objectives": [
+    {
+      "id": "OBJ-SUPPRESSION",
+      "name": "suppression",
+      "observable": "control-subtracted carrier kinetic response or licensed target activity",
+      "target": "minimize response while preserving the requested protected state",
+      "channels": ["CTL-CARRIER-ROUTE", "CTL-SCALAR-SEED", "CTL-THERMAL-POWER"],
+      "control": "independently initialized scalar-free and no-command branches",
+      "abort": "loss of suppressive sign, WATCH reserve exhaustion, DENY, or heat budget exhaustion"
+    },
+    {
+      "id": "OBJ-SHIELDING",
+      "name": "shielding",
+      "observable": "integrated protected-volume stress, flux, or impulse",
+      "target": "minimize exposure relative to an unshielded control",
+      "channels": ["CTL-CARRIER-ROUTE", "CTL-SCALAR-SEED", "CTL-VECTOR-DRIVE", "CTL-BOUNDARY-CONFIG"],
+      "control": "same incident disturbance without the shield command",
+      "abort": "shield increases protected exposure, redirects it into an unlicensed volume, or enters WATCH/DENY"
+    },
+    {
+      "id": "OBJ-REDIRECTION",
+      "name": "redirection",
+      "observable": "target flux or momentum projected onto licensed exit surfaces",
+      "target": "maximize desired-direction fraction while conserving total accounted momentum",
+      "channels": ["CTL-CARRIER-ROUTE", "CTL-VECTOR-DRIVE", "CTL-BOUNDARY-CONFIG"],
+      "control": "same source with neutral routing and field drive",
+      "abort": "unlicensed counter-flux, causal deadline failure, boundary overload, or DENY"
+    },
+    {
+      "id": "OBJ-CONFINEMENT",
+      "name": "confinement",
+      "observable": "energy, carrier, or scalar content outside the licensed volume",
+      "target": "minimize leakage over the declared holding interval",
+      "channels": ["CTL-CARRIER-ROUTE", "CTL-VECTOR-DRIVE", "CTL-BOUNDARY-CONFIG", "CTL-THERMAL-POWER"],
+      "control": "same initial content with absorbing or open interfaces",
+      "abort": "leakage, pressure, reflection, heat, or admissibility margin exceeds its bound"
+    },
+    {
+      "id": "OBJ-TRANSPORT",
+      "name": "transport",
+      "observable": "delivered conserved content at a licensed receiver",
+      "target": "maximize delivery efficiency subject to latency and route capacity",
+      "channels": ["CTL-CARRIER-ROUTE", "CTL-MATTER-PREP", "CTL-VECTOR-DRIVE", "CTL-BOUNDARY-CONFIG"],
+      "control": "same source with no routing command or a declared conventional route",
+      "abort": "inventory loss, misdelivery, route damage, causal deadline failure, or DENY"
+    },
+    {
+      "id": "OBJ-STABILIZATION",
+      "name": "stabilization",
+      "observable": "distance from a target equilibrium plus constraint and admissibility margins",
+      "target": "minimize deviation and growth without masking physical instability",
+      "channels": ["CTL-CARRIER-ROUTE", "CTL-MATTER-PREP", "CTL-SCALAR-SEED", "CTL-THERMAL-POWER"],
+      "control": "uncontrolled perturbation from the same constraint-solved state",
+      "abort": "control increases growth, relies on numerical damping, or crosses WATCH/DENY"
+    },
+    {
+      "id": "OBJ-SENSING",
+      "name": "sensing",
+      "observable": "control-subtracted return signal and inferred state uncertainty",
+      "target": "maximize information gained per injected energy, carrier, and disturbance",
+      "channels": ["CTL-VECTOR-DRIVE", "CTL-SCALAR-SEED", "CTL-BOUNDARY-CONFIG"],
+      "control": "no-probe baseline and calibration target",
+      "abort": "probe perturbs the target beyond tolerance, return is unresolved, or inference enters DENY"
+    },
+    {
+      "id": "OBJ-RELEASE",
+      "name": "release",
+      "observable": "remaining confined content, outgoing flux, and post-release residual",
+      "target": "empty or relax a controlled state into licensed sinks without rebound",
+      "channels": ["CTL-CARRIER-ROUTE", "CTL-BOUNDARY-CONFIG", "CTL-THERMAL-POWER"],
+      "control": "continued confinement and passive-decay branches",
+      "abort": "rebound, unlicensed exposure, sink saturation, excessive heat, or DENY"
+    }
+  ],
+  "accounting": {
+    "energy": "Actuator work plus injected material, scalar, and vector coordinate energy; gravitational energy requires a separately qualified quasi-local or asymptotic measure.",
+    "heat": "Physical drag and damping heat plus exported heat are charged; numerical entropy is reported separately as a convergence veto.",
+    "carrier": "Peak local inventory, integrated routed amount, net boundary flux, and replenishment burden are charged.",
+    "latency": "Preparation, causal propagation, physical growth, feedback, and shutdown times are all charged.",
+    "infrastructure": "Route length, actuator count, power and sink capacity, occupancy, redundancy, and damage state are charged.",
+    "admissibility": "The minimum normalized distance to amplitude, convexity, causality, recovery, constraint, and runtime-guard boundaries is charged as reserve consumption."
+  },
+  "decision_states": ["APPROVE", "WEAKEN", "DELAY", "SUBSTITUTE", "REDIRECT", "TERMINATE", "DENY"]
+}

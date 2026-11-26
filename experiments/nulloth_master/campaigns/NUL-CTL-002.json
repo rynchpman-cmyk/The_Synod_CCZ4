@@ -1,0 +1,90 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CTL-002",
+  "title": "Carrier Coherence Brake minimal-seed inverse search",
+  "question": "What is the least resolved growing-mode scalar seed that achieves two-percent carrier-kinetic suppression, and does that effect disappear when the canonical scalarization couplings are removed?",
+  "prediction": "A coarse bracket plus six bisections finds a seed below the promoted 0.02 reference amplitude, the upper bracket meets the objective while the lower does not, and the canonical branch suppresses carrier response more strongly than both independently initialized no-command and scalar-coupling-free controls without violating any production veto.",
+  "falsifier": "Failure to bracket the objective, a passing lower bracket, a selected amplitude at or above 0.02, loss of suppressive sign against either control, nonzero no-command scalar growth, failed recovery or admissibility, negative entropy, number drift, or field and gravitational constraint failure falsifies the search result.",
+  "decisive_observables": [
+    "search_evaluations",
+    "bracket_width",
+    "lower_bracket_passes",
+    "upper_bracket_passes",
+    "selected_seed_amplitude",
+    "selected_seed_coordinate_energy",
+    "selected_relative_suppression",
+    "coupling_attributed_suppression",
+    "active_beats_scalar_coupling_free",
+    "no_command_scalar_amplitude",
+    "all_branches_admissible",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue"
+  ],
+  "acceptance_criteria": [
+    {"observable": "search_evaluations", "operator": "<=", "value": 12},
+    {"observable": "bracket_width", "operator": "<=", "value": 0.00025},
+    {"observable": "lower_bracket_passes", "operator": "==", "value": 0},
+    {"observable": "upper_bracket_passes", "operator": "==", "value": 1},
+    {"observable": "selected_seed_amplitude", "operator": "<", "value": 0.02},
+    {"observable": "selected_seed_coordinate_energy", "operator": ">", "value": 0.0},
+    {"observable": "selected_relative_suppression", "operator": ">=", "value": 0.02},
+    {"observable": "coupling_attributed_suppression", "operator": ">", "value": 0.0},
+    {"observable": "active_beats_scalar_coupling_free", "operator": "==", "value": 1},
+    {"observable": "no_command_scalar_amplitude", "operator": "==", "value": 0.0},
+    {"observable": "all_branches_admissible", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": -1e-12},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "The no-command control keeps canonical Nulloth but supplies exactly zero scalar seed.",
+    "The scalar-coupling-free control receives the selected scalar seed and momentum but sets only the three scalarization couplings to zero.",
+    "Every reported branch receives an independent periodic CMC constraint solve.",
+    "The objective is predeclared as two-percent suppression of the carrier kinetic proxy relative to no command.",
+    "Seed coordinate energy, entropy, number, constraints, recovery, and constitutive margins are reported independently of the objective."
+  ],
+  "resolution_ladder": [
+    {"points": 8, "duration": 2.0, "dt": 0.01, "role": "inverse-search reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "The coarse amplitude ladder, bisection rule, profiles, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "coarse_amplitudes": [0.001, 0.002, 0.004, 0.008, 0.016, 0.032],
+    "refinement_steps": 6,
+    "target_relative_suppression": 0.02,
+    "reference_promoted_amplitude": 0.02
+  },
+  "command": [
+    "{python}",
+    "experiments/search_nulloth_brake_controls.py",
+    "--points", "8",
+    "--duration", "2.0",
+    "--dt", "0.01",
+    "--target-suppression", "0.02",
+    "--refinement-steps", "6"
+  ],
+  "timeout_seconds": 1800,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/search_nulloth_brake_controls.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/grid.py"
+  ],
+  "outputs": [],
+  "supports_claims": ["NUL-CTL-002"]
+}

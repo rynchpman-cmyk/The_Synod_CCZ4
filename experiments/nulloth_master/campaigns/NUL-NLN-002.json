@@ -1,0 +1,82 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-NLN-002",
+  "title": "Domain-wall structure and controlled collision",
+  "question": "Does the canonical coherence PDE support resolved traveling domain walls whose controlled collision remains bounded, conservative, constraint-compatible, dimensionally embeddable, and free of a growing grid-scale cascade?",
+  "prediction": "Five wall-pair evolutions collide with minimum separation below two units, remain bounded, conserve vacuum-subtracted energy within 2e-10, retain their two walls after collision, agree under planar 2D and 3D embedding, and show decreasing high-wavenumber fraction across the finest 1D resolutions.",
+  "falsifier": "A missed collision, amplitude-limit violation, energy or reduction-constraint failure, unresolved incoming speed, dimensional mismatch, increasing high-wavenumber pileup, or an unpredicted change in wall count falsifies the registered regime.",
+  "decisive_observables": [
+    "controlled_collisions",
+    "maximum_speed_error",
+    "maximum_energy_relative_drift",
+    "maximum_constraint_l2",
+    "high_wavenumber_fraction_change_96_to_128",
+    "maximum_dimensional_embedding_error",
+    "bounded_runs",
+    "annihilation_runs"
+  ],
+  "acceptance_criteria": [
+    {"observable": "controlled_collisions", "operator": "==", "value": 5},
+    {"observable": "maximum_speed_error", "operator": "<=", "value": 0.005},
+    {"observable": "maximum_energy_relative_drift", "operator": "<=", "value": 2e-10},
+    {"observable": "maximum_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "high_wavenumber_fraction_change_96_to_128", "operator": "<=", "value": 5e-7},
+    {"observable": "maximum_dimensional_embedding_error", "operator": "<=", "value": 1e-12},
+    {"observable": "bounded_runs", "operator": "==", "value": 5},
+    {"observable": "annihilation_runs", "operator": "==", "value": 0}
+  ],
+  "controls": [
+    "The wall and antiwall interpolate between the two analytic condensed vacua on a periodic domain.",
+    "The initial momentum is the Lorentz-boosted inward wall profile; subsequent motion comes only from the canonical scalar RHS.",
+    "Vacuum energy is subtracted before the conserved collision energy is compared.",
+    "The independently evolved three-component scalar gradient is retained and its reduction constraint is measured.",
+    "The collision is repeated at three longitudinal resolutions.",
+    "Two- and three-dimensional runs use exactly homogeneous transverse embeddings as dimensional controls.",
+    "The high-wavenumber energy fraction is compared across the two finest resolutions to detect grid-scale pileup."
+  ],
+  "resolution_ladder": [
+    {"dimensions": 1, "x_points": 64},
+    {"dimensions": 1, "x_points": 96},
+    {"dimensions": 1, "x_points": 128},
+    {"dimensions": 2, "shape": [64, 4]},
+    {"dimensions": 3, "shape": [64, 4, 4]}
+  ],
+  "seed": null,
+  "seed_rationale": "The analytic wall pair, boost, grids, and evolution are deterministic.",
+  "parameters": {
+    "carrier_density": 0.18,
+    "box_length": 32.0,
+    "initial_wall_centers": [8.0, 24.0],
+    "incoming_speed": 0.4,
+    "duration": 28.0,
+    "time_step": 0.01
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_wall_collisions.py",
+    "--duration",
+    "28.0",
+    "--dt",
+    "0.01",
+    "--incoming-speed",
+    "0.4",
+    "--output",
+    "{run_dir}/wall_collisions.json"
+  ],
+  "timeout_seconds": 1200,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_wall_collisions.py",
+    "experiments/nulloth_master/NULLOTH_WALL_COLLISIONS.md",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/integrators.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py"
+  ],
+  "outputs": [
+    "wall_collisions.json"
+  ],
+  "supports_claims": [
+    "NUL-NLN-002"
+  ]
+}

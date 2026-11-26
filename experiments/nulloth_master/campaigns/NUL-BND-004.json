@@ -1,0 +1,78 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-004",
+  "title": "Finite material numerical entropy convergence",
+  "question": "Is the finite material entropy-account residual nonnegative numerical production that decreases under fixed-CFL refinement after physical boundary outflow is separated?",
+  "prediction": "Every step remainder is nonnegative, cumulative and maximum-step remainders decrease monotonically across 12, 18, and 24 cells, coarse-to-fine reductions exceed ten percent, the exact bookkeeping identity closes, and all carrier, constraint, and recovery vetoes pass.",
+  "falsifier": "A negative step remainder, nonmonotone refinement, inadequate reduction, failed balance identity, carrier imbalance, excessive constraints, or failed recovery falsifies this numerical-entropy interpretation.",
+  "decisive_observables": [
+    "minimum_step_entropy_remainder",
+    "cumulative_remainder_monotone_to_fine",
+    "maximum_step_remainder_monotone_to_fine",
+    "coarse_to_fine_cumulative_reduction",
+    "coarse_to_fine_maximum_step_reduction",
+    "fine_raw_projection_to_retained_remainder_ratio",
+    "maximum_balance_identity_error",
+    "maximum_carrier_number_balance_residual",
+    "maximum_gravitational_constraint_l2",
+    "maximum_proca_constraint_l2",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "minimum_step_entropy_remainder", "operator": ">=", "value": -1e-12},
+    {"observable": "cumulative_remainder_monotone_to_fine", "operator": "==", "value": 1},
+    {"observable": "maximum_step_remainder_monotone_to_fine", "operator": "==", "value": 1},
+    {"observable": "coarse_to_fine_cumulative_reduction", "operator": ">", "value": 1.1},
+    {"observable": "coarse_to_fine_maximum_step_reduction", "operator": ">", "value": 1.1},
+    {"observable": "fine_raw_projection_to_retained_remainder_ratio", "operator": ">", "value": 2.0},
+    {"observable": "maximum_balance_identity_error", "operator": "<=", "value": 1e-15},
+    {"observable": "maximum_carrier_number_balance_residual", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_proca_constraint_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "The material profile is exactly the sealed NUL-BND-003 source.",
+    "The time step scales with grid spacing at fixed ratio 0.024.",
+    "Boundary outflow, retained entropy change, raw stage-projection sum, and retained numerical remainder are reported separately.",
+    "Drag and vector damping contribute zero physical entropy in this co-moving trial."
+  ],
+  "resolution_ladder": [
+    {"points": 12, "dt": 0.002, "steps": 12, "role": "coarse"},
+    {"points": 18, "dt": 0.0013333333333333333, "steps": 18, "role": "medium"},
+    {"points": 24, "dt": 0.001, "steps": 24, "role": "fine"}
+  ],
+  "seed": null,
+  "seed_rationale": "The source and fixed-CFL trajectories are deterministic.",
+  "parameters": {
+    "duration": 0.024,
+    "cfl_ratio": 0.024,
+    "source": "NUL-BND-003 material pulse"
+  },
+  "command": [
+    "{python}",
+    "experiments/converge_nulloth_finite_material_entropy.py",
+    "--duration",
+    "0.024",
+    "--cfl-ratio",
+    "0.024",
+    "--output",
+    "{run_dir}/finite_material_entropy.json"
+  ],
+  "timeout_seconds": 120,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_finite_scalar_outflow.py",
+    "experiments/audit_nulloth_finite_vector_material_outflow.py",
+    "experiments/converge_nulloth_finite_material_entropy.py",
+    "experiments/nulloth_master/NULLOTH_FINITE_MATERIAL_ENTROPY.md",
+    "src/causal_repair/finite_nulloth.py",
+    "src/causal_repair/production_nulloth.py"
+  ],
+  "outputs": [
+    "finite_material_entropy.json"
+  ],
+  "supports_claims": [
+    "NUL-BND-004"
+  ]
+}

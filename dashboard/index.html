@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b14">
+  <title>Causal Repair Observatory</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#interaction_dominant" aria-label="Causal Repair Observatory home">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span><strong>CAUSAL REPAIR</strong><small>FIELD OBSERVATORY</small></span>
+    </a>
+    <nav id="scenario-nav" class="scenario-nav" aria-label="Showcase dashboards"></nav>
+    <div class="status"><span></span> TRAJECTORY ONLINE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ACTIVE-REPAIR SHOWCASE / <span id="scenario-code">—</span></p>
+        <h1 id="scenario-title">Loading trajectory…</h1>
+        <p id="scenario-subtitle" class="subtitle"></p>
+      </div>
+      <div id="parameter-strip" class="parameter-strip"></div>
+    </section>
+
+    <section id="metrics" class="metrics" aria-label="Current-frame metrics"></section>
+
+    <section class="transport-controls panel">
+      <button id="play-button" class="play-button" type="button" aria-label="Play trajectory"><span>▶</span></button>
+      <div class="timeline-control">
+        <div class="control-labels"><span>SIMULATION TIME</span><strong id="time-readout">t = 0.000</strong></div>
+        <input id="time-slider" type="range" min="0" max="160" value="0" step="1" aria-label="Simulation frame">
+        <div class="timeline-ticks"><span>INITIAL</span><span>QUENCH / EXCHANGE</span><span>OUTGOING WAKE</span></div>
+      </div>
+      <label class="speed-control">PLAYBACK
+        <select id="speed-select"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select>
+      </label>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel heatmap-panel">
+        <header class="panel-header">
+          <div><p>SPACETIME FIELD MAP</p><h2 id="heatmap-title">Dynamical field A<sub>z</sub></h2></div>
+          <div id="field-tabs" class="tabs" role="tablist">
+            <button data-field="a_z" class="active">A<sub>z</sub></button>
+            <button data-field="mismatch">A<sub>z</sub>−A<sub>z</sub><sup>★</sup></button>
+            <button data-field="energy">Energy</button>
+            <button data-field="phi">Φ</button>
+          </div>
+        </header>
+        <div class="canvas-wrap heatmap-wrap"><canvas id="heatmap"></canvas><div id="heatmap-cursor-label" class="cursor-label"></div></div>
+        <footer class="panel-footer"><span>POSITION x →</span><span>Click the map to inspect a time slice</span></footer>
+      </article>
+
+      <article class="panel profile-panel">
+        <header class="panel-header"><div><p>INSTANTANEOUS SLICE</p><h2>Field profile at <span id="profile-time">t = 0.00</span></h2></div></header>
+        <div class="legend"><span class="blue">A<sub>z</sub></span><span class="orange">A<sub>z</sub><sup>★</sup></span><span class="green">Mismatch</span></div>
+        <div class="canvas-wrap"><canvas id="profile-chart"></canvas></div>
+        <footer class="panel-footer"><span>POSITION x →</span><span id="peak-location">Peak —</span></footer>
+      </article>
+
+      <article class="panel series-panel">
+        <header class="panel-header"><div><p>REPAIR RESPONSE</p><h2>Normalized amplitudes</h2></div></header>
+        <div class="legend"><span class="blue">‖A‖</span><span class="orange">‖A★‖</span><span class="green">‖A−A★‖</span></div>
+        <div class="canvas-wrap"><canvas id="amplitude-chart"></canvas></div>
+      </article>
+
+      <article class="panel exchange-panel">
+        <header class="panel-header"><div><p>EXCHANGE &amp; TRANSPORT</p><h2>Energy ratio, outward fraction, phase</h2></div></header>
+        <div class="legend"><span class="amber">E<sub>int</sub>/E<sub>A</sub></span><span class="cyan">Exterior fraction</span><span class="violet">Profile phase</span></div>
+        <div class="canvas-wrap"><canvas id="exchange-chart"></canvas></div>
+      </article>
+
+      <article class="panel energy-panel">
+        <header class="panel-header"><div><p>LOCAL ENERGY</p><h2>Repair-sector energy density</h2></div><span class="unit-chip">E(x,t)</span></header>
+        <div class="canvas-wrap"><canvas id="energy-chart"></canvas></div>
+      </article>
+
+      <article class="panel interpretation-panel">
+        <header class="panel-header"><div><p>RUN SIGNATURE</p><h2 id="signature-title">What to watch</h2></div></header>
+        <div id="interpretation" class="interpretation"></div>
+        <div class="validation"><span>GAUSS RESIDUAL</span><strong id="gauss-value">—</strong><i>algebraic reconstruction</i></div>
+      </article>
+    </section>
+  </main>
+
+  <div id="loading" class="loading"><div class="loader-orbit"><i></i><i></i><i></i></div><p>Loading repair trajectory</p></div>
+  <div id="error-banner" class="error-banner" hidden></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

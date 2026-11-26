@@ -1,0 +1,90 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-001",
+  "title": "Weak-field Nulloth backreaction",
+  "question": "Does an active Nulloth coherence seed produce a controlled weak-field geometric response relative to an independently constraint-solved scalar-free control, and does that response scale with gravitational coupling?",
+  "prediction": "Both the constraint-solved initial geometry and its subsequent evolution differ between active and scalar-free states. Doubling gravitational coupling produces an approximately doubled metric response while all constraints, conservation accounts, convexity margins, and recovery remain admissible.",
+  "falsifier": "A vanishing dynamical geometric contrast, response scaling outside the declared weak-field window, failed conservation or entropy account, constraint violation, nonpositive convexity margin, or recovery failure falsifies the observation.",
+  "decisive_observables": [
+    "physical_metric_response_ratio",
+    "conformal_factor_response_ratio",
+    "conformal_A_response_ratio",
+    "minimum_dynamical_physical_metric_contrast_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "physical_metric_response_ratio", "operator": ">=", "value": 1.8},
+    {"observable": "physical_metric_response_ratio", "operator": "<=", "value": 2.2},
+    {"observable": "conformal_factor_response_ratio", "operator": ">=", "value": 1.8},
+    {"observable": "conformal_factor_response_ratio", "operator": "<=", "value": 2.2},
+    {"observable": "conformal_A_response_ratio", "operator": ">=", "value": 1.8},
+    {"observable": "conformal_A_response_ratio", "operator": "<=", "value": 2.2},
+    {"observable": "minimum_dynamical_physical_metric_contrast_l2", "operator": ">", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-4},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "Each active and scalar-free state receives an independent periodic CMC constraint solve.",
+    "The active and control pairs share gauge, matter, carrier modulation, grid, time step, and evolution duration.",
+    "The gravitational coupling is doubled from 5e-4 to 1e-3 to test weak-field scaling.",
+    "Initial constraint backreaction and subsequent dynamical response are reported separately.",
+    "No one-dimensional contrast is interpreted as transverse-traceless gravitational radiation."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 0.25, "dt": 0.01, "role": "weak-field coupling ladder reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "All initial profiles, constraint solves, and production evolutions are deterministic.",
+  "parameters": {
+    "kappa_gravity": [0.0005, 0.001],
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "active_scalar_amplitude": 0.02,
+    "control_scalar_amplitude": 0.0,
+    "box_length": 32.0,
+    "slicing": "harmonic"
+  },
+  "command": [
+    "{python}",
+    "experiments/measure_nulloth_weak_field_backreaction.py",
+    "--points",
+    "4",
+    "--duration",
+    "0.25",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/weak_field_backreaction.json"
+  ],
+  "timeout_seconds": 180,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/measure_nulloth_weak_field_backreaction.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_WEAK_FIELD_BACKREACTION.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "weak_field_backreaction.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-001"
+  ]
+}

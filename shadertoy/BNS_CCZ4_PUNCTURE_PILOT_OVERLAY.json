@@ -1,0 +1,92 @@
+{
+  "derived": {
+    "chirp_mass": 0.43527528164806206,
+    "contact_display_angular_speed": 8.05740976213738,
+    "contact_omega": 0.07009279563550024,
+    "contact_phase": 73.21336210363549,
+    "contact_separation": 5.88235294117647,
+    "contact_to_merger_orbits": 4.2621630569492295,
+    "inspiral_orbits": 11.652268479170433,
+    "inspiral_time": 2501.3874084273157,
+    "mass_1": 0.5,
+    "mass_2": 0.5,
+    "postmerger_f2_cycles": 12.0,
+    "postmerger_f2_omega_M": 0.2506769560255754,
+    "radius_1": 2.941176470588235,
+    "radius_2": 2.941176470588235,
+    "ringdown_display_angular_speed": 5.890486225480863,
+    "symmetric_mass_ratio": 0.25,
+    "tidal_bulge_1_at_contact": 0.016875,
+    "tidal_bulge_2_at_contact": 0.016875
+  },
+  "model": "leading_quadrupole_tidal_bns_with_visual_merger_bridge",
+  "mots_bake": {
+    "display_scale": 6.0,
+    "first_time": 0.82,
+    "format": "causal_repair.mots_shader_bake.v2",
+    "frames": 3,
+    "last_time": 0.96,
+    "modes": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "principal_eigenvalue_range": [
+      0.06394416034616036,
+      0.08384683328125005
+    ],
+    "qualified": false,
+    "response_semantics": "signed offset-surface outgoing-expansion response",
+    "source_kind": "ccz4_puncture_campaign",
+    "source_label": "ccz4_puncture_mots_lapsefix_n32_early/trajectory.json:common_outer; coordinate time 0.45..0.5; UNDER-RESOLVED PILOT",
+    "source_parameter_name": "CCZ4 coordinate time",
+    "source_parameter_values": [
+      0.45000000000000034,
+      0.47500000000000037,
+      0.5000000000000003
+    ],
+    "stability_semantics": "principal physical-normal MOTS eigenvalue lambda_0"
+  },
+  "parameters": {
+    "animation_seconds": 32.0,
+    "compactness_1": 0.17,
+    "compactness_2": 0.17,
+    "horizon_formation_fraction": 0.805,
+    "initial_separation": 13.5,
+    "inspiral_fraction": 0.68,
+    "lensing_gain": 0.82,
+    "love_k2_1": 0.09,
+    "love_k2_2": 0.09,
+    "mass_ratio": 1.0,
+    "merger_fraction": 0.8,
+    "postmerger_damping_ms": 2.5,
+    "postmerger_duration_ms": 4.0,
+    "postmerger_f2_khz": 3.0,
+    "prompt_collapse": true,
+    "quality": 1,
+    "repair_strength": 0.22,
+    "show_horizon_wireframe": true,
+    "total_mass_solar": 2.7,
+    "wave_visual_gain": 1.0
+  },
+  "qualification": {
+    "inspiral": "leading adiabatic quasi-circular quadrupole model",
+    "merger_and_ringdown": "phenomenological visualization bridge",
+    "repair_layer": "illustrative unless calibrated to a solver campaign",
+    "tides": "Love-number equilibrium bulge approximation"
+  },
+  "units": "G=c=M_total=1"
+}

@@ -1,0 +1,453 @@
+{
+  "case": "low_flow",
+  "linearization_step": 0.000125,
+  "amplitude": 0.0002,
+  "wavenumber": 256.0,
+  "equivalent_cells": 64,
+  "fourier_samples": 4,
+  "nodes": [
+    0.0,
+    0.004000000000000003,
+    0.008000000000000005,
+    0.012000000000000009,
+    0.01600000000000001
+  ],
+  "field_count": 23,
+  "norms": [
+    "primitive",
+    "fractional current and entropy"
+  ],
+  "models": {
+    "frozen_full": {
+      "peak_gains": [
+        1.8862896393312911,
+        1.961776111011035
+      ],
+      "peak_times": [
+        0.01250000000000001,
+        0.01275000000000001
+      ],
+      "endpoint_gains": [
+        1.7904345966310744,
+        1.8762158044578245
+      ]
+    },
+    "evolving_full": {
+      "peak_gains": [
+        1.8860689025142845,
+        1.9617025939331316
+      ],
+      "peak_times": [
+        0.01250000000000001,
+        0.01275000000000001
+      ],
+      "endpoint_gains": [
+        1.7900092465116093,
+        1.875934888136411
+      ]
+    },
+    "evolving_principal": {
+      "peak_gains": [
+        2.234979760847666,
+        2.3402649262324218
+      ],
+      "peak_times": [
+        0.01400000000000001,
+        0.014375000000000011
+      ],
+      "endpoint_gains": [
+        2.1961079385206244,
+        2.31498694848906
+      ]
+    },
+    "without_scalar_cross_blocks": {
+      "peak_gains": [
+        1.886133090954937,
+        1.9618030708693268
+      ],
+      "peak_times": [
+        0.01250000000000001,
+        0.01275000000000001
+      ],
+      "endpoint_gains": [
+        1.7900840038004329,
+        1.8760424098558386
+      ]
+    },
+    "without_vector_cross_blocks": {
+      "peak_gains": [
+        1.8876000941895894,
+        1.9652376222701933
+      ],
+      "peak_times": [
+        0.01237500000000001,
+        0.01275000000000001
+      ],
+      "endpoint_gains": [
+        1.7897146690771566,
+        1.8854579140150385
+      ]
+    },
+    "without_native_drag_linear_term": {
+      "peak_gains": [
+        1.8950541767398141,
+        1.9720459865758673
+      ],
+      "peak_times": [
+        0.01250000000000001,
+        0.01275000000000001
+      ],
+      "endpoint_gains": [
+        1.8024637659767562,
+        1.88854501364675
+      ]
+    }
+  },
+  "k0_source_matrix_norm": [
+    19.52844240647956,
+    19.370065030923485,
+    19.213000794184023,
+    19.05723518243273,
+    18.90271909076571
+  ],
+  "drag_matrix_norm": [
+    2.424852033777548,
+    2.4078462233958056,
+    2.391088861566859,
+    2.3745743993449486,
+    2.3582962198775124
+  ],
+  "maximum_cleaner_response": 3.8216702890748496e-18,
+  "screened_background": [
+    {
+      "time": 0.0,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.57630066364462,
+      "longitudinal_pinch_pair_separation": 0.12681400392371345,
+      "convexity_margin": 0.3412733297553943,
+      "reasons": []
+    },
+    {
+      "time": 0.0005,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.57828724210729,
+      "longitudinal_pinch_pair_separation": 0.12674663872747538,
+      "convexity_margin": 0.3412796696019254,
+      "reasons": []
+    },
+    {
+      "time": 0.001,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.5803123908218404,
+      "longitudinal_pinch_pair_separation": 0.12667878723134957,
+      "convexity_margin": 0.3412860027635442,
+      "reasons": []
+    },
+    {
+      "time": 0.0015000000000000005,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.5823758279714633,
+      "longitudinal_pinch_pair_separation": 0.1266104502422341,
+      "convexity_margin": 0.34129232933479997,
+      "reasons": []
+    },
+    {
+      "time": 0.002000000000000001,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.584477402375692,
+      "longitudinal_pinch_pair_separation": 0.12654162841171857,
+      "convexity_margin": 0.34129864930947973,
+      "reasons": []
+    },
+    {
+      "time": 0.0025000000000000014,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.586616029389557,
+      "longitudinal_pinch_pair_separation": 0.12647232219531174,
+      "convexity_margin": 0.3413049626813866,
+      "reasons": []
+    },
+    {
+      "time": 0.003000000000000002,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.5887913961805924,
+      "longitudinal_pinch_pair_separation": 0.12640253264801116,
+      "convexity_margin": 0.34131126944436646,
+      "reasons": []
+    },
+    {
+      "time": 0.0035000000000000022,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.5910028316579257,
+      "longitudinal_pinch_pair_separation": 0.1263322601785693,
+      "convexity_margin": 0.34131756959232473,
+      "reasons": []
+    },
+    {
+      "time": 0.004000000000000003,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.593249453371161,
+      "longitudinal_pinch_pair_separation": 0.1262615057060869,
+      "convexity_margin": 0.34132386311919183,
+      "reasons": []
+    },
+    {
+      "time": 0.004500000000000003,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.5955299965762215,
+      "longitudinal_pinch_pair_separation": 0.126190269733435,
+      "convexity_margin": 0.3413301500189252,
+      "reasons": []
+    },
+    {
+      "time": 0.005000000000000004,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.5978435858865945,
+      "longitudinal_pinch_pair_separation": 0.12611855297659347,
+      "convexity_margin": 0.34133643028554533,
+      "reasons": []
+    },
+    {
+      "time": 0.005500000000000004,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.600188905850946,
+      "longitudinal_pinch_pair_separation": 0.12604635634140893,
+      "convexity_margin": 0.3413427039130914,
+      "reasons": []
+    },
+    {
+      "time": 0.0060000000000000045,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.602564141816739,
+      "longitudinal_pinch_pair_separation": 0.12597368031928557,
+      "convexity_margin": 0.34134897089565897,
+      "reasons": []
+    },
+    {
+      "time": 0.006500000000000005,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6049678149373876,
+      "longitudinal_pinch_pair_separation": 0.12590052567805754,
+      "convexity_margin": 0.3413552312273569,
+      "reasons": []
+    },
+    {
+      "time": 0.007000000000000005,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6073977301451805,
+      "longitudinal_pinch_pair_separation": 0.12582689288581306,
+      "convexity_margin": 0.341361484902359,
+      "reasons": []
+    },
+    {
+      "time": 0.007500000000000006,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6098519271902587,
+      "longitudinal_pinch_pair_separation": 0.12575278302996967,
+      "convexity_margin": 0.3413677319148587,
+      "reasons": []
+    },
+    {
+      "time": 0.008000000000000005,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6123274780821912,
+      "longitudinal_pinch_pair_separation": 0.1256781965045366,
+      "convexity_margin": 0.34137397225910193,
+      "reasons": []
+    },
+    {
+      "time": 0.008500000000000006,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6148215286938994,
+      "longitudinal_pinch_pair_separation": 0.12560313388707883,
+      "convexity_margin": 0.3413802059293519,
+      "reasons": []
+    },
+    {
+      "time": 0.009000000000000006,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6173308335563523,
+      "longitudinal_pinch_pair_separation": 0.12552759618964826,
+      "convexity_margin": 0.34138643291993315,
+      "reasons": []
+    },
+    {
+      "time": 0.009500000000000007,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.619851348367332,
+      "longitudinal_pinch_pair_separation": 0.1254515839706148,
+      "convexity_margin": 0.3413926532251858,
+      "reasons": []
+    },
+    {
+      "time": 0.010000000000000007,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.622379230206242,
+      "longitudinal_pinch_pair_separation": 0.1253750978339615,
+      "convexity_margin": 0.3413988668395143,
+      "reasons": []
+    },
+    {
+      "time": 0.010500000000000008,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6249096782986796,
+      "longitudinal_pinch_pair_separation": 0.1252981383999593,
+      "convexity_margin": 0.3414050737573275,
+      "reasons": []
+    },
+    {
+      "time": 0.011000000000000008,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6274370668616833,
+      "longitudinal_pinch_pair_separation": 0.12522070653144513,
+      "convexity_margin": 0.3414112739730929,
+      "reasons": []
+    },
+    {
+      "time": 0.011500000000000008,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6299554868438095,
+      "longitudinal_pinch_pair_separation": 0.12514280278273626,
+      "convexity_margin": 0.3414174674813162,
+      "reasons": []
+    },
+    {
+      "time": 0.012000000000000009,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.632458353851085,
+      "longitudinal_pinch_pair_separation": 0.12506442789806088,
+      "convexity_margin": 0.3414236542765244,
+      "reasons": []
+    },
+    {
+      "time": 0.01250000000000001,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.634937762798623,
+      "longitudinal_pinch_pair_separation": 0.12498558241685132,
+      "convexity_margin": 0.34142983435329816,
+      "reasons": []
+    },
+    {
+      "time": 0.01300000000000001,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6373850380775328,
+      "longitudinal_pinch_pair_separation": 0.1249062672093939,
+      "convexity_margin": 0.34143600770623755,
+      "reasons": []
+    },
+    {
+      "time": 0.01350000000000001,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.639791061485116,
+      "longitudinal_pinch_pair_separation": 0.12482648287471221,
+      "convexity_margin": 0.34144217432999846,
+      "reasons": []
+    },
+    {
+      "time": 0.01400000000000001,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6421447899341226,
+      "longitudinal_pinch_pair_separation": 0.12474623001789081,
+      "convexity_margin": 0.34144833421925513,
+      "reasons": []
+    },
+    {
+      "time": 0.014500000000000011,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6444341679439787,
+      "longitudinal_pinch_pair_separation": 0.12466550939832965,
+      "convexity_margin": 0.34145448736872674,
+      "reasons": []
+    },
+    {
+      "time": 0.015000000000000012,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6466461587089376,
+      "longitudinal_pinch_pair_separation": 0.12458432154840998,
+      "convexity_margin": 0.3414606337731752,
+      "reasons": []
+    },
+    {
+      "time": 0.015500000000000012,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6487652923460243,
+      "longitudinal_pinch_pair_separation": 0.12450266737008198,
+      "convexity_margin": 0.3414667734273823,
+      "reasons": []
+    },
+    {
+      "time": 0.01600000000000001,
+      "oblique_collision_angle": null,
+      "maximum_imaginary": 0.0,
+      "maximum_characteristic_modulus": 1.0,
+      "maximum_finite_basis_condition": 3.6507750778456116,
+      "longitudinal_pinch_pair_separation": 0.12442054721624979,
+      "convexity_margin": 0.3414729063261816,
+      "reasons": []
+    }
+  ]
+}

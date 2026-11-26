@@ -1,0 +1,94 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-002",
+  "title": "Finite scalar resolution and patch-size convergence",
+  "question": "Does the one-dimensional finite scalar passage converge with resolution and remain unchanged when the causally irrelevant opposite wall is moved outward at equal spacing?",
+  "prediction": "The scalar-energy loss approaches the fine result across 12, 18, and 24 cells, the enlarged equal-spacing patch agrees within one percent, and every characteristic, contamination, constraint, recovery, convexity, entropy-residual, and carrier-balance veto passes.",
+  "falsifier": "Nonconvergent loss, patch-size sensitivity, incoming characteristic excitation, opposite-edge contamination, failed recovery or convexity, excessive constraints, entropy residual, or carrier imbalance falsifies the claimed convergence.",
+  "decisive_observables": [
+    "finest_scalar_energy_loss_fraction",
+    "energy_loss_convergence_ratio",
+    "medium_to_fine_energy_loss_difference",
+    "patch_size_energy_loss_relative_difference",
+    "maximum_incoming_to_outgoing_characteristic_ratio",
+    "maximum_opposite_edge_amplitude",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_proca_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue",
+    "maximum_step_entropy_balance_residual",
+    "maximum_absolute_cumulative_entropy_balance_residual",
+    "maximum_carrier_number_balance_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "finest_scalar_energy_loss_fraction", "operator": ">=", "value": 0.25},
+    {"observable": "energy_loss_convergence_ratio", "operator": ">", "value": 1.0},
+    {"observable": "medium_to_fine_energy_loss_difference", "operator": "<=", "value": 0.1},
+    {"observable": "patch_size_energy_loss_relative_difference", "operator": "<=", "value": 0.01},
+    {"observable": "maximum_incoming_to_outgoing_characteristic_ratio", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_opposite_edge_amplitude", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-6},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-7},
+    {"observable": "maximum_proca_constraint_l2", "operator": "<=", "value": 1e-9},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "maximum_step_entropy_balance_residual", "operator": "<=", "value": 1e-5},
+    {"observable": "maximum_absolute_cumulative_entropy_balance_residual", "operator": "<=", "value": 1e-5},
+    {"observable": "maximum_carrier_number_balance_residual", "operator": "<=", "value": 1e-12}
+  ],
+  "controls": [
+    "The three resolution cases share identical physical initial data, patch, duration, and time step.",
+    "The expanded case preserves the fine-grid spacing and upper boundary while moving only the opposite wall from -0.5 to -1.0.",
+    "The pulse is broader than in NUL-BND-001 so its refinement trend is resolved on the registered ladder.",
+    "The campaign reuses the sealed finite solver and NUL-BND-001 construction without modifying their source fingerprints."
+  ],
+  "resolution_ladder": [
+    {"points": 12, "length": 1.0, "origin": -0.5, "role": "coarse"},
+    {"points": 18, "length": 1.0, "origin": -0.5, "role": "medium"},
+    {"points": 24, "length": 1.0, "origin": -0.5, "role": "fine"},
+    {"points": 36, "length": 1.5, "origin": -1.0, "role": "expanded equal-spacing control"}
+  ],
+  "seed": null,
+  "seed_rationale": "All profiles and trajectories are deterministic.",
+  "parameters": {
+    "duration": 0.32,
+    "dt": 0.002,
+    "scalar_amplitude": 1e-5,
+    "scalar_center": 0.2,
+    "scalar_width": 0.1,
+    "fluid_density": 0.1,
+    "specific_internal_energy": 0.5,
+    "carrier_density": 0.03
+  },
+  "command": [
+    "{python}",
+    "experiments/converge_nulloth_finite_scalar_outflow.py",
+    "--duration",
+    "0.32",
+    "--dt",
+    "0.002",
+    "--output",
+    "{run_dir}/finite_scalar_convergence.json"
+  ],
+  "timeout_seconds": 360,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_finite_scalar_outflow.py",
+    "experiments/converge_nulloth_finite_scalar_outflow.py",
+    "experiments/nulloth_master/NULLOTH_FINITE_SCALAR_CONVERGENCE.md",
+    "src/causal_repair/finite_nulloth.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py"
+  ],
+  "outputs": [
+    "finite_scalar_convergence.json"
+  ],
+  "supports_claims": [
+    "NUL-BND-002"
+  ]
+}

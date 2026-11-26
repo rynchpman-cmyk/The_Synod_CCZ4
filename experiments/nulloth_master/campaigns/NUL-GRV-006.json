@@ -1,0 +1,96 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-006",
+  "title": "Elevated-curvature periodic CMC convergence",
+  "question": "Can the active Nulloth trajectory remain admissible and separately converge its physical endpoint and CCZ4 constraints when gravitational coupling is raised to 0.5?",
+  "prediction": "Across 4, 8, and 16 points the gravitational constraint decreases monotonically, scalar and metric endpoints converge, and the fine state retains an RMS metric deviation above 0.1 and extrinsic-curvature norm above 0.2 without violating lapse, signature, conservation, entropy, field, convexity, or recovery vetoes.",
+  "falsifier": "Nonconvergent constraints or endpoints, insufficient elevated-curvature signal, loss of positive lapse or metric signature, or failure of any independent physical or numerical veto falsifies the observation.",
+  "decisive_observables": [
+    "gravitational_constraint_monotone_with_resolution",
+    "coarse_to_medium_constraint_reduction",
+    "medium_to_fine_constraint_reduction",
+    "coarse_to_medium_scalar_error_reduction",
+    "coarse_to_medium_metric_error_reduction",
+    "finest_gravitational_constraint_l2",
+    "finest_metric_deviation_l2",
+    "finest_extrinsic_curvature_l2",
+    "minimum_lapse",
+    "minimum_metric_eigenvalue",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "gravitational_constraint_monotone_with_resolution", "operator": "==", "value": 1},
+    {"observable": "coarse_to_medium_constraint_reduction", "operator": ">", "value": 4.0},
+    {"observable": "medium_to_fine_constraint_reduction", "operator": ">", "value": 1.8},
+    {"observable": "coarse_to_medium_scalar_error_reduction", "operator": ">", "value": 5.0},
+    {"observable": "coarse_to_medium_metric_error_reduction", "operator": ">", "value": 10.0},
+    {"observable": "finest_gravitational_constraint_l2", "operator": "<=", "value": 0.0006},
+    {"observable": "finest_metric_deviation_l2", "operator": ">", "value": 0.1},
+    {"observable": "finest_extrinsic_curvature_l2", "operator": ">", "value": 0.2},
+    {"observable": "minimum_lapse", "operator": ">", "value": 0.9},
+    {"observable": "minimum_metric_eigenvalue", "operator": ">", "value": 0.7},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "The 4, 8, and 16 point cases use the same physical profile, box, coupling, gauge, time step, and duration.",
+    "Every resolution begins from an independent periodic CMC solve.",
+    "Scalar and metric endpoints are converged independently from CCZ4 constraints.",
+    "Positive lapse, metric signature, field constraints, numbers, entropy, convexity, and recovery are independent vetoes.",
+    "Coordinate metric and extrinsic-curvature norms are not treated as invariant compactness measures."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 0.05, "dt": 0.01, "role": "coarse"},
+    {"points": 8, "duration": 0.05, "dt": 0.01, "role": "medium"},
+    {"points": 16, "duration": 0.05, "dt": 0.01, "role": "fine"}
+  ],
+  "seed": null,
+  "seed_rationale": "Profiles, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "kappa_gravity": 0.5,
+    "slicing": "harmonic",
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "scalar_initial_amplitude": 0.02,
+    "box_length": 32.0
+  },
+  "command": [
+    "{python}",
+    "experiments/converge_nulloth_elevated_curvature.py",
+    "--duration",
+    "0.05",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/elevated_curvature.json"
+  ],
+  "timeout_seconds": 240,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/converge_nulloth_elevated_curvature.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_ELEVATED_CURVATURE.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "elevated_curvature.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-006"
+  ]
+}

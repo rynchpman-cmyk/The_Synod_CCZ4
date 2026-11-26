@@ -1,0 +1,84 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-NLN-001",
+  "title": "Homogeneous nonlinear phase and basin atlas",
+  "question": "What are the nonlinear turnover scale, phase-transition order, multistable basins, and conservative lifetime of the homogeneous Nulloth coherence sector?",
+  "prediction": "All fifteen activated growing-mode seeds turn over at the quartic energy root while remaining bounded; the equilibrium branches emerge continuously with no hysteresis; two sign basins are separated by the stationary symmetric state; and reduced energy is conserved through the 100-unit basin runs.",
+  "falsifier": "An unbounded run, a turnover mismatch above 1e-6, a resolved hysteresis loop or first-order jump, basin sign crossing, motion of the exact symmetric boundary, or energy drift above 1e-10 falsifies the map.",
+  "decisive_observables": [
+    "turnover_runs",
+    "bounded_turnover_runs",
+    "maximum_turnover_amplitude",
+    "maximum_turnover_amplitude_error",
+    "turnover_time_relative_change_fine_pair",
+    "maximum_hysteresis_branch_difference",
+    "stable_basin_count",
+    "basin_boundary_stationary",
+    "basin_sign_failures",
+    "metastable_lifetime_lower_bound",
+    "maximum_energy_drift",
+    "blowup_runs",
+    "first_order_transition_detected"
+  ],
+  "acceptance_criteria": [
+    {"observable": "turnover_runs", "operator": "==", "value": 15},
+    {"observable": "bounded_turnover_runs", "operator": "==", "value": 15},
+    {"observable": "maximum_turnover_amplitude", "operator": "<=", "value": 0.17},
+    {"observable": "maximum_turnover_amplitude_error", "operator": "<=", "value": 1e-6},
+    {"observable": "turnover_time_relative_change_fine_pair", "operator": "<=", "value": 1e-3},
+    {"observable": "maximum_hysteresis_branch_difference", "operator": "<=", "value": 1e-12},
+    {"observable": "stable_basin_count", "operator": "==", "value": 2},
+    {"observable": "basin_boundary_stationary", "operator": "==", "value": 1},
+    {"observable": "basin_sign_failures", "operator": "==", "value": 0},
+    {"observable": "metastable_lifetime_lower_bound", "operator": ">=", "value": 100.0},
+    {"observable": "maximum_energy_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "blowup_runs", "operator": "==", "value": 0},
+    {"observable": "first_order_transition_detected", "operator": "==", "value": 0}
+  ],
+  "controls": [
+    "The scalar ODE is the exact homogeneous reduction of the implemented first-order scalar RHS with frozen material.",
+    "Every measured turnover amplitude is compared with the independent conserved-energy root.",
+    "The representative turnover time is repeated at time steps 0.004, 0.002, and 0.001.",
+    "Upward and downward carrier-density equilibrium sweeps test hysteresis without changing the canonical potential.",
+    "Positive, negative, and exactly zero seeds test the two basins and their symmetric boundary.",
+    "The word saturation is restricted to the first nonlinear turning scale because no damping is present."
+  ],
+  "resolution_ladder": [
+    {"time_step": 0.004, "role": "turnover-time coarse control"},
+    {"time_step": 0.002, "role": "phase-atlas production"},
+    {"time_step": 0.001, "role": "turnover-time fine control"}
+  ],
+  "seed": null,
+  "seed_rationale": "The carrier-density, amplitude, equilibrium, and basin sweeps are deterministic.",
+  "parameters": {
+    "carrier_densities": [0.16, 0.18, 0.20, 0.22, 0.24],
+    "initial_amplitudes": [0.001, 0.005, 0.02],
+    "turnover_duration": 40.0,
+    "basin_duration": 100.0,
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS"
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_homogeneous_nonlinear_phases.py",
+    "--duration",
+    "40.0",
+    "--dt",
+    "0.002",
+    "--output",
+    "{run_dir}/homogeneous_phases.json"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_homogeneous_nonlinear_phases.py",
+    "experiments/nulloth_master/NULLOTH_HOMOGENEOUS_PHASES.md",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py"
+  ],
+  "outputs": [
+    "homogeneous_phases.json"
+  ],
+  "supports_claims": [
+    "NUL-NLN-001"
+  ]
+}

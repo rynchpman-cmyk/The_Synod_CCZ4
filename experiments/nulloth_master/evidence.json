@@ -1,0 +1,1839 @@
+{
+  "ledger_schema": "nulloth.evidence.v1",
+  "canonical_name": "Nulloth",
+  "status_vocabulary": [
+    "POSTULATED",
+    "DERIVED",
+    "REGRESSED",
+    "OBSERVED",
+    "QUALIFIED",
+    "PROMOTED",
+    "PROSCRIBED",
+    "UNKNOWN",
+    "REVOKED"
+  ],
+  "campaign_supersessions": [
+    {
+      "campaign_id": "NUL-BND-008",
+      "replacement_campaign_id": "NUL-BND-008-ASSESS-001",
+      "record": "experiments/nulloth_master/corrections/NUL-BND-008-CR-001.md",
+      "reason": "The raw campaign terminated on a singular primitive-recovery Jacobian before emitting decisive observables; the assessment preserves the failure and classifies the driven finite domain as unresolved."
+    },
+    {
+      "campaign_id": "NUL-CTL-007",
+      "replacement_campaign_id": "NUL-CTL-007-ASSESS-001",
+      "record": "experiments/nulloth_master/corrections/NUL-CTL-007-CR-001.md",
+      "reason": "The negative-shape control failed independently, invalidating the planned interaction attribution; the assessment preserves and classifies the shape-sign and combined objective denials."
+    },
+    {
+      "campaign_id": "NUL-CTL-005",
+      "replacement_campaign_id": "NUL-CTL-005-ASSESS-001",
+      "record": "experiments/nulloth_master/corrections/NUL-CTL-005-CR-001.md",
+      "reason": "The raw campaign correctly denied the full robustness envelope; the assessment classifies the failure as a symmetric phase-target objective boundary while preserving all original gates."
+    },
+    {
+      "campaign_id": "NUL-CTL-004",
+      "replacement_campaign_id": "NUL-CTL-004-ASSESS-001",
+      "record": "experiments/nulloth_master/corrections/NUL-CTL-004-CR-001.md",
+      "reason": "The raw campaign's sole failure was a four-ulp excess in representing the exact declared bisection width. The 0.0005 scientific tolerance and every physical gate remain unchanged."
+    },
+    {
+      "campaign_id": "NUL-SPL-001",
+      "replacement_campaign_id": "NUL-SPL-001-ASSESS-001",
+      "record": "experiments/nulloth_master/corrections/NUL-SPL-001-CR-001.md",
+      "reason": "The raw campaign incorrectly required short resolution runs to pass nonlinear gates reserved for the separate long run. No physical tolerance changed."
+    },
+    {
+      "campaign_id": "NUL-BND-003",
+      "replacement_campaign_id": "NUL-BND-003-ASSESS-001",
+      "record": "experiments/nulloth_master/corrections/NUL-BND-003-CR-001.md",
+      "reason": "The original run physically completed and passed every non-entropy gate, but failed both predeclared entropy-account gates. The assessment preserves all original tolerances and records denial of qualification."
+    }
+  ],
+  "claims": [
+    {
+      "id": "NUL-FND-001",
+      "title": "Single-counted material interaction stress",
+      "status": "QUALIFIED",
+      "statement": "At the audited states, fixed-densitized-current metric variation of the material action reproduces the Carter material stress with the scalarization interaction included exactly once through the master function.",
+      "domain": "The registered flat-spacetime currents, entropy, couplings, and coherence amplitudes zero, 0.23, and -0.31.",
+      "evidence": [
+        "experiments/audit_nulloth_action.py",
+        "runs/nulloth_master/NUL-FND-001-581b685b1d00a1f5/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-FND-001-d0451ccfce7e5bb9/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-FND-001"
+      ],
+      "metrics": {
+        "cases": 3,
+        "hilbert_material_stress_max_error": 2.8519769879054024e-11
+      },
+      "limitations": [
+        "This finite audit samples one current configuration and does not replace the complete symbolic metric variation.",
+        "The canonical scalar stress is a separate sector and is not part of this material-only variation."
+      ]
+    },
+    {
+      "id": "NUL-FND-002",
+      "title": "Constitutive derivative closure",
+      "status": "QUALIFIED",
+      "statement": "At the audited states, every first and second constitutive derivative consumed by recovery and characteristic analysis agrees with an independent invariant-preserving finite difference of the canonical master function.",
+      "domain": "The 128 seeded states and parameter choice registered by campaign NUL-FND-002.",
+      "evidence": [
+        "experiments/audit_nulloth_constitutive_derivatives.py",
+        "runs/nulloth_master/NUL-FND-002-5ec031e2a507f568/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-FND-002-82d81c22dce1d35f/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-FND-002"
+      ],
+      "metrics": {
+        "samples": 128,
+        "maximum_first_derivative_relative_error": 6.086846753653494e-8,
+        "maximum_hessian_relative_error": 3.959506102491185e-6,
+        "maximum_pressure_identity_error": 2.7755575615628914e-17,
+        "nonfinite_results": 0
+      },
+      "limitations": [
+        "Finite differences provide sampled numerical evidence, not a computer-algebra proof.",
+        "The campaign covers the registered interior box rather than every admissible state."
+      ]
+    },
+    {
+      "id": "NUL-LIM-001",
+      "title": "Theory 3.3 constitutive limit",
+      "status": "REGRESSED",
+      "statement": "At zero scalar amplitude, the Nulloth constitutive system reproduces the compared Theory 3.3 master, momentum, Hessian, source-current, and stress fields.",
+      "domain": "Compared constitutive states with varphi equal to zero.",
+      "evidence": [
+        "experiments/NULLOTH_01_INTEGRATION_REPORT.md",
+        "tests/test_nulloth.py",
+        "runs/nulloth_master/NUL-LIM-001-e1bcdecde77d89d0/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIM-001"
+      ],
+      "metrics": {
+        "constitutive_fields_compared": 18,
+        "constitutive_max_abs_error": 0.0
+      },
+      "limitations": [
+        "This claim does not qualify nonzero scalar coupling states."
+      ]
+    },
+    {
+      "id": "NUL-LIM-003",
+      "title": "Decoupled field limits",
+      "status": "QUALIFIED",
+      "statement": "At the audited configurations, Nulloth approaches vacuum CCZ4 as atmosphere support vanishes, reproduces canonical Klein-Gordon dynamics and time reversal, and reduces to independently relabelable Proca sectors when mixing and sources vanish.",
+      "domain": "The deterministic vacuum-floor, scalar Fourier-mode, homogeneous condensed, and source-free Proca configurations registered by NUL-LIM-003.",
+      "evidence": [
+        "experiments/audit_nulloth_decoupled_limits.py",
+        "runs/nulloth_master/NUL-LIM-003-3442d9864a66f19e/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIM-003"
+      ],
+      "metrics": {
+        "vacuum_floor_scaling_order": 2.000000000000014,
+        "vacuum_smallest_floor_error": 3.4180528071055174e-7,
+        "scalar_frequency": 2.039607805437114,
+        "scalar_field_max_error": 1.2565903179106996e-16,
+        "scalar_energy_relative_drift": 2.592490009946511e-16,
+        "scalar_time_reversal_max_error": 1.734723475976807e-18,
+        "proca_cross_excitation": 0.0,
+        "proca_relabeling_max_error": 0.0
+      },
+      "limitations": [
+        "Vacuum is reached as a convergent atmosphere-floor limit rather than represented by exactly zero carrier density.",
+        "The scalar time-reversal test uses fixed flat geometry.",
+        "The Proca decoupling test is local to the registered source-free periodic configuration."
+      ]
+    },
+    {
+      "id": "NUL-LIM-004",
+      "title": "Covariant and reversible closure symmetries",
+      "status": "QUALIFIED",
+      "statement": "At the audited states, the material closure and characteristic spectrum are rotationally covariant, the material stress is Lorentz covariant, coherence sign reversal has the required even and odd sectors, reversible scalar and Proca equations obey time parity, and nonzero-coupling primitive recovery round-trips.",
+      "domain": "The seeded covariance and discovery-parameter recovery states registered by NUL-LIM-004.",
+      "evidence": [
+        "experiments/audit_nulloth_symmetries.py",
+        "runs/nulloth_master/NUL-LIM-004-a0f4a88dab4dfabc/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIM-004"
+      ],
+      "metrics": {
+        "covariance_samples": 32,
+        "recovery_samples": 64,
+        "recovery_failures": 0,
+        "maximum_rotation_characteristic_error": 8.791256611573317e-11,
+        "maximum_boost_stress_error": 7.771561172376096e-16,
+        "maximum_scalar_sign_characteristic_error": 2.886579864025407e-15,
+        "maximum_time_reversal_error": 0.0,
+        "maximum_recovery_primitive_error": 8.326672684688674e-17
+      },
+      "limitations": [
+        "The boost audit applies to the local material stress in flat spacetime.",
+        "Time reversal is an RHS equivariance audit of reversible subsystems rather than a long full-CCZ4 reversed trajectory.",
+        "Random recovery samples the registered interior box rather than proving global invertibility."
+      ]
+    },
+    {
+      "id": "NUL-LIM-005",
+      "title": "Noether-current and total stress-energy accounting",
+      "status": "QUALIFIED",
+      "statement": "At the audited states, canonical scalar and Proca exchanges cancel between sectors, while the periodic production equations introduce no spurious source into total stress-energy, baryon number, or carrier charge.",
+      "domain": "The seeded homogeneous scalar states, constraint-compatible periodic Proca configuration, and nonhomogeneous periodic production state registered by NUL-LIM-005.",
+      "evidence": [
+        "experiments/audit_nulloth_noether_accounting.py",
+        "runs/nulloth_master/NUL-LIM-005-37a750db8de75176/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIM-005"
+      ],
+      "metrics": {
+        "scalar_exchange_samples": 128,
+        "maximum_scalar_material_energy_exchange_residual": 1.734723475976807e-18,
+        "proca_energy_exchange_residual": 5.381108809180449e-13,
+        "maximum_proca_momentum_exchange_residual": 1.330517333244629e-13,
+        "maximum_initial_gauss_constraint": 0.0,
+        "maximum_periodic_total_balance_residual": 3.2358155010822265e-18
+      },
+      "limitations": [
+        "The scalar exchange audit is homogeneous and local in flat spacetime.",
+        "The Proca exchange derivative is evaluated on one smooth periodic configuration.",
+        "The total-balance audit is instantaneous and periodic; finite boundaries and long trajectories remain separate obligations."
+      ]
+    },
+    {
+      "id": "NUL-LIM-002",
+      "title": "Theory 3.3 production limit",
+      "status": "REGRESSED",
+      "statement": "On the smallest real periodic grid, initialization, primitive recovery, and the first 24 right-hand-side groups reproduce the Theory 3.3 production system when scalar couplings and scalar amplitude vanish.",
+      "domain": "PeriodicGrid with shape (4,), length 2, finite-difference order two, zero scalar amplitude, and disabled scalar couplings.",
+      "evidence": [
+        "experiments/NULLOTH_01_INTEGRATION_REPORT.md",
+        "tests/test_nulloth.py",
+        "runs/nulloth_master/NUL-LIM-001-e1bcdecde77d89d0/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIM-001"
+      ],
+      "metrics": {
+        "compared_rhs_groups": 24,
+        "rhs_max_abs_error": 0.0,
+        "minimum_scalar_amplitude_scaling_order": 2.0000021603881324
+      },
+      "limitations": [
+        "A nonzero uncoupled scalar still contributes canonical stress-energy."
+      ]
+    },
+    {
+      "id": "NUL-MOD-001",
+      "title": "Homogeneous scalarization growth",
+      "status": "QUALIFIED",
+      "statement": "The frozen homogeneous condensed branch grows at the linear rate predicted by its negative effective mass squared.",
+      "domain": "The homogeneous frozen-material regression configuration documented by the integration report.",
+      "evidence": [
+        "experiments/NULLOTH_01_INTEGRATION_REPORT.md",
+        "experiments/run_nulloth_homogeneous_growth.py",
+        "tests/test_nulloth.py",
+        "runs/nulloth_master/NUL-MOD-001-0028df3f98f940c0/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-MOD-001"
+      ],
+      "metrics": {
+        "effective_mass_squared": -0.32000000000000006,
+        "predicted_growth_rate": 0.5656854249492381,
+        "measured_growth_rate": 0.5656854249492044,
+        "relative_error": 5.97e-14
+      },
+      "limitations": [
+        "Frozen homogeneous material is a linear validation, not a nonlinear spell qualification."
+      ]
+    },
+    {
+      "id": "NUL-CHR-001",
+      "title": "Initial activation-domain characteristic qualification",
+      "status": "QUALIFIED",
+      "statement": "The coupled material, scalar, and two-Proca symbol remained causal and strongly hyperbolic throughout the explicitly sampled activation-capable box.",
+      "domain": "The 216 boundary states and 1024 seeded three-dimensional states declared in the integration report.",
+      "evidence": [
+        "experiments/NULLOTH_01_INTEGRATION_REPORT.md",
+        "experiments/qualify_nulloth_discovery_domain.py",
+        "experiments/audit_nulloth_coupled_symbol.py",
+        "runs/nulloth_master/NUL-CHR-001-ac2ed23b575da3b5/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-001"
+      ],
+      "metrics": {
+        "samples": 1240,
+        "failures": 0,
+        "activated_samples": 1240,
+        "maximum_eigenvector_condition": 54.96192298069045,
+        "maximum_constraint_reduced_condition": 3.437746343039567,
+        "maximum_eigenspace_residual": 9.708635292093976e-15,
+        "minimum_legendre_eigenvalue": 0.25839746689845,
+        "minimum_thermodynamic_eigenvalue": 0.12324473272469352,
+        "minimum_effective_mass_squared": -0.5332859049463868
+      },
+      "limitations": [
+        "This is a sampled-domain qualification, not a global proof.",
+        "The reported symbol does not yet constitute the requested CCZ4-inclusive characteristic atlas."
+      ]
+    },
+    {
+      "id": "NUL-CHR-002",
+      "title": "CCZ4-inclusive principal composition",
+      "status": "QUALIFIED",
+      "statement": "At the audited state, the regular CCZ4 algebraic and pseudo-differential reductions leave a complete 23-variable gravitational, gauge, and constraint block which composes with the 25-variable Nulloth physical block into a complete 48-variable characteristic basis.",
+      "domain": "The deterministic nonzero-coupling state, harmonic slicing, Gamma-driver shift, and Fourier ladder registered by NUL-CHR-002.",
+      "evidence": [
+        "experiments/audit_nulloth_ccz4_composition.py",
+        "experiments/nulloth_master/corrections/NUL-CHR-002-CR-001.md",
+        "runs/nulloth_master/NUL-CHR-002-4942f745d05abc3f/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CHR-002-ff54097f25f47011/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-002"
+      ],
+      "metrics": {
+        "ccz4_reduced_variables": 23,
+        "nulloth_physical_variables": 25,
+        "composed_principal_variables": 48,
+        "ccz4_eigenvector_condition": 33.927390496504415,
+        "ccz4_maximum_gauge_speed": 1.1547005387263132,
+        "nulloth_physical_maximum_speed": 1.0,
+        "composed_eigenvector_rank": 48,
+        "composed_eigenvector_condition": 33.927390485351204,
+        "composed_maximum_eigenspace_residual": 7.637207550152257e-11,
+        "composed_spectrum_union_error": 4.518280359883027e-16,
+        "minimum_cross_block_decay_order": 0.9968909794934206,
+        "highest_mode_cross_block_fraction": 0.24960391119776326
+      },
+      "limitations": [
+        "The production cross-block scaling is measured at one nonzero-coupling state in one coordinate direction.",
+        "The direct-sum conclusion uses minimal coupling; a non-minimal metric-derivative interaction would require a new audit.",
+        "The Gamma-driver coordinate gauge speed exceeds unity while the physical Nulloth sector remains causal; coordinate gauge speed is not a material signal speed.",
+        "The adaptive all-direction state-space atlas remains unfinished."
+      ]
+    },
+    {
+      "id": "NUL-CHR-003",
+      "title": "Near-uniform directional characteristic coverage",
+      "status": "QUALIFIED",
+      "statement": "At the audited boundary and interior states, Nulloth retains causal, complete characteristic bases over near-uniform spherical propagation coverage.",
+      "domain": "The twelve boundary and seeded interior states and 256-direction Fibonacci sphere registered by NUL-CHR-003.",
+      "evidence": [
+        "experiments/scan_nulloth_direction_sphere.py",
+        "runs/nulloth_master/NUL-CHR-003-ff864a29fd3d715b/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-003"
+      ],
+      "metrics": {
+        "states": 12,
+        "directions_per_state": 256,
+        "samples": 3072,
+        "failures": 0,
+        "activated_samples": 3072,
+        "approximate_covering_radius_radians": 0.15552091707264187,
+        "maximum_absolute_speed": 1.0,
+        "maximum_eigenvector_condition": 54.55280564527796,
+        "maximum_constraint_reduced_condition": 3.3360128721916418,
+        "maximum_eigenspace_residual": 9.103039224112986e-15,
+        "maximum_characteristic_multiplicity": 7,
+        "minimum_distinct_characteristic_families": 8
+      },
+      "limitations": [
+        "A finite spherical mesh does not prove every continuum direction; the estimated largest angular hole is part of the declared scope.",
+        "The scan covers twelve registered states rather than the complete thermodynamic box.",
+        "Coupling parameters are fixed to the discovery parameter set."
+      ]
+    },
+    {
+      "id": "NUL-CHR-004",
+      "title": "Adaptive state-space characteristic margins",
+      "status": "QUALIFIED",
+      "statement": "At the audited states, the discovery box retains finite constitutive and characteristic margins under adaptive refinement toward its most hazardous thermodynamic, counterflow, coherence, and modal regions.",
+      "domain": "The five-dimensional box and four propagation orientations registered by NUL-CHR-004.",
+      "evidence": [
+        "experiments/map_nulloth_adaptive_state_atlas.py",
+        "runs/nulloth_master/NUL-CHR-004-019e829eb2296967/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-004"
+      ],
+      "metrics": {
+        "sampled_states": 832,
+        "symbol_evaluations": 3328,
+        "failures": 0,
+        "activated_states": 832,
+        "maximum_absolute_speed": 1.0000000000000018,
+        "maximum_eigenvector_condition": 54.96192298069045,
+        "maximum_constraint_reduced_condition": 3.437746343039567,
+        "maximum_eigenspace_residual": 1.0935472939981105e-14,
+        "minimum_legendre_eigenvalue": 0.25839746689845,
+        "minimum_thermodynamic_eigenvalue": 0.12324473272469352,
+        "minimum_distinct_mode_gap": 0.008714036938829883,
+        "minimum_effective_mass_squared": -0.5332859049463868,
+        "maximum_effective_mass_squared": -0.013263534432530394
+      },
+      "limitations": [
+        "Adaptive priority refinement supplies sampled evidence and does not enclose every unsampled point.",
+        "The campaign fixes scalar couplings to the discovery parameter set.",
+        "The carrier counterflow is represented along one axis; rotational covariance and the separate direction-sphere campaign support equivalent rotated configurations.",
+        "No failure surface lies inside the registered box, so the actual convexity and hyperbolicity boundaries require an expanded-envelope campaign."
+      ]
+    },
+    {
+      "id": "NUL-CHR-005",
+      "title": "Expanded-envelope denial surfaces",
+      "status": "PROSCRIBED",
+      "statement": "Along the audited rays outside the qualified discovery box, Nulloth reaches separately identifiable production caps, superluminal onset, complex-mode onset, and condition-number denial surfaces.",
+      "domain": "The thirteen outward state-space rays and expanded envelope registered by NUL-CHR-005.",
+      "evidence": [
+        "experiments/locate_nulloth_admissibility_boundaries.py",
+        "experiments/nulloth_master/corrections/NUL-CHR-005-CR-001.md",
+        "runs/nulloth_master/NUL-CHR-005-d388198d44d63bd5/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CHR-005-b0c4808240f050c8/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-005"
+      ],
+      "metrics": {
+        "rays": 13,
+        "safe_starting_points": 13,
+        "physically_proscribed_rays": 6,
+        "production_proscribed_rays": 8,
+        "superluminal_rays": 1,
+        "complex_mode_rays": 2,
+        "ill_conditioned_rays": 3,
+        "amplitude_cap_rays": 5,
+        "relative_lorentz_cap_rays": 2,
+        "central_carrier_superluminal_boundary": 0.023096061889082198,
+        "central_coherence_condition_boundary": 0.20536348521709444,
+        "production_coherence_cap": 0.17000000029802323,
+        "production_counterflow_speed_cap": 0.8660254038870335,
+        "maximum_boundary_bracket_width": 9.313225746154785e-10
+      },
+      "limitations": [
+        "The denial surfaces are one-dimensional ray crossings, not yet closed multidimensional boundary meshes.",
+        "The exact Legendre and thermodynamic zero surfaces lie beyond precursor characteristic gates on the audited rays and remain to be isolated.",
+        "No physical failure was found before the expanded endpoints of the isolated density, internal-energy, high-carrier, or counterflow rays; this does not qualify the full expanded envelope.",
+        "Boundary verification currently uses binary64 and requires the registered higher-precision follow-up."
+      ]
+    },
+    {
+      "id": "NUL-CHR-006",
+      "title": "Analytic convexity bounds",
+      "status": "DERIVED",
+      "statement": "Explicit sufficient Legendre and thermodynamic inequalities protect the discovery box and order its central production, characteristic, thermodynamic-zero, and Legendre-zero denial surfaces.",
+      "domain": "The canonical discovery parameter set, registered state box, and central homogeneous state declared by NUL-CHR-006.",
+      "evidence": [
+        "experiments/derive_nulloth_admissibility_bounds.py",
+        "experiments/nulloth_master/NULLOTH_ADMISSIBILITY_BOUNDS.md",
+        "runs/nulloth_master/NUL-CHR-006-fc74ecf25503fa08/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-006"
+      ],
+      "metrics": {
+        "precision_decimal_digits": 80,
+        "thermodynamic_sufficient_lower_bound_at_cap": 0.11870679012345679,
+        "legendre_sufficient_lower_bound_at_cap": 0.1875637836325276,
+        "global_thermodynamic_guaranteed_amplitude": 0.1999063457268485,
+        "global_legendre_guaranteed_amplitude": 0.210715778106871,
+        "central_condition_denial_amplitude": 0.20536348521709444,
+        "central_thermodynamic_zero_amplitude": 0.20536350922158442,
+        "central_legendre_zero_amplitude": 0.223878303178276,
+        "condition_to_thermodynamic_gap": 2.400448998527252e-8
+      },
+      "limitations": [
+        "The box-wide formulas are sufficient lower bounds and need not equal the true minimum eigenvalues.",
+        "They use the discovery slice with zero ordinary entrainment and zero scalar baryon coupling; other coupling domains require their own inequalities.",
+        "The exact determinant zeros are located on the central homogeneous state rather than a complete multidimensional surface mesh."
+      ]
+    },
+    {
+      "id": "NUL-CHR-007",
+      "title": "Scalar-coupling characteristic atlas",
+      "status": "OBSERVED",
+      "statement": "Across the audited coupling envelope, joint variation of all three scalar couplings and coherence amplitude separates qualified points from thermodynamically proscribed and complex-mode points while retaining the canonical and decoupled controls.",
+      "domain": "The four-dimensional coupling envelope, five material probes, and four directions registered by NUL-CHR-007.",
+      "evidence": [
+        "experiments/map_nulloth_scalar_coupling_atlas.py",
+        "runs/nulloth_master/NUL-CHR-007-dfe959a9453a080b/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-007"
+      ],
+      "metrics": {
+        "coupling_points": 545,
+        "symbol_evaluations": 10900,
+        "qualified_points": 489,
+        "proscribed_points": 56,
+        "activated_points": 543,
+        "thermodynamic_failure_points": 46,
+        "complex_mode_failure_points": 10,
+        "canonical_point_failures": 0,
+        "zero_coupling_point_failures": 0,
+        "qualified_maximum_condition": 11786071.706676004,
+        "qualified_maximum_reduced_condition": 106321.0507201693,
+        "qualified_minimum_legendre": 0.25839746689845,
+        "qualified_minimum_thermodynamic": 0.007264778008046803
+      },
+      "limitations": [
+        "The adaptive points do not form a closed certified boundary mesh.",
+        "Only five material states and four propagation directions are tested at each coupling point.",
+        "The broad envelope is classified pointwise; only the canonical discovery coupling domain currently carries full state-space qualification.",
+        "The nearest qualified and proscribed adaptive points identify a refinement target, not an analytic global coupling bound."
+      ]
+    },
+    {
+      "id": "NUL-CHR-008",
+      "title": "Runtime admissibility guard",
+      "status": "QUALIFIED",
+      "statement": "At the audited states, an opt-in local-frame runtime guard correctly classifies safe, approaching, and denied Nulloth states without modifying the evolution equations.",
+      "domain": "The flat, curved-frame, denial-control, and real production-recovery states registered by NUL-CHR-008.",
+      "evidence": [
+        "experiments/audit_nulloth_runtime_guard.py",
+        "src/causal_repair/nulloth_guard.py",
+        "tests/test_nulloth_guard.py",
+        "runs/nulloth_master/NUL-CHR-008-caca36a060e6185d/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-008"
+      ],
+      "metrics": {
+        "direction_count": 18,
+        "safe_status_correct": 1,
+        "watch_status_correct": 1,
+        "amplitude_deny_status_correct": 1,
+        "superluminal_deny_status_correct": 1,
+        "enforce_raised_on_deny": 1,
+        "production_recovery_status_correct": 1,
+        "frame_status_agreement": 1,
+        "frame_maximum_metric_speed_error": 2.168404344971009e-19,
+        "production_symbol_evaluations": 72
+      },
+      "limitations": [
+        "The guard samples at most sixteen cells and eighteen directions per cell by default; it is not a continuum proof.",
+        "It is opt-in because a complete symbol evaluation at every cell and step is expensive.",
+        "WATCH thresholds are operational margins chosen inside hard physical gates and may be tightened for a campaign.",
+        "The guard diagnoses but does not repair or project a denied state."
+      ]
+    },
+    {
+      "id": "NUL-CHR-009",
+      "title": "Vector-target mismatch orientation",
+      "status": "DERIVED",
+      "statement": "At the audited configurations, Proca masses, mixing, and target-current mismatch are lower-order orientation-dependent forcing and do not deform the canonical principal block.",
+      "domain": "The Proca parameter sets, numerical field Jacobians, and target-current orientation sphere registered by NUL-CHR-009.",
+      "evidence": [
+        "experiments/audit_nulloth_vector_target_orientation.py",
+        "experiments/nulloth_master/corrections/NUL-CHR-009-CR-001.md",
+        "runs/nulloth_master/NUL-CHR-009-e75d77e6a4b52647/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CHR-009-b8b84f93aca7842d/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-009"
+      ],
+      "metrics": {
+        "target_orientations": 128,
+        "proca_parameter_sets": 4,
+        "field_variables": 16,
+        "maximum_principal_block_variation": 0.0,
+        "maximum_principal_spectrum_variation": 0.0,
+        "maximum_source_orientation_field_jacobian_error": 4.533062814005007e-11,
+        "maximum_power_projection_error": 0.0,
+        "maximum_force_projection_error": 0.0,
+        "longitudinal_power": 0.008400000000000001,
+        "transverse_power": 0.0
+      },
+      "limitations": [
+        "The exact principal independence follows from derivative order; the numerical Jacobian samples one smooth periodic field configuration.",
+        "Orientation-dependent Lorentz forcing is local and does not qualify a nonlinear controlled trajectory.",
+        "The orientation sphere is finite and its nearest electric-axis mismatch angle is 0.1203 radians."
+      ]
+    },
+    {
+      "id": "NUL-CHR-010",
+      "title": "High-precision denial surfaces",
+      "status": "QUALIFIED",
+      "statement": "Across the audited surfaces and planes, carrier-dependent characteristic and exact convexity boundaries preserve the production safety ordering and delimit distinct low-carrier superluminal, high-coherence convexity, and counterflow-dependent complex or ill-conditioned regions.",
+      "domain": "The coherence surface, thermodynamic mesh, and carrier-coherence plane registered by NUL-CHR-010.",
+      "evidence": [
+        "experiments/map_nulloth_boundary_surfaces.py",
+        "experiments/nulloth_master/corrections/NUL-CHR-010-CR-001.md",
+        "runs/nulloth_master/NUL-CHR-010-50a1a22c3507dbae/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CHR-010-11221d4e802e8eaf/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CHR-010-8d80a385de6ccd9f/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-CHR-010"
+      ],
+      "metrics": {
+        "precision_decimal_digits": 80,
+        "coherence_surface_points": 17,
+        "carrier_causal_surface_points": 25,
+        "carrier_coherence_grid_cells": 961,
+        "counterflow_coherence_grid_cells": 961,
+        "safe_grid_cells": 1486,
+        "superluminal_grid_cells": 29,
+        "complex_or_ill_conditioned_grid_cells": 4,
+        "thermodynamic_grid_cells": 131,
+        "legendre_grid_cells": 272,
+        "failed_region_components": 3,
+        "maximum_characteristic_bracket_width": 2.6775526240641057e-11,
+        "minimum_condition_margin_above_production_cap": 0.03093230444993722,
+        "minimum_thermodynamic_to_legendre_gap": 0.017806435645694813,
+        "minimum_qualified_carrier_density": 0.012682315887650477,
+        "maximum_qualified_carrier_density": 0.03451842779177243
+      },
+      "limitations": [
+        "The surfaces are low-dimensional slices through a larger state and coupling space.",
+        "Connected components are defined on finite four-neighbor grids and may merge or split under further refinement.",
+        "Characteristic boundary bisections use binary64, while exact convexity determinant roots use 80-digit arithmetic.",
+        "The complex or ill-conditioned category still combines two nearby numerical denial mechanisms on the coarse plane; trajectory guards report the underlying metrics separately."
+      ]
+    },
+    {
+      "id": "NUL-LIN-001",
+      "title": "Canonical branch-resolved linear spectrum",
+      "status": "QUALIFIED",
+      "statement": "The canonical frozen equations possess separately identified material acoustic and contact, scalar coherence and reduction-constraint, mixed-Proca, cleaning, gravitational tensor, coordinate-gauge, and formulation-constraint branches around the registered homogeneous equilibria.",
+      "domain": "The three homogeneous zero-flow equilibria, Fourier modes, vector parameters, harmonic CCZ4 gauge, and three spectral resolutions registered by NUL-LIN-001.",
+      "evidence": [
+        "experiments/audit_nulloth_linear_spectrum.py",
+        "experiments/nulloth_master/NULLOTH_LINEAR_SPECTRUM.md",
+        "tests/test_nulloth_linear_spectrum.py",
+        "runs/nulloth_master/NUL-LIN-001-9e3795aeec0b7357/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIN-001"
+      ],
+      "metrics": {
+        "equilibria_audited": 3,
+        "branch_families_identified": 7,
+        "material_modes_per_equilibrium": 8,
+        "scalar_physical_modes": 2,
+        "scalar_reduction_constraint_modes": 3,
+        "proca_physical_modes": 12,
+        "proca_cleaning_modes": 4,
+        "ccz4_gravitational_tensor_modes": 4,
+        "ccz4_gamma_driver_modes": 2,
+        "ccz4_gauge_constraint_modes": 17,
+        "maximum_scalar_dispersion_error": 2.0455748206416047e-11,
+        "maximum_vector_dispersion_error": 1.0219982327368713e-14,
+        "maximum_ccz4_principal_frequency_error": 3.470617127021569e-10,
+        "maximum_resolution_spectrum_change": 1.3973822099554792e-11,
+        "maximum_spurious_real_growth": 1.2073675392798577e-15,
+        "finite_volume_critical_length": 13.135658776307194,
+        "finite_volume_unstable_mode_count": 3
+      },
+      "limitations": [
+        "The branchwise frozen operator does not yet measure finite-amplitude or background-gradient mixing.",
+        "Material drag and the exact vector damping split are reserved for a dedicated relaxation campaign.",
+        "The CCZ4 audit identifies the residual gauge and constraint family collectively except for the transverse-traceless and Gamma-driver modes.",
+        "Finite boundaries and nonlinear gravitational backreaction are outside this campaign."
+      ]
+    },
+    {
+      "id": "NUL-LIN-002",
+      "title": "Atlas-wide growth and multidimensional coherence",
+      "status": "QUALIFIED",
+      "statement": "The qualified characteristic atlas contains distinct local coherence-growth and coherence-oscillation regions; periodic volume selects the admitted unstable wavelengths; and canonical coherence growth is isotropic for the registered oblique and fully three-dimensional modes.",
+      "domain": "The 832 states reconstructed from NUL-CHR-004, four periodic lengths, three multidimensional wavevectors, and three spectral resolutions registered by NUL-LIN-002.",
+      "evidence": [
+        "experiments/map_nulloth_linear_growth_atlas.py",
+        "experiments/nulloth_master/NULLOTH_LINEAR_CANDIDATES.md",
+        "tests/test_nulloth_linear_atlas.py",
+        "runs/nulloth_master/NUL-LIN-002-8f06b25f9c395b6f/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIN-002"
+      ],
+      "metrics": {
+        "sampled_states": 832,
+        "characteristic_failures": 0,
+        "locally_growing_states": 16,
+        "locally_oscillatory_states": 816,
+        "maximum_growth_rate": 0.456609006357168,
+        "minimum_scalar_curvature": -0.2084917846864803,
+        "maximum_scalar_curvature": 3.82673646556747,
+        "maximum_condensed_frequency": 1.0327496356294559,
+        "states_with_nonhomogeneous_instability_L8": 0,
+        "states_with_nonhomogeneous_instability_L16": 8,
+        "states_with_nonhomogeneous_instability_L32": 16,
+        "states_with_nonhomogeneous_instability_L64": 16,
+        "maximum_multidimensional_dispersion_error": 5.580536256551949e-13,
+        "maximum_directional_growth_difference": 3.748390486890685e-13,
+        "candidate_mechanisms_registered": 3
+      },
+      "limitations": [
+        "The atlas classifies local frozen curvature; it does not evolve every state to nonlinear saturation.",
+        "Periodic mode selection is not a finite-wall boundary qualification.",
+        "The multidimensional audit covers canonical scalar waves on homogeneous backgrounds, not anisotropic flowing backgrounds.",
+        "The three registered mechanisms remain candidates and carry no spell status."
+      ]
+    },
+    {
+      "id": "NUL-LIN-003",
+      "title": "Mode mixing and lower-order relaxation",
+      "status": "QUALIFIED",
+      "statement": "The registered mixed-Proca crossing, cleaning, electric-damping, and carrier-drag operators exhibit the predicted mode rotation and decay while the production drag split conserves energy and momentum and increases entropy.",
+      "domain": "The vector mass sweep, damping matrices, cleaning parameters, homogeneous carrier state, and relaxation-time sweep registered by NUL-LIN-003.",
+      "evidence": [
+        "experiments/audit_nulloth_mixing_and_relaxation.py",
+        "experiments/nulloth_master/NULLOTH_MIXING_DAMPING.md",
+        "tests/test_nulloth_linear_atlas.py",
+        "runs/nulloth_master/NUL-LIN-003-e29fd1e04966e88a/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-LIN-003"
+      ],
+      "metrics": {
+        "mass_samples": 81,
+        "exact_crossings_detected": 1,
+        "avoided_crossings_detected": 1,
+        "uncoupled_minimum_mass_squared_gap": 5.551115123125783e-17,
+        "coupled_minimum_mass_squared_gap": 0.09999999999999995,
+        "maximum_mode_mixing_fraction": 0.4999999999999996,
+        "cleaning_damping_samples": 4,
+        "maximum_cleaning_dispersion_error": 7.119291619286993e-15,
+        "electric_damping_modes": 6,
+        "maximum_electric_damping_error": 1.1102230246251565e-16,
+        "minimum_irreversible_heat": 0.0,
+        "maximum_carrier_drag_decay_error": 1.1102230246251565e-16,
+        "carrier_drag_monotonic_with_inverse_relaxation_time": 1,
+        "minimum_drag_entropy_change": 0.0002728349545419562,
+        "maximum_drag_energy_conservation_error": 0.0,
+        "maximum_drag_momentum_conservation_error": 0.0
+      },
+      "limitations": [
+        "The avoided crossing is a vector normal-mode result and does not demonstrate nonlinear transfer between scalar and material branches.",
+        "Electric damping is audited in the frozen-fluid local step used by production.",
+        "Carrier drag is homogeneous and above the production map's small-counterflow inactivity threshold.",
+        "Dissipation is lower order and does not extend the principal-symbol qualification domain."
+      ]
+    },
+    {
+      "id": "NUL-NLN-001",
+      "title": "Homogeneous nonlinear phases and basins",
+      "status": "QUALIFIED",
+      "statement": "The activated homogeneous coherence sector has bounded conservative quartic turnover, a continuous two-branch symmetry-breaking transition without hysteresis, and two sign basins separated by the symmetric stationary state.",
+      "domain": "The homogeneous frozen-material carrier densities, growing-mode seeds, density sweeps, basin seeds, durations, and time steps registered by NUL-NLN-001.",
+      "evidence": [
+        "experiments/map_nulloth_homogeneous_nonlinear_phases.py",
+        "experiments/nulloth_master/NULLOTH_HOMOGENEOUS_PHASES.md",
+        "tests/test_nulloth_nonlinear_phases.py",
+        "runs/nulloth_master/NUL-NLN-001-f56957c25f9bac26/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-NLN-001"
+      ],
+      "metrics": {
+        "turnover_runs": 15,
+        "bounded_turnover_runs": 15,
+        "maximum_turnover_amplitude": 0.14579273435485204,
+        "minimum_turnover_time": 3.6620000000000004,
+        "maximum_turnover_time": 13.120000000000001,
+        "maximum_turnover_amplitude_error": 2.7050831657993157e-8,
+        "turnover_time_relative_change_fine_pair": 1.166200656118862e-16,
+        "activation_carrier_density": 0.11547005383792516,
+        "maximum_hysteresis_branch_difference": 0.0,
+        "stable_basin_count": 2,
+        "basin_boundary_stationary": 1,
+        "basin_sign_failures": 0,
+        "metastable_lifetime_lower_bound": 100.0,
+        "maximum_energy_drift": 7.149716169314087e-16,
+        "blowup_runs": 0,
+        "first_order_transition_detected": 0
+      },
+      "limitations": [
+        "This is the exact homogeneous scalar reduction with frozen material, not a full production evolution.",
+        "Turnover is conservative oscillation and must not be described as dissipative settling.",
+        "The 100-unit basin lifetime is a lower bound inside the reduced sector only.",
+        "Localized radiation, matter transport, vector damping, and gravitational backreaction remain outside this claim."
+      ]
+    },
+    {
+      "id": "NUL-NLN-002",
+      "title": "Traveling walls and controlled collisions",
+      "status": "QUALIFIED",
+      "statement": "The frozen-material canonical coherence PDE supports bounded traveling wall-antiwall structures whose registered collision survives without annihilation, conserves scalar energy, embeds planarly in two and three dimensions, and shows no growing grid-scale spectral pileup.",
+      "domain": "The carrier density, periodic wall pair, incoming speed, duration, three longitudinal resolutions, and planar dimensional embeddings registered by NUL-NLN-002.",
+      "evidence": [
+        "experiments/map_nulloth_wall_collisions.py",
+        "experiments/nulloth_master/NULLOTH_WALL_COLLISIONS.md",
+        "tests/test_nulloth_walls.py",
+        "runs/nulloth_master/NUL-NLN-002-f258bde196d30084/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-NLN-002"
+      ],
+      "metrics": {
+        "wall_thickness": 2.9565619799454135,
+        "vacuum_amplitude": 0.06764613810115104,
+        "controlled_collisions": 5,
+        "maximum_speed_error": 0.0021888059777531166,
+        "maximum_energy_relative_drift": 1.242949311219616e-10,
+        "maximum_constraint_l2": 6.885585817490322e-16,
+        "high_wavenumber_fraction_64": 9.514724184348271e-7,
+        "high_wavenumber_fraction_96": 6.144355645144359e-7,
+        "high_wavenumber_fraction_128": 4.7475050165887506e-7,
+        "high_wavenumber_fraction_change_96_to_128": 1.396850628555608e-7,
+        "maximum_dimensional_embedding_error": 0.0,
+        "bounded_runs": 5,
+        "annihilation_runs": 0
+      },
+      "limitations": [
+        "Material and gravity are frozen, so this claim does not establish survival under full production backreaction.",
+        "Only one incoming speed, initial separation, and planar wall orientation are tested.",
+        "The two- and three-dimensional runs are exact planar embeddings and do not test transverse instability.",
+        "Wall survival is an observed free evolution, not a controlled useful effect or a spell."
+      ]
+    },
+    {
+      "id": "NUL-NLN-003",
+      "title": "Low-resolution full-production nonlinear regimes",
+      "status": "OBSERVED",
+      "statement": "At the registered low resolution, complete Nulloth production evolution distinguishes scalar-free, sustained-coherence, and nonlinear-turnover outcomes while preserving number, field constraints, constitutive admissibility, and nondecreasing complete-step entropy through six time units.",
+      "domain": "The four constraint-solved, carrier-modulated, one-dimensional periodic production trajectories registered by NUL-NLN-003.",
+      "evidence": [
+        "experiments/map_nulloth_production_regimes.py",
+        "experiments/nulloth_master/NULLOTH_PRODUCTION_REGIMES.md",
+        "runs/nulloth_master/NUL-NLN-003-bfbbb052f7cfc767/attempt-001/run_record.json",
+        "tests/test_nulloth_production_regimes.py"
+      ],
+      "campaigns": [
+        "NUL-NLN-003"
+      ],
+      "metrics": {
+        "attempted_runs": 4,
+        "completed_runs": 4,
+        "denied_runs": 0,
+        "distinct_outcomes": 3,
+        "scalar_free_runs": 1,
+        "nonlinear_turnover_runs": 2,
+        "sustained_coherence_runs": 1,
+        "maximum_peak_amplitude": 0.13929293595591702,
+        "maximum_high_wavenumber_fraction": 0.11634856714983485,
+        "maximum_number_relative_drift": 7.401485794770728e-16,
+        "maximum_combined_energy_relative_change": 0.05212536375443782,
+        "minimum_entropy_change": 0.15632792929067563,
+        "minimum_step_entropy_change": 0.00010669083726355666,
+        "maximum_entropy_telescope_error": 0.0,
+        "maximum_gravitational_constraint_l2": 1.2079563721834248e-05,
+        "maximum_field_constraint_l2": 3.6799042000400975e-18,
+        "minimum_legendre": 0.33086722346505215,
+        "minimum_thermodynamic": 0.25014511293770225,
+        "maximum_recovery_residual": 2.5782575813404025e-10,
+        "maximum_projection_stage_sum_to_net_entropy_ratio": 2.4704928116843066,
+        "metastable_lifetime_lower_bound": 5.9999999999999165
+      },
+      "limitations": [
+        "This is a four-point reconnaissance atlas and the regime boundaries are not converged.",
+        "The coordinate combined-energy integral changes under evolving periodic geometry and is not a global gravitational energy.",
+        "Internal-stage manifold-projection corrections do not form an additive physical entropy channel, so the decomposed entropy budget remains open.",
+        "A coherence-amplitude 0.12 stress seed remains unclassified because its production recovery cost exceeded the multi-regime process window.",
+        "No turbulent, collapse, or finite-boundary conclusion follows from this campaign."
+      ]
+    },
+    {
+      "id": "NUL-NLN-004",
+      "title": "High-amplitude production dispersal edge",
+      "status": "OBSERVED",
+      "statement": "A preloaded mode-one coherence amplitude of 0.12 disperses below half its initial amplitude within three time units of low-resolution full-production evolution without encountering a recovery, admissibility, entropy, or constraint denial.",
+      "domain": "The single four-point, constraint-solved, carrier-modulated, one-dimensional periodic stress trajectory registered by NUL-NLN-004.",
+      "evidence": [
+        "experiments/map_nulloth_stress_edge.py",
+        "experiments/nulloth_master/NULLOTH_STRESS_EDGE.md",
+        "runs/nulloth_master/NUL-NLN-004-58bf16c1a640a598/attempt-002/run_record.json",
+        "tests/test_nulloth_production_regimes.py"
+      ],
+      "campaigns": [
+        "NUL-NLN-004"
+      ],
+      "metrics": {
+        "completed": 1,
+        "final_time": 2.99999999999998,
+        "peak_amplitude": 0.12,
+        "final_amplitude": 0.049534981352079024,
+        "peak_to_final_drop_fraction": 0.5872084887326747,
+        "maximum_high_wavenumber_fraction": 0.48455160545581843,
+        "baryon_relative_drift": 1.8503714754353947e-16,
+        "carrier_relative_drift": 0.0,
+        "entropy_change": 0.11190942564340389,
+        "minimum_step_entropy_change": 0.00024683693292359976,
+        "entropy_telescope_error": 0.0,
+        "maximum_hamiltonian_l2": 7.993565395083062e-06,
+        "maximum_momentum_l2": 4.818626564187994e-06,
+        "maximum_field_constraint_l2": 8.467889666272201e-19,
+        "minimum_legendre": 0.4016633771934195,
+        "minimum_thermodynamic": 0.31904156343516255,
+        "maximum_recovery_residual": 1.2936464612997764e-10,
+        "combined_energy_relative_change": 0.02521690170973723
+      },
+      "limitations": [
+        "This is a single coarse-grid stress trajectory, not a converged dispersal boundary.",
+        "High-wavenumber occupation reaches the coarse grid's terminal band, so no turbulent or continuum-cascade inference is permitted.",
+        "The three-unit horizon does not establish the long-time endpoint or metastable lifetime.",
+        "Collapse, blow-up, finite-boundary, and strong-gravity behavior remain untested."
+      ]
+    },
+    {
+      "id": "NUL-NLN-005",
+      "title": "Complete-step counterflow entropy budget",
+      "status": "OBSERVED",
+      "statement": "For an active counterflow, complete-step net entropy separates into physical implicit-drag entropy and a positive spatially convergent finite-volume/projection remainder; raw provisional-stage projection sums are nonadditive overcounts.",
+      "domain": "The five periodic time-step and spatial-resolution trajectories through time 0.1 registered by NUL-NLN-005.",
+      "evidence": [
+        "experiments/close_nulloth_entropy_budget.py",
+        "experiments/nulloth_master/NULLOTH_ENTROPY_BUDGET.md",
+        "runs/nulloth_master/NUL-NLN-005-a3e3446c30e5c763/attempt-001/run_record.json",
+        "tests/test_nulloth_entropy_budget.py"
+      ],
+      "campaigns": [
+        "NUL-NLN-005"
+      ],
+      "metrics": {
+        "time_net_relative_spread": 0.00047000590299505987,
+        "time_drag_relative_spread": 0.0009667437595195699,
+        "time_numerical_relative_spread": 0.003453978760092231,
+        "numerical_entropy_monotone_with_resolution": 1,
+        "coarse_to_medium_numerical_reduction": 1.6634552267536207,
+        "medium_to_fine_numerical_reduction": 1.856857242346128,
+        "coarse_numerical_entropy_fraction": 0.17479307456910106,
+        "fine_numerical_entropy_fraction": 0.06435279251563823,
+        "minimum_net_entropy_change": 0.004822559825427675,
+        "minimum_drag_entropy_change": 0.004512214633587675,
+        "minimum_numerical_entropy_change": 0.0003103451918399997,
+        "minimum_raw_projection_to_numerical_ratio": 3.0004352927664213,
+        "maximum_raw_projection_to_numerical_ratio": 3.0017738197361035,
+        "maximum_entropy_telescope_error": 0.0,
+        "maximum_gravitational_constraint_l2": 6.950673564596373e-08,
+        "maximum_field_constraint_l2": 6.371061790946282e-19,
+        "maximum_number_relative_drift": 1.850371642566198e-16,
+        "minimum_legendre": 0.5770590125623913,
+        "minimum_thermodynamic": 0.3697388112062413,
+        "maximum_recovery_residual": 5.6941490395604343e-11
+      },
+      "limitations": [
+        "The budget is closed for one periodic counterflow family and short duration.",
+        "The numerical remainder combines finite-volume entropy production and the retained final constitutive projection; it is not yet split further.",
+        "This does not close gravitational energy, global energy, finite-boundary entropy flux, or strong-field thermodynamics."
+      ]
+    },
+    {
+      "id": "NUL-NLN-006",
+      "title": "Twelve-unit full-production coherence trial",
+      "status": "OBSERVED",
+      "statement": "The small seed classified as sustained coherence at time six subsequently enters nonlinear turnover yet remains coherent and admissible through twelve units of complete production evolution.",
+      "domain": "The single four-point carrier-modulated periodic trajectory through time twelve registered by NUL-NLN-006, interpreted with its NUL-NLN-003 predecessor.",
+      "evidence": [
+        "experiments/measure_nulloth_long_horizon.py",
+        "experiments/nulloth_master/NULLOTH_LONG_HORIZON.md",
+        "runs/nulloth_master/NUL-NLN-006-739c3a7243293ecf/attempt-001/run_record.json",
+        "tests/test_nulloth_long_horizon.py"
+      ],
+      "campaigns": [
+        "NUL-NLN-006"
+      ],
+      "metrics": {
+        "completed": 1,
+        "transitioned_from_sustained_to_turnover": 1,
+        "coherence_lifetime_lower_bound": 11.999999999999833,
+        "retained_coherence_at_horizon": 1,
+        "peak_amplitude": 0.15432432664762807,
+        "final_amplitude": 0.14048800573620315,
+        "peak_to_final_drop_fraction": 0.08965741961743776,
+        "maximum_high_wavenumber_fraction": 0.09684474510206176,
+        "baryon_relative_drift": 9.25185724370286e-16,
+        "carrier_relative_drift": 7.709249260640699e-16,
+        "entropy_change": 0.21785924692975556,
+        "minimum_step_entropy_change": 0.00010195096616882893,
+        "entropy_telescope_error": 0.0,
+        "maximum_hamiltonian_l2": 1.1435826655153392e-05,
+        "maximum_momentum_l2": 1.9304797243407494e-05,
+        "maximum_field_constraint_l2": 1.4188143204038953e-18,
+        "minimum_legendre": 0.2728489261302839,
+        "minimum_thermodynamic": 0.19257033104081614,
+        "maximum_recovery_residual": 5.975373281008895e-10
+      },
+      "limitations": [
+        "This is one coarse-grid long-horizon trajectory with a larger time step than NUL-NLN-003.",
+        "Twelve units is a coherence-lifetime lower bound, not a measured decay lifetime or asymptotic endpoint.",
+        "The trajectory is periodic and does not support turbulence, collapse, finite-boundary, or radiation conclusions."
+      ]
+    },
+    {
+      "id": "NUL-GRV-001",
+      "title": "Weak-field Nulloth backreaction",
+      "status": "OBSERVED",
+      "statement": "An active coherence seed produces both constraint-solved and dynamical geometric contrasts against a scalar-free control, with the response scaling approximately linearly under a doubling of weak gravitational coupling.",
+      "domain": "The paired four-point, one-dimensional periodic trajectories at gravitational couplings 5e-4 and 1e-3 registered by NUL-GRV-001.",
+      "evidence": [
+        "experiments/measure_nulloth_weak_field_backreaction.py",
+        "experiments/nulloth_master/NULLOTH_WEAK_FIELD_BACKREACTION.md",
+        "runs/nulloth_master/NUL-GRV-001-559eeb3cf409e299/attempt-001/run_record.json",
+        "tests/test_nulloth_gravity.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-001"
+      ],
+      "metrics": {
+        "physical_metric_response_ratio": 1.9956322943474036,
+        "conformal_factor_response_ratio": 2.0025477343462827,
+        "conformal_A_response_ratio": 2.00267799177035,
+        "minimum_dynamical_physical_metric_contrast_l2": 2.010780613374732e-09,
+        "maximum_dynamical_physical_metric_contrast_l2": 4.092835558288786e-09,
+        "maximum_gravitational_constraint_l2": 2.1971199455383842e-06,
+        "maximum_field_constraint_l2": 2.3957709635677722e-21,
+        "maximum_number_relative_drift": 3.7007428989163973e-16,
+        "minimum_entropy_change": 0.014823025889647568,
+        "minimum_legendre": 0.5638842173902321,
+        "minimum_thermodynamic": 0.36912602245285225,
+        "maximum_recovery_residual": 5.8306513911684014e-11,
+        "low_kappa_final_physical_metric_contrast_l2": 1.642057140621442e-07,
+        "high_kappa_final_physical_metric_contrast_l2": 3.2769422589879054e-07
+      },
+      "limitations": [
+        "The campaign has one low spatial resolution and a short time horizon.",
+        "The contrasts are evaluated in one declared harmonic coordinate gauge and are not gauge-invariant observables.",
+        "One-dimensional periodic evolution does not qualify transverse-traceless gravitational radiation or asymptotic flux.",
+        "Strong curvature, collapse, horizons, finite boundaries, and AMR remain untested."
+      ]
+    },
+    {
+      "id": "NUL-GRV-002",
+      "title": "Short-horizon gauge robustness",
+      "status": "OBSERVED",
+      "statement": "The short-horizon active coherence amplitude and active-versus-control physical-metric contrast are robust between harmonic and 1+log slicing even though the coordinate lapse contrast changes substantially.",
+      "domain": "The paired four-point, one-dimensional periodic harmonic and 1+log trajectories at gravitational coupling 1e-3 registered by NUL-GRV-002.",
+      "evidence": [
+        "experiments/audit_nulloth_gauge_robustness.py",
+        "experiments/nulloth_master/NULLOTH_GAUGE_ROBUSTNESS.md",
+        "runs/nulloth_master/NUL-GRV-002-2a8c1ac485510215/attempt-001/run_record.json",
+        "tests/test_nulloth_gravity.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-002"
+      ],
+      "metrics": {
+        "scalar_amplitude_relative_spread": 0.0007110623904784244,
+        "physical_metric_contrast_relative_spread": 7.65763649383379e-05,
+        "lapse_contrast_relative_spread": 0.4990485533614281,
+        "maximum_gravitational_constraint_l2": 2.1971199455383842e-06,
+        "maximum_field_constraint_l2": 2.3957709635677722e-21,
+        "maximum_number_relative_drift": 6.167400110717922e-16,
+        "minimum_entropy_change": 0.014758783014286792,
+        "minimum_legendre": 0.5638842173902321,
+        "minimum_thermodynamic": 0.36912602245285225,
+        "maximum_recovery_residual": 5.8306513911684014e-11,
+        "harmonic_final_scalar_amplitude": 0.022401143179979106,
+        "one_plus_log_final_scalar_amplitude": 0.0223852145695601
+      },
+      "limitations": [
+        "This is a one-resolution, one-coupling, quarter-time-unit comparison.",
+        "Agreement of coordinate-profile norms is empirical gauge robustness in the declared trial, not proof of gauge invariance.",
+        "Shift evolution, strong curvature, radiation extraction, collapse, horizons, finite boundaries, and AMR remain untested."
+      ]
+    },
+    {
+      "id": "NUL-GRV-003",
+      "title": "Weak-field CCZ4 constraint and observable convergence",
+      "status": "OBSERVED",
+      "statement": "Across a three-level weak-field resolution ladder, the maximum CCZ4 constraint and the active scalar endpoint independently converge while field, conservation, entropy, convexity, and recovery vetoes pass.",
+      "domain": "The 4, 8, and 16 point one-dimensional periodic active trajectories registered by NUL-GRV-003 through one quarter time unit.",
+      "evidence": [
+        "experiments/converge_nulloth_ccz4_constraints.py",
+        "experiments/nulloth_master/NULLOTH_CCZ4_CONVERGENCE.md",
+        "runs/nulloth_master/NUL-GRV-003-092e650000a772e6/attempt-001/run_record.json",
+        "tests/test_nulloth_gravity.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-003"
+      ],
+      "metrics": {
+        "gravitational_constraint_monotone_with_resolution": 1,
+        "coarse_to_medium_constraint_reduction": 3.9416023847309747,
+        "medium_to_fine_constraint_reduction": 2.401529696712775,
+        "coarse_to_medium_scalar_error_reduction": 2.325362737262815,
+        "maximum_finest_gravitational_constraint_l2": 2.3052894027113597e-07,
+        "maximum_field_constraint_l2": 2.751074881899498e-21,
+        "maximum_number_relative_drift": 3.7007428989163973e-16,
+        "minimum_entropy_change": 0.0046405822828106125,
+        "minimum_legendre": 0.56361148969289,
+        "minimum_thermodynamic": 0.3689403054487827,
+        "maximum_recovery_residual": 5.8306513911684014e-11,
+        "coarse_final_scalar_amplitude": 0.022401143179979106,
+        "medium_final_scalar_amplitude": 0.022401616906503122,
+        "fine_final_scalar_amplitude": 0.022401974338103314
+      },
+      "limitations": [
+        "The ladder is short-horizon, weak-field, one-dimensional, periodic, and harmonic-gauge only.",
+        "The reported empirical reduction factors are not a formal asymptotic convergence order.",
+        "Long-time damping, strong curvature, radiation, finite boundaries, and AMR remain untested."
+      ]
+    },
+    {
+      "id": "NUL-GRV-004",
+      "title": "Three-dimensional periodic tensor response",
+      "status": "OBSERVED",
+      "statement": "An anisotropic Nulloth coherence profile generates a nonzero three-dimensional transverse-traceless geometry contrast whose amplitude follows the quadratic scaling of canonical scalar anisotropic stress.",
+      "domain": "The scalar-free and two active 4x4x4 periodic production trajectories through time 0.02 registered by NUL-GRV-004.",
+      "evidence": [
+        "experiments/measure_nulloth_periodic_tensor_response.py",
+        "experiments/nulloth_master/NULLOTH_PERIODIC_TENSOR_RESPONSE.md",
+        "runs/nulloth_master/NUL-GRV-004-31cbc5ee06d392c4/attempt-001/run_record.json",
+        "tests/test_nulloth_gravity.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-004"
+      ],
+      "metrics": {
+        "extrinsic_curvature_tt_amplitude_scaling": 3.9999983084799746,
+        "metric_tt_amplitude_scaling": 4.004157600939148,
+        "maximum_initial_extrinsic_curvature_tt_l2": 1.1104281112568523e-25,
+        "maximum_initial_metric_tt_l2": 7.079637758932334e-24,
+        "maximum_final_extrinsic_curvature_tt_l2": 6.833038575543226e-12,
+        "maximum_final_metric_tt_l2": 1.3657317109763365e-13,
+        "maximum_gravitational_constraint_l2": 5.20099024726074e-07,
+        "maximum_field_constraint_l2": 7.759641962678239e-24,
+        "maximum_number_relative_drift": 1.541944934166483e-16,
+        "minimum_entropy_change": 0.3160632279323181,
+        "minimum_legendre": 0.5760338211630924,
+        "minimum_thermodynamic": 0.3703098392588319,
+        "maximum_recovery_residual": 8.142892859550056e-13
+      },
+      "limitations": [
+        "The tensor response is measured at one coarse resolution and a very short horizon.",
+        "Periodic Fourier TT excitation is not an asymptotic gravitational-wave flux or finite-radius vacuum Psi4 extraction.",
+        "Propagation, resolution convergence, gauge robustness, finite-boundary contamination, and AMR remain untested for this tensor channel."
+      ]
+    },
+    {
+      "id": "NUL-GRV-005",
+      "title": "Three-dimensional vector and material pulse trial",
+      "status": "OBSERVED",
+      "statement": "Independent transverse mixed-Proca and baryon-density modes survive short complete 3D production evolution and generate dynamical geometric contrasts without violating the registered physical or numerical vetoes.",
+      "domain": "The vector, material, and control 4x4x4 periodic trajectories through time 0.01 registered by NUL-GRV-005.",
+      "evidence": [
+        "experiments/measure_nulloth_source_pulses.py",
+        "experiments/nulloth_master/NULLOTH_SOURCE_PULSES.md",
+        "runs/nulloth_master/NUL-GRV-005-7e27341d50e18bbc/attempt-001/run_record.json",
+        "tests/test_nulloth_gravity.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-005"
+      ],
+      "metrics": {
+        "vector_pulse_retention": 0.9999730864850024,
+        "material_pulse_retention": 0.9991970398242983,
+        "vector_final_metric_contrast_l2": 9.361485408892012e-10,
+        "material_final_metric_contrast_l2": 0.00015228512631055115,
+        "minimum_dynamical_metric_contrast_l2": 2.994911882209964e-11,
+        "minimum_final_extrinsic_curvature_tt_l2": 3.4722755906345905e-12,
+        "maximum_initial_extrinsic_curvature_tt_l2": 4.135934663310467e-25,
+        "maximum_gravitational_constraint_l2": 5.218143563589664e-07,
+        "maximum_field_constraint_l2": 1.654411711433641e-24,
+        "maximum_number_relative_drift": 3.083889866877725e-16,
+        "minimum_entropy_change": 0.15830276998894988,
+        "minimum_legendre": 0.5769371197456303,
+        "minimum_thermodynamic": 0.3631271577971537,
+        "maximum_recovery_residual": 9.68035347790628e-13
+      },
+      "limitations": [
+        "The trial has one coarse resolution and a very short time horizon.",
+        "The modes are periodic Fourier profiles rather than compactly supported finite-domain pulses.",
+        "Propagation speed, dispersion, radiation, gauge robustness, long-time survival, finite boundaries, and AMR remain untested."
+      ]
+    },
+    {
+      "id": "NUL-GRV-006",
+      "title": "Elevated-curvature periodic CMC convergence",
+      "status": "OBSERVED",
+      "statement": "At gravitational coupling 0.5, an active periodic Nulloth CMC trajectory retains positive lapse, metric signature, constitutive margins, and recovery while its scalar and metric endpoints and CCZ4 constraints converge separately across three resolutions.",
+      "domain": "The 4, 8, and 16 point one-dimensional periodic trajectories through time 0.05 registered by NUL-GRV-006.",
+      "evidence": [
+        "experiments/converge_nulloth_elevated_curvature.py",
+        "experiments/nulloth_master/NULLOTH_ELEVATED_CURVATURE.md",
+        "runs/nulloth_master/NUL-GRV-006-48b15de383739cff/attempt-001/run_record.json",
+        "tests/test_nulloth_gravity.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-006"
+      ],
+      "metrics": {
+        "gravitational_constraint_monotone_with_resolution": 1,
+        "coarse_to_medium_constraint_reduction": 4.79916794281271,
+        "medium_to_fine_constraint_reduction": 1.967504759962602,
+        "coarse_to_medium_scalar_error_reduction": 11.885134602840928,
+        "coarse_to_medium_metric_error_reduction": 3672.9550484595184,
+        "finest_gravitational_constraint_l2": 0.000520958973976551,
+        "finest_metric_deviation_l2": 0.10919603168416708,
+        "finest_extrinsic_curvature_l2": 0.21375842309264464,
+        "minimum_lapse": 0.9479579115647117,
+        "minimum_metric_eigenvalue": 0.7344715659431205,
+        "maximum_field_constraint_l2": 8.495430815141416e-23,
+        "maximum_number_relative_drift": 1.783631206760074e-16,
+        "minimum_entropy_change": 0.002910333128880893,
+        "minimum_legendre": 0.5607616685929221,
+        "minimum_thermodynamic": 0.3624512073277941,
+        "maximum_recovery_residual": 1.7703197113026263e-09
+      },
+      "limitations": [
+        "The data are dynamical periodic CMC data, not a stationary equilibrium or compact object.",
+        "Metric deviation and extrinsic-curvature norms are coordinate diagnostics rather than gauge-invariant curvature scalars.",
+        "The horizon is short and no collapse, trapped-surface, horizon, radiation, finite-boundary, or AMR conclusion follows."
+      ]
+    },
+    {
+      "id": "NUL-GRV-007",
+      "title": "Elevated-curvature gauge robustness",
+      "status": "OBSERVED",
+      "statement": "At gravitational coupling 0.5, short-horizon scalar, metric-deviation, and extrinsic-curvature profile diagnostics remain robust between harmonic and 1+log slicing while minimum lapse changes substantially.",
+      "domain": "The paired 16 point periodic harmonic and 1+log trajectories through time 0.05 registered by NUL-GRV-007.",
+      "evidence": [
+        "experiments/audit_nulloth_elevated_curvature_gauge.py",
+        "experiments/nulloth_master/NULLOTH_ELEVATED_CURVATURE_GAUGE.md",
+        "runs/nulloth_master/NUL-GRV-007-5c433042fdd42c91/attempt-001/run_record.json",
+        "tests/test_nulloth_gravity.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-007"
+      ],
+      "metrics": {
+        "scalar_amplitude_relative_spread": 0.0006159968422022123,
+        "metric_deviation_relative_spread": 0.00040574408435131774,
+        "extrinsic_curvature_relative_spread": 0.00010930510037930481,
+        "minimum_lapse_relative_spread": 0.05475873271030531,
+        "maximum_gravitational_constraint_l2": 0.000520958973976551,
+        "maximum_field_constraint_l2": 9.558142669338356e-23,
+        "maximum_number_relative_drift": 1.432300494947835e-16,
+        "minimum_entropy_change": 0.0028308276100617036,
+        "minimum_legendre": 0.5607616685929221,
+        "minimum_thermodynamic": 0.36356738201688854,
+        "maximum_recovery_residual": 1.7703197113026263e-09
+      },
+      "limitations": [
+        "The comparison is short-horizon and uses no evolved shift.",
+        "Agreement of coordinate-profile norms is empirical robustness, not proof of gauge invariance.",
+        "Stationarity, compactness, collapse, horizons, radiation, finite boundaries, and AMR remain untested."
+      ]
+    },
+    {
+      "id": "NUL-GRV-008",
+      "title": "Coordinate energy and geometric work budget",
+      "status": "OBSERVED",
+      "statement": "In periodic Nulloth production, the retained densitized matter-plus-field coordinate-energy change equals the RK-integrated geometric work while periodic fluxes cancel and post-RK projection, drag, and damping preserve total energy.",
+      "domain": "The weak-field fine trajectory and elevated-curvature 4, 8, and 16 point trajectories through time 0.05 registered by NUL-GRV-008.",
+      "evidence": [
+        "experiments/close_nulloth_coordinate_energy_budget.py",
+        "experiments/nulloth_master/NULLOTH_COORDINATE_ENERGY_BUDGET.md",
+        "runs/nulloth_master/NUL-GRV-008-3cc885a1f732fb02/attempt-001/run_record.json",
+        "tests/test_nulloth_energy_budget.py"
+      ],
+      "campaigns": [
+        "NUL-GRV-008"
+      ],
+      "metrics": {
+        "maximum_absolute_energy_balance_error": 3.293515460356389e-11,
+        "maximum_relative_energy_balance_error": 1.3331750604648937e-10,
+        "maximum_stage_flux_cancellation_error": 1.1798381827077264e-08,
+        "maximum_post_operator_energy_change": 6.641916183713903e-12,
+        "elevated_work_monotone_to_fine": 1,
+        "coarse_to_medium_work_error_reduction": 314.14284281896084,
+        "maximum_gravitational_constraint_l2": 0.0049190956084588025,
+        "maximum_field_constraint_l2": 1.6744432256279895e-22,
+        "maximum_number_relative_drift": 1.7877823666361266e-16,
+        "minimum_entropy_change": 0.0009392452949725794,
+        "minimum_legendre": 0.560761668592984,
+        "minimum_thermodynamic": 0.3624512073383751,
+        "maximum_recovery_residual": 1.7703162395482861e-09
+      },
+      "limitations": [
+        "The identity is a periodic coordinate-slice balance, not a global or quasi-local gravitational energy.",
+        "The campaign is short-horizon and does not include boundary energy flux, radiation extraction, compact objects, or horizons.",
+        "The coordinate work terms are gauge dependent even though the discrete balance is exact in the declared slicing."
+      ]
+    },
+    {
+      "id": "NUL-BND-001",
+      "title": "One-dimensional finite scalar outflow",
+      "status": "OBSERVED",
+      "statement": "On the registered one-dimensional finite patch, canonical Nulloth production carries a compact scalar pulse through the upper face without exciting its homogeneous incoming scalar characteristic or contaminating the opposite edge.",
+      "domain": "The 24-cell weak-curvature Cartesian trajectory through time 0.12 registered by NUL-BND-001.",
+      "evidence": [
+        "experiments/audit_nulloth_finite_scalar_outflow.py",
+        "experiments/nulloth_master/NULLOTH_FINITE_SCALAR_OUTFLOW.md",
+        "runs/nulloth_master/NUL-BND-001-8b7b0a7416106b6f/attempt-001/run_record.json",
+        "tests/test_finite_nulloth.py"
+      ],
+      "campaigns": [
+        "NUL-BND-001"
+      ],
+      "metrics": {
+        "scalar_energy_loss_fraction": 0.47386599046020106,
+        "incoming_to_outgoing_characteristic_ratio": 0.0,
+        "maximum_opposite_edge_amplitude": 7.245704434577525e-26,
+        "maximum_scalar_constraint_l2": 1.3103792289098401e-09,
+        "maximum_gravitational_constraint_l2": 3.031628353282893e-13,
+        "maximum_proca_constraint_l2": 2.7625543548956546e-23,
+        "maximum_recovery_residual": 1.9989117073620206e-09,
+        "minimum_legendre_eigenvalue": 0.7881165142350675,
+        "minimum_thermodynamic_eigenvalue": 0.6708688589067977,
+        "maximum_step_entropy_balance_residual": 5.875854700076785e-08,
+        "cumulative_entropy_balance_residual": -1.6801676708117026e-08,
+        "maximum_carrier_number_balance_residual": 4.336808925228947e-19
+      },
+      "limitations": [
+        "The campaign qualifies one dimension and one weak, dilute scalar pulse only.",
+        "Complete coupled incoming characteristic data, multidimensional faces and corners, strong curvature, AMR, and long-duration reflection remain open.",
+        "Exact atmosphere-floor scalar recovery is singular and is not part of the admitted domain.",
+        "The finite material projection's signed entropy-balance residual is measured as a numerical limitation, not interpreted as physical entropy production."
+      ]
+    },
+    {
+      "id": "NUL-BND-002",
+      "title": "Finite scalar resolution and patch-size convergence",
+      "status": "OBSERVED",
+      "statement": "The registered one-dimensional finite scalar passage converges under spatial refinement and is insensitive to outward displacement of the causally irrelevant opposite wall at equal spacing.",
+      "domain": "The 12, 18, and 24 cell unit-patch ladder and 36 cell enlarged equal-spacing control through time 0.32 registered by NUL-BND-002.",
+      "evidence": [
+        "experiments/converge_nulloth_finite_scalar_outflow.py",
+        "experiments/nulloth_master/NULLOTH_FINITE_SCALAR_CONVERGENCE.md",
+        "runs/nulloth_master/NUL-BND-002-1eb4c53bf380a6dd/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-BND-002"
+      ],
+      "metrics": {
+        "coarse_scalar_energy_loss_fraction": 0.320706733806682,
+        "medium_scalar_energy_loss_fraction": 0.3761445635386309,
+        "fine_scalar_energy_loss_fraction": 0.41255299852099303,
+        "energy_loss_convergence_ratio": 2.5226644528611417,
+        "medium_to_fine_energy_loss_difference": 0.036408434982362126,
+        "patch_size_energy_loss_relative_difference": 3.9397762563311517e-13,
+        "maximum_incoming_to_outgoing_characteristic_ratio": 5.197757070238037e-16,
+        "maximum_opposite_edge_amplitude": 8.16325196706436e-11,
+        "maximum_scalar_constraint_l2": 1.1563886719516829e-08,
+        "maximum_gravitational_constraint_l2": 5.374933162498954e-13,
+        "maximum_proca_constraint_l2": 5.625586374623916e-22,
+        "maximum_recovery_residual": 1.975746927160765e-09,
+        "minimum_legendre_eigenvalue": 0.7881163998477199,
+        "minimum_thermodynamic_eigenvalue": 0.6708668930875579,
+        "maximum_step_entropy_balance_residual": 2.3107597470296607e-07,
+        "maximum_absolute_cumulative_entropy_balance_residual": 3.1613788907108606e-08,
+        "maximum_carrier_number_balance_residual": 7.33469267992774e-19
+      },
+      "limitations": [
+        "The ladder is one-dimensional, weak-curvature, dilute, and short-horizon.",
+        "The primary convergence observable is scalar-energy loss rather than a complete field norm.",
+        "The expanded patch moves only the opposite wall; distance-to-outflow-boundary convergence remains separate.",
+        "Vector, material, multidimensional, strong-curvature, AMR, and spell boundary claims remain open."
+      ]
+    },
+    {
+      "id": "NUL-BND-003",
+      "title": "Independent finite vector and material outflow",
+      "status": "PROSCRIBED",
+      "statement": "Independent transverse-vector and co-moving material pulses physically leave the registered finite patch, but their combined qualification is denied because the finite material projection fails both predeclared entropy-account gates.",
+      "domain": "The 24-cell weak-curvature vector, material, and control trajectories through time 0.12 registered by NUL-BND-003.",
+      "evidence": [
+        "experiments/audit_nulloth_finite_vector_material_outflow.py",
+        "experiments/nulloth_master/NULLOTH_FINITE_VECTOR_MATERIAL_OUTFLOW.md",
+        "experiments/nulloth_master/corrections/NUL-BND-003-CR-001.md",
+        "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-BND-003",
+        "NUL-BND-003-ASSESS-001"
+      ],
+      "metrics": {
+        "vector_norm_loss_fraction": 0.45689023568569076,
+        "material_excess_baryon_loss_fraction": 0.6310682133723654,
+        "material_excess_carrier_loss_fraction": 0.6938604714081333,
+        "vector_opposite_edge_amplitude": 2.0843058890319156e-19,
+        "material_opposite_edge_density_contrast": 2.8921309791485328e-14,
+        "maximum_gravitational_constraint_l2": 3.06898016742746e-13,
+        "maximum_proca_constraint_l2": 3.0234999999130995e-18,
+        "maximum_recovery_residual": 1.8923315792876575e-09,
+        "maximum_step_entropy_balance_residual": 1.6060981132879502e-05,
+        "maximum_absolute_cumulative_entropy_balance_residual": 0.0005942812615476212,
+        "failed_entropy_criteria": 2
+      },
+      "limitations": [
+        "The trial uses one spatial resolution and one weak one-dimensional patch.",
+        "Physical passage is observed, but the finite material qualification is expressly denied.",
+        "Active-minus-control norm loss does not establish a converged reflection coefficient or propagation law.",
+        "Complete coupled characteristics, multiple dimensions, shocks, strong gravity, AMR, and finite-domain spells remain open."
+      ]
+    },
+    {
+      "id": "NUL-BND-004",
+      "title": "Finite material numerical entropy convergence",
+      "status": "OBSERVED",
+      "statement": "After physical boundary outflow is separated, the registered finite material pulse has a nonnegative finite-volume and constitutive-projection entropy remainder which decreases under fixed-CFL refinement.",
+      "domain": "The 12, 18, and 24 cell material-pulse trajectories through time 0.024 registered by NUL-BND-004.",
+      "evidence": [
+        "experiments/converge_nulloth_finite_material_entropy.py",
+        "experiments/nulloth_master/NULLOTH_FINITE_MATERIAL_ENTROPY.md",
+        "runs/nulloth_master/NUL-BND-004-45e0f80479f94f22/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-BND-004"
+      ],
+      "metrics": {
+        "minimum_step_entropy_remainder": 7.979045914748772e-06,
+        "coarse_cumulative_entropy_remainder": 0.0003570177719555339,
+        "medium_cumulative_entropy_remainder": 0.0003320254608282327,
+        "fine_cumulative_entropy_remainder": 0.00027703883179305394,
+        "coarse_to_fine_cumulative_reduction": 1.288692165083282,
+        "coarse_to_fine_maximum_step_reduction": 2.488759024330591,
+        "fine_raw_projection_to_retained_remainder_ratio": 3.007043518977257,
+        "maximum_balance_identity_error": 8.131516293641283e-20,
+        "maximum_carrier_number_balance_residual": 7.250602028496811e-19,
+        "maximum_gravitational_constraint_l2": 3.1302757114996104e-13,
+        "maximum_proca_constraint_l2": 2.8397046708285477e-19,
+        "maximum_recovery_residual": 1.8421391074746885e-09
+      },
+      "limitations": [
+        "The convergence horizon is short and uses one smooth co-moving material source.",
+        "Positive numerical entropy production does not satisfy the stricter absolute-closure criteria of NUL-BND-003.",
+        "The raw internal-stage projection sum is nonadditive and cannot be interpreted as retained entropy.",
+        "A fresh long-passage qualification remains required."
+      ]
+    },
+    {
+      "id": "NUL-BND-005",
+      "title": "Full-horizon finite vector and material requalification",
+      "status": "QUALIFIED",
+      "statement": "The registered one-dimensional vector and co-moving material passages satisfy full-horizon fixed-CFL entropy accounts under the convergent numerical-entropy standard.",
+      "domain": "The immutable NUL-BND-003 passage measurements and fresh 12, 18, and 24 cell active-source trajectories through time 0.12 registered by NUL-BND-005.",
+      "evidence": [
+        "experiments/requalify_nulloth_finite_vector_material.py",
+        "experiments/nulloth_master/NULLOTH_FINITE_VECTOR_MATERIAL_REQUALIFICATION.md",
+        "runs/nulloth_master/NUL-BND-005-83cf33b8b3e4a661/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-BND-005"
+      ],
+      "metrics": {
+        "vector_norm_loss_fraction": 0.45689023568569076,
+        "material_excess_baryon_loss_fraction": 0.6310682133723654,
+        "material_excess_carrier_loss_fraction": 0.6938604714081333,
+        "material_minimum_step_entropy_remainder": 1.8399200634001371e-06,
+        "coarse_material_cumulative_entropy_remainder": 0.0007635070696620872,
+        "medium_material_cumulative_entropy_remainder": 0.0006499057265955742,
+        "fine_material_cumulative_entropy_remainder": 0.0005942812615476212,
+        "material_coarse_to_fine_cumulative_reduction": 1.2847570991448893,
+        "vector_minimum_step_entropy_remainder": -1.1716017895219419e-07,
+        "fine_vector_absolute_cumulative_entropy_remainder": 1.6479716955933526e-08,
+        "fine_vector_maximum_step_entropy_remainder": 5.8675985432075054e-08,
+        "maximum_balance_identity_error": 3.2526065174565133e-19,
+        "maximum_carrier_number_balance_residual": 7.962109704190423e-19,
+        "maximum_gravitational_constraint_l2": 3.06898016742746e-13,
+        "maximum_proca_constraint_l2": 3.0234999999130995e-18,
+        "maximum_recovery_residual": 1.938122242176102e-09,
+        "minimum_legendre_eigenvalue": 0.7711355342746735,
+        "minimum_thermodynamic_eigenvalue": 0.6574812337321356
+      },
+      "limitations": [
+        "The domain remains one-dimensional, weak-curvature, smooth, and source-specific.",
+        "Only entropy behavior, not every physical pulse observable, is refined in the fresh ladder.",
+        "The earlier absolute-closure denial remains a valid historical result.",
+        "Reflection coefficients, complete coupled characteristics, multiple dimensions, strong gravity, AMR, and finite-domain spells remain open."
+      ]
+    },
+    {
+      "id": "NUL-BND-006",
+      "title": "Scalar boundary-reflection convergence",
+      "status": "QUALIFIED",
+      "statement": "On the registered frozen material background, scalar contamination generated by the one-dimensional homogeneous incoming boundary converges away against a causally disconnected equal-spacing extended-domain control.",
+      "domain": "The paired 32/64, 64/128, and 128/256 finite/extended scalar trajectories through time 0.6 registered by NUL-BND-006.",
+      "evidence": [
+        "experiments/converge_nulloth_scalar_boundary_reflection.py",
+        "experiments/nulloth_master/NULLOTH_SCALAR_BOUNDARY_REFLECTION.md",
+        "runs/nulloth_master/NUL-BND-006-2dc43470aebdcc8c/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-BND-006"
+      ],
+      "metrics": {
+        "coarse_normalized_reflection_energy": 0.0018140340520322194,
+        "medium_normalized_reflection_energy": 6.937378500336177e-05,
+        "fine_normalized_reflection_energy": 1.3875530450198997e-06,
+        "coarse_to_medium_reflection_reduction": 26.148696542134953,
+        "medium_to_fine_reflection_reduction": 49.99721290105117,
+        "finest_maximum_reflected_amplitude": 1.1156885115659154e-09,
+        "maximum_scalar_constraint_l2": 1.1365775955978034e-11
+      },
+      "limitations": [
+        "The audit freezes geometry and material while retaining the canonical effective scalar mass and quartic term.",
+        "Only the one-dimensional homogeneous incoming scalar operator is qualified.",
+        "Vector, material, CCZ4, multidimensional, strong-field, and AMR reflections remain unmeasured."
+      ]
+    },
+    {
+      "id": "NUL-BND-007",
+      "title": "Complete finite-face characteristic inventory",
+      "status": "DERIVED",
+      "statement": "State-local clustered projectors resolve the complete incoming, glancing, and outgoing spaces of the constrained CCZ4-plus-Nulloth symbol, while the implementation audit denies complete coupled boundary qualification.",
+      "domain": "The generic composed state and 192 discovery-box corner/face states registered by NUL-BND-007.",
+      "evidence": [
+        "experiments/derive_nulloth_boundary_characteristics.py",
+        "experiments/nulloth_master/NULLOTH_BOUNDARY_CHARACTERISTICS.md",
+        "runs/nulloth_master/NUL-BND-007-4d422f4c0e53f205/attempt-001/run_record.json",
+        "tests/test_nulloth_boundary_inventory.py"
+      ],
+      "campaigns": [
+        "NUL-BND-007"
+      ],
+      "metrics": {
+        "composed_principal_variables": 48,
+        "generic_face_signature": "21 incoming / 6 glancing / 21 outgoing",
+        "sampled_face_states": 192,
+        "distinct_face_signatures": 3,
+        "minimum_incoming_modes": 19,
+        "maximum_incoming_modes": 21,
+        "maximum_glancing_modes": 10,
+        "maximum_physical_projector_condition": 54.96192298069045,
+        "maximum_physical_projector_commutator_error": 7.500872875760753e-14,
+        "ccz4_projector_condition": 5.733641412920345,
+        "ccz4_projector_commutator_error": 6.933590482093845e-11,
+        "exact_characteristic_incoming_modes_implemented": 2,
+        "componentwise_radiative_incoming_modes": 15,
+        "flux_only_material_incoming_modes": 4,
+        "maximum_incoming_modes_without_exact_data": 19,
+        "complete_coupled_boundary_qualified": 0
+      },
+      "limitations": [
+        "The projectors are frozen-coefficient local data, not a nonlinear multidimensional boundary implementation.",
+        "The survey uses discovery-box corners and Cartesian face normals; curved boundaries require local frame composition.",
+        "Only two incoming modes presently receive exact characteristic data.",
+        "Componentwise radiative and flux-only treatments remain unqualified as a complete coupled absorbing boundary."
+      ]
+    },
+    {
+      "id": "NUL-BND-008",
+      "title": "Unresolved driven finite scalar latency and cutoff",
+      "status": "UNKNOWN",
+      "statement": "Driven finite scalar latency and cutoff remain unresolved because the registered two-grid campaign terminated on a singular primitive-recovery Jacobian before producing any decisive observable.",
+      "domain": "The two finite grids, Gaussian drive, sensor positions, and weak-gravity background registered by NUL-BND-008.",
+      "evidence": [
+        "src/causal_repair/driven_finite_nulloth.py",
+        "experiments/qualify_nulloth_driven_latency.py",
+        "experiments/assess_nulloth_driven_latency_failure.py",
+        "experiments/nulloth_master/corrections/NUL-BND-008-CR-001.md",
+        "runs/nulloth_master/NUL-BND-008-09206a6999a6d521/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-BND-008-ASSESS-001-fbfbc98260fde78b/attempt-001/run_record.json",
+        "tests/test_nulloth_driven_boundary.py"
+      ],
+      "campaigns": ["NUL-BND-008", "NUL-BND-008-ASSESS-001"],
+      "metrics": {
+        "original_run_completed": 0,
+        "decisive_observables_produced": 0,
+        "singular_recovery_jacobian_reported": 1,
+        "failed_run_duration_seconds": 1114.9519643000094
+      },
+      "limitations": [
+        "The failure is an implementation/recovery obstruction, not evidence of acausal propagation or physical impossibility.",
+        "Only the scalar incoming characteristic is driven exactly; the complete coupled boundary remains unqualified.",
+        "The drive is small, one-dimensional, weak-gravity, and does not establish the finite Carrier Coherence Brake.",
+        "Route branching, damage, material interfaces, and feedback are not represented."
+      ]
+    },
+    {
+      "id": "NUL-CTL-001",
+      "title": "Synodic physical control grammar",
+      "status": "DERIVED",
+      "statement": "The initial Synodic control grammar admits six physically actuated channels, eight objective families, and six mandatory cost dimensions while forbidding direct metric, gauge, coupling, cap, damping, and unmodelled-source overrides.",
+      "domain": "The canonical action, production map, Urumes actuator lore, and machine-readable registry validated by NUL-CTL-001.",
+      "evidence": [
+        "experiments/nulloth_master/control_registry.json",
+        "experiments/nulloth_master/NULLOTH_CONTROL_CHARTER.md",
+        "experiments/validate_nulloth_control_registry.py",
+        "runs/nulloth_master/NUL-CTL-001-9dc26a54a9974c9c/attempt-001/run_record.json",
+        "tests/test_nulloth_controls.py"
+      ],
+      "campaigns": [
+        "NUL-CTL-001"
+      ],
+      "metrics": {
+        "physical_control_channels": 6,
+        "objective_families": 8,
+        "mandatory_cost_dimensions": 6,
+        "decision_states": 7,
+        "forbidden_shortcuts": 6,
+        "noncanonical_overrides": 0,
+        "objectives_without_controls": 0,
+        "objectives_without_abort_surfaces": 0
+      },
+      "limitations": [
+        "The registry defines admissible search variables and costs; it does not prove controllability of any objective.",
+        "No optimizer, infrastructure geometry, damage model, or live authorization service is implemented by this campaign.",
+        "Physical channel bandwidths and capacities require separate measured domains."
+      ]
+    },
+    {
+      "id": "NUL-CTL-002",
+      "title": "Carrier Coherence Brake minimal-seed inverse search",
+      "status": "OBSERVED",
+      "statement": "A deterministic gradient-free inverse search brackets the least resolved growing-mode seed that achieves two-percent carrier-kinetic suppression and attributes the response to the canonical scalarization couplings.",
+      "domain": "The eight-point, one-dimensional periodic-box trajectory and objective registered by NUL-CTL-002.",
+      "evidence": [
+        "experiments/search_nulloth_brake_controls.py",
+        "experiments/nulloth_master/NULLOTH_BRAKE_CONTROL_SEARCH.md",
+        "runs/nulloth_master/NUL-CTL-002-be68f5c873076f2c/attempt-001/run_record.json",
+        "tests/test_nulloth_control_search.py"
+      ],
+      "campaigns": ["NUL-CTL-002"],
+      "metrics": {
+        "production_evaluations": 11,
+        "last_failing_seed_amplitude": 0.010124999999999999,
+        "first_passing_seed_amplitude": 0.010249999999999999,
+        "threshold_bracket_width": 0.0001250000000000001,
+        "selected_seed_coordinate_energy": 0.0004898210232490026,
+        "selected_relative_suppression": 0.02078081709516562,
+        "uncoupled_relative_suppression": -3.2287027589026e-06,
+        "coupling_attributed_suppression": 0.020784045797924523,
+        "maximum_number_relative_drift": 6.167280813972116e-16,
+        "maximum_gravitational_constraint_l2": 4.623770799282206e-06
+      },
+      "limitations": [
+        "The search is a coarse one-dimensional amplitude optimization, not a general adjoint or infrastructure controller.",
+        "The threshold is resolved only to the registered amplitude bracket at one spatial and temporal resolution.",
+        "Periodic topology and ideal initial-data actuation remain part of the declared domain."
+      ]
+    },
+    {
+      "id": "NUL-CTL-003",
+      "title": "Sixteen-point brake-threshold refinement",
+      "status": "OBSERVED",
+      "statement": "The first two-percent brake economy shifts by more than ten percent at sixteen points and therefore remains unqualified across resolution.",
+      "domain": "The eight- and sixteen-point periodic production searches registered by NUL-CTL-002 and NUL-CTL-003.",
+      "evidence": [
+        "experiments/converge_nulloth_brake_threshold.py",
+        "experiments/nulloth_master/NULLOTH_BRAKE_THRESHOLD_CONVERGENCE.md",
+        "runs/nulloth_master/NUL-CTL-003-52a4c8d75810fdaf/attempt-001/run_record.json"
+      ],
+      "campaigns": ["NUL-CTL-003"],
+      "metrics": {
+        "new_production_evaluations": 5,
+        "sixteen_point_failing_amplitude": 0.013250000000000001,
+        "sixteen_point_passing_amplitude": 0.014,
+        "threshold_bracket_width": 0.0007499999999999989,
+        "relative_shift_from_eight_points": 0.36585365853658536,
+        "maximum_number_relative_drift": 3.700742779287883e-16,
+        "maximum_gravitational_constraint_l2": 2.5286537827472405e-06
+      },
+      "limitations": [
+        "The campaign tests sixteen points against eight but does not yet establish the sixteen-to-thirty-two-point limit.",
+        "The refined bracket remains a threshold for one fixed objective, horizon, carrier profile, and periodic topology.",
+        "The upper control is reused from an immutable accepted production campaign rather than recomputed."
+      ]
+    },
+    {
+      "id": "NUL-CTL-004",
+      "title": "Thirty-two-point brake-threshold qualification",
+      "status": "QUALIFIED",
+      "statement": "The two-percent Carrier Coherence Brake seed threshold converges from sixteen to thirty-two points within the registered ten-percent allowance.",
+      "domain": "The sixteen- and thirty-two-point periodic production searches registered by NUL-CTL-003 and NUL-CTL-004.",
+      "evidence": [
+        "experiments/converge_nulloth_brake_threshold_32.py",
+        "experiments/assess_nulloth_brake_threshold_32.py",
+        "experiments/nulloth_master/corrections/NUL-CTL-004-CR-001.md",
+        "experiments/nulloth_master/NULLOTH_BRAKE_SEED_QUALIFICATION.md",
+        "runs/nulloth_master/NUL-CTL-004-4ceb45997c80a0b3/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CTL-004-ASSESS-001-53a485fec982e747/attempt-001/run_record.json"
+      ],
+      "campaigns": ["NUL-CTL-004", "NUL-CTL-004-ASSESS-001"],
+      "metrics": {
+        "thirty_two_point_failing_amplitude": 0.014499999999999999,
+        "thirty_two_point_passing_amplitude": 0.015,
+        "passing_relative_suppression": 0.020139769712451586,
+        "qualified_bracket_width": 0.0005,
+        "relative_shift_from_sixteen_point_upper": 0.07142857142857137,
+        "maximum_number_relative_drift": 1.8503713898181826e-16,
+        "maximum_gravitational_constraint_l2": 1.2899790750109584e-06,
+        "raw_width_comparison_excess": 4.336808689942018e-19
+      },
+      "limitations": [
+        "Qualification, if obtained, applies only to one objective, horizon, carrier profile, gauge, and periodic topology.",
+        "Amplitude bracketing does not supply a time-dependent actuator trajectory or robustness margin.",
+        "Finite-domain deployment remains unqualified."
+      ]
+    },
+    {
+      "id": "NUL-CTL-005",
+      "title": "Conservative brake targeting-robustness envelope",
+      "status": "PROSCRIBED",
+      "statement": "The conservative amplitude-0.02 Carrier Coherence Brake tolerates the registered amplitude, shape, and momentum errors but fails its two-percent objective under either symmetric pi/8 alignment error.",
+      "domain": "The six deterministic perturbations of the qualified periodic production setup registered by NUL-CTL-005.",
+      "evidence": [
+        "experiments/audit_nulloth_brake_robustness.py",
+        "experiments/assess_nulloth_brake_robustness.py",
+        "experiments/nulloth_master/corrections/NUL-CTL-005-CR-001.md",
+        "experiments/nulloth_master/NULLOTH_BRAKE_ROBUSTNESS.md",
+        "runs/nulloth_master/NUL-CTL-005-fc56077e9eaec75e/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CTL-005-ASSESS-001-cd36ac92258ad15e/attempt-001/run_record.json",
+        "tests/test_nulloth_brake_robustness.py"
+      ],
+      "campaigns": ["NUL-CTL-005", "NUL-CTL-005-ASSESS-001"],
+      "metrics": {
+        "sealed_nominal_relative_suppression": 0.03235707044116159,
+        "amplitude_minus_ten_percent_suppression": 0.027716796263492875,
+        "amplitude_plus_ten_percent_suppression": 0.037980079636883435,
+        "phase_minus_pi_over_eight_suppression": 0.019861785892157133,
+        "phase_plus_pi_over_eight_suppression": 0.01986178589217501,
+        "phase_pair_relative_asymmetry": 9.001234954637403e-13,
+        "second_harmonic_ten_percent_suppression": 0.04182512501173155,
+        "momentum_underdrive_twenty_percent_suppression": 0.02840839269805469,
+        "maximum_number_relative_drift": 1.8503713902991873e-16,
+        "maximum_gravitational_constraint_l2": 1.2895132747793156e-06
+      },
+      "limitations": [
+        "The audit samples independent bounded errors rather than simultaneous worst-case combinations.",
+        "Momentum underdrive is not a physical boundary-actuation delay model.",
+        "Damaged infrastructure, finite boundaries, feedback noise, and shutdown remain untested."
+      ]
+    },
+    {
+      "id": "NUL-CTL-006",
+      "title": "Conservative brake phase-tolerance bracket",
+      "status": "QUALIFIED",
+      "statement": "At thirty-two points, the conservative Carrier Coherence Brake has a symmetric two-percent alignment tolerance bracket narrower than pi/64 radians and a passing lower bound of at least pi/16.",
+      "domain": "The mode-one periodic production trajectory, amplitude 0.02, and phase bisection registered by NUL-CTL-006.",
+      "evidence": [
+        "experiments/bracket_nulloth_brake_phase_tolerance.py",
+        "experiments/nulloth_master/NULLOTH_BRAKE_PHASE_TOLERANCE.md",
+        "runs/nulloth_master/NUL-CTL-006-67d334b36a712cef/attempt-001/run_record.json"
+      ],
+      "campaigns": ["NUL-CTL-006"],
+      "metrics": {
+        "passing_phase_radians": 0.3436116964863836,
+        "failing_phase_radians": 0.39269908169872414,
+        "passing_phase_degrees": 19.6875,
+        "failing_phase_degrees": 22.5,
+        "phase_bracket_width_degrees": 2.8125,
+        "passing_relative_suppression": 0.02313446733539482,
+        "failing_relative_suppression": 0.01986178589217501,
+        "source_phase_pair_relative_asymmetry": 9.001234954637403e-13,
+        "maximum_number_relative_drift": 1.8503713901187243e-16,
+        "maximum_gravitational_constraint_l2": 1.2892961365419277e-06
+      },
+      "limitations": [
+        "The magnitude interpretation relies on the opposite-sign symmetry measured at the failing pi/8 endpoint.",
+        "The bracket is not yet combined with amplitude, shape, momentum, or stochastic errors.",
+        "The result remains an ideal periodic initial-data tolerance rather than a finite actuator alignment specification."
+      ]
+    },
+    {
+      "id": "NUL-CTL-007",
+      "title": "Conservative brake combined-error corner",
+      "status": "PROSCRIBED",
+      "statement": "Independent targeting reserves do not compose: negative shape error fails in isolation, two phase-error pairs fail, and the registered all-error corner falls far below the two-percent objective while remaining safe.",
+      "domain": "The five isolated, paired, and combined thirty-two-point periodic trajectories registered by NUL-CTL-007.",
+      "evidence": [
+        "experiments/audit_nulloth_brake_combined_errors.py",
+        "experiments/assess_nulloth_brake_combined_errors.py",
+        "experiments/nulloth_master/corrections/NUL-CTL-007-CR-001.md",
+        "experiments/nulloth_master/NULLOTH_BRAKE_COMBINED_ERRORS.md",
+        "runs/nulloth_master/NUL-CTL-007-1d74e7cf52075281/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-CTL-007-ASSESS-001-10f2b87d6e6ce35b/attempt-001/run_record.json"
+      ],
+      "campaigns": ["NUL-CTL-007", "NUL-CTL-007-ASSESS-001"],
+      "metrics": {
+        "positive_shape_relative_suppression": 0.04182512501173155,
+        "negative_shape_relative_suppression": 0.015325081407078962,
+        "shape_sign_suppression_difference": 0.02650004360465259,
+        "phase_low_amplitude_relative_suppression": 0.01904465673877664,
+        "phase_momentum_underdrive_relative_suppression": 0.0207278549350016,
+        "phase_negative_shape_relative_suppression": 0.00643988491614702,
+        "combined_corner_relative_suppression": 0.00643621251906302,
+        "maximum_number_relative_drift": 3.083641348501124e-16,
+        "maximum_gravitational_constraint_l2": 1.2895026035602277e-06
+      },
+      "limitations": [
+        "The campaign samples one deterministic detrimental corner rather than optimizing over the full joint error space.",
+        "The qualified phase lower bound is deliberately used as an error input, so passing individual tolerances are not assumed composable.",
+        "Stochastic feedback, physical delay, finite boundaries, and damaged infrastructure remain outside this campaign."
+      ]
+    },
+    {
+      "id": "NUL-CTL-008",
+      "title": "Conservative brake stochastic shape-noise ensemble",
+      "status": "PROSCRIBED",
+      "statement": "An eight-member seeded ten-percent RMS multimode shape-noise ensemble produces both passing and failing two-percent brake trajectories, denying a worst-case noise guarantee while remaining safe.",
+      "domain": "The eight mode-2-through-5, thirty-two-point periodic profiles registered by NUL-CTL-008.",
+      "evidence": [
+        "experiments/audit_nulloth_brake_stochastic_noise.py",
+        "experiments/nulloth_master/NULLOTH_BRAKE_STOCHASTIC_NOISE.md",
+        "runs/nulloth_master/NUL-CTL-008-68099d5d38781c5a/attempt-001/run_record.json",
+        "tests/test_nulloth_stochastic_noise.py"
+      ],
+      "campaigns": ["NUL-CTL-008"],
+      "metrics": {
+        "ensemble_size": 8,
+        "realizations_meeting_objective": 7,
+        "realizations_missing_objective": 1,
+        "empirical_pass_fraction": 0.875,
+        "wilson_95_lower_pass_fraction": 0.5291118177871464,
+        "wilson_95_upper_pass_fraction": 0.9775825085499433,
+        "minimum_relative_suppression": 0.013196450471712064,
+        "mean_relative_suppression": 0.02916261680633843,
+        "maximum_relative_suppression": 0.03793161014928419,
+        "suppression_standard_deviation": 0.008764807712538233,
+        "maximum_number_relative_drift": 3.700742780222066e-16,
+        "maximum_gravitational_constraint_l2": 1.289584787193111e-06
+      },
+      "limitations": [
+        "Eight realizations are reconnaissance and do not qualify a population failure probability.",
+        "The ensemble perturbs ideal initial scalar shape, not live sensor or feedback measurements.",
+        "Only modes two through five and one RMS magnitude are sampled."
+      ]
+    },
+    {
+      "id": "NUL-SPL-001",
+      "title": "Carrier Coherence Brake",
+      "status": "PROMOTED",
+      "statement": "A controlled mode-one coherence field suppresses the carrier kinetic response relative to an independently initialized scalar-free control.",
+      "domain": "The declared one-dimensional periodic-box campaign with weak evolving gravity through the reported duration.",
+      "evidence": [
+        "experiments/NULLOTH_SPELL_001_REPORT.md",
+        "experiments/promote_nulloth_spell_candidates.py",
+        "experiments/nulloth_master/corrections/NUL-SPL-001-CR-001.md",
+        "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json",
+        "runs/nulloth_master/NUL-SPL-001-ASSESS-001-688a045f626aa0f0/attempt-001/run_record.json"
+      ],
+      "campaigns": [
+        "NUL-SPL-001",
+        "NUL-SPL-001-ASSESS-001"
+      ],
+      "metrics": {
+        "initial_scalar_amplitude": 0.02,
+        "peak_scalar_amplitude": 0.1424025600748232,
+        "peak_to_final_drop_fraction": 0.10625301683382189,
+        "scalar_amplitude_relative_change_16_to_32": 0.0028633968806995426,
+        "carrier_velocity_effect_relative_change_16_to_32": 0.012963760663241423,
+        "high_resolution_kinetic_effect": -0.00015698014009789263,
+        "maximum_number_relative_drift": 9.25185694445613e-16,
+        "maximum_gravitational_constraint_l2": 7.80045849202114e-6,
+        "restart_maximum_error": 7.54951656745106e-15
+      },
+      "limitations": [
+        "Finite domains are unqualified.",
+        "Multiple dimensions are unqualified.",
+        "Shocks and strong gravity are unqualified.",
+        "The effect is a brake or shielding response, not propulsion or energy creation."
+      ]
+    }
+  ]
+}

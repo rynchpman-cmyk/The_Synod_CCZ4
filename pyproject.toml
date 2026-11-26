@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-synod-czz4"
+version = "0.1.0"
+description = "A numerical-relativity experiment bench for Physical Nulloth in the Urumes setting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+causal-repair = "causal_repair.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

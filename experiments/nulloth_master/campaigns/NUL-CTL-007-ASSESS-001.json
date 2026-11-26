@@ -1,0 +1,91 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CTL-007-ASSESS-001",
+  "title": "Combined-error shape-sign denial assessment",
+  "question": "Did NUL-CTL-007 fail because its negative-shape control was independently invalid while still demonstrating safe paired and all-error objective losses?",
+  "prediction": "The source failed exactly its two negative-shape predictions; positive shape passes while negative shape fails, at least one phase pair and the all-error corner fail, and every safety gate passes.",
+  "falsifier": "Any additional raw failure, no shape-sign split, no paired or combined failure, or any safety-veto failure falsifies this classification.",
+  "decisive_observables": [
+    "source_process_completed",
+    "raw_scientific_acceptance_passed",
+    "raw_failed_criteria",
+    "failed_criteria_are_negative_shape_prediction",
+    "all_other_raw_criteria_passed",
+    "positive_shape_meets_objective",
+    "positive_shape_relative_suppression",
+    "negative_shape_meets_objective",
+    "negative_shape_relative_suppression",
+    "shape_sign_suppression_difference",
+    "phase_low_amplitude_relative_suppression",
+    "phase_momentum_underdrive_relative_suppression",
+    "phase_negative_shape_relative_suppression",
+    "paired_phase_failures",
+    "combined_corner_meets_objective",
+    "combined_corner_relative_suppression",
+    "all_variants_admissible",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue"
+  ],
+  "acceptance_criteria": [
+    {"observable": "source_process_completed", "operator": "==", "value": 1},
+    {"observable": "raw_scientific_acceptance_passed", "operator": "==", "value": 0},
+    {"observable": "raw_failed_criteria", "operator": "==", "value": 2},
+    {"observable": "failed_criteria_are_negative_shape_prediction", "operator": "==", "value": 1},
+    {"observable": "all_other_raw_criteria_passed", "operator": "==", "value": 1},
+    {"observable": "positive_shape_meets_objective", "operator": "==", "value": 1},
+    {"observable": "positive_shape_relative_suppression", "operator": ">=", "value": 0.02},
+    {"observable": "negative_shape_meets_objective", "operator": "==", "value": 0},
+    {"observable": "negative_shape_relative_suppression", "operator": "<", "value": 0.02},
+    {"observable": "shape_sign_suppression_difference", "operator": ">", "value": 0.02},
+    {"observable": "paired_phase_failures", "operator": ">=", "value": 1},
+    {"observable": "combined_corner_meets_objective", "operator": "==", "value": 0},
+    {"observable": "combined_corner_relative_suppression", "operator": "<", "value": 0.02},
+    {"observable": "all_variants_admissible", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": -1e-12},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "The assessment reads immutable NUL-CTL-007 and NUL-CTL-005 records and performs no new physical evolution.",
+    "Positive and negative deterministic shape signs are compared at equal peak amplitude and equal magnitude.",
+    "The original target, perturbations, and safety gates remain unchanged.",
+    "Invalid isolated control and nonlinear interaction are not conflated."
+  ],
+  "resolution_ladder": [
+    {"source": "NUL-CTL-007 attempt-001", "role": "immutable combined-error record"},
+    {"source": "NUL-CTL-005 attempt-001", "role": "immutable positive-shape control"}
+  ],
+  "seed": null,
+  "seed_rationale": "The assessment deterministically parses content-addressed run records.",
+  "parameters": {
+    "classification": "shape-sign denial with safe combined objective loss",
+    "unchanged_target": 0.02
+  },
+  "command": [
+    "{python}",
+    "experiments/assess_nulloth_brake_combined_errors.py",
+    "runs/nulloth_master/NUL-CTL-007-1d74e7cf52075281/attempt-001/run_record.json",
+    "runs/nulloth_master/NUL-CTL-005-fc56077e9eaec75e/attempt-001/run_record.json"
+  ],
+  "timeout_seconds": 30,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/assess_nulloth_brake_combined_errors.py",
+    "experiments/nulloth_master/corrections/NUL-CTL-007-CR-001.md",
+    "runs/nulloth_master/NUL-CTL-007-1d74e7cf52075281/attempt-001/run_record.json",
+    "runs/nulloth_master/NUL-CTL-005-fc56077e9eaec75e/attempt-001/run_record.json"
+  ],
+  "outputs": [],
+  "supports_claims": ["NUL-CTL-007"]
+}

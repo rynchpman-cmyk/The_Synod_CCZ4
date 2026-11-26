@@ -1,0 +1,94 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-001",
+  "title": "One-dimensional finite scalar outflow",
+  "question": "Can the canonical coupled production solver carry a compact scalar pulse out of a finite one-dimensional patch without exciting the incoming scalar characteristic or wrapping into the opposite edge?",
+  "prediction": "At least 35 percent of the initial scalar energy leaves by time 0.12, the incoming-to-outgoing right-boundary characteristic ratio remains below 1e-8, the opposite-edge amplitude stays below 1e-12, and all registered recovery, constraint, carrier-balance, convexity, and entropy-residual vetoes pass.",
+  "falsifier": "Insufficient scalar-energy loss, measurable incoming characteristic excitation, opposite-edge contamination, failed recovery or convexity, excessive constraints, carrier imbalance, or an entropy-balance residual above the declared finite-patch tolerance falsifies the passage.",
+  "decisive_observables": [
+    "scalar_energy_loss_fraction",
+    "incoming_to_outgoing_characteristic_ratio",
+    "maximum_opposite_edge_amplitude",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_proca_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue",
+    "maximum_step_entropy_balance_residual",
+    "cumulative_entropy_balance_residual",
+    "maximum_carrier_number_balance_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "scalar_energy_loss_fraction", "operator": ">=", "value": 0.35},
+    {"observable": "incoming_to_outgoing_characteristic_ratio", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_opposite_edge_amplitude", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-7},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_proca_constraint_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "maximum_step_entropy_balance_residual", "operator": "<=", "value": 1e-6},
+    {"observable": "cumulative_entropy_balance_residual", "operator": ">=", "value": -1e-6},
+    {"observable": "maximum_carrier_number_balance_residual", "operator": "<=", "value": 1e-12}
+  ],
+  "controls": [
+    "The patch is centered on zero so the existing radial CCZ4 operator has the correct outward orientation on both faces.",
+    "The initial Pi=Phi_x pulse is the right-moving scalar characteristic and begins with zero right-boundary incoming field.",
+    "The nonperiodic grid shift uses constant edge extrapolation and cannot wrap the upper-face pulse into the lower face.",
+    "Scalar, Proca, CCZ4, recovery, convexity, carrier, and entropy diagnostics remain separate vetoes.",
+    "The periodic production backend and every previously sealed campaign input remain unchanged."
+  ],
+  "resolution_ladder": [
+    {"points": 24, "length": 1.0, "duration": 0.12, "dt": 0.001, "method": "fd2", "role": "first coupled finite-patch passage"}
+  ],
+  "seed": null,
+  "seed_rationale": "The Gaussian pulse, material background, and evolution are deterministic.",
+  "parameters": {
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "kappa_gravity": 1e-12,
+    "slicing": "harmonic",
+    "radiative_ccz4_boundaries": true,
+    "scalar_boundary_damping": 1.0,
+    "fluid_density": 0.1,
+    "specific_internal_energy": 0.5,
+    "carrier_density": 0.03,
+    "scalar_amplitude": 1e-5,
+    "scalar_center": 0.4,
+    "scalar_width": 0.035
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_finite_scalar_outflow.py",
+    "--points",
+    "24",
+    "--duration",
+    "0.12",
+    "--dt",
+    "0.001",
+    "--output",
+    "{run_dir}/finite_scalar_outflow.json"
+  ],
+  "timeout_seconds": 180,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_finite_scalar_outflow.py",
+    "experiments/nulloth_master/NULLOTH_FINITE_SCALAR_OUTFLOW.md",
+    "src/causal_repair/adm.py",
+    "src/causal_repair/boundary.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/finite_nulloth.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "finite_scalar_outflow.json"
+  ],
+  "supports_claims": [
+    "NUL-BND-001"
+  ]
+}

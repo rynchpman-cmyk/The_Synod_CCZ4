@@ -1,0 +1,69 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-LIM-001",
+  "title": "Theory 3.3 constitutive and production limit",
+  "question": "Does Nulloth recover the Theory 3.3 constitutive and production systems when the scalar vanishes, and do finite scalar-stress corrections disappear quadratically with scalar amplitude?",
+  "prediction": "All compared constitutive fields and the first 24 production right-hand-side groups agree at zero scalar amplitude, while one-step discrepancies at finite uncoupled scalar amplitude scale with at least order 1.7 as the amplitude is halved.",
+  "falsifier": "Primitive recovery fails, a compared zero-scalar field differs above the registered tolerance, the state layout changes unexpectedly, or the finite-amplitude one-step error fails to decrease with at least order 1.7.",
+  "decisive_observables": [
+    "constitutive_max_abs_error",
+    "smallest_grid_failed_cells",
+    "nulloth_state_groups",
+    "theory33_rhs_groups",
+    "nulloth_rhs_groups",
+    "rhs_groups_compared",
+    "rhs_max_abs_error",
+    "minimum_one_step_scaling_order"
+  ],
+  "acceptance_criteria": [
+    {"observable": "constitutive_max_abs_error", "operator": "<=", "value": 1e-13},
+    {"observable": "smallest_grid_failed_cells", "operator": "==", "value": 0},
+    {"observable": "nulloth_state_groups", "operator": "==", "value": 27},
+    {"observable": "theory33_rhs_groups", "operator": "==", "value": 24},
+    {"observable": "nulloth_rhs_groups", "operator": "==", "value": 27},
+    {"observable": "rhs_groups_compared", "operator": "==", "value": 24},
+    {"observable": "rhs_max_abs_error", "operator": "<=", "value": 2e-12},
+    {"observable": "minimum_one_step_scaling_order", "operator": ">=", "value": 1.7}
+  ],
+  "controls": [
+    "The unmodified Theory 3.3 constitutive and production implementations are the regression oracles.",
+    "All scalar material couplings are disabled in the production comparison.",
+    "The finite-amplitude comparison retains canonical scalar stress so convergence, rather than equality, is required."
+  ],
+  "resolution_ladder": [
+    {"scalar_amplitude": 0.002},
+    {"scalar_amplitude": 0.001},
+    {"scalar_amplitude": 0.0005}
+  ],
+  "seed": null,
+  "seed_rationale": "The registered periodic profiles and all comparisons are deterministic.",
+  "parameters": {
+    "grid_shape": [4],
+    "grid_lengths": [2.0],
+    "grid_method": "fd2",
+    "rk_step": 1e-6,
+    "compared_rhs_groups": 24
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_limits.py"
+  ],
+  "timeout_seconds": 120,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_limits.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/production33.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/integrators.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-LIM-001",
+    "NUL-LIM-002"
+  ]
+}

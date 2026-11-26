@@ -1,0 +1,83 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CTL-005-ASSESS-001",
+  "title": "Conservative brake robustness denial assessment",
+  "question": "Did NUL-CTL-005 fail specifically because both symmetric phase errors missed the objective while all other perturbations and safety gates passed?",
+  "prediction": "The immutable source completed and was rejected on exactly two target criteria; both phase variants miss two percent, all four nonphase variants pass, phase asymmetry is negligible, and all independent vetoes pass.",
+  "falsifier": "Any additional failed criterion, a passing phase variant, a failing nonphase variant, phase asymmetry above five percent, or any safety-veto failure falsifies this classification.",
+  "decisive_observables": [
+    "source_process_completed",
+    "raw_scientific_acceptance_passed",
+    "raw_failed_criteria",
+    "failed_criteria_are_target_only",
+    "all_nontarget_criteria_passed",
+    "phase_variants",
+    "phase_variants_meeting_objective",
+    "nonphase_variants",
+    "nonphase_variants_meeting_objective",
+    "minimum_phase_relative_suppression",
+    "maximum_phase_relative_suppression",
+    "phase_pair_relative_asymmetry",
+    "all_variants_admissible",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue"
+  ],
+  "acceptance_criteria": [
+    {"observable": "source_process_completed", "operator": "==", "value": 1},
+    {"observable": "raw_scientific_acceptance_passed", "operator": "==", "value": 0},
+    {"observable": "raw_failed_criteria", "operator": "==", "value": 2},
+    {"observable": "failed_criteria_are_target_only", "operator": "==", "value": 1},
+    {"observable": "all_nontarget_criteria_passed", "operator": "==", "value": 1},
+    {"observable": "phase_variants", "operator": "==", "value": 2},
+    {"observable": "phase_variants_meeting_objective", "operator": "==", "value": 0},
+    {"observable": "nonphase_variants", "operator": "==", "value": 4},
+    {"observable": "nonphase_variants_meeting_objective", "operator": "==", "value": 4},
+    {"observable": "minimum_phase_relative_suppression", "operator": "<", "value": 0.02},
+    {"observable": "maximum_phase_relative_suppression", "operator": "<", "value": 0.02},
+    {"observable": "phase_pair_relative_asymmetry", "operator": "<=", "value": 0.05},
+    {"observable": "all_variants_admissible", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": -1e-12},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "The assessment reads the immutable raw record and performs no new physical evolution.",
+    "The original two-percent objective and every perturbation radius remain unchanged.",
+    "Objective loss and safety denial are classified separately.",
+    "The raw failed campaign remains preserved."
+  ],
+  "resolution_ladder": [
+    {"source": "NUL-CTL-005 attempt-001", "role": "immutable robustness denial record"}
+  ],
+  "seed": null,
+  "seed_rationale": "The assessment deterministically parses a content-addressed run record.",
+  "parameters": {
+    "classification": "symmetric phase-target objective boundary",
+    "unchanged_target": 0.02
+  },
+  "command": [
+    "{python}",
+    "experiments/assess_nulloth_brake_robustness.py",
+    "runs/nulloth_master/NUL-CTL-005-fc56077e9eaec75e/attempt-001/run_record.json"
+  ],
+  "timeout_seconds": 30,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/assess_nulloth_brake_robustness.py",
+    "experiments/nulloth_master/corrections/NUL-CTL-005-CR-001.md",
+    "runs/nulloth_master/NUL-CTL-005-fc56077e9eaec75e/attempt-001/run_record.json"
+  ],
+  "outputs": [],
+  "supports_claims": ["NUL-CTL-005"]
+}

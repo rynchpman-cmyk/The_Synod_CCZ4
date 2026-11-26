@@ -1,0 +1,83 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-SPL-001-ASSESS-001",
+  "title": "Carrier Coherence Brake corrected promotion assessment",
+  "question": "Does the immutable raw Spell 001 campaign pass the correctly partitioned short-run resolution gates and long-run nonlinear promotion gates?",
+  "prediction": "All four short runs have no rejection reason except the two nonlinear gates explicitly deferred to the long run, while the long run and every unchanged physical tolerance pass.",
+  "falsifier": "Any short run fails a non-deferred gate, the long run fails full promotion, or any unchanged resolution, conservation, constraint, admissibility, restart, amplitude, or turnover threshold fails.",
+  "decisive_observables": [
+    "source_process_completed",
+    "short_resolution_runs",
+    "short_resolution_gate_passes",
+    "long_run_promoted",
+    "nonlinear_turnover",
+    "scalar_amplitude_relative_change_16_to_32",
+    "carrier_velocity_effect_relative_change_16_to_32",
+    "high_resolution_kinetic_effect",
+    "suppressive_sign_consistent_16_to_32",
+    "maximum_number_relative_drift",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue",
+    "maximum_restart_error",
+    "long_peak_scalar_amplitude",
+    "long_peak_to_final_drop"
+  ],
+  "acceptance_criteria": [
+    {"observable": "source_process_completed", "operator": "==", "value": 1},
+    {"observable": "short_resolution_runs", "operator": "==", "value": 4},
+    {"observable": "short_resolution_gate_passes", "operator": "==", "value": 4},
+    {"observable": "long_run_promoted", "operator": "==", "value": 1},
+    {"observable": "nonlinear_turnover", "operator": "==", "value": 1},
+    {"observable": "scalar_amplitude_relative_change_16_to_32", "operator": "<=", "value": 0.01},
+    {"observable": "carrier_velocity_effect_relative_change_16_to_32", "operator": "<=", "value": 0.02},
+    {"observable": "high_resolution_kinetic_effect", "operator": "<", "value": 0.0},
+    {"observable": "suppressive_sign_consistent_16_to_32", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "maximum_restart_error", "operator": "<=", "value": 1e-11},
+    {"observable": "long_peak_scalar_amplitude", "operator": "<=", "value": 0.17},
+    {"observable": "long_peak_to_final_drop", "operator": ">=", "value": 0.05}
+  ],
+  "controls": [
+    "The assessment reads the immutable raw campaign record without rerunning or modifying its trajectories.",
+    "Only the two nonlinear gates declared for the separate long run are deferred from the short runs.",
+    "All original numerical tolerances are unchanged.",
+    "The methodological correction is recorded in NUL-SPL-001-CR-001."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 2.0, "role": "effect resolution"},
+    {"points": 8, "duration": 2.0, "role": "effect resolution"},
+    {"points": 16, "duration": 2.0, "role": "effect resolution"},
+    {"points": 32, "duration": 2.0, "role": "effect resolution"},
+    {"points": 8, "duration": 6.0, "role": "nonlinear promotion"}
+  ],
+  "seed": null,
+  "seed_rationale": "The assessment is deterministic and reads a content-addressed raw execution record.",
+  "parameters": {
+    "correction": "NUL-SPL-001-CR-001",
+    "raw_run_id": "NUL-SPL-001-3aec69fdbb40b1de"
+  },
+  "command": [
+    "{python}",
+    "experiments/assess_nulloth_spell_001.py",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json"
+  ],
+  "timeout_seconds": 120,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/assess_nulloth_spell_001.py",
+    "experiments/nulloth_master/corrections/NUL-SPL-001-CR-001.md",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-SPL-001"
+  ]
+}

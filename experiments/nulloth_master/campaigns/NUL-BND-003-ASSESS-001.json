@@ -1,0 +1,66 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-003-ASSESS-001",
+  "title": "Assessment of denied finite vector and material qualification",
+  "question": "Did the immutable NUL-BND-003 run demonstrate physical vector and material passage while failing specifically and exclusively on its two registered entropy-account gates?",
+  "prediction": "The original run completed, all non-entropy criteria passed, scientific acceptance remained false, exactly two entropy criteria failed, and both residuals exceeded their original 1e-5 limits.",
+  "falsifier": "An incomplete run, any failed non-entropy gate, accepted original result, a different failure count, or entropy residuals not exceeding the registered limits falsifies this denial classification.",
+  "decisive_observables": [
+    "original_run_completed",
+    "original_scientific_acceptance_passed",
+    "all_nonentropy_criteria_passed",
+    "failed_entropy_criteria",
+    "vector_norm_loss_fraction",
+    "material_excess_baryon_loss_fraction",
+    "material_excess_carrier_loss_fraction",
+    "maximum_step_entropy_balance_residual",
+    "maximum_absolute_cumulative_entropy_balance_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "original_run_completed", "operator": "==", "value": 1},
+    {"observable": "original_scientific_acceptance_passed", "operator": "==", "value": 0},
+    {"observable": "all_nonentropy_criteria_passed", "operator": "==", "value": 1},
+    {"observable": "failed_entropy_criteria", "operator": "==", "value": 2},
+    {"observable": "vector_norm_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "material_excess_baryon_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "material_excess_carrier_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "maximum_step_entropy_balance_residual", "operator": ">", "value": 1e-5},
+    {"observable": "maximum_absolute_cumulative_entropy_balance_residual", "operator": ">", "value": 1e-5}
+  ],
+  "controls": [
+    "The assessment reads the immutable original run record and performs no new physical evolution.",
+    "Original criteria and thresholds are classified without modification.",
+    "Physical passage and qualification are reported separately."
+  ],
+  "resolution_ladder": [
+    {"source": "NUL-BND-003 attempt-001", "role": "immutable failed qualification record"}
+  ],
+  "seed": null,
+  "seed_rationale": "The assessment is a deterministic parse of a hashed run record.",
+  "parameters": {
+    "original_campaign": "NUL-BND-003",
+    "original_run_id": "NUL-BND-003-2f4a8b0fcb0e78d3",
+    "original_attempt": "attempt-001"
+  },
+  "command": [
+    "{python}",
+    "experiments/assess_nulloth_finite_vector_material_outflow.py",
+    "--record",
+    "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json",
+    "--output",
+    "{run_dir}/finite_vector_material_assessment.json"
+  ],
+  "timeout_seconds": 30,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/assess_nulloth_finite_vector_material_outflow.py",
+    "experiments/nulloth_master/corrections/NUL-BND-003-CR-001.md",
+    "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json"
+  ],
+  "outputs": [
+    "finite_vector_material_assessment.json"
+  ],
+  "supports_claims": [
+    "NUL-BND-003"
+  ]
+}

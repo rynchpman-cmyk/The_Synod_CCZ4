@@ -1,0 +1,74 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-009",
+  "title": "Vector-target mismatch and orientation audit",
+  "question": "Do Proca masses, mixing, source-current orientation, and vector-target mismatch alter the principal block, and does their lower-order Lorentz exchange retain the declared longitudinal and transverse projections?",
+  "prediction": "The doubled 14-variable Proca principal block and spectrum remain invariant across four parameter sets; numerical 16-variable field Jacobians remain identical across three source orientations; 128 target orientations reproduce Lorentz power and force projections to roundoff, with exact zero transverse electric power.",
+  "falsifier": "Any principal block, spectrum, or source-orientation Jacobian differs above tolerance, or any power/force projection fails its algebraic identity.",
+  "decisive_observables": [
+    "target_orientations",
+    "proca_parameter_sets",
+    "field_variables",
+    "numerical_jacobian_source_orientations",
+    "maximum_principal_block_variation",
+    "maximum_principal_spectrum_variation",
+    "maximum_source_orientation_field_jacobian_error",
+    "maximum_power_projection_error",
+    "maximum_force_projection_error",
+    "longitudinal_power",
+    "transverse_power",
+    "minimum_sampled_mismatch_angle",
+    "maximum_sampled_mismatch_angle"
+  ],
+  "acceptance_criteria": [
+    {"observable": "target_orientations", "operator": "==", "value": 128},
+    {"observable": "proca_parameter_sets", "operator": "==", "value": 4},
+    {"observable": "field_variables", "operator": "==", "value": 16},
+    {"observable": "numerical_jacobian_source_orientations", "operator": "==", "value": 3},
+    {"observable": "maximum_principal_block_variation", "operator": "==", "value": 0.0},
+    {"observable": "maximum_principal_spectrum_variation", "operator": "==", "value": 0.0},
+    {"observable": "maximum_source_orientation_field_jacobian_error", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_power_projection_error", "operator": "<=", "value": 1e-14},
+    {"observable": "maximum_force_projection_error", "operator": "<=", "value": 1e-14},
+    {"observable": "longitudinal_power", "operator": ">", "value": 0.0},
+    {"observable": "transverse_power", "operator": "==", "value": 0.0}
+  ],
+  "controls": [
+    "The four Proca parameter sets independently vary kinetic normalizations, both masses, and mass mixing.",
+    "The numerical field Jacobian is differentiated with target charge and current held fixed, isolating source-orientation dependence of the field operator.",
+    "Longitudinal, transverse, and oblique source currents are explicit Jacobian controls.",
+    "The 128-direction sphere evaluates lower-order Lorentz power and force against independent dot-product and antisymmetric-field contractions.",
+    "Exact longitudinal and transverse electric-current controls accompany the near-uniform orientation sphere."
+  ],
+  "resolution_ladder": [
+    {"parameter_sets": 4, "principal_variables": 14},
+    {"source_orientations": 3, "numerical_field_variables": 16},
+    {"target_orientation_sphere": 128}
+  ],
+  "seed": null,
+  "seed_rationale": "Parameter sets, fields, source controls, and Fibonacci orientations are deterministic.",
+  "parameters": {
+    "target_charge": 0.18,
+    "target_current_magnitude": 0.07,
+    "electric_field_magnitude": 0.12,
+    "field_orientation": "nonzero electric and magnetic projections"
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_vector_target_orientation.py",
+    "--target-orientations",
+    "128"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_vector_target_orientation.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory3.py",
+    "src/causal_repair/grid.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-009"
+  ]
+}

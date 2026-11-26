@@ -1,0 +1,91 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CTL-007",
+  "title": "Conservative brake combined-error corner",
+  "question": "How does the qualified independent phase reserve contract when combined with low amplitude, momentum underdrive, and opposite-sign shape error?",
+  "prediction": "The opposite-sign shape perturbation alone retains the objective, at least one paired phase error loses it, and the all-error corner loses it while every trajectory remains physically admissible and numerically controlled.",
+  "falsifier": "Failure of the isolated opposite-sign shape branch, no paired phase failure, a passing all-error corner, or any safety-veto failure falsifies the predicted reserve contraction.",
+  "decisive_observables": [
+    "source_assessment_accepted",
+    "points",
+    "variant_count",
+    "variants_meeting_objective",
+    "minimum_variant_relative_suppression",
+    "negative_shape_meets_objective",
+    "negative_shape_relative_suppression",
+    "paired_phase_failures",
+    "combined_corner_meets_objective",
+    "combined_corner_relative_suppression",
+    "all_variants_admissible",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "maximum_gauss_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue"
+  ],
+  "acceptance_criteria": [
+    {"observable": "source_assessment_accepted", "operator": "==", "value": 1},
+    {"observable": "points", "operator": "==", "value": 32},
+    {"observable": "variant_count", "operator": "==", "value": 5},
+    {"observable": "negative_shape_meets_objective", "operator": "==", "value": 1},
+    {"observable": "negative_shape_relative_suppression", "operator": ">=", "value": 0.02},
+    {"observable": "paired_phase_failures", "operator": ">=", "value": 1},
+    {"observable": "combined_corner_meets_objective", "operator": "==", "value": 0},
+    {"observable": "combined_corner_relative_suppression", "operator": "<", "value": 0.02},
+    {"observable": "all_variants_admissible", "operator": "==", "value": 1},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-10},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": -1e-12},
+    {"observable": "maximum_gauss_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-3},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "The immutable accepted thirty-two-point Spell 001 no-command trajectory supplies the kinetic control.",
+    "The phase magnitude is the passing lower bound qualified by NUL-CTL-006, not the failing pi/8 endpoint.",
+    "The opposite second-harmonic sign closes the missing deterministic shape direction from NUL-CTL-005.",
+    "Every isolated, paired, and combined profile receives an independent periodic CMC solve and complete production evolution.",
+    "The all-error corner and reserve-contraction prediction are fixed before execution."
+  ],
+  "resolution_ladder": [
+    {"points": 32, "duration": 2.0, "dt": 0.01, "role": "qualified-domain combined-error audit"}
+  ],
+  "seed": null,
+  "seed_rationale": "All combined profiles, controls, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "nominal_amplitude": 0.02,
+    "low_amplitude": 0.018,
+    "phase_error_radians": 0.3436116964863836,
+    "negative_second_harmonic_fraction": -0.10,
+    "momentum_scale": 0.8,
+    "target_relative_suppression": 0.02
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_brake_combined_errors.py",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json",
+    "runs/nulloth_master/NUL-SPL-001-ASSESS-001-688a045f626aa0f0/attempt-001/run_record.json"
+  ],
+  "timeout_seconds": 10800,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_brake_combined_errors.py",
+    "experiments/audit_nulloth_brake_robustness.py",
+    "experiments/search_nulloth_brake_controls.py",
+    "runs/nulloth_master/NUL-SPL-001-3aec69fdbb40b1de/attempt-001/run_record.json",
+    "runs/nulloth_master/NUL-SPL-001-ASSESS-001-688a045f626aa0f0/attempt-001/run_record.json",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/grid.py"
+  ],
+  "outputs": [],
+  "supports_claims": ["NUL-CTL-007"]
+}

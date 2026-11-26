@@ -1,0 +1,6378 @@
+{
+  "scope": "collinear homogeneous constitutive detour screen",
+  "slices": [
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.2,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.25,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        0.8,
+        0.3,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.2,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.25,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.0,
+        0.3,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.2,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.25,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.2
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.2
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.2
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.2
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.3
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.3
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.3
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.3
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.45
+      ],
+      "phi": 0.006884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.45
+      ],
+      "phi": 0.010884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "screened"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.44
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.45
+      ],
+      "phi": 0.014884443568990347,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "screened"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.375
+    },
+    {
+      "background_n_d_eps": [
+        1.2,
+        0.3,
+        0.45
+      ],
+      "phi": 0.02,
+      "tests": [
+        [
+          0.18,
+          "screened"
+        ],
+        [
+          0.245,
+          "screened"
+        ],
+        [
+          0.31,
+          "screened"
+        ],
+        [
+          0.375,
+          "oblique defect"
+        ],
+        [
+          0.44,
+          "oblique defect"
+        ],
+        [
+          0.505,
+          "oblique defect"
+        ],
+        [
+          0.5700000000000001,
+          "oblique defect"
+        ],
+        [
+          0.635,
+          "oblique defect"
+        ],
+        [
+          0.7,
+          "oblique defect"
+        ],
+        [
+          0.7508844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7608844075272453,
+          "oblique defect"
+        ],
+        [
+          0.7708844075272453,
+          "oblique defect"
+        ]
+      ],
+      "highest_screened_v": 0.31
+    }
+  ],
+  "screened_at_reference_velocities": []
+}

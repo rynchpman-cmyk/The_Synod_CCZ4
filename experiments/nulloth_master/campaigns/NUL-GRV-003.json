@@ -1,0 +1,85 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-003",
+  "title": "Weak-field CCZ4 constraint and observable convergence",
+  "question": "Do CCZ4 constraints and the active scalar endpoint independently converge across a 4, 8, and 16 point weak-field production ladder?",
+  "prediction": "The maximum gravitational constraint decreases monotonically with resolution, both constraint-reduction factors exceed two, and the scalar endpoint error decreases by more than a factor of two. Field constraints, numbers, entropy, convexity, and recovery remain admissible.",
+  "falsifier": "Nonmonotone gravitational constraints, failure of either reduction sequence, or violation of any independent field, conservation, entropy, convexity, or recovery veto falsifies the observation.",
+  "decisive_observables": [
+    "gravitational_constraint_monotone_with_resolution",
+    "coarse_to_medium_constraint_reduction",
+    "medium_to_fine_constraint_reduction",
+    "coarse_to_medium_scalar_error_reduction",
+    "maximum_finest_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "gravitational_constraint_monotone_with_resolution", "operator": "==", "value": 1},
+    {"observable": "coarse_to_medium_constraint_reduction", "operator": ">", "value": 2.0},
+    {"observable": "medium_to_fine_constraint_reduction", "operator": ">", "value": 2.0},
+    {"observable": "coarse_to_medium_scalar_error_reduction", "operator": ">", "value": 2.0},
+    {"observable": "maximum_finest_gravitational_constraint_l2", "operator": "<=", "value": 1e-6},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "All resolutions use the same physical profile, box, gravity coupling, gauge, time step, and duration.",
+    "Every resolution begins from an independent periodic CMC constraint solve.",
+    "The scalar endpoint and maximum CCZ4 constraint form separate convergence sequences.",
+    "Field constraints, number conservation, entropy, convexity, and recovery are independent vetoes."
+  ],
+  "resolution_ladder": [
+    {"points": 4, "duration": 0.25, "dt": 0.01, "role": "coarse"},
+    {"points": 8, "duration": 0.25, "dt": 0.01, "role": "medium"},
+    {"points": 16, "duration": 0.25, "dt": 0.01, "role": "fine"}
+  ],
+  "seed": null,
+  "seed_rationale": "The mode, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "kappa_gravity": 0.001,
+    "slicing": "harmonic",
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "scalar_initial_amplitude": 0.02,
+    "box_length": 32.0
+  },
+  "command": [
+    "{python}",
+    "experiments/converge_nulloth_ccz4_constraints.py",
+    "--duration",
+    "0.25",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/ccz4_convergence.json"
+  ],
+  "timeout_seconds": 240,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/converge_nulloth_ccz4_constraints.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_CCZ4_CONVERGENCE.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "ccz4_convergence.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-003"
+  ]
+}

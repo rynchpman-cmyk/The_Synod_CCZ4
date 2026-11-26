@@ -1,0 +1,94 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-004",
+  "title": "Three-dimensional periodic tensor response",
+  "question": "Does anisotropic Nulloth scalar stress generate a transverse-traceless geometry response in complete 3D production evolution, with the quadratic amplitude scaling predicted by the canonical stress tensor?",
+  "prediction": "Initial active-control TT contrasts remain at roundoff, evolved metric and extrinsic-curvature TT contrasts become nonzero, and doubling scalar amplitude multiplies both responses by approximately four. All constraint, conservation, entropy, convexity, and recovery vetoes pass.",
+  "falsifier": "A resolved initial TT seed, absent evolved response, nonquadratic amplitude scaling, or failure of any independent constraint, conservation, entropy, convexity, or recovery veto falsifies the observation.",
+  "decisive_observables": [
+    "extrinsic_curvature_tt_amplitude_scaling",
+    "metric_tt_amplitude_scaling",
+    "maximum_initial_extrinsic_curvature_tt_l2",
+    "maximum_initial_metric_tt_l2",
+    "maximum_final_extrinsic_curvature_tt_l2",
+    "maximum_final_metric_tt_l2",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "extrinsic_curvature_tt_amplitude_scaling", "operator": ">=", "value": 3.8},
+    {"observable": "extrinsic_curvature_tt_amplitude_scaling", "operator": "<=", "value": 4.2},
+    {"observable": "metric_tt_amplitude_scaling", "operator": ">=", "value": 3.8},
+    {"observable": "metric_tt_amplitude_scaling", "operator": "<=", "value": 4.2},
+    {"observable": "maximum_initial_extrinsic_curvature_tt_l2", "operator": "<=", "value": 1e-20},
+    {"observable": "maximum_initial_metric_tt_l2", "operator": "<=", "value": 1e-20},
+    {"observable": "maximum_final_extrinsic_curvature_tt_l2", "operator": ">", "value": 1e-12},
+    {"observable": "maximum_final_metric_tt_l2", "operator": ">", "value": 1e-14},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-4},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "Every amplitude and the scalar-free control receive independent 3D periodic CMC constraint solves.",
+    "The fluid, carrier modulation, grid, gravity coupling, gauge, time step, and duration are common.",
+    "The Fourier TT projection excludes the homogeneous mode and is evaluated on active-minus-control physical geometry.",
+    "An amplitude doubling tests the quadratic canonical scalar-stress source.",
+    "The periodic TT response is not called asymptotic gravitational radiation."
+  ],
+  "resolution_ladder": [
+    {"points": [4, 4, 4], "duration": 0.02, "dt": 0.005, "role": "3D tensor-source reconnaissance"}
+  ],
+  "seed": null,
+  "seed_rationale": "Profiles, Fourier projection, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "scalar_initial_amplitudes": [0.005, 0.01],
+    "scalar_profile": "0.5*(cos(k*x)-cos(k*y))",
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.1,
+    "carrier_modulation_axis": "z",
+    "kappa_gravity": 0.001,
+    "slicing": "harmonic",
+    "box_lengths": [32.0, 32.0, 32.0]
+  },
+  "command": [
+    "{python}",
+    "experiments/measure_nulloth_periodic_tensor_response.py",
+    "--points",
+    "4",
+    "--duration",
+    "0.02",
+    "--dt",
+    "0.005",
+    "--output",
+    "{run_dir}/periodic_tensor_response.json"
+  ],
+  "timeout_seconds": 240,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/measure_nulloth_periodic_tensor_response.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_PERIODIC_TENSOR_RESPONSE.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "periodic_tensor_response.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-004"
+  ]
+}

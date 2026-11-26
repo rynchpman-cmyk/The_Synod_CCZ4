@@ -1,0 +1,748 @@
+# PHYSICAL NULLOTH EXPERIMENT CAMPAIGN
+# THE HADAMARD PINCH AND DYNAMICAL FEASIBILITY TRANSIT
+
+## 1. OBJECTIVE
+
+Investigate a candidate semisimple characteristic degeneracy discovered during an independent SciPy/mpmath analysis of the Physical Nulloth master action.
+
+The longitudinal Hadamard instability region appears to close at a single point in constitutive state space before reopening on either side.
+
+The objectives are:
+
+- Independently reproduce the pinch using the native Nulloth implementation.
+- Establish its algebraic and geometric eigenvalue multiplicities.
+- Determine whether the full coupled PDE remains strongly hyperbolic at the pinch.
+- Investigate arbitrary propagation directions near the pinch.
+- Determine whether autonomous or controlled dynamical evolution can transit the pinch without losing admissibility.
+- Search for additional unexpected phenomena in its immediate neighborhood.
+
+Treat all reference results below as hypotheses to reproduce, not assertions that the production implementation must be modified to satisfy.
+
+Preserve the existing solver architecture and qualification policies. Do not silently modify constitutive physics, disable recovery gates, clip characteristic eigenvalues, or introduce artificial stabilization.
+
+## 2. CONSTITUTIVE PARAMETERS
+
+Use the existing Physical Nulloth master action with:
+
+```text
+gamma_ad   = 5/3
+K_d        = 1.2
+c_d        = 0.45
+f          = 0.25
+chi_c      = 6.0
+a_1        = 0.04
+a_2        = 0.01
+W_4        = 1.0
+g_n        = 0.20
+g_d        = 0.20
+g_W        = 10.0
+n_star     = 1.0
+d_star     = 0.25
+W_star     = 0.0025
+m_phi      = 1.0
+lambda_phi = 2500.0
+```
+
+Fixed thermodynamic background:
+
+```text
+n   = 1.00
+d   = 0.25
+eps = 0.30
+```
+
+Use the native conventions for all other parameters. Record their actual values, particularly drag relaxation, vector mixing, carrier charge, gravitational coupling, constraint damping and numerical floors.
+
+Do not assume that undocumented default parameters are irrelevant.
+
+## 3. REFERENCE HADAMARD PINCH
+
+Ordinary-matter rest frame:
+
+```text
+v_N       = 0.0
+v_D       = 0.760884407527245
+phi       = 0.010884443568990346290462464857531010
+Q         = -0.19558947532364135
+lambda_*  = 0.471084089380828
+```
+
+Equivalent laboratory frame:
+
+```text
+v_N       = +0.60
+v_D       = +0.9343328358045895
+```
+
+The independently calculated longitudinal material spectrum in the ordinary-matter rest frame is approximately:
+
+```text
+lambda_1 = -0.472974646
+lambda_2 = +0.471084089
+lambda_3 = +0.471084089
+lambda_4 = +0.903335920
+lambda_5 =  0.000000000  (advected entropy)
+```
+
+Reference scalar quantities:
+
+```text
+C                  = 541.499316
+phi_equilibrium    = 0.464973
+initial_phi_ddot   = +5.87981
+```
+
+The scalar acceleration assumes homogeneous flat-space initial data and zero initial scalar momentum.
+
+The reference gap width near the pinch is:
+
+```text
+delta_v_gap ~= 6.99110144175 * abs(delta_phi)
+
+dv_boundary_1/dphi ~= -8.20935741844
+dv_boundary_2/dphi ~= -1.21825597669
+```
+
+These are rest-frame relative-velocity derivatives.
+
+## 4. PHASE A - INDEPENDENT CONSTITUTIVE REPRODUCTION
+
+Before performing any dynamical evolution, reproduce the static characteristic structure with the native Nulloth implementation.
+
+Construct the complete available material principal symbol:
+
+```text
+P(s) = inverse(A0) * A(s)
+```
+
+Where practical, use a generalized eigenvalue formulation directly on the matrix pencil:
+
+```text
+A(s) - lambda * A0
+```
+
+For every evaluated state, record:
+
+```text
+n
+d
+eps
+phi
+v_N
+v_D
+v_rel
+Gamma_rel
+W
+Q
+B_N
+B_D
+Psi
+C
+effective_scalar_mass_squared
+minimum_legendre_eigenvalue
+minimum_thermodynamic_eigenvalue
+condition_number_A0
+characteristic_eigenvalues_real
+characteristic_eigenvalues_imag
+maximum_characteristic_modulus
+eigenbasis_condition_number
+primitive_recovery_jacobian
+primitive_recovery_residual
+```
+
+Verify the reference longitudinal instability topology at phi = 0.15.
+
+Expected approximate rest-frame instability band:
+
+```text
+0.162091636 < abs(v_rel) < 0.759728089
+```
+
+Then independently locate the low-scalarization pinch.
+
+If the native implementation disagrees with the reference, investigate and document the discrepancy before proceeding.
+
+Check normalization, entropy treatment, derivatives of Q, scalar coupling derivatives and primitive-variable conventions.
+
+## 5. PHASE B - HIGH-PRECISION DEGENERACY ANALYSIS
+
+Solve for the candidate pinch independently.
+
+Construct a symmetric 2x2 acoustic pencil from the second variations of the master action and linearized current-conservation constraints, if available or straightforward to derive.
+
+At the proposed pinch, test whether:
+
+```text
+M_NN(lambda_*) = 0
+M_DD(lambda_*) = 0
+M_ND(lambda_*) = 0
+```
+
+Distinguish between:
+
+```text
+Ordinary exceptional point:
+    algebraic multiplicity = 2
+    geometric multiplicity = 1
+
+Semisimple degeneracy:
+    algebraic multiplicity = 2
+    geometric multiplicity = 2
+```
+
+Use clustered eigenvalues and SVD null-space reconstruction. Do not use the raw eigenvectors returned by a generic eigensolver as the sole multiplicity test.
+
+Report the singular values of:
+
+```text
+P - lambda_* * I
+```
+
+And independently report the residuals of both reconstructed eigenvectors.
+
+Investigate sensitivity to the singular-value threshold and eigenvalue clustering tolerance.
+
+Use float64 for production comparisons. Use mpmath or another arbitrary-precision implementation for the reference degeneracy calculation if required.
+
+Suggested precision ladder:
+
+```text
+30 decimal digits
+50 decimal digits
+80 decimal digits
+100 decimal digits
+```
+
+Do not interpret an inability to resolve a gap in float64 as evidence that the gap does not exist.
+
+Map the reopened instability gap for:
+
+```text
+delta_phi = +/- 1e-3
+delta_phi = +/- 1e-4
+delta_phi = +/- 1e-5
+delta_phi = +/- 1e-6
+delta_phi = +/- 1e-8
+delta_phi = +/- 1e-10
+delta_phi = +/- 1e-12
+```
+
+Extend to smaller offsets using arbitrary precision where justified.
+
+Locate both gap boundaries using adaptive root finding rather than relying exclusively on a uniform velocity grid.
+
+Measure:
+
+```text
+gap_width
+gap_center
+maximum_imaginary_characteristic
+eigenvalue_splitting
+eigenbasis_conditioning
+```
+
+Fit the scaling laws as delta_phi approaches zero.
+
+Determine whether the linear gap-width law survives independent reproduction.
+
+## 6. PHASE C - FULL DIRECTIONAL HYPERBOLICITY AUDIT
+
+The longitudinal pinch may be admissible while oblique or transverse propagation remains unstable.
+
+Audit the complete available coupled characteristic system, including:
+
+```text
+ordinary matter
+Null carrier
+entropy mode, if evolved independently
+coherence scalar
+mixed massive-vector A sector
+mixed massive-vector B sector
+cleaning variables
+```
+
+Identify the actual principal-symbol dimension and distinguish physical, auxiliary and constraint modes.
+
+Do not omit entropy merely to force the system to have 25 variables.
+
+Use the existing directional characteristic convention.
+
+For collinear background currents, sample:
+
+```text
+theta = 0.00 to 180.00 degrees
+initial angular spacing = 0.10 degrees
+```
+
+Refine adaptively wherever:
+
+```text
+eigenvalue separation becomes small
+eigenbasis conditioning increases
+imaginary components appear
+characteristic speeds approach the light cone
+A0 becomes poorly conditioned
+```
+
+Pay particular attention to the limiting behavior as theta approaches zero.
+
+At a repeated eigenvalue, reconstruct the complete eigenspace using SVD.
+
+A real spectrum at every sampled direction is necessary but not sufficient to establish strong hyperbolicity.
+
+Investigate whether eigenbasis conditioning remains uniformly bounded as propagation direction approaches a degeneracy.
+
+Where practical, construct a positive symmetrizer and measure its conditioning.
+
+Repeat the audit at:
+
+```text
+exact pinch
+both sides of the pinch
+both reopened Hadamard gaps
+both adjacent hyperbolic regions
+```
+
+Additional reference test:
+
+```text
+phi   = 0.15
+v_rel = 0.85
+```
+
+The independent isentropic calculation predicts real longitudinal characteristics but a substantial transverse imaginary component:
+
+```text
+max_imag ~= 0.29448
+```
+
+Verify or reject this hidden transverse instability using the full implementation.
+
+Classify each state separately according to:
+
+```text
+REAL_SPECTRUM
+COMPLETE_EIGENBASIS
+DIRECTIONAL_CONDITIONING
+CAUSAL_SPEEDS
+LEGENDRE_POSITIVITY
+THERMODYNAMIC_CONVEXITY
+PRIMITIVE_RECOVERABILITY
+FULL_ADMISSIBILITY
+```
+
+Do not collapse these into a single boolean without preserving the individual results.
+
+## 7. PHASE D - LOCAL CONSTITUTIVE GEOMETRY
+
+The pinch was discovered in a two-dimensional slice of a much larger state space.
+
+Investigate whether it remains an isolated point or belongs to a higher-dimensional degeneracy manifold.
+
+Vary:
+
+```text
+n   = 1.00 +/- small perturbations
+d   = 0.25 +/- small perturbations
+eps = 0.30 +/- small perturbations
+```
+
+Use relative perturbation magnitudes:
+
+```text
+1e-2
+1e-3
+1e-4
+1e-5
+1e-6
+```
+
+For each perturbation, attempt to continue the pinch in:
+
+```text
+(phi, v_rel, lambda_*)
+```
+
+Estimate the local tangent directions of the degeneracy manifold.
+
+Determine:
+
+- Whether the pinch persists under density changes.
+- Whether thermodynamic changes destroy the semisimple degeneracy.
+- Whether the location of the pinch can be steered by material compression.
+- Whether nearby admissible trajectories exist.
+- Whether another instability sector intersects the pinch manifold.
+
+Construct a local Jacobian of the pinch-defining equations and report its numerical rank and singular values.
+
+If continuation fails, distinguish a physical termination from failure of the continuation algorithm.
+
+This phase should be treated as exploratory research. Investigate any unexpected additional degeneracies rather than forcing the result into the original hourglass interpretation.
+
+## 8. PHASE E - HOMOGENEOUS DYNAMICAL EVOLUTION
+
+Use the native coupled material/scalar evolution machinery.
+
+Begin with a homogeneous fixed-Minkowski experiment, if supported.
+
+Do not interpret flat initial geometry with nonzero stress-energy as constraint-satisfying Einstein initial data.
+
+For the later coupled CCZ4 experiment, use appropriately constructed constraint-consistent initial data.
+
+Initialize the reference pinch state with:
+
+```text
+scalar_gradient = 0
+scalar_momentum = 0
+```
+
+Run the following cases:
+
+```text
+E1: Frozen background characteristic control
+E2: Homogeneous material/scalar evolution without drag
+E3: Homogeneous material/scalar evolution with native drag
+E4: Full material/scalar/vector evolution with native drag
+```
+
+Use only physically consistent initial vector and charge configurations supported by the implementation.
+
+If a sector cannot be disabled consistently, document that limitation rather than modifying the physical equations.
+
+Start with a very short time horizon.
+
+The scalar source is large at the candidate pinch and the initial state is not in scalar equilibrium.
+
+Resolve the early departure with adaptive timesteps or dense diagnostic output.
+
+Track:
+
+```text
+time
+phi
+scalar_momentum
+scalar_acceleration
+v_rel
+Q
+C
+minimum_legendre_eigenvalue
+minimum_thermodynamic_eigenvalue
+minimum_characteristic_separation
+maximum_imaginary_characteristic
+maximum_directional_eigenbasis_condition
+total_energy
+total_momentum
+baryon_number
+carrier_number
+entropy
+drag_heat
+recovery_residual
+```
+
+Determine the first mechanism that causes departure from admissibility.
+
+In particular, distinguish:
+
+```text
+scalar growth
+carrier drag
+thermodynamic convexity loss
+longitudinal hyperbolicity loss
+oblique hyperbolicity loss
+causal-speed violation
+primitive recovery failure
+```
+
+Compare the early trajectory with the tangent directions of the pinch manifold found in Phase D.
+
+## 9. PHASE F - DYNAMICAL TRANSIT THROUGH THE PINCH
+
+This is the primary discovery experiment.
+
+Investigate whether an initially admissible trajectory can pass through the vicinity of the pinch while remaining admissible on both sides.
+
+Use the local constitutive geometry from Phase D to identify candidate transit directions.
+
+Vary initial:
+
+```text
+phi
+scalar_momentum
+relative_velocity
+carrier_density
+ordinary_density
+internal_energy
+```
+
+First search for an autonomous transit under the unmodified equations.
+
+Determine whether initial scalar momentum and native carrier drag can be tuned to produce passage between the adjacent hyperbolic regions.
+
+Use a shooting method or constrained optimization if appropriate.
+
+If no autonomous transit is found, investigate a separately labeled controlled experiment using only explicitly defined, physically accounted-for actuation.
+
+Any external control must have its energy, momentum and carrier accounting included.
+
+Do not prescribe an arbitrary trajectory and describe it as an autonomous solution.
+
+Measure the minimum admissibility margin along every trajectory.
+
+A successful transit requires more than admissible endpoints.
+
+Audit the full intermediate path using adaptive diagnostic refinement.
+
+For each candidate, report:
+
+```text
+initial_state
+final_state
+minimum_distance_to_pinch
+minimum_characteristic_separation
+maximum_imaginary_characteristic
+maximum_eigenbasis_condition
+minimum_convexity_margin
+maximum_characteristic_modulus
+energy_balance_error
+entropy_change
+```
+
+Compare successful and unsuccessful neighboring trajectories.
+
+Determine how the admissible transit corridor scales with initial-condition perturbations.
+
+## 10. PHASE G - SPATIALLY RESOLVED PERTURBATIONS
+
+Once the homogeneous evolution is characterized, introduce small spatial perturbations on periodic Cartesian domains.
+
+Use physically consistent longitudinal and transverse perturbations of:
+
+```text
+ordinary current
+carrier current
+coherence scalar
+entropy, where supported
+```
+
+Prefer perturbations aligned with independently reconstructed characteristic eigenvectors.
+
+Test:
+
+```text
+single acoustic eigenmode
+both degenerate acoustic eigenmodes
+equal-amplitude superposition
+opposite-phase superposition
+transverse perturbation
+oblique perturbation
+broadband deterministic perturbation
+```
+
+Suggested perturbation amplitudes:
+
+```text
+1e-3
+1e-5
+1e-7
+1e-9
+```
+
+Use a fixed random seed for broadband experiments.
+
+Start with the smallest practical periodic grids supported by the backend.
+
+Use resolution ladders rather than immediately launching expensive production runs.
+
+Suggested exploratory resolutions, adapted to backend capabilities:
+
+```text
+N = 16
+N = 32
+N = 40
+N = 64
+```
+
+Use higher resolution only when a specific phenomenon warrants it.
+
+Record actual domain dimensions, physical lengths, CFL and timesteps.
+
+Test whether perturbation amplification follows the predicted frozen-background growth law inside the Hadamard region:
+
+```text
+growth_rate(k) ~= abs(k) * abs(Im(lambda))
+```
+
+Account for the evolving background when comparing dynamical measurements with frozen-background predictions.
+
+Perform wavelength and resolution ladders.
+
+Determine whether observed amplification:
+
+- Converges to a resolved physical transient.
+- Scales with wavenumber as expected from the ill-posed principal symbol.
+- Is dominated by discretization, filtering or numerical dissipation.
+- Produces unexpected exchange between the two degenerate acoustic modes.
+
+Never interpret a numerically stabilized evolution inside a Hadamard region as proof that the continuum PDE is well-posed.
+
+## 11. PHASE H - NONNORMAL TRANSIENT AMPLIFICATION
+
+Even if the spectrum remains real near the pinch, strongly nonorthogonal eigenvectors may permit transient amplification.
+
+Investigate the frozen-background propagator:
+
+```text
+G(k,t) = exp(-i*k*P*t)
+```
+
+Compute:
+
+```text
+maximum_singular_value(G)
+optimal_initial_perturbation
+optimal_amplification_time
+eigenbasis_condition_number
+```
+
+Use both Euclidean and physically motivated perturbation norms where available.
+
+Document the variable scaling used for every norm.
+
+Include lower-order scalar, drag and vector source Jacobians in a second analysis:
+
+```text
+G_full(k,t) = exp((-i*k*P + J_source)*t)
+```
+
+For evolving backgrounds, integrate the corresponding time-dependent linear variational equation rather than treating a single frozen matrix as exact.
+
+Compare the predicted optimal perturbations against the nonlinear production evolution.
+
+Search for substantial finite-time amplification while the trajectory remains spectrally admissible.
+
+This is a particularly interesting possible connection to the previous Nulloth resonance experiments.
+
+## 12. NUMERICAL QUALIFICATION POLICY
+
+For every candidate discovery, distinguish:
+
+```text
+OBSERVED
+REPRODUCED
+RESOLUTION_QUALIFIED
+INDEPENDENTLY_VERIFIED
+```
+
+Preserve rejected runs and record the rejection reason.
+
+Never silently skip failed recovery or hyperbolicity states.
+
+Run refinement tests for:
+
+```text
+spatial resolution
+time integration
+characteristic differentiation
+eigenvalue clustering
+SVD tolerances
+arbitrary-precision arithmetic
+diagnostic sampling cadence
+```
+
+Do not disable production admissibility gates.
+
+If an intentionally nonhyperbolic state is investigated, isolate it in a clearly labeled diagnostic-only experiment.
+
+No production stability claim may be based on that diagnostic evolution.
+
+## 13. OUTPUT ARTIFACTS
+
+Create a dedicated experiment directory:
+
+```text
+experiments/hadamard_pinch/
+```
+
+Produce:
+
+```text
+HADAMARD_PINCH_CAMPAIGN.md
+hadamard_pinch_summary.json
+hadamard_pinch_reference.json
+hadamard_pinch_directional_scan.npz
+hadamard_pinch_continuation.npz
+hadamard_pinch_dynamics.npz
+hadamard_pinch_transient_growth.npz
+```
+
+Generate plots for:
+
+```text
+01 - Global scalar-amplitude / relative-velocity phase diagram
+02 - High-resolution pinch geometry
+03 - Gap-width scaling
+04 - Eigenvalue splitting
+05 - Eigenbasis conditioning
+06 - Directional instability map
+07 - Convexity and causality boundaries
+08 - Pinch continuation under thermodynamic perturbations
+09 - Homogeneous dynamical trajectories
+10 - Scalar amplitude and relative velocity versus time
+11 - Admissibility margins versus time
+12 - Perturbation amplification versus wavelength
+13 - Transient propagator singular values
+14 - Energy, momentum and entropy accounting
+```
+
+Save reproducible configurations, raw data, source versions, random seeds and exact execution commands.
+
+Preserve restartability for expensive experiments.
+
+## 14. COMPUTATIONAL BUDGET
+
+Prioritize inexpensive local constitutive analysis before spatial evolution.
+
+Use adaptive refinement rather than unnecessarily dense global scans.
+
+Perform discovery experiments at small resolutions and short time horizons.
+
+Do not automatically launch an overnight production campaign.
+
+If an interesting phenomenon survives the exploratory qualification ladder, package the larger production replay and report:
+
+```text
+recommended_resolution
+recommended_domain
+recommended_timestep
+recommended_duration
+estimated_memory_requirement
+estimated_runtime_from_measured_pilots
+qualification_gates
+scientific_reason_for_escalation
+```
+
+## 15. FINAL REPORT
+
+Present the findings as an experimental research journal in the style of the existing KKT/MOTS campaign.
+
+Answer the following questions explicitly:
+
+1. Is the Hadamard pinch independently reproducible?
+2. Is the double characteristic root genuinely semisimple?
+3. Does the pinch survive the complete directional characteristic audit?
+4. Does it belong to a higher-dimensional degeneracy manifold?
+5. Does the linear gap-width scaling survive numerical refinement?
+6. Can autonomous dynamics approach or transit the pinch?
+7. Can controlled dynamics transit it with complete physical accounting?
+8. Does nonnormal transient amplification occur near the boundary?
+9. Are there unexpected interactions between the degenerate modes?
+10. What is the most interesting verified phenomenon discovered?
+11. Which remaining claims require production-scale verification?
+
+Unexpected results are encouraged.
+
+Do not limit the investigation to confirming the supplied reference numbers.
+
+If the mathematics reveals a new phenomenon, follow it far enough to characterize its mechanism and numerical reliability.
+
+The objective is discovery, not confirmation.

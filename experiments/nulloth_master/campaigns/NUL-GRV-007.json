@@ -1,0 +1,86 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-GRV-007",
+  "title": "Elevated-curvature gauge robustness",
+  "question": "Do scalar and geometric profile diagnostics remain robust between harmonic and 1+log slicing at gravitational coupling 0.5 while the lapse responds to the gauge choice?",
+  "prediction": "Scalar amplitude, metric deviation, and extrinsic-curvature norms agree within 0.1 percent; minimum lapse differs by more than 3 percent; and all independent constraint, conservation, entropy, convexity, and recovery vetoes pass.",
+  "falsifier": "A primary-observable spread above tolerance, an insensitive lapse control, or failure of any independent veto falsifies the elevated-curvature gauge observation.",
+  "decisive_observables": [
+    "scalar_amplitude_relative_spread",
+    "metric_deviation_relative_spread",
+    "extrinsic_curvature_relative_spread",
+    "minimum_lapse_relative_spread",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_entropy_change",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "scalar_amplitude_relative_spread", "operator": "<=", "value": 0.001},
+    {"observable": "metric_deviation_relative_spread", "operator": "<=", "value": 0.001},
+    {"observable": "extrinsic_curvature_relative_spread", "operator": "<=", "value": 0.001},
+    {"observable": "minimum_lapse_relative_spread", "operator": ">=", "value": 0.03},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 0.001},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_entropy_change", "operator": ">=", "value": 0.0},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "Harmonic and 1+log runs share the fine 16 point profile, coupling, box, time step, and duration.",
+    "Each slicing begins from an independent periodic CMC construction of the same physical primitives.",
+    "Scalar, metric, and extrinsic-curvature norms are primary profile diagnostics; minimum lapse is the gauge-sensitive control.",
+    "Constraint, conservation, entropy, convexity, and recovery vetoes are evaluated independently."
+  ],
+  "resolution_ladder": [
+    {"points": 16, "duration": 0.05, "dt": 0.01, "role": "fine elevated-curvature gauge comparison"}
+  ],
+  "seed": null,
+  "seed_rationale": "Both slicing trials are deterministic.",
+  "parameters": {
+    "slicing": ["harmonic", "1+log"],
+    "evolve_shift": false,
+    "kappa_gravity": 0.5,
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.2,
+    "scalar_initial_amplitude": 0.02,
+    "box_length": 32.0
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_elevated_curvature_gauge.py",
+    "--points",
+    "16",
+    "--duration",
+    "0.05",
+    "--dt",
+    "0.01",
+    "--output",
+    "{run_dir}/elevated_curvature_gauge.json"
+  ],
+  "timeout_seconds": 240,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_elevated_curvature_gauge.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_ELEVATED_CURVATURE_GAUGE.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "elevated_curvature_gauge.json"
+  ],
+  "supports_claims": [
+    "NUL-GRV-007"
+  ]
+}

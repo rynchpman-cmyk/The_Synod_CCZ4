@@ -1,0 +1,100 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-002",
+  "title": "CCZ4-inclusive principal-symbol composition",
+  "question": "Does minimally coupled Nulloth retain a complete frozen characteristic basis when its physical symbol is composed with constrained CCZ4 gravitational, gauge, and constraint modes?",
+  "prediction": "The 23-variable algebraically reduced CCZ4 block and 25-variable Nulloth physical block form a complete 48-variable principal basis; normalized production cross blocks decay with Fourier order and vanish in the principal limit; the physical sector remains causal while the registered Gamma-driver gauge speed remains below 1.2.",
+  "falsifier": "An incomplete diagonal-block or composed eigenspace, a non-real characteristic frequency beyond tolerance, failure of cross-block decay, a physical speed above unity, or a composed spectrum differing from the union of its diagonal blocks falsifies the claim.",
+  "decisive_observables": [
+    "ccz4_reduced_variables",
+    "nulloth_physical_variables",
+    "composed_principal_variables",
+    "ccz4_eigenvector_rank",
+    "ccz4_eigenvector_condition",
+    "ccz4_maximum_eigenspace_residual",
+    "ccz4_maximum_real_growth",
+    "ccz4_maximum_gauge_speed",
+    "ccz4_spectrum_variation",
+    "nulloth_physical_eigenvector_rank",
+    "nulloth_physical_eigenvector_condition",
+    "nulloth_physical_maximum_speed",
+    "composed_eigenvector_rank",
+    "composed_eigenvector_condition",
+    "composed_maximum_eigenspace_residual",
+    "composed_spectrum_union_error",
+    "minimum_cross_block_decay_order",
+    "highest_mode_cross_block_fraction",
+    "principal_limit_cross_block_norm"
+  ],
+  "acceptance_criteria": [
+    {"observable": "ccz4_reduced_variables", "operator": "==", "value": 23},
+    {"observable": "nulloth_physical_variables", "operator": "==", "value": 25},
+    {"observable": "composed_principal_variables", "operator": "==", "value": 48},
+    {"observable": "ccz4_eigenvector_rank", "operator": "==", "value": 23},
+    {"observable": "ccz4_eigenvector_condition", "operator": "<=", "value": 1000000.0},
+    {"observable": "ccz4_maximum_eigenspace_residual", "operator": "<=", "value": 1e-5},
+    {"observable": "ccz4_maximum_real_growth", "operator": "<=", "value": 1e-6},
+    {"observable": "ccz4_maximum_gauge_speed", "operator": "<=", "value": 1.2},
+    {"observable": "ccz4_spectrum_variation", "operator": "<=", "value": 1e-6},
+    {"observable": "nulloth_physical_eigenvector_rank", "operator": "==", "value": 25},
+    {"observable": "nulloth_physical_eigenvector_condition", "operator": "<=", "value": 1000000.0},
+    {"observable": "nulloth_physical_maximum_speed", "operator": "<=", "value": 1.00000001},
+    {"observable": "composed_eigenvector_rank", "operator": "==", "value": 48},
+    {"observable": "composed_eigenvector_condition", "operator": "<=", "value": 1000000.0},
+    {"observable": "composed_maximum_eigenspace_residual", "operator": "<=", "value": 1e-5},
+    {"observable": "composed_spectrum_union_error", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_cross_block_decay_order", "operator": ">=", "value": 0.5},
+    {"observable": "highest_mode_cross_block_fraction", "operator": "<=", "value": 0.5},
+    {"observable": "principal_limit_cross_block_norm", "operator": "==", "value": 0.0}
+  ],
+  "controls": [
+    "CCZ4 conformal-metric and conformal-curvature perturbations are restricted to the tangent space of determinant one and zero trace, matching the production algebraic projection.",
+    "Configuration variables are rescaled by Fourier magnitude before the second-order CCZ4 symbol is normalized.",
+    "The CCZ4 diagonal block is linearized independently in vacuum so algebraic matter sources cannot contaminate its principal spectrum.",
+    "The off-diagonal scaling audit uses the actual initialize, recover, and production RHS path at nonzero scalar coupling and amplitude.",
+    "Matter stress sources in CCZ4 and metric-connection terms in matter are retained in the finite-wavenumber cross blocks; only their measured high-frequency limit is set to zero in the composed principal matrix.",
+    "Physical causality and coordinate gauge speed are reported separately."
+  ],
+  "resolution_ladder": [
+    {"grid_points": 16, "method": "spectral", "fourier_modes": [1, 2, 4]}
+  ],
+  "seed": null,
+  "seed_rationale": "The campaign uses a deterministic nonzero-coupling state and exact Fourier modes; no random sampling is used.",
+  "parameters": {
+    "material_parameters": "NULLOTH_DISCOVERY_PARAMETERS",
+    "density": 0.65,
+    "specific_internal_energy": 0.2,
+    "carrier_density": 0.18,
+    "varphi": 0.05,
+    "slicing": "harmonic",
+    "shift_driver": "Gamma-driver",
+    "algebraic_ccz4_reduction": "det(conformal_metric)=1 and tr(conformal_A)=0"
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_ccz4_composition.py",
+    "--grid-points",
+    "16",
+    "--modes",
+    "1",
+    "2",
+    "4"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_ccz4_composition.py",
+    "NULLOTH_SPEC.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/production3.py",
+    "src/causal_repair/theory3.py",
+    "src/causal_repair/grid.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-002"
+  ]
+}

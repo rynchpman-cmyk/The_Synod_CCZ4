@@ -1,0 +1,94 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-007",
+  "title": "Adaptive scalar-coupling atlas",
+  "question": "How does characteristic admissibility change jointly with scalar baryon, carrier, and counterflow couplings and coherence amplitude across representative hazardous material states?",
+  "prediction": "The registered four-dimensional envelope contains both qualified and proscribed coupling points, while the canonical discovery point and the zero-coupling control remain qualified; every failure is assigned to a declared gate.",
+  "falsifier": "The design fails to find both classes, either control point fails, a failure is unclassified, or a point reported qualified violates a registered causal, convexity, eigenspace, or residual tolerance.",
+  "decisive_observables": [
+    "coupling_dimensions",
+    "state_probes",
+    "directions_per_probe",
+    "initial_cells",
+    "refinements",
+    "adaptive_points",
+    "corner_points",
+    "coupling_points",
+    "symbol_evaluations",
+    "maximum_refinement_depth",
+    "qualified_points",
+    "proscribed_points",
+    "activated_points",
+    "canonical_point_failures",
+    "zero_coupling_point_failures",
+    "unclassified_failures",
+    "qualified_maximum_speed",
+    "qualified_maximum_condition",
+    "qualified_maximum_reduced_condition",
+    "qualified_maximum_eigenspace_residual",
+    "qualified_minimum_legendre",
+    "qualified_minimum_thermodynamic"
+  ],
+  "acceptance_criteria": [
+    {"observable": "coupling_dimensions", "operator": "==", "value": 4},
+    {"observable": "state_probes", "operator": "==", "value": 5},
+    {"observable": "directions_per_probe", "operator": "==", "value": 4},
+    {"observable": "initial_cells", "operator": "==", "value": 16},
+    {"observable": "refinements", "operator": "==", "value": 32},
+    {"observable": "adaptive_points", "operator": "==", "value": 528},
+    {"observable": "corner_points", "operator": "==", "value": 16},
+    {"observable": "coupling_points", "operator": "==", "value": 545},
+    {"observable": "symbol_evaluations", "operator": "==", "value": 10900},
+    {"observable": "maximum_refinement_depth", "operator": ">=", "value": 2},
+    {"observable": "qualified_points", "operator": ">=", "value": 10},
+    {"observable": "proscribed_points", "operator": ">=", "value": 10},
+    {"observable": "canonical_point_failures", "operator": "==", "value": 0},
+    {"observable": "zero_coupling_point_failures", "operator": "==", "value": 0},
+    {"observable": "unclassified_failures", "operator": "==", "value": 0},
+    {"observable": "qualified_maximum_speed", "operator": "<=", "value": 1.00000001},
+    {"observable": "qualified_maximum_condition", "operator": "<", "value": 100000000.0},
+    {"observable": "qualified_maximum_reduced_condition", "operator": "<", "value": 100000000.0},
+    {"observable": "qualified_maximum_eigenspace_residual", "operator": "<=", "value": 1e-7},
+    {"observable": "qualified_minimum_legendre", "operator": ">", "value": 1e-10},
+    {"observable": "qualified_minimum_thermodynamic", "operator": ">", "value": 1e-10}
+  ],
+  "controls": [
+    "The canonical discovery coupling at amplitude 0.16 and the fully scalar-decoupled point at amplitude 0.17 are explicit controls.",
+    "Five state probes include the previously measured central, convexity, collision, and condition-number locations plus the opposite hot boundary.",
+    "Every coupling point is evaluated in four propagation directions at every state probe.",
+    "All sixteen corners are retained independently of the adaptive priority queue.",
+    "Adaptive priority retains both high-hazard qualified points and low-severity failed points near denial surfaces.",
+    "Activation is recorded separately from characteristic qualification."
+  ],
+  "resolution_ladder": [
+    {"coupling_corners": 16, "initial_cells": 16},
+    {"priority_refinements": 32, "adaptive_points": 528, "state_direction_audits_per_point": 20}
+  ],
+  "seed": null,
+  "seed_rationale": "Coupling cells, state probes, directions, priority ordering, and controls are deterministic.",
+  "parameters": {
+    "coordinates": ["scalar_baryon_coupling", "scalar_carrier_coupling", "scalar_counterflow_coupling", "absolute_varphi"],
+    "lower_bounds": [0.0, 0.0, 0.0, 0.0],
+    "upper_bounds": [6.0, 20.0, 16.0, 0.17],
+    "base_parameters": "NULLOTH_DISCOVERY_PARAMETERS"
+  },
+  "command": [
+    "{python}",
+    "experiments/map_nulloth_scalar_coupling_atlas.py",
+    "--refinements",
+    "32"
+  ],
+  "timeout_seconds": 1800,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/map_nulloth_scalar_coupling_atlas.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py",
+    "src/causal_repair/matter.py",
+    "src/causal_repair/adm.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-007"
+  ]
+}

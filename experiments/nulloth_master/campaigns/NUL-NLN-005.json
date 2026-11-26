@@ -1,0 +1,105 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-NLN-005",
+  "title": "Complete-step counterflow entropy budget",
+  "question": "Can Nulloth's net entropy be separated into physical implicit-drag entropy and a spatially convergent numerical remainder without treating provisional RK projection sums as physical production?",
+  "prediction": "Net and drag entropy are stable under time refinement; the positive non-drag remainder decreases across 8, 16, and 32 points; complete-step telescopes close; and the raw provisional-stage projection sum overcounts the retained numerical remainder by approximately three.",
+  "falsifier": "Time-step instability, nonpositive entropy channels, a nonconvergent numerical remainder, failure of the complete-step telescope, or violation of constraint, conservation, convexity, or recovery vetoes falsifies the budget.",
+  "decisive_observables": [
+    "time_net_relative_spread",
+    "time_drag_relative_spread",
+    "time_numerical_relative_spread",
+    "numerical_entropy_monotone_with_resolution",
+    "coarse_to_medium_numerical_reduction",
+    "medium_to_fine_numerical_reduction",
+    "coarse_numerical_entropy_fraction",
+    "fine_numerical_entropy_fraction",
+    "minimum_net_entropy_change",
+    "minimum_drag_entropy_change",
+    "minimum_numerical_entropy_change",
+    "minimum_raw_projection_to_numerical_ratio",
+    "maximum_raw_projection_to_numerical_ratio",
+    "maximum_entropy_telescope_error",
+    "maximum_gravitational_constraint_l2",
+    "maximum_field_constraint_l2",
+    "maximum_number_relative_drift",
+    "minimum_legendre",
+    "minimum_thermodynamic",
+    "maximum_recovery_residual"
+  ],
+  "acceptance_criteria": [
+    {"observable": "time_net_relative_spread", "operator": "<=", "value": 0.001},
+    {"observable": "time_drag_relative_spread", "operator": "<=", "value": 0.002},
+    {"observable": "time_numerical_relative_spread", "operator": "<=", "value": 0.005},
+    {"observable": "numerical_entropy_monotone_with_resolution", "operator": "==", "value": 1},
+    {"observable": "coarse_to_medium_numerical_reduction", "operator": ">", "value": 1.5},
+    {"observable": "medium_to_fine_numerical_reduction", "operator": ">", "value": 1.7},
+    {"observable": "coarse_numerical_entropy_fraction", "operator": ">", "value": 0.15},
+    {"observable": "fine_numerical_entropy_fraction", "operator": "<", "value": 0.07},
+    {"observable": "minimum_net_entropy_change", "operator": ">", "value": 0.0},
+    {"observable": "minimum_drag_entropy_change", "operator": ">", "value": 0.0},
+    {"observable": "minimum_numerical_entropy_change", "operator": ">", "value": 0.0},
+    {"observable": "minimum_raw_projection_to_numerical_ratio", "operator": ">", "value": 2.9},
+    {"observable": "maximum_raw_projection_to_numerical_ratio", "operator": "<", "value": 3.1},
+    {"observable": "maximum_entropy_telescope_error", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-6},
+    {"observable": "maximum_field_constraint_l2", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_number_relative_drift", "operator": "<=", "value": 1e-12},
+    {"observable": "minimum_legendre", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic", "operator": ">", "value": 0.0},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8}
+  ],
+  "controls": [
+    "A sinusoidal carrier counterflow activates the real implicit drag collision map while retaining zero mean momentum compatibility.",
+    "The 16 point time ladder uses dt 0.02, 0.01, and 0.005 at fixed duration.",
+    "The spatial ladder uses 8, 16, and 32 points at dt 0.01 and fixed duration.",
+    "Net entropy is measured only between retained complete-step states.",
+    "Physical drag entropy and the complete-step non-drag remainder are reported separately.",
+    "Raw provisional-stage projection sums are measured but expressly excluded from the additive budget."
+  ],
+  "resolution_ladder": [
+    {"points": 8, "duration": 0.1, "dt": 0.01, "role": "spatial coarse"},
+    {"points": 16, "duration": 0.1, "dt": 0.02, "role": "temporal coarse"},
+    {"points": 16, "duration": 0.1, "dt": 0.01, "role": "shared temporal medium and spatial medium"},
+    {"points": 16, "duration": 0.1, "dt": 0.005, "role": "temporal fine"},
+    {"points": 32, "duration": 0.1, "dt": 0.01, "role": "spatial fine"}
+  ],
+  "seed": null,
+  "seed_rationale": "Counterflow, constraint solves, and evolutions are deterministic.",
+  "parameters": {
+    "carrier_mean_density": 0.18,
+    "carrier_fractional_modulation": 0.1,
+    "carrier_velocity_amplitude": 0.15,
+    "kappa_gravity": 0.001,
+    "slicing": "harmonic",
+    "box_length": 32.0
+  },
+  "command": [
+    "{python}",
+    "experiments/close_nulloth_entropy_budget.py",
+    "--duration",
+    "0.1",
+    "--output",
+    "{run_dir}/entropy_budget.json"
+  ],
+  "timeout_seconds": 300,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/close_nulloth_entropy_budget.py",
+    "experiments/map_nulloth_production_regimes.py",
+    "experiments/nulloth_master/NULLOTH_ENTROPY_BUDGET.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/initial_constraints.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "entropy_budget.json"
+  ],
+  "supports_claims": [
+    "NUL-NLN-005"
+  ]
+}

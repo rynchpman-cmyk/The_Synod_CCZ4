@@ -1,0 +1,75 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-LIM-005",
+  "title": "Noether-current and total stress-energy accounting",
+  "question": "Do the implemented scalar and Proca exchanges cancel between sectors, and do the periodic production equations preserve total stress-energy and conserved currents without spurious sources?",
+  "prediction": "Across 128 seeded scalar states the homogeneous material-scalar energy residual remains below 1e-13; the integrated Proca-field exchange cancels its Lorentz power and force below 2e-10; and every periodic total-current balance remains below 1e-12.",
+  "falsifier": "Any registered exchange or periodic balance residual exceeds its tolerance.",
+  "decisive_observables": [
+    "scalar_exchange_samples",
+    "maximum_scalar_material_energy_exchange_residual",
+    "proca_energy_exchange_residual",
+    "maximum_proca_momentum_exchange_residual",
+    "maximum_initial_gauss_constraint",
+    "periodic_baryon_rhs_integral",
+    "periodic_carrier_charge_rhs_integral",
+    "periodic_total_energy_rhs_integral",
+    "maximum_periodic_total_momentum_rhs_integral",
+    "maximum_periodic_passive_current_rhs_integral"
+  ],
+  "acceptance_criteria": [
+    {"observable": "scalar_exchange_samples", "operator": "==", "value": 128},
+    {"observable": "maximum_scalar_material_energy_exchange_residual", "operator": "<=", "value": 1e-13},
+    {"observable": "proca_energy_exchange_residual", "operator": "<=", "value": 2e-10},
+    {"observable": "maximum_proca_momentum_exchange_residual", "operator": "<=", "value": 2e-10},
+    {"observable": "maximum_initial_gauss_constraint", "operator": "<=", "value": 1e-12},
+    {"observable": "periodic_baryon_rhs_integral", "operator": "<=", "value": 1e-12},
+    {"observable": "periodic_carrier_charge_rhs_integral", "operator": "<=", "value": 1e-12},
+    {"observable": "periodic_total_energy_rhs_integral", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_periodic_total_momentum_rhs_integral", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_periodic_passive_current_rhs_integral", "operator": "<=", "value": 1e-12}
+  ],
+  "controls": [
+    "The scalar audit differentiates canonical scalar energy and material interaction energy independently at fixed material currents.",
+    "The Proca audit starts on the Gauss surface and differentiates the full vector stress along the field equations while evolving source charge by its continuity equation.",
+    "The Proca comparison uses the independently evaluated Lorentz power and force returned to matter.",
+    "The production balance uses a nonhomogeneous periodic state with moving material and carrier currents, a coherence field, and an excited Proca sector on flat instantaneous geometry.",
+    "Damping and irreversible carrier drag are disabled for the reversible exchange audit."
+  ],
+  "resolution_ladder": [
+    {"scalar_exchange_samples": 128},
+    {"proca_grid_points": 32, "method": "spectral"},
+    {"production_grid_points": 16, "method": "spectral"}
+  ],
+  "seed": 20260724,
+  "seed_rationale": "Constitutive parameters, physical states, coherence amplitudes, and momenta are generated from a fixed NumPy seed.",
+  "parameters": {
+    "production_parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "proca_directional_derivative_epsilon": 1e-6,
+    "irreversible_terms": "disabled"
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_noether_accounting.py",
+    "--seed",
+    "20260724",
+    "--scalar-exchange-samples",
+    "128"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_noether_accounting.py",
+    "NULLOTH_SPEC.md",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py",
+    "src/causal_repair/production3.py",
+    "src/causal_repair/grid.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-LIM-005"
+  ]
+}

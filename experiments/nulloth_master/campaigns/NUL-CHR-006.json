@@ -1,0 +1,75 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CHR-006",
+  "title": "Analytic convexity bounds and high-precision zero surfaces",
+  "question": "Can explicit sufficient Legendre and thermodynamic bounds protect the entire discovery box, and how are the production, condition-number, thermodynamic-zero, and Legendre-zero amplitudes ordered on the central state?",
+  "prediction": "Both analytic lower bounds remain positive at the production cap; both guaranteed amplitudes exceed 0.17; the central denial surfaces occur in the order production cap, condition-number gate, thermodynamic determinant zero, and Legendre determinant zero; binary64 roots agree with 80-digit results below 1e-14.",
+  "falsifier": "A sufficient lower bound is nonpositive, a guaranteed amplitude does not exceed the production cap, the denial ordering changes, or either root comparison exceeds tolerance.",
+  "decisive_observables": [
+    "precision_decimal_digits",
+    "production_scalar_amplitude_cap",
+    "thermodynamic_sufficient_lower_bound_at_cap",
+    "legendre_sufficient_lower_bound_at_cap",
+    "global_thermodynamic_guaranteed_amplitude",
+    "global_legendre_guaranteed_amplitude",
+    "central_condition_denial_amplitude",
+    "central_thermodynamic_zero_amplitude",
+    "central_legendre_zero_amplitude",
+    "condition_to_thermodynamic_gap",
+    "thermodynamic_to_legendre_gap",
+    "thermodynamic_cap_margin_fraction",
+    "legendre_cap_margin_fraction",
+    "binary64_thermodynamic_root_error",
+    "binary64_legendre_root_error"
+  ],
+  "acceptance_criteria": [
+    {"observable": "precision_decimal_digits", "operator": "==", "value": 80},
+    {"observable": "production_scalar_amplitude_cap", "operator": "==", "value": 0.17},
+    {"observable": "thermodynamic_sufficient_lower_bound_at_cap", "operator": ">", "value": 0.0},
+    {"observable": "legendre_sufficient_lower_bound_at_cap", "operator": ">", "value": 0.0},
+    {"observable": "global_thermodynamic_guaranteed_amplitude", "operator": ">", "value": 0.17},
+    {"observable": "global_legendre_guaranteed_amplitude", "operator": ">", "value": 0.17},
+    {"observable": "condition_to_thermodynamic_gap", "operator": ">", "value": 0.0},
+    {"observable": "thermodynamic_to_legendre_gap", "operator": ">", "value": 0.0},
+    {"observable": "thermodynamic_cap_margin_fraction", "operator": ">", "value": 0.0},
+    {"observable": "legendre_cap_margin_fraction", "operator": ">", "value": 0.0},
+    {"observable": "binary64_thermodynamic_root_error", "operator": "<=", "value": 1e-14},
+    {"observable": "binary64_legendre_root_error", "operator": "<=", "value": 1e-14}
+  ],
+  "controls": [
+    "The inequalities use monotonic endpoint bounds and Gershgorin lower estimates, not fitted sampled minima.",
+    "Nonnegative counterflow contributions to the Legendre diagonals are deliberately discarded, making the result sufficient rather than optimistic.",
+    "The thermodynamic and Legendre determinant zeros are solved independently with 80-digit bisection.",
+    "Binary64 formulas use a separate algebraic evaluation and bisection path.",
+    "The condition-number amplitude is imported as a fixed observed boundary from the accepted NUL-CHR-005 record and is not refitted."
+  ],
+  "resolution_ladder": [
+    {"analytic_box_bound": "endpoint monotonicity and Gershgorin"},
+    {"root_precision_decimal_digits": 80, "bisection_iterations": 256}
+  ],
+  "seed": null,
+  "seed_rationale": "The derivation and high-precision root solves are deterministic.",
+  "parameters": {
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "box_lower": [0.4, 0.1, 0.12, -0.3, -0.16],
+    "box_upper": [0.9, 0.35, 0.24, 0.3, 0.16],
+    "central_state": [0.65, 0.225, 0.18, 0.0]
+  },
+  "command": [
+    "{python}",
+    "experiments/derive_nulloth_admissibility_bounds.py"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/derive_nulloth_admissibility_bounds.py",
+    "experiments/nulloth_master/NULLOTH_ADMISSIBILITY_BOUNDS.md",
+    "runs/nulloth_master/NUL-CHR-005-b0c4808240f050c8/attempt-001/run_record.json",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/theory33.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CHR-006"
+  ]
+}

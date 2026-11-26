@@ -1,0 +1,94 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-LIN-001",
+  "title": "Canonical branch-resolved linear spectrum",
+  "question": "Do the implemented Nulloth equations reproduce the complete material, coherence, mixed-Proca, cleaning, gravitational, gauge, and constraint dispersion branches around the important homogeneous equilibria?",
+  "prediction": "Direct Fourier generators at three resolutions reproduce the derived scalar, mixed-Proca, cleaning, and CCZ4 spectra within 1e-8; the material block has four acoustic and four contact or vorticity modes; and the activated 32-unit box contains exactly three unstable scalar modes among mode numbers zero through three.",
+  "falsifier": "A missing branch, a spectrum error above tolerance, resolution-dependent eigenvalues, unpredicted real growth, or a different finite-volume unstable-mode count falsifies the registered spectrum.",
+  "decisive_observables": [
+    "material_modes_per_equilibrium",
+    "scalar_physical_modes",
+    "scalar_reduction_constraint_modes",
+    "proca_physical_modes",
+    "proca_cleaning_modes",
+    "ccz4_gravitational_tensor_modes",
+    "ccz4_gamma_driver_modes",
+    "ccz4_gauge_constraint_modes",
+    "maximum_vector_dispersion_error",
+    "maximum_ccz4_principal_frequency_error",
+    "maximum_resolution_spectrum_change",
+    "maximum_spurious_real_growth",
+    "finite_volume_unstable_mode_count",
+    "branch_families_identified"
+  ],
+  "acceptance_criteria": [
+    {"observable": "material_modes_per_equilibrium", "operator": "==", "value": 8},
+    {"observable": "scalar_physical_modes", "operator": "==", "value": 2},
+    {"observable": "scalar_reduction_constraint_modes", "operator": "==", "value": 3},
+    {"observable": "proca_physical_modes", "operator": "==", "value": 12},
+    {"observable": "proca_cleaning_modes", "operator": "==", "value": 4},
+    {"observable": "ccz4_gravitational_tensor_modes", "operator": "==", "value": 4},
+    {"observable": "ccz4_gamma_driver_modes", "operator": "==", "value": 2},
+    {"observable": "ccz4_gauge_constraint_modes", "operator": "==", "value": 17},
+    {"observable": "maximum_vector_dispersion_error", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_ccz4_principal_frequency_error", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_resolution_spectrum_change", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_spurious_real_growth", "operator": "<=", "value": 1e-10},
+    {"observable": "finite_volume_unstable_mode_count", "operator": "==", "value": 3},
+    {"observable": "branch_families_identified", "operator": "==", "value": 7}
+  ],
+  "controls": [
+    "All backgrounds are homogeneous and zero-flow so Doppler shifts cannot obscure branch identity.",
+    "The stable symmetric and condensed equilibria are negative controls for tachyonic scalar growth.",
+    "The activated symmetric equilibrium is the positive control and its finite-volume band is predicted before measurement.",
+    "The Proca comparison uses eigenvalues of the production Gauss mass matrix and includes cleaning damping separately.",
+    "CCZ4 coordinate gauge speeds are reported separately from physical characteristic speeds.",
+    "Every numerical Fourier spectrum is repeated on three spectral grids."
+  ],
+  "resolution_ladder": [
+    {"grid_points": 16, "method": "spectral"},
+    {"grid_points": 24, "method": "spectral"},
+    {"grid_points": 32, "method": "spectral"}
+  ],
+  "seed": null,
+  "seed_rationale": "The homogeneous equilibria and exact Fourier modes are deterministic and use no random sampling.",
+  "parameters": {
+    "material_parameters": "NULLOTH_DISCOVERY_PARAMETERS",
+    "equilibria": ["symmetric-stable", "symmetric-activated", "condensed"],
+    "scalar_box_length": 32.0,
+    "scalar_mode_numbers": [0, 1, 2, 3],
+    "vector_mode_numbers": [1, 2, 3],
+    "cleaning_damping": 1.0,
+    "ccz4_slicing": "harmonic",
+    "ccz4_shift": "Gamma-driver"
+  },
+  "command": [
+    "{python}",
+    "experiments/audit_nulloth_linear_spectrum.py",
+    "--resolutions",
+    "16",
+    "24",
+    "32",
+    "--output",
+    "{run_dir}/spectrum.json"
+  ],
+  "timeout_seconds": 600,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_linear_spectrum.py",
+    "experiments/audit_nulloth_ccz4_composition.py",
+    "experiments/nulloth_master/NULLOTH_LINEAR_SPECTRUM.md",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/grid.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/nulloth_scalar.py",
+    "src/causal_repair/production_nulloth.py",
+    "src/causal_repair/theory3.py"
+  ],
+  "outputs": [
+    "spectrum.json"
+  ],
+  "supports_claims": [
+    "NUL-LIN-001"
+  ]
+}

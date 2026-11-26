@@ -1,0 +1,99 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-007",
+  "title": "Complete finite-face characteristic inventory",
+  "question": "What are the state-local incoming, glancing, and outgoing projectors of the constrained CCZ4-plus-Nulloth principal system, and how much of the incoming space receives exact characteristic data in the present backend?",
+  "prediction": "The generic 48-variable system has signature 21/6/21, the 192 discovery-box face states preserve total count while exhibiting exactly three signatures with 19 to 21 incoming modes, clustered projectors close within tolerance, and the coverage audit finds only two exact incoming prescriptions and no complete coupled qualification.",
+  "falsifier": "A lost mode, unstable clustered projector, unexpected signature, incorrect coverage count, or an already complete coupled boundary falsifies the inventory.",
+  "decisive_observables": [
+    "composed_principal_variables",
+    "generic_composed_incoming_modes",
+    "generic_composed_glancing_modes",
+    "generic_composed_outgoing_modes",
+    "sampled_face_states",
+    "distinct_face_signatures",
+    "minimum_incoming_modes",
+    "maximum_incoming_modes",
+    "maximum_glancing_modes",
+    "count_conservation_failures",
+    "maximum_physical_projector_condition",
+    "maximum_physical_eigenspace_residual",
+    "maximum_physical_projector_idempotence_error",
+    "maximum_physical_projector_commutator_error",
+    "maximum_physical_projector_completeness_error",
+    "ccz4_projector_idempotence_error",
+    "ccz4_projector_commutator_error",
+    "ccz4_projector_completeness_error",
+    "exact_characteristic_incoming_modes_implemented",
+    "componentwise_radiative_incoming_modes",
+    "flux_only_material_incoming_modes",
+    "maximum_incoming_modes_without_exact_data",
+    "complete_coupled_boundary_qualified"
+  ],
+  "acceptance_criteria": [
+    {"observable": "composed_principal_variables", "operator": "==", "value": 48},
+    {"observable": "generic_composed_incoming_modes", "operator": "==", "value": 21},
+    {"observable": "generic_composed_glancing_modes", "operator": "==", "value": 6},
+    {"observable": "generic_composed_outgoing_modes", "operator": "==", "value": 21},
+    {"observable": "sampled_face_states", "operator": "==", "value": 192},
+    {"observable": "distinct_face_signatures", "operator": "==", "value": 3},
+    {"observable": "minimum_incoming_modes", "operator": "==", "value": 19},
+    {"observable": "maximum_incoming_modes", "operator": "==", "value": 21},
+    {"observable": "maximum_glancing_modes", "operator": "==", "value": 10},
+    {"observable": "count_conservation_failures", "operator": "==", "value": 0},
+    {"observable": "maximum_physical_projector_condition", "operator": "<=", "value": 100.0},
+    {"observable": "maximum_physical_eigenspace_residual", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_physical_projector_idempotence_error", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_physical_projector_commutator_error", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_physical_projector_completeness_error", "operator": "<=", "value": 1e-12},
+    {"observable": "ccz4_projector_idempotence_error", "operator": "<=", "value": 2e-10},
+    {"observable": "ccz4_projector_commutator_error", "operator": "<=", "value": 2e-10},
+    {"observable": "ccz4_projector_completeness_error", "operator": "<=", "value": 2e-10},
+    {"observable": "exact_characteristic_incoming_modes_implemented", "operator": "==", "value": 2},
+    {"observable": "componentwise_radiative_incoming_modes", "operator": "==", "value": 15},
+    {"observable": "flux_only_material_incoming_modes", "operator": "==", "value": 4},
+    {"observable": "maximum_incoming_modes_without_exact_data", "operator": "==", "value": 19},
+    {"observable": "complete_coupled_boundary_qualified", "operator": "==", "value": 0}
+  ],
+  "controls": [
+    "The 23-variable constrained CCZ4 symbol is composed with the 25-variable physical Nulloth symbol already qualified by NUL-CHR-010.",
+    "All 32 discovery-box corners are audited on both signs of all three Cartesian face normals.",
+    "Clustered SVD eigenspaces replace unstable individual eigenvectors at repeated and glancing speeds.",
+    "Projector idempotence, commutation with the symbol, completeness, and mode-count conservation are independent gates.",
+    "Coverage is classified as exact characteristic, componentwise radiative, or flux-only rather than collapsed into a binary boundary-present flag."
+  ],
+  "resolution_ladder": [
+    {"generic_states": 1, "role": "generic face signature"},
+    {"discovery_box_corners": 32, "face_normals": 6, "role": "glancing and flow-direction survey"}
+  ],
+  "seed": null,
+  "seed_rationale": "The corners, normals, symbols, clustering, and projectors are deterministic.",
+  "parameters": {
+    "parameter_set": "NULLOTH_DISCOVERY_PARAMETERS",
+    "discovery_box_lower": [0.4, 0.1, 0.12, -0.3, -0.16],
+    "discovery_box_upper": [0.9, 0.35, 0.24, 0.3, 0.16],
+    "projector_cluster_tolerance": 2e-7
+  },
+  "command": [
+    "{python}",
+    "experiments/derive_nulloth_boundary_characteristics.py",
+    "--grid-points",
+    "16"
+  ],
+  "timeout_seconds": 120,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_ccz4_composition.py",
+    "experiments/derive_nulloth_boundary_characteristics.py",
+    "experiments/nulloth_master/NULLOTH_BOUNDARY_CHARACTERISTICS.md",
+    "src/causal_repair/boundary.py",
+    "src/causal_repair/ccz4.py",
+    "src/causal_repair/finite_nulloth.py",
+    "src/causal_repair/nulloth.py",
+    "src/causal_repair/production3.py"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-BND-007"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-CTL-001",
+  "title": "Synodic physical control grammar",
+  "question": "Can the physically available Nulloth actuators, spell-search objectives, mandatory costs, controls, and abort surfaces be stated without introducing noncanonical state overrides?",
+  "prediction": "The registry contains six physical channels, all eight required objective families, all six cost dimensions, seven decision states, no duplicate or unknown references, no missing controls or aborts, and no direct metric, gauge, coupling, cap, or damping override.",
+  "falsifier": "A missing objective or cost, an unknown channel, an uncharged channel, a missing control or abort, duplicate identity, incorrect name, or direct noncanonical override falsifies the charter.",
+  "decisive_observables": [
+    "canonical_name_correct",
+    "channel_count",
+    "objective_count",
+    "required_objectives_present",
+    "accounting_dimension_count",
+    "required_accounting_dimensions_present",
+    "decision_state_count",
+    "global_forbidden_shortcut_count",
+    "duplicate_channel_ids",
+    "duplicate_objective_ids",
+    "unknown_channel_references",
+    "missing_channel_cost_links",
+    "direct_state_overrides",
+    "objectives_without_controls",
+    "objectives_without_abort"
+  ],
+  "acceptance_criteria": [
+    {"observable": "canonical_name_correct", "operator": "==", "value": 1},
+    {"observable": "channel_count", "operator": "==", "value": 6},
+    {"observable": "objective_count", "operator": "==", "value": 8},
+    {"observable": "required_objectives_present", "operator": "==", "value": 1},
+    {"observable": "accounting_dimension_count", "operator": "==", "value": 6},
+    {"observable": "required_accounting_dimensions_present", "operator": "==", "value": 1},
+    {"observable": "decision_state_count", "operator": "==", "value": 7},
+    {"observable": "global_forbidden_shortcut_count", "operator": ">=", "value": 6},
+    {"observable": "duplicate_channel_ids", "operator": "==", "value": 0},
+    {"observable": "duplicate_objective_ids", "operator": "==", "value": 0},
+    {"observable": "unknown_channel_references", "operator": "==", "value": 0},
+    {"observable": "missing_channel_cost_links", "operator": "==", "value": 0},
+    {"observable": "direct_state_overrides", "operator": "==", "value": 0},
+    {"observable": "objectives_without_controls", "operator": "==", "value": 0},
+    {"observable": "objectives_without_abort", "operator": "==", "value": 0}
+  ],
+  "controls": [
+    "The lore supplies actuator authority and caster semantics; the canonical action and production trace delimit what those actuators may physically change.",
+    "Every objective names an independently evolved control and an abort condition.",
+    "Every channel links all six mandatory accounting dimensions.",
+    "Forbidden shortcuts explicitly separate physical control from numerical formulation choices."
+  ],
+  "resolution_ladder": [
+    {"channels": 6, "objectives": 8, "cost_dimensions": 6, "role": "complete initial control grammar"}
+  ],
+  "seed": null,
+  "seed_rationale": "The registry and validator are deterministic.",
+  "parameters": {
+    "control_model": "outcome request compiled to canonical physical actuators",
+    "guard_states": ["SAFE", "WATCH", "DENY"]
+  },
+  "command": [
+    "{python}",
+    "experiments/validate_nulloth_control_registry.py",
+    "--registry",
+    "experiments/nulloth_master/control_registry.json"
+  ],
+  "timeout_seconds": 30,
+  "stdout_format": "json",
+  "inputs": [
+    "../WORLDBUILDING_THE_URUMES.txt",
+    "experiments/validate_nulloth_control_registry.py",
+    "experiments/nulloth_master/control_registry.json",
+    "experiments/nulloth_master/NULLOTH_ACTION_DERIVATION.md",
+    "experiments/nulloth_master/NULLOTH_CONTROL_CHARTER.md",
+    "experiments/nulloth_master/NULLOTH_3P1_SYSTEM.md"
+  ],
+  "outputs": [],
+  "supports_claims": [
+    "NUL-CTL-001"
+  ]
+}

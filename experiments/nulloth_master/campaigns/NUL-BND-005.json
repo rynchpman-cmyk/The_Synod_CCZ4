@@ -1,0 +1,96 @@
+{
+  "manifest_schema": "nulloth.campaign.v1",
+  "campaign_id": "NUL-BND-005",
+  "title": "Full-horizon finite vector and material requalification",
+  "question": "Do the physically observed vector and material passages admit full-horizon fixed-CFL entropy accounts under the convergent numerical-entropy standard established by NUL-BND-004?",
+  "prediction": "The immutable passage losses remain nonzero, the material remainder is nonnegative and decreases across 12, 18, and 24 cells, the fine vector signed remainder remains within truncation tolerance, and all balance, carrier, constraint, recovery, and constitutive gates pass.",
+  "falsifier": "Absent physical passage, a negative material remainder, nonconvergent material production, excessive vector truncation residual, failed balance identity, carrier imbalance, excessive constraints, failed recovery, or lost constitutive margin falsifies requalification.",
+  "decisive_observables": [
+    "original_vector_norm_loss_fraction",
+    "original_material_excess_baryon_loss_fraction",
+    "original_material_excess_carrier_loss_fraction",
+    "material_minimum_step_entropy_remainder",
+    "material_cumulative_remainder_monotone_to_fine",
+    "material_coarse_to_fine_cumulative_reduction",
+    "vector_minimum_step_entropy_remainder",
+    "fine_vector_absolute_cumulative_entropy_remainder",
+    "fine_vector_maximum_step_entropy_remainder",
+    "fine_material_cumulative_entropy_remainder",
+    "maximum_balance_identity_error",
+    "maximum_carrier_number_balance_residual",
+    "maximum_gravitational_constraint_l2",
+    "maximum_proca_constraint_l2",
+    "maximum_scalar_constraint_l2",
+    "maximum_recovery_residual",
+    "minimum_legendre_eigenvalue",
+    "minimum_thermodynamic_eigenvalue"
+  ],
+  "acceptance_criteria": [
+    {"observable": "original_vector_norm_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "original_material_excess_baryon_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "original_material_excess_carrier_loss_fraction", "operator": ">=", "value": 0.01},
+    {"observable": "material_minimum_step_entropy_remainder", "operator": ">=", "value": -1e-12},
+    {"observable": "material_cumulative_remainder_monotone_to_fine", "operator": "==", "value": 1},
+    {"observable": "material_coarse_to_fine_cumulative_reduction", "operator": ">", "value": 1.1},
+    {"observable": "vector_minimum_step_entropy_remainder", "operator": ">=", "value": -1e-6},
+    {"observable": "fine_vector_absolute_cumulative_entropy_remainder", "operator": "<=", "value": 1e-5},
+    {"observable": "fine_vector_maximum_step_entropy_remainder", "operator": "<=", "value": 1e-6},
+    {"observable": "fine_material_cumulative_entropy_remainder", "operator": "<=", "value": 0.001},
+    {"observable": "maximum_balance_identity_error", "operator": "<=", "value": 1e-14},
+    {"observable": "maximum_carrier_number_balance_residual", "operator": "<=", "value": 1e-12},
+    {"observable": "maximum_gravitational_constraint_l2", "operator": "<=", "value": 1e-8},
+    {"observable": "maximum_proca_constraint_l2", "operator": "<=", "value": 1e-7},
+    {"observable": "maximum_scalar_constraint_l2", "operator": "<=", "value": 1e-10},
+    {"observable": "maximum_recovery_residual", "operator": "<=", "value": 1e-8},
+    {"observable": "minimum_legendre_eigenvalue", "operator": ">", "value": 0.0},
+    {"observable": "minimum_thermodynamic_eigenvalue", "operator": ">", "value": 0.0}
+  ],
+  "controls": [
+    "Physical passage values are read from the immutable completed NUL-BND-003 active-versus-control record.",
+    "Fresh vector and material active trajectories span 12, 18, and 24 cells for the complete 0.12 horizon.",
+    "The time step scales with spacing at fixed ratio 0.024.",
+    "Material numerical production and vector signed background truncation are judged by distinct predeclared gates.",
+    "Retained entropy, physical boundary outflow, and the balance identity are recorded independently."
+  ],
+  "resolution_ladder": [
+    {"points": 12, "dt": 0.002, "steps": 60, "sources": ["vector", "material"], "role": "coarse"},
+    {"points": 18, "dt": 0.0013333333333333333, "steps": 90, "sources": ["vector", "material"], "role": "medium"},
+    {"points": 24, "dt": 0.001, "steps": 120, "sources": ["vector", "material"], "role": "fine"}
+  ],
+  "seed": null,
+  "seed_rationale": "The source profiles, immutable passage record, and fixed-CFL trajectories are deterministic.",
+  "parameters": {
+    "duration": 0.12,
+    "cfl_ratio": 0.024,
+    "sources": ["NUL-BND-003 vector", "NUL-BND-003 material"]
+  },
+  "command": [
+    "{python}",
+    "experiments/requalify_nulloth_finite_vector_material.py",
+    "--record",
+    "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json",
+    "--duration",
+    "0.12",
+    "--cfl-ratio",
+    "0.024",
+    "--output",
+    "{run_dir}/finite_vector_material_requalification.json"
+  ],
+  "timeout_seconds": 420,
+  "stdout_format": "json",
+  "inputs": [
+    "experiments/audit_nulloth_finite_scalar_outflow.py",
+    "experiments/audit_nulloth_finite_vector_material_outflow.py",
+    "experiments/requalify_nulloth_finite_vector_material.py",
+    "experiments/nulloth_master/NULLOTH_FINITE_VECTOR_MATERIAL_REQUALIFICATION.md",
+    "runs/nulloth_master/NUL-BND-003-2f4a8b0fcb0e78d3/attempt-001/run_record.json",
+    "src/causal_repair/finite_nulloth.py",
+    "src/causal_repair/production_nulloth.py"
+  ],
+  "outputs": [
+    "finite_vector_material_requalification.json"
+  ],
+  "supports_claims": [
+    "NUL-BND-005"
+  ]
+}
