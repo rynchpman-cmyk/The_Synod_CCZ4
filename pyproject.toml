@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "the-synod-czz4"
+name = "the-synod-ccz4"
 version = "0.1.0"
 description = "A numerical-relativity experiment bench for Physical Nulloth in the Urumes setting"
 readme = "README.md"

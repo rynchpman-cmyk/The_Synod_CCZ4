@@ -1,4 +1,4 @@
-# The_Synod_CZZ4
+# The_Synod_CCZ4
 
 The last black hole has evaporated. The Urumes is still here. Somewhere behind the Wall, the Synod advances spacetime one time step at a time.
 
@@ -8,7 +8,7 @@ Welcome to the Synod's test bench.
 
 In the Urumes setting, the Synod **is** the ship's CCZ4 solver. The ship is its domain. Sensors tell it what state that domain is in, and actuators let it change flows, fields, and boundary conditions. Between those two jobs, it has to keep the equations and the ship in working order.
 
-**The_Synod_CZZ4** is a real-world numerical experiment bench modeled on that fictional solver. Its purpose is to explore **Physical Nulloth**, the invented relativistic field theory the Synod evolves aboard the Urumes. The project name is spelled **CZZ4**. The spacetime formulation is **CCZ4**, the conformal and covariant Z4 formulation of Einstein's equations, which evolves constraint violations and gives the solver a way to damp them.
+**The_Synod_CCZ4** is a real-world numerical experiment bench modeled on that fictional solver. Its purpose is to explore **Physical Nulloth**, the invented relativistic field theory the Synod evolves aboard the Urumes. It uses **CCZ4**, the conformal and covariant Z4 formulation of Einstein's equations, which evolves constraint violations and gives the solver a way to damp them.
 
 Physical Nulloth couples ordinary matter to a second current called the Null, a scalar coherence field, and two mixed massive vector fields. Here you can change a coupling, seed a perturbation, and watch what the equations do. Some experiments isolate a single mechanism. Others evolve coupled fields or audit the characteristic speeds and eigenvectors to see where the equations support a well-posed initial-value problem. The experiments tell us how this fictional model behaves under the conditions we test.
 
