@@ -1024,12 +1024,17 @@
                       {
                           "path":  "experiments/nulloth_master/campaigns/NUL-CTL-001.json",
                           "role":  "registered Synodic physical control grammar campaign",
-                          "sha256":  "818ddb7f711b7a4f115a101eb7f305e79263961b6fbd5cb4631f59f80583d623"
+                          "sha256":  "06aa150174cf1f07f9d71e5f62c9180d7bf1b92acb1a8bdaca349dfb97a8132c"
                       },
                       {
                           "path":  "runs/nulloth_master/NUL-CTL-001-9dc26a54a9974c9c/attempt-001/run_record.json",
                           "role":  "accepted Synodic physical control grammar record",
                           "sha256":  "a4617d1998d920563db7a5f92334ca9ff9a7043f0037bd1c81e708c33cd4abcf"
+                      },
+                      {
+                          "path":  "runs/nulloth_master/NUL-CTL-001-bc92b2d3756bca35/attempt-001/run_record.json",
+                          "role":  "accepted Synodic physical control grammar record",
+                          "sha256":  "a089988acf9c67aba0b1e80b722c707d704e75c00b8e193ce54fa7b70e592dac"
                       },
                       {
                           "path":  "tests/test_nulloth_controls.py",
