@@ -30,3 +30,7 @@ The solver CLI is available through `python -m causal_repair --help`. Run the te
 - **What happens when two characteristic speeds meet?** The Hadamard pinch campaign follows the collision through longitudinal and oblique directions. Along the flow the modes meet with independent eigenvectors. At an oblique angle the eigenvectors can coalesce. [Read the campaign](experiments/hadamard_pinch/HADAMARD_PINCH_CAMPAIGN.md)
 - **What else is on the bench?** The experiment notebook collects questions about growth, mode coupling, transient amplification, and whether trajectories can reach the states found in the characteristic scans. [Open the experiment notebook](Nulloth%20exp.txt)
 - **Want the equations or the ship?** The specification gives the Physical Nulloth model, the solver guide describes the numerical machinery, and the lore book takes you aboard the Urumes. [Physical Nulloth specification](NULLOTH_SPEC.md) · [Solver guide](HOW_IT_WORKS.md) · [Urumes lore book](WORLDBUILDING_THE_URUMES.txt)
+
+## License
+
+[MIT](LICENSE)
